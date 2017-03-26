@@ -2238,6 +2238,7 @@ section.pt-image-slider-section {
 # Footer
 --------------------------------------------------------------*/
 .pt-footer-wrapper {
+	margin-top: 60px;
 	font-size: 15px;
 	line-height: 1.8em;
 	letter-spacing: .03em;
