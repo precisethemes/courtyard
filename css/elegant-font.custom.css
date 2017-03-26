@@ -1,0 +1,40 @@
+/*!
+ *  Elegant Icon Font by elegantthemes - https://www.elegantthemes.com/blog/resources/elegant-icon-font
+ *  License - http://www.gnu.org/licenses/gpl-2.0.html
+ *  License - https://opensource.org/licenses/MIT
+ */
+@font-face {
+  font-family: 'ElegantIcons';
+  src:  url('../fonts/elegant-fonts.eot?mlocq3');
+  src:  url('../fonts/elegant-fonts.eot?mlocq3#iefix') format('embedded-opentype'),
+    url('../fonts/elegant-fonts.ttf?mlocq3') format('truetype'),
+    url('../fonts/elegant-fonts.woff?mlocq3') format('woff'),
+    url('../fonts/elegant-fonts.svg?mlocq3#ElegantIcons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.pt-arrow-up, .pt-arrow-down, .pt-arrow-left, .pt-arrow-right {
+  font-family: 'ElegantIcons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.pt-arrow-up:before {
+  content: "\21";
+}
+.pt-arrow-down:before {
+  content: "\22";
+}
+.pt-arrow-left:before {
+  content: "\23";
+}
+.pt-arrow-right:before {
+  content: "\24";
+}
