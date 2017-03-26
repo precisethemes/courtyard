@@ -385,9 +385,9 @@ function courtyard_customize_register( $wp_customize ) {
         'section'            => 'courtyard_post_sidebar_section',
         'settings'           => 'courtyard_post_global_sidebar',
         'choices'            => array(
-            'right_sidebar'                 => get_template_directory_uri() . '/images/right-sidebar.png',
-            'left_sidebar'                  => get_template_directory_uri() . '/images/left-sidebar.png',
-            'no_sidebar_full_width'         => get_template_directory_uri() . '/images/no-sidebar-full-width-layout.png',
+            'right_sidebar'                 => get_template_directory_uri() . '/inc/admin/images/right-sidebar.svg',
+            'left_sidebar'                  => get_template_directory_uri() . '/inc/admin/images/left-sidebar.svg',
+            'no_sidebar_full_width'         => get_template_directory_uri() . '/inc/admin/images/no-sidebar.svg',
         ),
     ) ) );
 
@@ -548,9 +548,9 @@ function courtyard_customize_register( $wp_customize ) {
         'section'            => 'courtyard_blog_sidebar_section',
         'settings'           => 'courtyard_blog_global_sidebar',
         'choices'            => array(
-            'right_sidebar'                 => get_template_directory_uri() . '/images/right-sidebar.png',
-            'left_sidebar'                  => get_template_directory_uri() . '/images/left-sidebar.png',
-            'no_sidebar_full_width'         => get_template_directory_uri() . '/images/no-sidebar-full-width-layout.png',
+            'right_sidebar'                 => get_template_directory_uri() . '/inc/admin/images/right-sidebar.svg',
+            'left_sidebar'                  => get_template_directory_uri() . '/inc/admin/images/left-sidebar.svg',
+            'no_sidebar_full_width'         => get_template_directory_uri() . '/inc/admin/images/no-sidebar.svg',
         ),
     ) ) );
 
@@ -636,10 +636,10 @@ function courtyard_customize_register( $wp_customize ) {
         'section'            => 'courtyard_footer_widgets_sec',
         'settings'           => 'courtyard_footer_widget_area_layout',
         'choices'            => array(
-            '1by1'                      => get_template_directory_uri() . '/images/right-sidebar.png',
-            '1by2_1by2'                 => get_template_directory_uri() . '/images/left-sidebar.png',
-            '1by3_1by3_1by3'            => get_template_directory_uri() . '/images/no-sidebar-full-width-layout.png',
-            '1by4_1by4_1by4_1by4'       => get_template_directory_uri() . '/images/no-sidebar-full-width-layout.png',
+            '1by1'                      => get_template_directory_uri() . '/inc/admin/images/no-sidebar.svg',
+            '1by2_1by2'                 => get_template_directory_uri() . '/inc/admin/images/footer-1by2-1by2.svg',
+            '1by3_1by3_1by3'            => get_template_directory_uri() . '/inc/admin/images/footer-1by3-1by3-1by3.svg',
+            '1by4_1by4_1by4_1by4'       => get_template_directory_uri() . '/inc/admin/images/footer-1by4-1by4-1by4-1by4.svg',
         ),
     ) ) );
 
