@@ -75,10 +75,7 @@
 
 			<?php if ( get_theme_mod( 'courtyard_blog_show_read_more', '1' ) == 1 ) : ?>
 				<div class="read-more clearfix">
-					<?php $read_more = get_theme_mod( 'courtyard_blog_read_more_text', 'Read More' ); ?>
-					<a class="button post-button transition5" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php if ( $read_more != '' ) { echo esc_html( $read_more ); } else {
-							esc_html_e('Read More', 'courtyard');
-						} ?></a>
+					<a class="button post-button transition5" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php esc_html_e( get_theme_mod( 'courtyard_blog_read_more_text','Read More' ) ); ?></a>
 				</div>
 			<?php endif; ?>
 

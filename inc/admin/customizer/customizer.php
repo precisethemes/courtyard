@@ -300,7 +300,7 @@ function courtyard_customize_register( $wp_customize ) {
     $wp_customize->add_setting( 'courtyard_theme_color', array(
         'default'               => 'maroon',
         'capability'            => 'edit_theme_options',
-        'sanitize_callback'     => 'courtyard_sanitize_theme_color',
+        'sanitize_callback'     => 'courtyard_sanitize_choices',
     ) );
 
     $wp_customize->add_control( new courtyard_theme_color_picker( $wp_customize, 'courtyard_theme_color', array(
@@ -516,7 +516,7 @@ function courtyard_customize_register( $wp_customize ) {
     $wp_customize->add_setting( 'courtyard_blog_read_more_text', array(
         'default'               => esc_html__( 'Read More', 'courtyard' ),
         'capability'            => 'edit_theme_options',
-        'sanitize_callback'     => 'courtyard_sanitize_text',
+        'sanitize_callback'     => 'courtyard_sanitize_text_return_default',
     ) );
 
     $wp_customize->add_control( 'courtyard_blog_read_more_text', array(
@@ -644,6 +644,17 @@ function courtyard_customize_register( $wp_customize ) {
     ) ) );
 
     /**
+     * Sanitize text if empty return default value.
+     */
+    function courtyard_sanitize_text_return_default( $input, $setting ) {
+        // Ensure $text is text string
+        $text = wp_kses_post( force_balance_tags( $input ) );
+
+        // If the input is text, return it; otherwise, return the default
+        return ( $text ? $text : $setting->default );
+    }
+
+    /**
      * Checkbox Sanitize
      */
     function courtyard_checkbox_sanitize( $input ) {
@@ -698,16 +709,6 @@ function courtyard_customize_register( $wp_customize ) {
 
         // If the number is within the valid range, return it; otherwise, return the default
         return ( $min <= $number && $number <= $max && is_int( $number / $step ) ? $number : $setting->default );
-    }
-
-    /**
-     * Header Layout Sanitize
-     */
-    function courtyard_sanitize_theme_color( $value ) {
-        if ( ! in_array( $value, array( 'watermelon', 'red', 'orange', 'yellow', 'lime', 'green', 'mint', 'teal', 'sky-blue', 'blue', 'purple', 'pink', 'magenta', 'plum', 'brown', 'maroon' ) ) )
-            $value = 'sky-blue';
-
-        return $value;
     }
 }
 add_action( 'customize_register', 'courtyard_customize_register' );
