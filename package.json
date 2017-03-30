@@ -1,0 +1,23 @@
+{
+  "name": "courtyard",
+  "title": "Courtyard",
+  "version": "1.0.6",
+  "homepage": "https://precisethemes.com/courtyard/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/precisethemes/Courtyard"
+  },
+  "license": "GPL-3.0+",
+  "main": "Gruntfile.js",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-checktextdomain": "~1.0.0",
+    "grunt-contrib-compress": "~1.2.0",
+    "grunt-contrib-jshint": "~1.0.0",
+    "grunt-wp-i18n": "~0.5.4"
+  },
+  "engines": {
+    "node": ">=0.8.0",
+    "npm": ">=1.1.0"
+  }
+}
