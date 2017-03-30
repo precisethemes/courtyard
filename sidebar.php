@@ -6,7 +6,7 @@
  *
  * @package Courtyard
  */
-if ( ! is_active_sidebar( 'courtyard_sidebar' ) ) {
+if ( ! is_active_sidebar( 'pt_sidebar' ) ) {
    return;
 }
 ?>
@@ -16,5 +16,5 @@ if ( ! is_active_sidebar( 'courtyard_sidebar' ) ) {
 	if ( is_page_template( 'page-templates/template-rooms.php' ) ) {
 		echo courtyard_related_rooms_lists(); 
 	} ?>
-   	<?php dynamic_sidebar( 'courtyard_sidebar' ); ?>
+   	<?php dynamic_sidebar( 'pt_sidebar' ); ?>
 </aside><!-- #secondary -->

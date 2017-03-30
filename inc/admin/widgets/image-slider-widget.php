@@ -113,7 +113,7 @@ class courtyard_image_slider_widget extends WP_Widget
 
                                                             <article class="animated fadeInUp">
                                                                 <p><?php echo wp_trim_words(get_the_excerpt(), 12, ''); ?></p>
-                                                                <a class="transition5" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php esc_html_e(get_theme_mod('courtyard_blog_read_more_text', esc_html__('Discover', 'courtyard'))); ?></a>
+                                                                <a class="transition5" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php echo esc_html__('Discover', 'courtyard'); ?></a>
                                                             </article>
                                                         </div><!-- .pt-hero-image-cont -->
                                                     </div><!-- .col-md-12 -->

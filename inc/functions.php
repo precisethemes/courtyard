@@ -99,24 +99,24 @@ endif;
 /**
  * Added customizer scripts
  */
-function courtyard_admin_scripts( $hook ) {
+function courtyard_admin_scripts( ) {
     global $courtyard_version;
 
-    // Enqueue Admin style
-    wp_enqueue_style( 'courtyard-admin-style', get_theme_file_uri() .'/css/admin/admin-style.css', $courtyard_version, '' );
+    $pt_cScreen = get_current_screen();
 
-    if ( 'customize.php' == $hook || 'widgets.php' == $hook ) {
+    if( $pt_cScreen->id === "customize" || $pt_cScreen->id === "widgets" ) {
+        // Run some code, only on the admin customize and wigets page
+        wp_enqueue_style( 'courtyard-admin-style', get_theme_file_uri() .'/css/admin/admin-style.css', $courtyard_version, '' );
         wp_enqueue_media();
         wp_enqueue_style( 'wp-color-picker' );     
         wp_enqueue_script( 'courtyard-color-picker', get_theme_file_uri() . '/js/admin/color-picker.js', array( 'wp-color-picker' ), $courtyard_version, true );
         wp_enqueue_script( 'courtyard-customizer-script', get_theme_file_uri() .'/js/admin/customizer-scripts.js', array( 'jquery' ), $courtyard_version, true  );
     }
 
-    if ( 'post.php' == $hook || 'post-new.php' == $hook ) {
-        // Enqueue Custom Admin Script
+    if( $pt_cScreen->id === "page" ) {
+        // Enqueue Custom Admin Script, only on the admin Page page.
         wp_enqueue_script( 'courtyard-admin-script', get_theme_file_uri() .'/js/admin/admin-scripts.js', array( 'jquery' ), $courtyard_version, true );
     }
-
 }
 add_action('admin_enqueue_scripts', 'courtyard_admin_scripts');
 
@@ -630,10 +630,7 @@ if ( ! function_exists ( 'courtyard_listing_pagination' ) ) :
         * in our theme, and use this function in default quries
         * and custom queries.
         */
-        global $paged;
-        if ( empty( $paged ) ) {
-            $paged = 1;
-        }
+        $paged = ( get_query_var( 'paged' ) ) ? absint( get_query_var( 'paged' ) ) : 1;
         if ( $numpages == '' ) {
             global $wp_query;
             $numpages = $wp_query->max_num_pages;
@@ -744,7 +741,7 @@ if ( ! function_exists( 'courtyard_fetch_first_frontpage_widget_id' ) ) :
     function courtyard_fetch_first_frontpage_widget_id() {
         global $_wp_sidebars_widgets,$post;
         $post_id = $post->ID;
-        $widget_id = sprintf("courtyard_widget_area_%s", absint( $post_id ));
+        $widget_id = sprintf("pt_widget_area_%s", absint( $post_id ));
         $first_widget_id = $_wp_sidebars_widgets[$widget_id][0];
         return esc_html( $first_widget_id );
     }

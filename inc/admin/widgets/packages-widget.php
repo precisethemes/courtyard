@@ -150,7 +150,7 @@ class courtyard_packages_widget extends WP_Widget
 
                                             <a class="pt-holiday-package-read-more transition5"
                                                title="<?php the_title_attribute(); ?>"
-                                               href="<?php the_permalink(); ?>"><?php esc_html_e('View Details', 'courtyard'); ?></a>
+                                               href="<?php the_permalink(); ?>"><?php echo esc_html__('View Details', 'courtyard'); ?></a>
                                         </div>
                                     </div><!-- .pt-holiday-packages-cont -->
                                 </div><!-- .pt-holiday-packages-col -->

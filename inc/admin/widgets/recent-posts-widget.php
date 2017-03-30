@@ -199,7 +199,7 @@ class courtyard_recent_posts_widget extends WP_Widget
                                         <p><?php echo wp_trim_words(get_the_excerpt(), 18, ''); ?></p>
 
                                         <div class="pt-recent-posts-read-more">
-                                            <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php esc_html_e(get_theme_mod('courtyard_blog_read_more_text', esc_html__('Read More', 'courtyard'))); ?></a>
+                                            <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php echo esc_html__('Read More', 'courtyard'); ?></a>
                                         </div><!-- .pt-recent-posts-read-more -->
 
                                     </article><!-- .pt-recent-posts-cont -->

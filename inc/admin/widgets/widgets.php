@@ -20,7 +20,7 @@ function courtyard_widgets_init() {
   foreach($pages as $page){
     register_sidebar( array(
       'name'          => esc_html__( 'Front Page - ', 'courtyard' ) . esc_html( $page->post_title ),
-      'id'            => 'courtyard_widget_area_' . absint( $page->post_id ),
+      'id'            => 'pt_widget_area_' . absint( $page->post_id ),
       'description'   => esc_html__( 'Drag and drop our all custom widgets to build content awesome for the page: ', 'courtyard' ) . esc_html( $page->post_title ),
       'before_widget' => '<section id="%1$s" class="widget %2$s">',
       'after_widget'  => '</section>',
@@ -31,7 +31,7 @@ function courtyard_widgets_init() {
 
 	register_sidebar( array(
 		'name'          => esc_html__( 'Sidebar', 'courtyard' ),
-		'id'            => 'courtyard_sidebar',
+		'id'            => 'pt_sidebar',
 		'description'   => esc_html__( 'Add widgets in your sidebar of  theme.', 'courtyard' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
@@ -62,7 +62,6 @@ function courtyard_widgets_init() {
     ) );
   }
 
-  register_widget( "courtyard_video_widget" );
   register_widget( "courtyard_service_widget" );
   register_widget( "courtyard_recent_posts_widget" );
   register_widget( "courtyard_image_slider_widget" );
@@ -73,7 +72,6 @@ add_action( 'widgets_init', 'courtyard_widgets_init' );
 
 /**************************************************************************************/
 
-require get_template_directory() . '/inc/admin/widgets/video-widget.php';
 require get_template_directory() . '/inc/admin/widgets/services-widget.php';
 require get_template_directory() . '/inc/admin/widgets/recent-posts-widget.php';
 require get_template_directory() . '/inc/admin/widgets/image-slider-widget.php';

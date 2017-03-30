@@ -146,6 +146,13 @@ function courtyard_custom_style() {
 		$custom .= "input[type='text']:focus, input[type='email']:focus, input[type='url']:focus, input[type='password']:focus, input[type='search']:focus, input[type='number']:focus, input[type='tel']:focus, input[type='range']:focus, input[type='date']:focus, input[type='month']:focus, input[type='week']:focus, input[type='time']:focus, input[type='datetime']:focus, input[type='datetime-local']:focus, input[type='color']:focus, textarea:focus { border-color: " . esc_attr($theme_primary_color) . "}"."\n";
 	}
 
+	if ( is_admin_bar_showing() ) {
+		// Nav bar for admin logged in
+		$custom .= ".pt-navbar, .pt-menu-sm-wrap { top: 32px; }\n
+		@media screen and (max-width: 992px) {.pt-navbar, .pt-menu-sm-wrap { top: 32px; } }\n 
+		@media screen and (max-width: 786px) {.pt-navbar, .pt-menu-sm-wrap { top: 46px; } }\n";
+	}
+
 	if( !empty( $custom ) ) {
 		echo '<!-- '.get_bloginfo('name').' Internal Styles -->';
 	?>

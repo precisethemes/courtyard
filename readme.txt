@@ -7,6 +7,11 @@ License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: one-column, two-columns, left-sidebar, right-sidebar, flexible-header, custom-background, custom-colors, custom-header, custom-menu, custom-logo, featured-images, footer-widgets, full-width-template, post-formats, theme-options, threaded-comments, blog, e-commerce, food-and-drink
 
+== Copyright ==
+
+Courtyard, Copyright 2017 Precise Themes
+Courtyard is distributed under the terms of the GNU GPL
+
 == Description ==
 
 Courtyard - Responsive WordPress Theme is clean, minimalistic and beautifully designed theme perfectly for Hotel and Resorts. Courtyard theme can likewise be utilized to make site for Motel, Boarding House, Guest House, Lodge, Bed and Breakfast, B&B, Hostel, Inn Hospitality Business, Restaurant, Cuisine, Cafe, and some other kind of site you can envision with effectively adaptable and easily customizable landing page. Preview Demo is available at http://demo.precisethemes.com/courtyard/
@@ -103,7 +108,7 @@ Screenshot images licensed under CC0 Public Domain (http://creativecommons.org/p
 === Changelog ===
 
 Version: 1.0.6
-* Beautified customizer - Mar 25, 2017
+* Issue fixed as mentation by poena - Mar 30, 2017
 
 Version: 1.0.5
 * Issue fixes as per review - Jan 20, 2017

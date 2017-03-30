@@ -43,7 +43,7 @@ get_header(); ?>
 
 				?>
 				<div class="pt-pagination-nav">
-					<?php echo paginate_links(); ?>
+					<?php courtyard_listing_pagination(); ?>
 				</div><!-- .pt-pagination-nav -->
 				<?php
 			else :

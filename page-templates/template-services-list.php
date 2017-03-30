@@ -18,7 +18,7 @@ get_header(); ?>
                     </header>
                 </div><!-- .col-md-12 -->
 
-                <div class="pt-services-slider">
+                <div class="pt-services">
                     <?php
                     $default_ppp = get_option( 'posts_per_page' );
                     $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
