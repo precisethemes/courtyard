@@ -73,7 +73,9 @@ get_header(); ?>
                     // Custom Pagination
                     $total = $get_featured_pages->max_num_pages;
                     
-                    echo courtyard_listing_pagination( $total );
+                    if ( function_exists( 'courtyard_listing_pagination' ) ) {
+                        courtyard_listing_pagination( $total );
+                    }
 
                     // Reset Post Data
                     wp_reset_postdata();
