@@ -36,7 +36,7 @@ get_header(); ?>
 				?>
 
 				<div class="pt-pagination-nav">
-					<?php courtyard_listing_pagination(); ?>
+					<?php courtyard_navigation(); ?>
 				</div><!-- .pt-pagination-nav -->
 
 				<?php
