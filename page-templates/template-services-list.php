@@ -22,7 +22,6 @@ get_header(); ?>
                     <?php
                     $default_ppp = get_option( 'posts_per_page' );
                     $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
-                    $offset = ( $paged - 1 ) * $default_ppp;
                     $get_featured_pages = new WP_Query( array(
                         'post_status'     => 'publish',
                         'posts_per_page'  => intval ( $default_ppp ),
@@ -35,7 +34,6 @@ get_header(); ?>
                             )
                         ),
                         'paged'     => intval( $paged ),
-                        'offset'    =>  $offset,
                     ) ); ?>
 
                     <?php if ($get_featured_pages->have_posts()) : ?>
@@ -75,9 +73,10 @@ get_header(); ?>
 
                             <?php endwhile;
 
-                            if ( function_exists( 'courtyard_listing_pagination' ) ) {
-                                courtyard_listing_pagination( $get_featured_pages->max_num_pages,"",$paged );
-                            }
+                            // Custom Pagination
+                            $total = $get_featured_pages->max_num_pages;
+                            
+                            echo courtyard_listing_pagination( $total );
                         
                             // Reset Post Data
                             wp_reset_postdata();
