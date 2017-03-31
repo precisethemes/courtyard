@@ -39,7 +39,14 @@ get_header(); ?>
 				?>
 
 				<div class="pt-pagination-nav">
-					<?php courtyard_navigation(); ?>
+					<?php
+					the_posts_pagination( array(
+						'mid_size' 				=> 4,
+						'prev_text'          	=> __( '&laquo; Previous', 'courtyard' ),
+		                'next_text'          	=> __( 'Next &raquo;', 'courtyard' ),
+		                'before_page_number' 	=> '<span class="meta-nav screen-reader-text">' . __( 'Page', 'courtyard' ) . ' </span>',
+					) );
+					?>
 				</div><!-- .pt-pagination-nav -->
 
 				<?php

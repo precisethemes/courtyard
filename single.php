@@ -20,7 +20,15 @@ get_header();
 
 				get_template_part( 'template-parts/content', get_post_format() );
 
-				courtyard_navigation();
+				// Previous/next post navigation.
+				if ( get_theme_mod( 'courtyard_post_nex_prev_article', '1' ) == 1) :
+					the_post_navigation( array(
+						'next_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Next Post &rarr;', 'courtyard' ) . '</span> ' .
+							'<span class="screen-reader-text">' . __( 'Next post:', 'courtyard' ) . '</span> ',
+						'prev_text' => '<span class="meta-nav" aria-hidden="true">' . __( '&larr; Previous Post', 'courtyard' ) . '</span> ' .
+							'<span class="screen-reader-text">' . __( 'Previous post:', 'courtyard' ) . '</span> ',
+					) );
+				endif;
 
 				// If comments are open or we have at least one comment, load up the comment template.
 				if ( comments_open() || get_comments_number() ) :

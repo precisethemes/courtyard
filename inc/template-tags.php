@@ -56,7 +56,7 @@ function courtyard_posted_one() {
 			echo '</span>';
 		endif;
 
-		if ( get_theme_mod( 'courtyard_blog_post_author' ) ) :
+		if ( get_theme_mod( 'courtyard_blog_post_author', '1' ) == 1 ) :
 			echo '<span class="byline">';
 			echo $byline;
 			echo '</span>';
