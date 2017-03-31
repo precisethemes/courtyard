@@ -35,6 +35,11 @@ function courtyard_setup() {
 	 */
 	add_theme_support( 'title-tag' );
 
+	/**
+	 * Indicate widget sidebars can use selective refresh in the Customizer.
+	 */
+	add_theme_support( 'customize-selective-refresh-widgets' );
+
 	/*
 	 * Custom Image Crop
 	 */

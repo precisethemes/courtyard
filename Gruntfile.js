@@ -72,7 +72,7 @@ module.exports = function( grunt ){
 		// Compress files and folders.
 		compress: {
 			options: {
-				archive: 'Courtyard.zip'
+				archive: 'courtyard.zip'
 			},
 			files: {
 				src: [
@@ -85,7 +85,7 @@ module.exports = function( grunt ){
 					'!package.json',
 					'!node_modules/**'
 				],
-				dest: 'Courtyard',
+				dest: 'courtyard',
 				expand: true
 			}
 		}
