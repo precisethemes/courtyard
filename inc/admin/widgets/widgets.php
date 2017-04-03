@@ -19,9 +19,9 @@ function courtyard_widgets_init() {
   ));
   foreach($pages as $page){
     register_sidebar( array(
-      'name'          => esc_html__( 'Front Page - ', 'courtyard' ) . esc_html( $page->post_title ),
+      'name'          => sprintf( esc_html__( /* Translators: %s: Page Name */ 'Front Page - %s', 'courtyard' ), esc_html( $page->post_title ) ),
       'id'            => 'pt_widget_area_' . absint( $page->post_id ),
-      'description'   => esc_html__( 'Drag and drop our all custom widgets to build content awesome for the page: ', 'courtyard' ) . esc_html( $page->post_title ),
+      'description'   => sprintf(  /* Translators: %s: Page Name */ esc_html__( 'Drag and drop our all custom widgets to build content awesome for the page: %s', 'courtyard' ), esc_html( $page->post_title ) ),
       'before_widget' => '<section id="%1$s" class="widget %2$s">',
       'after_widget'  => '</section>',
       'before_title'  => '<h2 class="widget-title">',
@@ -32,7 +32,7 @@ function courtyard_widgets_init() {
 	register_sidebar( array(
 		'name'          => esc_html__( 'Sidebar', 'courtyard' ),
 		'id'            => 'pt_sidebar',
-		'description'   => esc_html__( 'Add widgets in your sidebar of  theme.', 'courtyard' ),
+		'description'   => esc_html__( 'Add widgets in your sidebar of theme.', 'courtyard' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h4 class="widget-title">',
@@ -52,9 +52,9 @@ function courtyard_widgets_init() {
   }
   for ($i=1; $i<=$cols_divider; $i++) {
     register_sidebar( array(
-      'name'          => esc_html__( 'Footer ', 'courtyard' ) . $i,
+      'name'          => sprintf( /* Translators: %d: widget number */ esc_html__( 'Footer %d', 'courtyard' ), $i ) ,
       'id'            => 'courtyard_footer_sidebar_' . $i,
-      'description'   => esc_html__( 'Add widgets in your footer widget area ', 'courtyard' ) .$i,
+      'description'   => sprintf( /* Translators: %d: widget number */ esc_html__( 'Add widgets in your footer widget area %d.', 'courtyard' ), $i ),
       'before_widget' => '<aside id="%1$s" class="widget %2$s">',
       'after_widget'  => '</aside>',
       'before_title'  => '<h3 class="widget-title">',
