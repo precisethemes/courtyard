@@ -52,9 +52,9 @@ function courtyard_widgets_init() {
   }
   for ($i=1; $i<=$cols_divider; $i++) {
     register_sidebar( array(
-      'name'          => esc_html__( 'Footer ', 'courtyard' ) . $i,
+      'name'          => sprintf( /* Translators: %d: widget number */ esc_html__( 'Footer %d', 'courtyard' ), $i ) ,
       'id'            => 'courtyard_footer_sidebar_' . $i,
-      'description'   => esc_html__( 'Add widgets in your footer widget area ', 'courtyard' ) .$i,
+      'description'   => sprintf( /* Translators: %d: widget number */ esc_html__( 'Add widgets in your footer widget area %d.', 'courtyard' ), $i ),
       'before_widget' => '<aside id="%1$s" class="widget %2$s">',
       'after_widget'  => '</aside>',
       'before_title'  => '<h3 class="widget-title">',
