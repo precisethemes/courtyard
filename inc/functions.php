@@ -126,7 +126,7 @@ add_action('admin_enqueue_scripts', 'courtyard_admin_scripts');
 * Footer credits
 */
 function courtyard_footer_credits() {
-    printf( __( 'Copyright &copy; %1$s %3$s %2$s.', 'courtyard' ), date('Y'), esc_html__('All rights reserved','courtyard'), '<a href="'.esc_url( home_url( '/' ) ) .'">' . esc_html( get_bloginfo( 'name', 'display' ) ) . '</a>.' );
+    printf( __( 'Copyright &copy; %1$s %3$s %2$s.', 'courtyard' ), date('Y'), esc_html__('All rights reserved','courtyard'), '<a href="'.esc_url( home_url( '/' ) ) .'">' . esc_html( get_bloginfo( 'name', 'display' ) ) . '</a>' );
     echo '<span class="sep"> | </span>';
     printf( __( 'Designed by %2$s', 'courtyard' ), '', '<a href="'.esc_url( __('http://precisethemes.com/','courtyard' ) ) .'" rel="designer" target="_blank">Precise Themes</a>' );
 }
