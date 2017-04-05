@@ -12,9 +12,6 @@ if ( ! is_active_sidebar( 'pt_sidebar' ) ) {
 ?>
 
 <aside id="secondary" class="<?php echo esc_attr( courtyard_secondary_sidebar() ); ?>" role="complementary">
-	<?php 
-	if ( is_page_template( 'page-templates/template-rooms.php' ) ) {
-		echo courtyard_related_rooms_lists(); 
-	} ?>
+	<?php echo courtyard_related_pages_listing(); ?>
    	<?php dynamic_sidebar( 'pt_sidebar' ); ?>
 </aside><!-- #secondary -->

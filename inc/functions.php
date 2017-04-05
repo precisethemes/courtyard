@@ -12,7 +12,7 @@ $courtyard_version = $courtyard_theme->get( 'Version' );
  */
 function courtyard_scripts() {
 
-	global $courtyard_version;
+    global $courtyard_version;
 
     // Add custom fonts, used in the main stylesheet.
     wp_enqueue_style( 'courtyard-fonts', courtyard_fonts_url(), array(), null );
@@ -40,21 +40,21 @@ function courtyard_scripts() {
     // Enqueue Swiper.css
     wp_enqueue_style( 'swiper', get_theme_file_uri() . '/css/swiper.min.css', array(), '3.4.0', '' );
 
-	wp_enqueue_style( 'courtyard-style', get_stylesheet_uri() );
+    wp_enqueue_style( 'courtyard-style', get_stylesheet_uri() );
 
-	// Enqueue Swiper
+    // Enqueue Swiper
     wp_enqueue_script( 'swiper', get_theme_file_uri() . '/js/swiper.jquery.min.js', array( 'jquery' ), '3.4.0', true );
 
     // Custom JS
     wp_enqueue_script( 'courtyard-custom', get_theme_file_uri() . '/js/custom.js', array( 'jquery' ), $courtyard_version, true );
 
-	wp_enqueue_script( 'courtyard-navigation', get_theme_file_uri() . '/js/navigation.js', array(), '20151215', true );
+    wp_enqueue_script( 'courtyard-navigation', get_theme_file_uri() . '/js/navigation.js', array(), '20151215', true );
 
-	wp_enqueue_script( 'courtyard-skip-link-focus-fix', get_theme_file_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+    wp_enqueue_script( 'courtyard-skip-link-focus-fix', get_theme_file_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
-	}
+    if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+        wp_enqueue_script( 'comment-reply' );
+    }
 }
 add_action( 'wp_enqueue_scripts', 'courtyard_scripts' );
 
@@ -566,22 +566,44 @@ endif;
 
 /*--------------------------------------------------------------------------------------------------*/
 
-if ( ! function_exists ( 'courtyard_related_rooms_lists' ) ) :
-    function courtyard_related_rooms_lists(){
+if ( ! function_exists ( 'courtyard_related_pages_listing' ) ) :
+    function courtyard_related_pages_listing(){
         global $post;
-        $related_room_display = get_post_meta($post->ID, 'room_related_posts_checkbox', true);
-        $related_room_numbers = get_post_meta($post->ID, 'room_related_posts_number', true);
-        if ( $related_room_display == 'checked') {
+        $activate = '';
+        $font_icon = '';
+        $thumbnail = '';
+        // List of related rooms
+        if ( is_page_template( 'page-templates/template-rooms.php' ) ) {
+            $activate  = get_post_meta($post->ID, 'room_related_posts_checkbox', true);
+            $numbers = get_post_meta($post->ID, 'room_related_posts_number', true);
+            $template = 'page-templates/template-rooms.php';
+        } 
+        // List of related services
+        if ( is_page_template( 'page-templates/template-services.php' ) ) {
+            $font_icon = get_post_meta($post->ID, 'service_icon', true);
+            $activate = get_post_meta($post->ID, 'service_related_posts_checkbox', true);
+            $numbers = get_post_meta($post->ID, 'service_related_posts_number', true);
+            $template = 'page-templates/template-services.php';
+        }
+        // List of related packages
+        if ( is_page_template( 'page-templates/template-packages.php' ) ) {
+            $activate  = get_post_meta($post->ID, 'packages_related_posts_checkbox', true);
+            $numbers = get_post_meta($post->ID, 'packages_related_posts_number', true);
+            $template = 'page-templates/template-packages.php';
+        }
+        
+        if ( $activate == 'checked' && '' != $activate ) {
             $get_featured_pages = new WP_Query( array(
                 'no_found_rows'   => true,
                 'post_status'     => 'publish',
-                'posts_per_page'  => intval ( $related_room_numbers ),
+                'posts_per_page'  => intval ( $numbers ),
                 'post_type'       => array( 'page' ),
                 'orderby'         => array( 'menu_order' => 'ASC', 'date' => 'DESC' ),
+                'post__not_in'    => array($post->ID),
                 'meta_query' => array(
                     array(
                     'key'   => '_wp_page_template',
-                    'value' => 'page-templates/template-rooms.php'
+                    'value' => $template
                     )
                 ),
             ) );
@@ -595,16 +617,21 @@ if ( ! function_exists ( 'courtyard_related_rooms_lists' ) ) :
                     $image_id                 = get_post_thumbnail_id();
                     $image_path               = wp_get_attachment_image_src( $image_id, 'courtyard-400x260', true );
                     $image_alt                = get_post_meta( $image_id, '_wp_attachment_image_alt', true );
-                    $room_thumbnail = '<img src="'.esc_url( $image_path[0] ).'" alt="'.esc_attr( $image_alt ).'" title="'.esc_attr( $title_attribute ).'" />';
+
+                    if ( has_post_thumbnail() ) {
+                        $thumbnail = '<figure>';
+                        $thumbnail .= '<img src="' . esc_url($image_path[0]) . '" alt="' . esc_attr($image_alt) . '" title="'.esc_attr( $title_attribute ).'" />';
+                        $thumbnail .= '</figure>';
+                    } elseif ( '' != $font_icon ) {
+                        $thumbnail = '<span class="pt-font-icon">';
+                        $thumbnail .= '<i class="fa ' . esc_attr($font_icon) . '"></i>';;
+                        $thumbnail .= '</span>';
+                    }
 
                     ?>
                     <div class="pt-related-wrap">
 
-                        <?php if( has_post_thumbnail() ) : ?>
-                            <figure>
-                                <a title="<?php esc_attr( $title_attribute ); ?>" href="<?php the_permalink(); ?>"><?php echo $room_thumbnail; ?></a>
-                            </figure>
-                        <?php endif; ?>
+                        <?php echo $thumbnail; ?>
 
                         <h3><a title="<?php esc_attr( $title_attribute ); ?>" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 
@@ -635,5 +662,39 @@ if ( ! function_exists( 'courtyard_fetch_first_frontpage_widget_id' ) ) :
         $widget_id = sprintf("pt_widget_area_%s", absint( $post_id ));
         $first_widget_id = $_wp_sidebars_widgets[$widget_id][0];
         return esc_html( $first_widget_id );
+    }
+endif;
+
+/*--------------------------------------------------------------------------------------------------*/
+
+if ( ! function_exists ( 'courtyard_page_thumbnail' ) ) :
+    function courtyard_page_thumbnail(){
+        global $post;
+        $font_icon = '';
+        $thumbnail = '';
+        $sidebar_class = courtyard_sidebar_layout_class();
+        if ( $sidebar_class == 'no_sidebar_full_width' ) {
+            $img_size = 'courtyard-1200x750';
+        } else {
+            $img_size = 'courtyard-800x500';
+        }
+        $title_attribute        = the_title_attribute( 'echo=0' );
+        $image_id               = get_post_thumbnail_id();
+        $image_path             = wp_get_attachment_image_src( $image_id, $img_size, true );
+        $image_alt              = get_post_meta( $image_id, '_wp_attachment_image_alt', true );
+        $alt                    = !empty( $image_alt ) ? $image_alt : the_title_attribute( 'echo=0' ) ;
+
+        $font_icon = get_post_meta($post->ID, 'service_icon', true);
+
+        if ( has_post_thumbnail() ) {
+            $thumbnail = '<figure>';
+            $thumbnail .= '<img src="' . esc_url($image_path[0]) . '" alt="' . esc_attr($alt) . '" title="'.esc_attr( $title_attribute ).'" />';
+            $thumbnail .= '</figure>';
+        } elseif( '' != $font_icon ) {
+            $thumbnail = '<span class="pt-font-icon">';
+            $thumbnail .= '<i class="fa ' . esc_attr($font_icon) . '"></i>';;
+            $thumbnail .= '</span>';
+        }
+        return $thumbnail;
     }
 endif;

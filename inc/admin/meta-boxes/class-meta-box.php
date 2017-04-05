@@ -120,7 +120,7 @@ class Courtyard_Service_Icon_Meta_Box {
 	public function init_metabox() {
 
 		add_action( 'add_meta_boxes', array( $this, 'add_metabox'  )        );
-		add_action( 'save_post',      array( $this, 'save_metabox' ), 10, 2 );
+		add_action( 'save_post',      array( $this, 'save_metabox' ), 5, 2 );
 
 	}
 
@@ -237,7 +237,7 @@ class Courtyard_Room_Related_Post_Meta_Box {
 
 		// Set default values.
 		if( empty( $room_checkbox ) ) $room_checkbox = 'checked';
-		if( empty( $number_of_posts ) ) $number_of_posts = '10'; ?>
+		if( empty( $number_of_posts ) ) $number_of_posts = '5'; ?>
 
 		<div class="pt-input-wrap">
 			<div class="pt-input-holder">
@@ -289,3 +289,195 @@ class Courtyard_Room_Related_Post_Meta_Box {
 }
 
 new Courtyard_Room_Related_Post_Meta_Box;
+
+/* --------------------------------------------- Service Page Template ---------------------------------------------*/
+class Courtyard_Service_Related_Post_Meta_Box {
+
+	public function __construct() {
+
+		if ( is_admin() ) {
+			add_action( 'load-post.php',     array( $this, 'init_metabox' ) );
+			add_action( 'load-post-new.php', array( $this, 'init_metabox' ) );
+		}
+
+	}
+
+	public function init_metabox() {
+
+		add_action( 'add_meta_boxes', array( $this, 'add_metabox'  )        );
+		add_action( 'save_post',      array( $this, 'save_metabox' ), 10, 2 );
+
+	}
+
+	public function add_metabox() {
+
+		// Adding service_checkbox meta box for Page
+		add_meta_box( 
+			'service_related_post', 
+			esc_html__( 'Relatd Services', 'courtyard' ), 
+			array( $this, 'render_metabox' ),
+			'page', 
+			'side', 
+			'default' 
+		);
+	}
+
+	public function render_metabox( $post ) {
+
+		// Add nonce for security and authentication.
+		wp_nonce_field( basename( __FILE__ ), 'courtyard_service_related_post_metabox_nonce' );
+
+		// Retrieve an existing value from the database.
+		$service_checkbox = get_post_meta( $post->ID, 'service_related_posts_checkbox', true );
+		$number_of_posts = get_post_meta( $post->ID, 'service_related_posts_number', true );
+
+		// Set default values.
+		if( empty( $service_checkbox ) ) $service_checkbox = 'checked';
+		if( empty( $number_of_posts ) ) $number_of_posts = '5'; ?>
+
+		<div class="pt-input-wrap">
+			<div class="pt-input-holder">
+				<input type="checkbox" id="service_related_posts_checkbox" name="service_related_posts_checkbox" value="<?php echo esc_attr( $service_checkbox ); ?>" <?php echo checked( $service_checkbox, 'checked', false ); ?>>
+				<em><?php echo esc_html__( 'Check to display related services in single service page widget sidebar area.', 'courtyard' ); ?></em>
+			</div><!-- .pt-input-holder -->
+		</div><!-- .pt-input-wrap -->
+
+		<div class="pt-input-wrap">
+			<div class=pt-input-label>
+				<label for="service_related_posts_number"><?php echo esc_html__( 'No of posts to display', 'courtyard' ); ?></label>
+			</div><!-- .pt-input-label -->
+			<div class="pt-input-holder">
+				<input type="number" id="service_related_posts_number" name="service_related_posts_number" value="<?php echo esc_attr( $number_of_posts ); ?>" >
+			</div><!-- .pt-input-holder -->
+		</div><!-- .pt-input-wrap -->
+
+		<?php
+	}
+
+	public function save_metabox( $post_id, $post ) {
+
+		// Add nonce for security and authentication.
+		if ( !isset( $_POST['courtyard_service_related_post_metabox_nonce'] ) || !wp_verify_nonce( $_POST['courtyard_service_related_post_metabox_nonce'], basename( __FILE__ ) ) )
+    		return;
+
+		// Stop WP from clearing custom fields on autosave
+		if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE)
+			return;
+
+		if ('page' == $_POST['post_type']) {
+			if (!current_user_can( 'edit_page', $post_id ) )
+				return $post_id;
+		}
+		elseif (!current_user_can( 'edit_post', $post_id ) ) {
+			return $post_id;
+		}
+
+		// Sanitize user input.
+		$service_checkbox = isset( $_POST['service_related_posts_checkbox'] ) ? 'checked' : '';
+		$number_of_posts = isset( $_POST['service_related_posts_number'] ) ? absint( $_POST['service_related_posts_number'] ) : '';
+
+		// Update the meta field in the database.
+		update_post_meta( $post_id, 'service_related_posts_checkbox', $service_checkbox );
+		update_post_meta( $post_id, 'service_related_posts_number', $number_of_posts );
+
+	}
+
+}
+
+new Courtyard_Service_Related_Post_Meta_Box;
+
+/* --------------------------------------------- Packages Page Template ---------------------------------------------*/
+class Courtyard_Packages_Related_Post_Meta_Box {
+
+	public function __construct() {
+
+		if ( is_admin() ) {
+			add_action( 'load-post.php',     array( $this, 'init_metabox' ) );
+			add_action( 'load-post-new.php', array( $this, 'init_metabox' ) );
+		}
+
+	}
+
+	public function init_metabox() {
+
+		add_action( 'add_meta_boxes', array( $this, 'add_metabox'  )        );
+		add_action( 'save_post',      array( $this, 'save_metabox' ), 10, 2 );
+
+	}
+
+	public function add_metabox() {
+
+		// Adding packages_checkbox meta box for Page
+		add_meta_box( 
+			'packages_related_post', 
+			esc_html__( 'Relatd Packages', 'courtyard' ), 
+			array( $this, 'render_metabox' ),
+			'page', 
+			'side', 
+			'default' 
+		);
+	}
+
+	public function render_metabox( $post ) {
+
+		// Add nonce for security and authentication.
+		wp_nonce_field( basename( __FILE__ ), 'courtyard_packages_related_post_metabox_nonce' );
+
+		// Retrieve an existing value from the database.
+		$packages_checkbox = get_post_meta( $post->ID, 'packages_related_posts_checkbox', true );
+		$number_of_posts = get_post_meta( $post->ID, 'packages_related_posts_number', true );
+
+		// Set default values.
+		if( empty( $packages_checkbox ) ) $packages_checkbox = 'checked';
+		if( empty( $number_of_posts ) ) $number_of_posts = '5'; ?>
+
+		<div class="pt-input-wrap">
+			<div class="pt-input-holder">
+				<input type="checkbox" id="packages_related_posts_checkbox" name="packages_related_posts_checkbox" value="<?php echo esc_attr( $packages_checkbox ); ?>" <?php echo checked( $packages_checkbox, 'checked', false ); ?>>
+				<em><?php echo esc_html__( 'Check to display related packages in single packages page widget sidebar area.', 'courtyard' ); ?></em>
+			</div><!-- .pt-input-holder -->
+		</div><!-- .pt-input-wrap -->
+
+		<div class="pt-input-wrap">
+			<div class=pt-input-label>
+				<label for="packages_related_posts_number"><?php echo esc_html__( 'No of posts to display', 'courtyard' ); ?></label>
+			</div><!-- .pt-input-label -->
+			<div class="pt-input-holder">
+				<input type="number" id="packages_related_posts_number" name="packages_related_posts_number" value="<?php echo esc_attr( $number_of_posts ); ?>" >
+			</div><!-- .pt-input-holder -->
+		</div><!-- .pt-input-wrap -->
+
+		<?php
+	}
+
+	public function save_metabox( $post_id, $post ) {
+
+		// Add nonce for security and authentication.
+		if ( !isset( $_POST['courtyard_packages_related_post_metabox_nonce'] ) || !wp_verify_nonce( $_POST['courtyard_packages_related_post_metabox_nonce'], basename( __FILE__ ) ) )
+    		return;
+
+		// Stop WP from clearing custom fields on autosave
+		if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE)
+			return;
+
+		if ('page' == $_POST['post_type']) {
+			if (!current_user_can( 'edit_page', $post_id ) )
+				return $post_id;
+		}
+		elseif (!current_user_can( 'edit_post', $post_id ) ) {
+			return $post_id;
+		}
+
+		// Sanitize user input.
+		$packages_checkbox = isset( $_POST['packages_related_posts_checkbox'] ) ? 'checked' : '';
+		$number_of_posts = isset( $_POST['packages_related_posts_number'] ) ? absint( $_POST['packages_related_posts_number'] ) : '';
+
+		// Update the meta field in the database.
+		update_post_meta( $post_id, 'packages_related_posts_checkbox', $packages_checkbox );
+		update_post_meta( $post_id, 'packages_related_posts_number', $number_of_posts );
+
+	}
+
+}
+
+new Courtyard_Packages_Related_Post_Meta_Box;
