@@ -47,6 +47,7 @@ function courtyard_setup() {
 	add_image_size( 'courtyard-400x300', 400, 300, true );
     add_image_size( 'courtyard-600x450', 600, 450, true );
     add_image_size( 'courtyard-800x500', 800, 500, true );
+    add_image_size( 'courtyard-1200x750', 1200, 750, true );
     add_image_size( 'courtyard-1920x1080', 1920, 1080, true );
 
     // Header Image Size

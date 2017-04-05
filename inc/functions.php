@@ -206,31 +206,35 @@ function courtyard_sidebar_layout_class() {
     $page_for_posts = get_option('page_for_posts');
     // Get Layout meta
     if($post) {
-        $layout_meta = get_post_meta( $post->ID, 'courtyard_page_specific_layout', true );
+        $layout_meta = get_post_meta( $post->ID, 'page_specific_layout', true );
     }
     // Home page if Posts page is assigned
     if( is_home() && !( is_front_page() ) ) {
         $queried_id = get_option( 'page_for_posts' );
-        $layout_meta = get_post_meta( $queried_id, 'courtyard_page_specific_layout', true );
+        $layout_meta = get_post_meta( $queried_id, 'page_specific_layout', true );
 
         if( $layout_meta != 'default_layout' && $layout_meta != '' ) {
-            $layout = get_post_meta( $queried_id, 'courtyard_page_specific_layout', true );
+            $layout = get_post_meta( $queried_id, 'page_specific_layout', true );
         }
     }
     elseif( is_page() ) {
+        $layout = get_theme_mod( 'courtyard_page_global_sidebar', 'right_sidebar' );
         if( $layout_meta != 'default_layout' && $layout_meta != '' ) {
-            $layout = get_post_meta( $post->ID, 'courtyard_page_specific_layout', true );
+            $layout = get_post_meta( $post->ID, 'page_specific_layout', true );
         }
     }
     elseif( is_single() ) {
         $layout = get_theme_mod( 'courtyard_post_global_sidebar', 'right_sidebar' );
         if( $layout_meta != 'default_layout' && $layout_meta != '' ) {
-            $layout = get_post_meta( $post->ID, 'courtyard_page_specific_layout', true );
+            $layout = get_post_meta( $post->ID, 'page_specific_layout', true );
         }
     }
     return esc_html( $layout );
 }
 endif;
+
+/*---------------------------------------------------------------------------------------------------------------*/
+
 
 /*--------------------------------------------------------------------------------------------------*/
 
@@ -583,8 +587,8 @@ if ( ! function_exists ( 'courtyard_related_rooms_lists' ) ) :
             ) );
             if ( $get_featured_pages->have_posts() ) { ?>
 
-                <aside id="related-rooms-lists" class="widget widget_related_room">     
-                    <h4 class="widget-title"><?php echo esc_html( 'Related Rooms', 'courtyard');?></h4> 
+                <aside id="pt-related-lists" class="widget widget_related_room">     
+                    <h4 class="widget-title"><?php echo esc_html( 'Related', 'courtyard');?></h4> 
 
                     <?php while( $get_featured_pages->have_posts() ) : $get_featured_pages->the_post();
                     $title_attribute          = the_title_attribute( 'echo=0' );
@@ -594,7 +598,7 @@ if ( ! function_exists ( 'courtyard_related_rooms_lists' ) ) :
                     $room_thumbnail = '<img src="'.esc_url( $image_path[0] ).'" alt="'.esc_attr( $image_alt ).'" title="'.esc_attr( $title_attribute ).'" />';
 
                     ?>
-                    <div>
+                    <div class="pt-related-wrap">
 
                         <?php if( has_post_thumbnail() ) : ?>
                             <figure>
@@ -602,13 +606,11 @@ if ( ! function_exists ( 'courtyard_related_rooms_lists' ) ) :
                             </figure>
                         <?php endif; ?>
 
-                        <div>
-                            <h3><a title="<?php esc_attr( $title_attribute ); ?>" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                        <h3><a title="<?php esc_attr( $title_attribute ); ?>" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 
-                            <p><?php echo wp_trim_words( get_the_excerpt(), 22, '' ); ?></p>
-                        </div><!-- .pt-room-cont -->
+                        <p><?php echo wp_trim_words( get_the_excerpt(), 22, '' ); ?></p>
 
-                    </div><!-- .pt-room-col -->
+                    </div><!-- .pt-related-col -->
 
                     <?php endwhile;
 

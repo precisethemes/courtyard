@@ -49,24 +49,26 @@ get_header(); ?>
                         $holiday_package_thumbnail = '<img src="' . esc_url($image_path[0]) . '" alt="' . esc_attr($image_alt) . '" title="' . esc_attr($title_attribute) . '" />';
                         ?>
 
-                        <div class="pt-holiday-package col-md-4">
-                            <?php if (has_post_thumbnail()) : ?>
-                                <figure>
-                                    <?php echo $holiday_package_thumbnail; ?>
-                                </figure>
-                            <?php endif; ?>
+                        <div class="col-md-4">
+                            <div class="pt-holiday-package">
+                                <?php if (has_post_thumbnail()) : ?>
+                                    <figure>
+                                        <?php echo $holiday_package_thumbnail; ?>
+                                    </figure>
+                                <?php endif; ?>
 
-                            <div class="pt-holiday-package-cont transition5">
-                                <div class="pt-holiday-package-cont-holder">
-                                    <h3><a title="<?php esc_attr($title_attribute); ?>"
-                                           href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                                <div class="pt-holiday-package-cont transition5">
+                                    <div class="pt-holiday-package-cont-holder">
+                                        <h3><a title="<?php esc_attr($title_attribute); ?>"
+                                               href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 
-                                    <a class="pt-holiday-package-read-more transition5"
-                                       title="<?php esc_attr($title_attribute); ?>"
-                                       href="<?php the_permalink(); ?>"><?php esc_html_e('View Details', 'courtyard'); ?></a>
-                                </div>
-                            </div><!-- .pt-holiday-packages-cont -->
-                        </div><!-- .pt-holiday-packages-col -->
+                                        <a class="pt-holiday-package-read-more transition5"
+                                           title="<?php esc_attr($title_attribute); ?>"
+                                           href="<?php the_permalink(); ?>"><?php esc_html_e('View Details', 'courtyard'); ?></a>
+                                    </div>
+                                </div><!-- .pt-holiday-packages-cont -->
+                            </div><!-- .pt-holiday-packages-col -->
+                        </div><!-- .col-md-4 -->
 
                     <?php endwhile;
 

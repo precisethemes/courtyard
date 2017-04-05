@@ -1,7 +1,7 @@
 === Courtyard ===
 
 Contributors: Precise Themes
-Version: 1.0.7
+Version: 1.0.8
 Requires at least: 4.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -106,6 +106,17 @@ Screenshot images licensed under CC0 Public Domain (http://creativecommons.org/p
   Source: https://unsplash.com/photos/w04Uo0y8UyI
 
 === Changelog ===
+
+Version: 1.0.8 - Apr 05, 2017
+* Fixed Sidebar title translation issue by @mayukojpn
+* Updated visited anchor link color for packages.
+* Fixed issue of "Services Slider Widget" while using featured images instead of icon.
+* Fixed CSS issue for "Rooms Slider Widget".
+* Fixed issues for links now working for sliders: Hero slider, Rooms slider, services slider.
+* Fixed CSS issue for package listings.
+* Fixed Left-Sidebar Layout issue for blog post.
+* Added full width image for single blog post with full width layout.
+* Added related pages show on sidebar for Room, Service and Package.
 
 Version: 1.0.7
 * Issue fixed for custom pagination - Mar 30, 2017

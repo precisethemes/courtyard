@@ -148,7 +148,7 @@ function courtyard_customize_register( $wp_customize ) {
     // Pre Loader
     $wp_customize->add_section( 'courtyard_basic', array(
         'priority'              => 1,
-        'title'                 => esc_html__( 'Basic', 'courtyard' ),
+        'title'                 => esc_html__( 'Settings', 'courtyard' ),
         'panel'                 => 'courtyard_general',
     ) );
 
@@ -379,7 +379,7 @@ function courtyard_customize_register( $wp_customize ) {
     $wp_customize->add_control( new WP_Customizer_Image_Radio_Control( $wp_customize, 'courtyard_post_global_sidebar', array(
         'type'               => 'radio',
         'priority'           => 1,
-        'label'              => esc_html__('Available Sidebar', 'courtyard'),
+        'label'              => esc_html__('Post Sidebar', 'courtyard'),
         'description'        => esc_html__('Select default layout for single posts. This layout will be reflected in all single posts unless unique layout is set for specific post.', 'courtyard'),
         'section'            => 'courtyard_post_sidebar_section',
         'settings'           => 'courtyard_post_global_sidebar',
@@ -469,13 +469,49 @@ function courtyard_customize_register( $wp_customize ) {
         'settings'              => 'courtyard_post_nex_prev_article',
     ) ) );
 
+/*------------------------------------------- PAGE PANEL -------------------------------------------------------*/
+
+    // Page Settings
+    $wp_customize->add_panel( 'courtyard_page_settings', array(
+        'priority'              => 113,
+        'title'                 => esc_html__( 'Page Settings', 'courtyard' ),
+    ) );
+
+    // Page sidebar
+    $wp_customize->add_section( 'courtyard_page_sidebar_sec', array(
+        'priority'              => 2,
+        'title'                 => esc_html__( 'Sidebar', 'courtyard' ),
+        'panel'                 => 'courtyard_page_settings',
+    ) );
+
+    // Page global sidebar.
+    $wp_customize->add_setting( 'courtyard_page_global_sidebar', array(
+        'default'           => 'right_sidebar',
+        'capability'        => 'edit_theme_options',
+        'sanitize_callback' => 'courtyard_sanitize_choices',                
+    ) );
+
+    $wp_customize->add_control( new WP_Customizer_Image_Radio_Control( $wp_customize, 'courtyard_page_global_sidebar', array(
+        'type'               => 'radio',
+        'priority'           => 1,
+        'label'              => esc_html__('Page Sidebar', 'courtyard'),
+        'description'        => esc_html__('Select default layout for single page. This layout will be reflected in all single page unless unique layout is set for specific page.', 'courtyard'),
+        'section'            => 'courtyard_page_sidebar_sec',
+        'settings'           => 'courtyard_page_global_sidebar',
+        'choices'            => array(
+            'right_sidebar'                 => get_template_directory_uri() . '/inc/admin/images/right-sidebar.svg',
+            'left_sidebar'                  => get_template_directory_uri() . '/inc/admin/images/left-sidebar.svg',
+            'no_sidebar_full_width'         => get_template_directory_uri() . '/inc/admin/images/no-sidebar.svg',
+        ),
+    ) ) );
+
     
 /*------------------------------------------- BLOG PANEL -------------------------------------------------------*/
 
     // Archive/Category Settings
     $wp_customize->add_panel( 'courtyard_blog_settings', array(
-        'priority'              => 113,
-        'title'                 => esc_html__( 'Blog Settings', 'courtyard' ),
+        'priority'              => 114,
+        'title'                 => esc_html__( 'Archive ( Blog ) Settings', 'courtyard' ),
     ) );
 
     // Settings
@@ -542,7 +578,7 @@ function courtyard_customize_register( $wp_customize ) {
     $wp_customize->add_control( new WP_Customizer_Image_Radio_Control( $wp_customize, 'courtyard_blog_global_sidebar', array(
         'type'               => 'radio',
         'priority'           => 1,
-        'label'              => esc_html__('Available Sidebar', 'courtyard'),
+        'label'              => esc_html__('Archive ( Blog ) Sidebar', 'courtyard'),
         'description'        => esc_html__('Select default sidebar. This sidebar will be reflected in all pages unless unique layout is set for specific page as well as reflected in whole site archives, categories, search page etc.', 'courtyard'),
         'section'            => 'courtyard_blog_sidebar_section',
         'settings'           => 'courtyard_blog_global_sidebar',

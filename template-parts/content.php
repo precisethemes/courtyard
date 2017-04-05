@@ -12,8 +12,14 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'pt-post-wrap' ); ?>>
 
 	<?php
+	$sidebar_class = courtyard_sidebar_layout_class();
+	if ( $sidebar_class == 'no_sidebar_full_width' ) {
+		$img_size = 'courtyard-1200x750';
+	} else {
+		$img_size = 'courtyard-800x500';
+	}
 	$image_id               = get_post_thumbnail_id();
-	$image_path             = wp_get_attachment_image_src( $image_id, 'courtyard-800x500', true );
+	$image_path             = wp_get_attachment_image_src( $image_id, $img_size, true );
 	$image_alt              = get_post_meta( $image_id, '_wp_attachment_image_alt', true );
 	$alt 					= !empty( $image_alt ) ? $image_alt : the_title_attribute( 'echo=0' ) ;
 	?>

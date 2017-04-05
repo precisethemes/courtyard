@@ -133,7 +133,7 @@ class courtyard_service_widget extends WP_Widget {
 
                                         if (has_post_thumbnail()) {
                                             $service_class = 'service-thumbnail';
-                                            $service_image_holder = '<img src="' . esc_url($image_path[0]) . '" alt="' . esc_attr($alt) . '" title="' . the_title_attribute() . '" />';
+                                            $service_image_holder = '<img src="' . esc_url($image_path[0]) . '" alt="' . esc_attr($alt) . '" />';
                                         } else {
                                             $service_class = 'service-icon';
                                             $service_image_holder = '<i class="fa ' . esc_attr($service_icon) . '"></i>';;

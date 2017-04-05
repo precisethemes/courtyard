@@ -49,6 +49,7 @@ jQuery(document).ready(function() {
 		autoplay: 3000,
 		speed: 1200,
 		effect: 'fade',
+		preventClicks: false,
 		touchEventsTarget: 'swiper-wrapper',
 		paginationClickable: true,
 
@@ -96,6 +97,7 @@ jQuery(document).ready(function() {
 		nextButton: '.pt-services-more .pt-arrow-right',
 		prevButton: '.pt-services-more .pt-arrow-left',
 		spaceBetween: 0,
+		preventClicks: false,
 		slidesPerView: courtyard_services_slider_num,
 		slidesPerColumn: courtyard_services_slider_per_col,
 		touchEventsTarget: 'swiper-wrapper',
@@ -106,6 +108,7 @@ jQuery(document).ready(function() {
 		nextButton: '.pt-rooms-more .pt-arrow-right',
 		prevButton: '.pt-rooms-more .pt-arrow-left',
 		spaceBetween: 30,
+		preventClicks: false,
 		slidesPerView: courtyard_services_slider_num,
 		touchEventsTarget: 'swiper-wrapper',
 		speed: 800

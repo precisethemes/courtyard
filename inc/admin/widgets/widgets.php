@@ -12,6 +12,16 @@
  */
 function courtyard_widgets_init() {
 
+	register_sidebar( array(
+		'name'          => esc_html__( 'Sidebar', 'courtyard' ),
+		'id'            => 'pt_sidebar',
+		'description'   => esc_html__( 'Add widgets in your sidebar of theme.', 'courtyard' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h4 class="widget-title">',
+		'after_title'   => '</h4>'
+	) );
+
   //Register widget areas for the Courtyard Front Page template
   $pages = get_pages(array(
     'meta_key' => '_wp_page_template',
@@ -28,16 +38,6 @@ function courtyard_widgets_init() {
       'after_title'   => '</h2>'
     ) );
   }
-
-	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'courtyard' ),
-		'id'            => 'pt_sidebar',
-		'description'   => esc_html__( 'Add widgets in your sidebar of theme.', 'courtyard' ),
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</aside>',
-		'before_title'  => '<h4 class="widget-title">',
-		'after_title'   => '</h4>'
-	) );
 
   //Footer widget areas
   $widget_areas = get_theme_mod('courtyard_footer_widget_area_layout', '1by3_1by3_1by3');

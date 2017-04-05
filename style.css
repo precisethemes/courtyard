@@ -4,7 +4,7 @@ Theme URI: http://precisethemes.com/wordpress-theme/courtyard/
 Author: Precise Themes
 Author URI: https://precisethemes.com/
 Description: Courtyard - Responsive WordPress Theme is clean, minimalistic and beautifully designed theme perfectly for Hotel and Resorts. Courtyard theme can likewise be utilized to make site for Motel, Boarding House, Guest House, Lodge, Bed and Breakfast, B&B, Hostel, Inn Hospitality Business, Restaurant, Cuisine, Cafe, and some other kind of site you can envision with effectively adaptable and easily customizable landing page. Preview Demo is available at http://demo.precisethemes.com/courtyard/
-Version: 1.0.7
+Version: 1.0.8
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: courtyard
@@ -787,7 +787,7 @@ body {
 # Header
 --------------------------------------------------------------*/
 .pt-header-sep {
-	height: 88px;
+	height: 110px;
 	background: #fff;
 }
 
@@ -1378,10 +1378,6 @@ a.pt-secondary-logo-show img,
 /*--------------------------------------------------------------
 # Pagination
 --------------------------------------------------------------*/
-.pt-pagination-nav {
-	margin-bottom: 80px;
-}
-
 .pt-pagination-nav a,
 .pt-pagination-nav .current {
 	display: inline-block;
@@ -1651,7 +1647,6 @@ section.pt-image-slider-section {
 --------------------------------------------------------------*/
 .pt-rooms-slider {
 	width: 100%;
-	margin: 0 -12px;
 	padding: 0 12px;
 }
 
@@ -1743,7 +1738,7 @@ section.pt-image-slider-section {
 	width: 320px;
 	margin: 0 auto;
 	position: relative;
-	padding: 14px 0;
+	padding: 10px 0 0;
 }
 
 .pt-services-more .pt-arrow-left,
@@ -1784,6 +1779,37 @@ section.pt-image-slider-section {
 	color: #bdbdbd !important;
 	background: transparent;
 	box-shadow: none;
+}
+
+/*--------------------------------------------------------------
+# Related rooms, packages, services
+--------------------------------------------------------------*/
+.pt-related-wrap {
+	position: relative;
+	padding-bottom: 5px;
+	margin-bottom: 32px;
+	margin-top: 20px;
+}
+
+.pt-related-wrap:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -50px;
+	width: 100px;
+	height: 2px;
+	background: #eae9eb;
+	border-radius: 30px;
+}
+
+.pt-related-wrap:last-of-type {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.pt-related-wrap:last-of-type:after {
+	height: 0;
 }
 
 /*--------------------------------------------------------------
@@ -1917,6 +1943,12 @@ section.pt-image-slider-section {
 	overflow: hidden;
 }
 
+.page-template-template-packages-list .pt-holiday-package,
+.page-template-template-packages-list .pt-holiday-package:nth-of-type(1) {
+	width: 100%;
+	margin: 30px 0 0 0;
+}
+
 .pt-holiday-package figure {
 	margin: 0;
 }
@@ -1951,7 +1983,7 @@ section.pt-image-slider-section {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: rgba(33,33,33,.8);
+	background: rgba(33,33,33,.6);
 	opacity: 0;
 	visibility: hidden;
 }
@@ -1988,7 +2020,8 @@ section.pt-image-slider-section {
 	font-weight: 400;
 }
 
-.pt-holiday-package-cont-holder h3 a {
+.pt-holiday-package-cont-holder h3 a,
+a.pt-holiday-package-read-more:visited {
 	color: #fff;
 	text-decoration: none;
 }
@@ -2238,7 +2271,7 @@ section.pt-image-slider-section {
 # Footer
 --------------------------------------------------------------*/
 .pt-footer-wrapper {
-	margin-top: 60px;
+	margin-top: 100px;
 	font-size: 15px;
 	line-height: 1.8em;
 	letter-spacing: .03em;
