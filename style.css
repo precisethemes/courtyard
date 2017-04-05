@@ -4,7 +4,7 @@ Theme URI: http://precisethemes.com/wordpress-theme/courtyard/
 Author: Precise Themes
 Author URI: https://precisethemes.com/
 Description: Courtyard - Responsive WordPress Theme is clean, minimalistic and beautifully designed theme perfectly for Hotel and Resorts. Courtyard theme can likewise be utilized to make site for Motel, Boarding House, Guest House, Lodge, Bed and Breakfast, B&B, Hostel, Inn Hospitality Business, Restaurant, Cuisine, Cafe, and some other kind of site you can envision with effectively adaptable and easily customizable landing page. Preview Demo is available at http://demo.precisethemes.com/courtyard/
-Version: 1.0.8
+Version: 1.0.9
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: courtyard
@@ -1925,6 +1925,27 @@ section.pt-image-slider-section {
 	line-height: 1;
 	letter-spacing: .025em;
 	text-decoration: none;
+}
+
+/*--------------------------------------------------------------
+# Service Single Page
+--------------------------------------------------------------*/
+.page-template-template-services .pt-service-icon,
+.pt-related-lists .pt-service-icon {
+	display: inline-block;
+	padding: 50px 25px;
+	font-size: 124px;
+	text-align: center;
+	width: 100%;
+	border: 1px solid #e0e0e0;
+	border-bottom: 0;
+	color: #673ab7;
+}
+
+.pt-related-wrap .pt-service-icon {
+	font-size: 84px;
+	padding: 30px 15px;
+	border: 1px solid #e0e0e0;
 }
 
 /*--------------------------------------------------------------

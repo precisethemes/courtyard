@@ -580,7 +580,6 @@ if ( ! function_exists ( 'courtyard_related_pages_listing' ) ) :
         } 
         // List of related services
         if ( is_page_template( 'page-templates/template-services.php' ) ) {
-            $font_icon = get_post_meta($post->ID, 'service_icon', true);
             $activate = get_post_meta($post->ID, 'service_related_posts_checkbox', true);
             $numbers = get_post_meta($post->ID, 'service_related_posts_number', true);
             $template = 'page-templates/template-services.php';
@@ -613,6 +612,8 @@ if ( ! function_exists ( 'courtyard_related_pages_listing' ) ) :
                     <h4 class="widget-title"><?php echo esc_html( 'Related', 'courtyard');?></h4> 
 
                     <?php while( $get_featured_pages->have_posts() ) : $get_featured_pages->the_post();
+
+                    $font_icon = get_post_meta($post->ID, 'service_icon', true);
                     $title_attribute          = the_title_attribute( 'echo=0' );
                     $image_id                 = get_post_thumbnail_id();
                     $image_path               = wp_get_attachment_image_src( $image_id, 'courtyard-400x260', true );
@@ -620,12 +621,10 @@ if ( ! function_exists ( 'courtyard_related_pages_listing' ) ) :
 
                     if ( has_post_thumbnail() ) {
                         $thumbnail = '<figure>';
-                        $thumbnail .= '<img src="' . esc_url($image_path[0]) . '" alt="' . esc_attr($image_alt) . '" title="'.esc_attr( $title_attribute ).'" />';
+                        $thumbnail .= '<a title="'.esc_attr( $title_attribute ).'" href="'.esc_attr( get_the_permalink() ).'"><img src="' . esc_url($image_path[0]) . '" alt="' . esc_attr($image_alt) . '" title="'.esc_attr( $title_attribute ).'" /></a>';
                         $thumbnail .= '</figure>';
                     } elseif ( '' != $font_icon ) {
-                        $thumbnail = '<span class="pt-font-icon">';
-                        $thumbnail .= '<i class="fa ' . esc_attr($font_icon) . '"></i>';;
-                        $thumbnail .= '</span>';
+                        $thumbnail = '<a title="'.esc_attr( $title_attribute ).'" href="'.esc_attr( get_the_permalink() ).'"><span class="pt-service-icon"><i class="fa ' . esc_attr($font_icon) . '"></i></span></a>';
                     }
 
                     ?>
@@ -682,7 +681,7 @@ if ( ! function_exists ( 'courtyard_page_thumbnail' ) ) :
         $image_id               = get_post_thumbnail_id();
         $image_path             = wp_get_attachment_image_src( $image_id, $img_size, true );
         $image_alt              = get_post_meta( $image_id, '_wp_attachment_image_alt', true );
-        $alt                    = !empty( $image_alt ) ? $image_alt : the_title_attribute( 'echo=0' ) ;
+        $alt                    = !empty( $image_alt ) ? $image_alt : the_title_attribute( 'echo=0' );
 
         $font_icon = get_post_meta($post->ID, 'service_icon', true);
 
@@ -691,8 +690,8 @@ if ( ! function_exists ( 'courtyard_page_thumbnail' ) ) :
             $thumbnail .= '<img src="' . esc_url($image_path[0]) . '" alt="' . esc_attr($alt) . '" title="'.esc_attr( $title_attribute ).'" />';
             $thumbnail .= '</figure>';
         } elseif( '' != $font_icon ) {
-            $thumbnail = '<span class="pt-font-icon">';
-            $thumbnail .= '<i class="fa ' . esc_attr($font_icon) . '"></i>';;
+            $thumbnail = '<span class="pt-service-icon">';
+            $thumbnail .= '<i class="fa ' . esc_attr($font_icon) . '"></i>';
             $thumbnail .= '</span>';
         }
         return $thumbnail;
