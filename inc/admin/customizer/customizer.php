@@ -511,7 +511,7 @@ function courtyard_customize_register( $wp_customize ) {
     // Archive/Category Settings
     $wp_customize->add_panel( 'courtyard_blog_settings', array(
         'priority'              => 114,
-        'title'                 => esc_html__( 'Archive ( Blog ) Settings', 'courtyard' ),
+        'title'                 => esc_html__( 'Archive/Blog Settings', 'courtyard' ),
     ) );
 
     // Settings
@@ -578,7 +578,7 @@ function courtyard_customize_register( $wp_customize ) {
     $wp_customize->add_control( new WP_Customizer_Image_Radio_Control( $wp_customize, 'courtyard_blog_global_sidebar', array(
         'type'               => 'radio',
         'priority'           => 1,
-        'label'              => esc_html__('Archive ( Blog ) Sidebar', 'courtyard'),
+        'label'              => esc_html__('Archive/Blog Sidebar', 'courtyard'),
         'description'        => esc_html__('Select default sidebar. This sidebar will be reflected in all pages unless unique layout is set for specific page as well as reflected in whole site archives, categories, search page etc.', 'courtyard'),
         'section'            => 'courtyard_blog_sidebar_section',
         'settings'           => 'courtyard_blog_global_sidebar',

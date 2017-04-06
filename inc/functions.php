@@ -62,7 +62,7 @@ add_action( 'wp_enqueue_scripts', 'courtyard_scripts' );
 
 if ( ! function_exists( 'courtyard_fonts_url' ) ) :
 /**
- * Register Google fonts for Flash.
+ * Register Google fonts for Courtyard.
  *
  * Create your own courtyard_fonts_url() function to override in a child theme.
  *

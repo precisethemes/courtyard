@@ -24,6 +24,7 @@ input[type=checkbox]:before {
 # Layout Selector
 ---------------------------*/
 #customize-control-courtyard_post_global_sidebar #pt-img-container li,
+#customize-control-courtyard_page_global_sidebar #pt-img-container li,
 #customize-control-courtyard_blog_global_sidebar #pt-img-container li,
 #customize-control-courtyard_footer_widget_area_layout #pt-img-container li {
     display: inline-block !important;
@@ -35,6 +36,8 @@ input[type=checkbox]:before {
 
 #customize-control-courtyard_post_global_sidebar #pt-img-container li:nth-of-type(3),
 #customize-control-courtyard_post_global_sidebar #pt-img-container li:nth-of-type(6),
+#customize-control-courtyard_page_global_sidebar #pt-img-container li:nth-of-type(3),
+#customize-control-courtyard_page_global_sidebar #pt-img-container li:nth-of-type(6),
 #customize-control-courtyard_blog_global_sidebar #pt-img-container li:nth-of-type(3),
 #customize-control-courtyard_blog_global_sidebar #pt-img-container li:nth-of-type(6),
 #customize-control-courtyard_footer_widget_area_layout #pt-img-container li:nth-of-type(3),
@@ -43,6 +46,7 @@ input[type=checkbox]:before {
 }
 
 #customize-control-courtyard_post_global_sidebar.customize-control-radio label,
+#customize-control-courtyard_page_global_sidebar.customize-control-radio label,
 #customize-control-courtyard_blog_global_sidebar.customize-control-radio label,
 #customize-control-courtyard_footer_widget_area_layout.customize-control-radio label {
     margin: 0;
@@ -50,6 +54,7 @@ input[type=checkbox]:before {
 }
 
 #customize-control-courtyard_post_global_sidebar .pt-radio-img-img,
+#customize-control-courtyard_page_global_sidebar .pt-radio-img-img,
 #customize-control-courtyard_blog_global_sidebar .pt-radio-img-img,
 #customize-control-courtyard_footer_widget_area_layout .pt-radio-img-img {
     border: 3px solid #fff;
@@ -60,6 +65,7 @@ input[type=checkbox]:before {
 }
 
 #customize-control-courtyard_post_global_sidebar .pt-radio-img-selected,
+#customize-control-courtyard_page_global_sidebar .pt-radio-img-selected,
 #customize-control-courtyard_blog_global_sidebar .pt-radio-img-selected,
 #customize-control-courtyard_footer_widget_area_layout .pt-radio-img-selected {
     opacity: 1;
