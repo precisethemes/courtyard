@@ -229,14 +229,35 @@ function courtyard_sidebar_layout_class() {
             $layout = get_post_meta( $post->ID, 'page_specific_layout', true );
         }
     }
+    elseif ( class_exists('WooCommerce') ) {
+        if ( is_cart() ) {
+            $page_id = get_option( 'woocommerce_cart_page_id' );
+            $layout_meta = get_post_meta( $page_id, 'page_specific_layout', true );
+            if( $layout_meta != 'default_layout' && $layout_meta != '' ) {
+                $layout = get_post_meta( $page_id, 'page_specific_layout', true );
+            }
+        }
+        if ( is_account_page() ) {
+            $page_id = get_option( 'woocommerce_myaccount_page_id' );
+            $layout_meta = get_post_meta( $page_id, 'page_specific_layout', true );
+            if( $layout_meta != 'default_layout' && $layout_meta != '' ) {
+                $layout = get_post_meta( $page_id, 'page_specific_layout', true );
+            }
+        }
+        if ( is_shop() ) {
+            $page_id = get_option( 'woocommerce_shop_page_id' );
+            $layout_meta = get_post_meta( $page_id, 'page_specific_layout', true );
+            if( $layout_meta != 'default_layout' && $layout_meta != '' ) {
+                $layout = get_post_meta( $page_id, 'page_specific_layout', true );
+            }
+        }
+
+    }
     return esc_html( $layout );
 }
 endif;
 
 /*---------------------------------------------------------------------------------------------------------------*/
-
-
-/*--------------------------------------------------------------------------------------------------*/
 
 if ( ! function_exists( 'courtyard_sidebar_select' ) ) :
 /**
@@ -245,7 +266,7 @@ if ( ! function_exists( 'courtyard_sidebar_select' ) ) :
 function courtyard_sidebar_select() {
     $layout = courtyard_sidebar_layout_class();
     if( $layout != "no_sidebar_full_width" ) {
-        if ( $layout == "right_sidebar" || $layout = "left_sidebar" ) {
+        if ( $layout == "right_sidebar" || $layout = "left_sidebar" || $layout = "default_layout" ) {
             get_sidebar();
         }
     }
@@ -265,7 +286,7 @@ function courtyard_primary_sidebar() {
         $classes = 'col-md-8';
     } elseif ( $layout == "left_sidebar" ) {
         $classes = 'col-md-8 pull-right';
-    } else {
+    } elseif ( $layout == "no_sidebar_full_width" ) {
         $classes = 'col-md-12';
     }
     return esc_html( $classes );
@@ -285,10 +306,8 @@ function courtyard_secondary_sidebar() {
         $classes = 'col-md-4 ';
     } elseif ( $layout == "left_sidebar" ) {
         $classes = 'col-md-4 pull-left';
-    } elseif ( $layout == "left_sidebar" ) {
-        $classes = 'col-md-4 pull-left';
-    } else {
-        $classes = 'no_sidebar_full_width';
+    } elseif ( $layout == "no_sidebar_full_width" ) {
+        $classes = 'col-md-12';
     }
     return esc_html( $classes );
 }
