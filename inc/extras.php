@@ -24,11 +24,6 @@ function courtyard_body_classes( $classes ) {
 		$classes[] = 'hfeed';
 	}
 
-	// Activate sticky menu
-    if ( get_theme_mod( 'courtyard_sticky_menu_activate', '' ) == 1 ) {
-        $classes[] = 'pt-stick';
-    }
-
 	return $classes;
 }
 add_filter( 'body_class', 'courtyard_body_classes' );

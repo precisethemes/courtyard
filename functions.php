@@ -92,11 +92,6 @@ function courtyard_setup() {
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
-
-	/**
-	 * WooCommerce Support
-	 */
-	add_theme_support( 'woocommerce' );
 }
 endif;
 add_action( 'after_setup_theme', 'courtyard_setup' );

@@ -265,7 +265,7 @@ function courtyard_primary_sidebar() {
         $classes = 'col-md-8';
     } elseif ( $layout == "left_sidebar" ) {
         $classes = 'col-md-8 pull-right';
-    } elseif ( $layout == "no_sidebar_full_width" ) {
+    } else {
         $classes = 'col-md-12';
     }
     return esc_html( $classes );
@@ -285,6 +285,10 @@ function courtyard_secondary_sidebar() {
         $classes = 'col-md-4 ';
     } elseif ( $layout == "left_sidebar" ) {
         $classes = 'col-md-4 pull-left';
+    } elseif ( $layout == "left_sidebar" ) {
+        $classes = 'col-md-4 pull-left';
+    } else {
+        $classes = 'no_sidebar_full_width';
     }
     return esc_html( $classes );
 }
