@@ -621,6 +621,71 @@ function courtyard_customize_register( $wp_customize ) {
         'section'               => 'courtyard_blog_post_meta_sec',
         'settings'              => 'courtyard_blog_post_author',
     ) ) );
+
+/*--------------------------------------- WooCommerce PANEL -----------------------------------------------------------*/
+
+if ( class_exists( 'WooCommerce' ) ) :
+    $wp_customize->add_panel( 'courtyard_woocommerce_panel', array(
+        'priority'              => 123,
+        'title'                 => esc_html__( 'WooCommerce', 'courtyard' ),
+    ) );
+
+    // WooCommerc Archive/Blog
+    $wp_customize->add_section( 'courtyard_woocommerce_blog_section', array(
+        'priority'              => 2,
+        'title'                 => esc_html__( 'Archive/Blog Page', 'courtyard' ),
+        'panel'                 => 'courtyard_woocommerce_panel',
+    ) );
+
+    // Blog sidebar.
+    $wp_customize->add_setting( 'courtyard_woocommerce_blog_sidebar', array(
+        'default'           => 'right_sidebar',
+        'capability'        => 'edit_theme_options',
+        'sanitize_callback' => 'courtyard_sanitize_choices',                
+    ) );
+
+    $wp_customize->add_control( new WP_Customizer_Image_Radio_Control( $wp_customize, 'courtyard_woocommerce_blog_sidebar', array(
+        'type'               => 'radio',
+        'priority'           => 1,
+        'label'              => esc_html__('Archive/Blog Sidebar', 'courtyard'),
+        'description'        => esc_html__('Select default sidebar. This sidebar will be reflected in archives, categories, search page etc. of WooCommerce.', 'courtyard'),
+        'section'            => 'courtyard_woocommerce_blog_section',
+        'settings'           => 'courtyard_woocommerce_blog_sidebar',
+        'choices'            => array(
+            'right_sidebar'                 => get_template_directory_uri() . '/inc/admin/images/right-sidebar.svg',
+            'left_sidebar'                  => get_template_directory_uri() . '/inc/admin/images/left-sidebar.svg',
+            'no_sidebar_full_width'         => get_template_directory_uri() . '/inc/admin/images/no-sidebar.svg',
+        ),
+    ) ) );
+
+    // WooCommerc Product Page
+    $wp_customize->add_section( 'courtyard_woocommerce_product_section', array(
+        'priority'              => 3,
+        'title'                 => esc_html__( 'Product Page', 'courtyard' ),
+        'panel'                 => 'courtyard_woocommerce_panel',
+    ) );
+
+    // Product sidebar.
+    $wp_customize->add_setting( 'courtyard_woocommerce_product_sidebar', array(
+        'default'           => 'right_sidebar',
+        'capability'        => 'edit_theme_options',
+        'sanitize_callback' => 'courtyard_sanitize_choices',                
+    ) );
+
+    $wp_customize->add_control( new WP_Customizer_Image_Radio_Control( $wp_customize, 'courtyard_woocommerce_product_sidebar', array(
+        'type'               => 'radio',
+        'priority'           => 1,
+        'label'              => esc_html__('Product Sidebar', 'courtyard'),
+        'description'        => esc_html__('Select default sidebar. This sidebar will be reflected in product page of WooCommerce.', 'courtyard'),
+        'section'            => 'courtyard_woocommerce_product_section',
+        'settings'           => 'courtyard_woocommerce_product_sidebar',
+        'choices'            => array(
+            'right_sidebar'                 => get_template_directory_uri() . '/inc/admin/images/right-sidebar.svg',
+            'left_sidebar'                  => get_template_directory_uri() . '/inc/admin/images/left-sidebar.svg',
+            'no_sidebar_full_width'         => get_template_directory_uri() . '/inc/admin/images/no-sidebar.svg',
+        ),
+    ) ) );
+endif;
     
 
 /*--------------------------------------- FOOTER PANEL -----------------------------------------------------------*/

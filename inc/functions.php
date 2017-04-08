@@ -229,47 +229,7 @@ function courtyard_sidebar_layout_class() {
             $layout = get_post_meta( $post->ID, 'page_specific_layout', true );
         }
     }
-    elseif ( class_exists('WooCommerce') ) {
-        if ( is_cart() ) {
-            $page_id = get_option( 'woocommerce_cart_page_id' );
-            $layout_meta = get_post_meta( $page_id, 'page_specific_layout', true );
-            if( $layout_meta != 'default_layout' && $layout_meta != '' ) {
-                $layout = get_post_meta( $page_id, 'page_specific_layout', true );
-            }
-        }
-        if ( is_account_page() ) {
-            $page_id = get_option( 'woocommerce_myaccount_page_id' );
-            $layout_meta = get_post_meta( $page_id, 'page_specific_layout', true );
-            if( $layout_meta != 'default_layout' && $layout_meta != '' ) {
-                $layout = get_post_meta( $page_id, 'page_specific_layout', true );
-            }
-        }
-        if ( is_shop() ) {
-            $page_id = get_option( 'woocommerce_shop_page_id' );
-            $layout_meta = get_post_meta( $page_id, 'page_specific_layout', true );
-            if( $layout_meta != 'default_layout' && $layout_meta != '' ) {
-                $layout = get_post_meta( $page_id, 'page_specific_layout', true );
-            }
-        }
-
-    }
     return esc_html( $layout );
-}
-endif;
-
-/*---------------------------------------------------------------------------------------------------------------*/
-
-if ( ! function_exists( 'courtyard_sidebar_select' ) ) :
-/**
- * Select and show sidebar based on post meta and customizer default settings
- */
-function courtyard_sidebar_select() {
-    $layout = courtyard_sidebar_layout_class();
-    if( $layout != "no_sidebar_full_width" ) {
-        if ( $layout == "right_sidebar" || $layout = "left_sidebar" || $layout = "default_layout" ) {
-            get_sidebar();
-        }
-    }
 }
 endif;
 
@@ -310,6 +270,24 @@ function courtyard_secondary_sidebar() {
         $classes = 'col-md-12';
     }
     return esc_html( $classes );
+}
+endif;
+
+/*---------------------------------------------------------------------------------------------------------------*/
+
+if ( ! function_exists( 'courtyard_sidebar_select' ) ) :
+/**
+ * Select and show sidebar based on post meta and customizer default settings
+ */
+function courtyard_sidebar_select() {
+    $layout = courtyard_sidebar_layout_class();
+    if( $layout != "no_sidebar_full_width" ) {
+        if ( $layout == "right_sidebar" || $layout = "left_sidebar" || $layout = "default_layout" ) {
+            echo '<div class="'.esc_attr( courtyard_secondary_sidebar() ).'">';
+            get_sidebar();
+            echo '</div>';
+        }
+    }
 }
 endif;
 

@@ -48,6 +48,15 @@ class Courtyard_Layout_Meta_Box {
 			'side', 
 			'default' 
 		);
+		// Adding layout meta box for WooCommerce (Product)
+		add_meta_box( 
+			'page_layout', 
+			esc_html__( 'Select Layout', 'courtyard' ), 
+			array( $this, 'render_metabox' ),
+			'product', 
+			'side', 
+			'default' 
+		);
 	}
 
 	public function render_metabox( $post ) {
