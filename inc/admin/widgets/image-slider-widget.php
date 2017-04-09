@@ -29,12 +29,21 @@ class courtyard_image_slider_widget extends WP_Widget
             </div><!-- .pt-admin-input-wrap -->
 
             <div class="pt-admin-input-wrap">
-                <label
+
+                <div class="pt-admin-input-label">
+                    <label
                     for="<?php echo $this->get_field_id('title'); ?>"><?php esc_html_e('Title', 'courtyard'); ?></label>
-                <input type="text" id="<?php echo $this->get_field_id('title'); ?>"
+                </div><!-- .pt-admin-input-label -->
+
+                <div class="pt-admin-input-holder">
+                    <input type="text" id="<?php echo $this->get_field_id('title'); ?>"
                        name="<?php echo $this->get_field_name('title'); ?>"
                        value="<?php echo esc_attr($instance['title']); ?>"
                        placeholder="<?php esc_attr_e('Title', 'courtyard'); ?>">
+                </div><!-- .pt-admin-input-holder -->
+
+                <div class="clear"></div>
+ 
             </div><!-- .pt-admin-input-wrap -->
 
             <div class="pt-admin-input-wrap">

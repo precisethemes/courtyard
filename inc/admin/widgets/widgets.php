@@ -67,6 +67,7 @@ function courtyard_widgets_init() {
   register_widget( "courtyard_image_slider_widget" );
   register_widget( "courtyard_packages_widget" );
   register_widget( "courtyard_rooms_widget" );
+  register_widget( "courtyard_video_widget" );
 }
 add_action( 'widgets_init', 'courtyard_widgets_init' );
 
@@ -77,3 +78,4 @@ require get_template_directory() . '/inc/admin/widgets/recent-posts-widget.php';
 require get_template_directory() . '/inc/admin/widgets/image-slider-widget.php';
 require get_template_directory() . '/inc/admin/widgets/packages-widget.php';
 require get_template_directory() . '/inc/admin/widgets/rooms-widget.php';
+require get_template_directory() . '/inc/admin/widgets/video-widget.php';

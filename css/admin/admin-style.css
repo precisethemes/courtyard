@@ -86,6 +86,9 @@ input[type=checkbox]:before {
 /*--------------------------------------------------------------
 # Admin input
 --------------------------------------------------------------*/
+.clear {
+    clear: both;
+}
 .pt-admin-input-wrap {
     margin-top: 15px;
 }
@@ -98,12 +101,29 @@ input[type=checkbox]:before {
     text-decoration: none;
 }
 
-.pt-admin-input-wrap label {
-    font-weight: bold;
-    display: inline-block;
+.pt-admin-input-label {
+    font-weight: 700;
     width: 96px;
     float: left;
     margin-top: 12px;
+}
+
+.pt-admin-input-holder {
+    position: relative;
+
+    float: right;
+
+    width: calc(100% - 112px);
+    margin-left: 16px;
+}
+
+.pt-admin-input-holder p {
+    font-size: 12px;
+    line-height: 16px;
+
+    margin-top: 6px;
+
+    color: #7b8690;
 }
 
 .pt-admin-input-wrap input[type='text'],
@@ -115,7 +135,7 @@ input[type=checkbox]:before {
 .pt-admin-input-wrap input[type='number'],
 .pt-admin-input-wrap select,
 .pt-admin-input-wrap textarea {
-    width: calc( 100% - 104px );
+    width: 100%;
     padding: 8px 10px;
 
     box-shadow: none;

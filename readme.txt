@@ -107,6 +107,9 @@ Screenshot images licensed under CC0 Public Domain (http://creativecommons.org/p
 
 === Changelog ===
 
+Version: 1.1.0 - Apr 09, 2017
+* Added dynamic WooCommerce sidebar layout.
+
 Version: 1.0.9 - Apr 05, 2017
 * Added dynamic related pages show option for rooms, services and packages.
 * Added Icon show option for single service page.

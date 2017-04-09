@@ -5,10 +5,10 @@
  */
 class courtyard_rooms_widget extends WP_Widget {
   function __construct() {
-      $widget_ops = array( 'classname' => 'pt-rooms-section', 'description' => esc_html__( 'Display some pages as rooms.', 'courtyard' ) );
-      $control_ops = array( 'width' => 200, 'height' =>250 );
-        parent::__construct( false, $name = esc_html__( 'PT: Rooms', 'courtyard' ), $widget_ops, $control_ops);
-    }
+    $widget_ops = array( 'classname' => 'pt-rooms-section', 'description' => esc_html__( 'Display some pages as rooms.', 'courtyard' ) );
+    $control_ops = array( 'width' => 200, 'height' =>250 );
+    parent::__construct( false, $name = esc_html__( 'PT: Rooms', 'courtyard' ), $widget_ops, $control_ops);
+  }
 
     function form( $instance ) {
       $instance = wp_parse_args(
@@ -29,29 +29,86 @@ class courtyard_rooms_widget extends WP_Widget {
         </div><!-- .pt-admin-input-wrap -->
 
         <div class="pt-admin-input-wrap">
-          <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php esc_html_e( 'Title', 'courtyard' ); ?></label>
-          <input type="text" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" value="<?php echo esc_attr( $instance['title'] ); ?>" placeholder="<?php esc_attr_e( 'Title', 'courtyard' ); ?>">
+
+          <div class="pt-admin-input-label">
+              <label
+              for="<?php echo $this->get_field_id('title'); ?>"><?php esc_html_e('Title', 'courtyard'); ?></label>
+          </div><!-- .pt-admin-input-label -->
+
+          <div class="pt-admin-input-holder">
+              <input type="text" id="<?php echo $this->get_field_id('title'); ?>"
+                 name="<?php echo $this->get_field_name('title'); ?>"
+                 value="<?php echo esc_attr($instance['title']); ?>"
+                 placeholder="<?php esc_attr_e('Title', 'courtyard'); ?>">
+          </div><!-- .pt-admin-input-holder -->
+
+          <div class="clear"></div>
+
         </div><!-- .pt-admin-input-wrap -->
 
         <div class="pt-admin-input-wrap">
-          <label for="<?php echo $this->get_field_id( 'sub_title' ); ?>"><?php esc_html_e( 'Sub Title', 'courtyard' ); ?></label>
-          <textarea class="widefat" rows="5" cols="20" id="<?php echo $this->get_field_id( 'sub_title' ); ?>" name="<?php echo $this->get_field_name( 'sub_title' ); ?>" placeholder="<?php esc_attr_e( 'Short description', 'courtyard' ); ?>"><?php echo esc_textarea( $instance['sub_title'] ); ?></textarea>
-        </div><!-- .pt-admin-input-wrap -->
 
-        <div class="pt-admin-input-wrap">
+          <div class="pt-admin-input-label">
+              <label
+              for="<?php echo $this->get_field_id('sub_title'); ?>"><?php esc_html_e('Sub Title', 'courtyard'); ?></label>
+          </div><!-- .pt-admin-input-label -->
+
+          <div class="pt-admin-input-holder">
+              <textarea class="widefat" rows="5" cols="20" id="<?php echo $this->get_field_id('sub_title'); ?>"
+                  name="<?php echo $this->get_field_name('sub_title'); ?>"
+                  placeholder="<?php esc_attr_e('Short description', 'courtyard'); ?>"><?php echo esc_textarea($instance['sub_title']); ?></textarea>
+          </div><!-- .pt-admin-input-holder -->
+
+          <div class="clear"></div>
+
+      </div><!-- .pt-admin-input-wrap -->
+
+      <div class="pt-admin-input-wrap">
+
+        <div class="pt-admin-input-label">
           <label for="<?php echo $this->get_field_id( 'button_text' ); ?>"><?php esc_html_e( 'Button Text', 'courtyard' ); ?></label>
+        </div><!-- .pt-admin-input-label -->
+
+        <div class="pt-admin-input-holder">
           <input type="text" id="<?php echo $this->get_field_id( 'button_text' ); ?>" name="<?php echo $this->get_field_name( 'button_text' ); ?>" value="<?php echo esc_attr( $instance['button_text'] ); ?>" placeholder="<?php esc_attr_e( 'View All Rooms', 'courtyard' ); ?>">
-        </div><!-- .pt-admin-input-wrap -->
+        </div><!-- .pt-admin-input-holder -->
 
-        <div class="pt-admin-input-wrap">
+        <div class="clear"></div>
+
+      </div><!-- .pt-admin-input-wrap -->
+
+      <div class="pt-admin-input-wrap">
+
+        <div class="pt-admin-input-label">
           <label for="<?php echo $this->get_field_id( 'button_url' ); ?>"><?php esc_html_e( 'Botton URL', 'courtyard' ); ?></label>
-          <input type="text" id="<?php echo $this->get_field_id( 'button_url' ); ?>" name="<?php echo $this->get_field_name( 'button_url' ); ?>" value="<?php echo esc_attr( $instance['button_url'] ); ?>" placeholder="<?php esc_attr_e( 'http://precisethemes.com/', 'courtyard' ); ?>">
-        </div><!-- .pt-admin-input-wrap -->
+        </div><!-- .pt-admin-input-label -->
 
-        <div class="pt-admin-input-wrap">
-          <label for="<?php echo $this->get_field_id( 'background_color' ); ?>"><?php esc_html_e( 'Background Color', 'courtyard' ); ?></label>
-          <input type="text" id="<?php echo $this->get_field_id( 'background_color' ); ?>" class="pt-color-picker" name="<?php echo $this->get_field_name( 'background_color' ); ?>" value="<?php echo esc_attr( $instance['background_color'] ); ?>" >
-        </div><!-- .pt-admin-input-wrap -->
+        <div class="pt-admin-input-holder">
+          <input type="text" id="<?php echo $this->get_field_id( 'button_url' ); ?>" name="<?php echo $this->get_field_name( 'button_url' ); ?>" value="<?php echo esc_attr( $instance['button_url'] ); ?>" placeholder="<?php esc_attr_e( 'http://precisethemes.com/', 'courtyard' ); ?>">
+        </div><!-- .pt-admin-input-holder -->
+
+        <div class="clear"></div>
+
+      </div><!-- .pt-admin-input-wrap -->
+
+      <div class="pt-admin-input-wrap">
+
+        <div class="pt-admin-input-label">
+            <label
+            for="<?php echo $this->get_field_id('background_color'); ?>"><?php esc_html_e('Color', 'courtyard'); ?></label>
+        </div><!-- .pt-admin-input-label -->
+
+        <div class="pt-admin-input-holder">
+            <input type="text" id="<?php echo $this->get_field_id('background_color'); ?>"
+                class="pt-color-picker"
+                name="<?php echo $this->get_field_name('background_color'); ?>"
+                value="<?php echo esc_attr($instance['background_color']); ?>">
+            <p><em><?php esc_html_e('Choose the background color for the widget section.', 'courtyard'); ?></em></p>
+        </div><!-- .pt-admin-input-holder -->
+
+          <div class="clear"></div>
+
+      </div><!-- .pt-admin-input-wrap -->
 
       </div><!-- .pt-room -->
     <?php }

@@ -32,52 +32,111 @@ class courtyard_recent_posts_widget extends WP_Widget
         <div class="pt-recent-posts">
 
             <div class="pt-admin-input-wrap">
-                <label
+
+                <div class="pt-admin-input-label">
+                    <label
                     for="<?php echo $this->get_field_id('title'); ?>"><?php esc_html_e('Title', 'courtyard'); ?></label>
-                <input type="text" id="<?php echo $this->get_field_id('title'); ?>"
+                </div><!-- .pt-admin-input-label -->
+
+                <div class="pt-admin-input-holder">
+                    <input type="text" id="<?php echo $this->get_field_id('title'); ?>"
                        name="<?php echo $this->get_field_name('title'); ?>"
                        value="<?php echo esc_attr($instance['title']); ?>"
                        placeholder="<?php esc_attr_e('Title', 'courtyard'); ?>">
+                </div><!-- .pt-admin-input-holder -->
+
+                <div class="clear"></div>
+ 
             </div><!-- .pt-admin-input-wrap -->
 
             <div class="pt-admin-input-wrap">
-                <label
+
+                <div class="pt-admin-input-label">
+                    <label
                     for="<?php echo $this->get_field_id('sub_title'); ?>"><?php esc_html_e('Sub Title', 'courtyard'); ?></label>
-                <textarea class="widefat" rows="5" cols="20" id="<?php echo $this->get_field_id('sub_title'); ?>"
-                          name="<?php echo $this->get_field_name('sub_title'); ?>"
-                          placeholder="<?php esc_attr_e('Short description', 'courtyard'); ?>"><?php echo esc_textarea($instance['sub_title']); ?></textarea>
+                </div><!-- .pt-admin-input-label -->
+
+                <div class="pt-admin-input-holder">
+                    <textarea class="widefat" rows="5" cols="20" id="<?php echo $this->get_field_id('sub_title'); ?>"
+                        name="<?php echo $this->get_field_name('sub_title'); ?>"
+                        placeholder="<?php esc_attr_e('Short description', 'courtyard'); ?>"><?php echo esc_textarea($instance['sub_title']); ?></textarea>
+                </div><!-- .pt-admin-input-holder -->
+
+                <div class="clear"></div>
+ 
             </div><!-- .pt-admin-input-wrap -->
 
             <div class="pt-admin-input-wrap">
-                <input type="radio" <?php checked($type, 'latest') ?> id="<?php echo $this->get_field_id('type'); ?>"
+
+                <div class="pt-admin-input-label">
+                    <label
+                    for="<?php echo $this->get_field_id('type'); ?>"><?php esc_html_e('Post Type', 'courtyard'); ?></label>
+                </div><!-- .pt-admin-input-label -->
+
+                <div class="pt-admin-input-holder">
+                    <input type="radio" <?php checked($type, 'latest') ?> id="<?php echo $this->get_field_id('type'); ?>"
                        name="<?php echo $this->get_field_name('type'); ?>"
-                       value="latest"/><?php esc_html_e('Show latest Posts', 'courtyard'); ?><br/>
-                <input type="radio" <?php checked($type, 'category') ?> id="<?php echo $this->get_field_id('type'); ?>"
+                       value="latest"/><?php esc_html_e('Latest Posts', 'courtyard'); ?><br/>
+                    <input type="radio" <?php checked($type, 'category') ?> id="<?php echo $this->get_field_id('type'); ?>"
                        name="<?php echo $this->get_field_name('type'); ?>"
-                       value="category"/><?php esc_html_e('Show posts from a category', 'courtyard'); ?><br/>
+                       value="category"/><?php esc_html_e('By Category', 'courtyard'); ?><br/>
+                </div><!-- .pt-admin-input-holder -->
+
+                <div class="clear"></div>
+ 
             </div><!-- .pt-admin-input-wrap -->
 
             <div class="pt-admin-input-wrap">
-                <label
-                    for="<?php echo $this->get_field_id('category'); ?>"><?php esc_html_e('Select category', 'courtyard'); ?></label>
-                <?php wp_dropdown_categories(array('show_option_none' => '', 'name' => $this->get_field_name('category'), 'selected' => $category)); ?>
+
+                <div class="pt-admin-input-label">
+                    <label
+                    for="<?php echo $this->get_field_id('category'); ?>"><?php esc_html_e('Select Category', 'courtyard'); ?></label>
+                </div><!-- .pt-admin-input-label -->
+
+                <div class="pt-admin-input-holder">
+                    <?php wp_dropdown_categories(array('show_option_none' => '', 'name' => $this->get_field_name('category'), 'selected' => $category)); ?>
+                </div><!-- .pt-admin-input-holder -->
+
+                <div class="clear"></div>
+ 
             </div><!-- .pt-admin-input-wrap -->
 
             <div class="pt-admin-input-wrap">
-                <input type="checkbox" <?php echo $random_posts; ?>
+
+                <div class="pt-admin-input-label">
+                    <label
+                    for="<?php echo $this->get_field_id('random_posts'); ?>"><?php esc_html_e('Random Post', 'courtyard'); ?></label>
+                </div><!-- .pt-admin-input-label -->
+
+                <div class="pt-admin-input-holder">
+                    <input type="checkbox" <?php echo $random_posts; ?>
                        id="<?php echo $this->get_field_id('random_posts'); ?>"
                        name="<?php echo $this->get_field_name('random_posts'); ?>"
                        value="<?php echo esc_attr($instance['random_posts']); ?>">
-                <label
-                    for="<?php echo $this->get_field_id('random_posts'); ?>"><?php esc_html_e('Check to display the random post from either the chosen category or from latest post.', 'courtyard'); ?></label>
+                    <p><em><?php esc_html_e('Check to display the random post from either the chosen category or from latest post.', 'courtyard'); ?></em></p>
+                </div><!-- .pt-admin-input-holder -->
+
+                <div class="clear"></div>
+ 
             </div><!-- .pt-admin-input-wrap -->
 
             <div class="pt-admin-input-wrap">
-                <label
-                    for="<?php echo $this->get_field_id('background_color'); ?>"><?php esc_html_e('Background Color', 'courtyard'); ?></label>
-                <input type="text" id="<?php echo $this->get_field_id('background_color'); ?>" class="pt-color-picker"
-                       name="<?php echo $this->get_field_name('background_color'); ?>"
-                       value="<?php echo esc_attr($instance['background_color']); ?>">
+
+                <div class="pt-admin-input-label">
+                    <label
+                    for="<?php echo $this->get_field_id('background_color'); ?>"><?php esc_html_e('Color', 'courtyard'); ?></label>
+                </div><!-- .pt-admin-input-label -->
+
+                <div class="pt-admin-input-holder">
+                    <input type="text" id="<?php echo $this->get_field_id('background_color'); ?>"
+                        class="pt-color-picker"
+                        name="<?php echo $this->get_field_name('background_color'); ?>"
+                        value="<?php echo esc_attr($instance['background_color']); ?>">
+                    <p><em><?php esc_html_e('Choose the background color for the widget section.', 'courtyard'); ?></em></p>
+                </div><!-- .pt-admin-input-holder -->
+
+                <div class="clear"></div>
+ 
             </div><!-- .pt-admin-input-wrap -->
 
         </div><!-- .pt-recent-posts -->
