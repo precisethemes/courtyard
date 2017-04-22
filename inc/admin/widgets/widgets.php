@@ -40,7 +40,7 @@ function courtyard_widgets_init() {
   }
 
   //Footer widget areas
-  $widget_areas = get_theme_mod('courtyard_footer_widget_area_layout', '1by3_1by3_1by3');
+  $widget_areas = get_theme_mod('courtyard_footer_widget_area_layout', '1by4_1by4_1by4_1by4');
   if ($widget_areas == '1by4_1by4_1by4_1by4') {
       $cols_divider = '4';
   } elseif ($widget_areas == '1by3_1by3_1by3') {

@@ -2,7 +2,7 @@
 /**
  * Functions to provide support for the One Click Demo Import plugin (wordpress.org/plugins/one-click-demo-import)
  *
- * @package Talon
+ * @package Courtyard
  */
 
 /*Import content data*/
@@ -40,20 +40,22 @@ function courtyard_set_after_import_mods( $selected_import ) {
         );
 
         //Asign the static front page and the blog page
-        $front_page = get_page_by_title( 'Home' );
         $blog_page  = get_page_by_title( 'Blog' );
- 
-        //Set Front page
-        if ( isset( $front_page->ID ) ) {
-            update_option( 'page_on_front', $front_page->ID );
-            update_option( 'show_on_front', 'page' );
-            //Assign the Front Page template
-            update_post_meta( $front_page -> ID, '_wp_page_template', 'page-templates/template-front-page.php' );
-        }
-
-        //Set Blog page
         if ( isset( $blog_page->ID ) ) {
             update_option( 'page_for_posts', $blog_page -> ID );
+        }
+
+        //Set Front page
+        $pages = get_pages(array(
+            'meta_key' => '_wp_page_template',
+            'meta_value' => 'page-templates/template-front-page.php',
+        ));
+        if ( !empty( $pages ) ) {
+            foreach( $pages as $page ) {
+                update_option( 'show_on_front', 'page' );
+                update_option( 'page_on_front', 'pt_widget_area_' . absint( $page->post_id ) );
+                update_post_meta( 'pt_widget_area_' . absint( $page->post_id ), '_wp_page_template', 'page-templates/template-front-page.php' );
+            }
         }
     }     
 }
