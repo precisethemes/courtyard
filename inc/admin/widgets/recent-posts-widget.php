@@ -227,6 +227,7 @@ class courtyard_recent_posts_widget extends WP_Widget
 
                     <?php if ($get_featured_posts->have_posts()) : ?>
                         <?php while ($get_featured_posts->have_posts()) : $get_featured_posts->the_post();
+                            $custom_image = get_template_directory_uri() . '/inc/admin/images/7.jpg';
                             $image_id       = get_post_thumbnail_id();
                             $image_path     = wp_get_attachment_image_src( $image_id, 'courtyard-400x260', true );
                             $image_alt      = get_post_meta( $image_id, '_wp_attachment_image_alt', true );
@@ -235,10 +236,19 @@ class courtyard_recent_posts_widget extends WP_Widget
                             <div class="col-md-4 col-sm-6 col-sm-6">
                                 <div class="pt-recent-posts-col">
 
-                                    <?php if (has_post_thumbnail()) : ?>
+                                    <?php if (has_post_thumbnail() || '' != $custom_image ) : ?>
+
                                         <figure>
                                             <a title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>">
+                                                <?php if ( !has_post_thumbnail() ) : ?>
+
+                                                <img src="<?php echo esc_url( $custom_image ); ?>" alt="<?php echo esc_attr( $alt ); ?>" title="<?php the_title_attribute(); ?>" />
+
+                                                <?php else : ?>
+
                                                 <img src="<?php echo esc_url( $image_path[0] ); ?>" alt="<?php echo esc_attr( $alt ); ?>" title="<?php the_title_attribute(); ?>" />
+
+                                                <?php endif; ?>
                                             </a>
 
                                             <div class="pt-blog-date transition5">
