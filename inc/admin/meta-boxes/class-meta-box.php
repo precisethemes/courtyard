@@ -245,13 +245,13 @@ class Courtyard_Room_Related_Post_Meta_Box {
 		$number_of_posts = get_post_meta( $post->ID, 'room_related_posts_number', true );
 
 		// Set default values.
-		if( empty( $room_checkbox ) ) $room_checkbox = 'checked';
+		if( empty( $room_checkbox ) ) $room_checkbox = '';
 		if( empty( $number_of_posts ) ) $number_of_posts = '5'; ?>
 
 		<div class="pt-input-wrap">
 			<div class="pt-input-holder">
 				<input type="checkbox" id="room_related_posts_checkbox" name="room_related_posts_checkbox" value="<?php echo esc_attr( $room_checkbox ); ?>" <?php echo checked( $room_checkbox, 'checked', false ); ?>>
-				<em><?php echo esc_html__( 'Check to display related rooms in single page widget sidebar area.', 'courtyard' ); ?></em>
+				<em><?php echo esc_html__( 'Check to disable related rooms in single page widget sidebar area.', 'courtyard' ); ?></em>
 			</div><!-- .pt-input-holder -->
 		</div><!-- .pt-input-wrap -->
 
@@ -341,13 +341,13 @@ class Courtyard_Service_Related_Post_Meta_Box {
 		$number_of_posts = get_post_meta( $post->ID, 'service_related_posts_number', true );
 
 		// Set default values.
-		if( empty( $service_checkbox ) ) $service_checkbox = 'checked';
+		if( empty( $service_checkbox ) ) $service_checkbox = '';
 		if( empty( $number_of_posts ) ) $number_of_posts = '5'; ?>
 
 		<div class="pt-input-wrap">
 			<div class="pt-input-holder">
 				<input type="checkbox" id="service_related_posts_checkbox" name="service_related_posts_checkbox" value="<?php echo esc_attr( $service_checkbox ); ?>" <?php echo checked( $service_checkbox, 'checked', false ); ?>>
-				<em><?php echo esc_html__( 'Check to display related services in single service page widget sidebar area.', 'courtyard' ); ?></em>
+				<em><?php echo esc_html__( 'Check to disable related services in single service page widget sidebar area.', 'courtyard' ); ?></em>
 			</div><!-- .pt-input-holder -->
 		</div><!-- .pt-input-wrap -->
 
@@ -437,13 +437,13 @@ class Courtyard_Packages_Related_Post_Meta_Box {
 		$number_of_posts = get_post_meta( $post->ID, 'packages_related_posts_number', true );
 
 		// Set default values.
-		if( empty( $packages_checkbox ) ) $packages_checkbox = 'checked';
+		if( empty( $packages_checkbox ) ) $packages_checkbox = '';
 		if( empty( $number_of_posts ) ) $number_of_posts = '5'; ?>
 
 		<div class="pt-input-wrap">
 			<div class="pt-input-holder">
 				<input type="checkbox" id="packages_related_posts_checkbox" name="packages_related_posts_checkbox" value="<?php echo esc_attr( $packages_checkbox ); ?>" <?php echo checked( $packages_checkbox, 'checked', false ); ?>>
-				<em><?php echo esc_html__( 'Check to display related packages in single packages page widget sidebar area.', 'courtyard' ); ?></em>
+				<em><?php echo esc_html__( 'Check to disable related packages in single packages page widget sidebar area.', 'courtyard' ); ?></em>
 			</div><!-- .pt-input-holder -->
 		</div><!-- .pt-input-wrap -->
 

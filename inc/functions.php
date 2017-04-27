@@ -606,29 +606,29 @@ endif;
 if ( ! function_exists ( 'courtyard_related_pages_listing' ) ) :
     function courtyard_related_pages_listing(){
         global $post;
-        $activate = '';
+        $disable = '';
         $font_icon = '';
         $thumbnail = '';
         // List of related rooms
         if ( is_page_template( 'page-templates/template-rooms.php' ) ) {
-            $activate  = get_post_meta($post->ID, 'room_related_posts_checkbox', true);
+            $disable  = get_post_meta($post->ID, 'room_related_posts_checkbox', true);
             $numbers = get_post_meta($post->ID, 'room_related_posts_number', true);
             $template = 'page-templates/template-rooms.php';
         } 
         // List of related services
         if ( is_page_template( 'page-templates/template-services.php' ) ) {
-            $activate = get_post_meta($post->ID, 'service_related_posts_checkbox', true);
+            $disable = get_post_meta($post->ID, 'service_related_posts_checkbox', true);
             $numbers = get_post_meta($post->ID, 'service_related_posts_number', true);
             $template = 'page-templates/template-services.php';
         }
         // List of related packages
         if ( is_page_template( 'page-templates/template-packages.php' ) ) {
-            $activate  = get_post_meta($post->ID, 'packages_related_posts_checkbox', true);
+            $disable  = get_post_meta($post->ID, 'packages_related_posts_checkbox', true);
             $numbers = get_post_meta($post->ID, 'packages_related_posts_number', true);
             $template = 'page-templates/template-packages.php';
         }
         
-        if ( $activate == 'checked' && '' != $activate ) {
+        if ( '' == $disable ) {
             $get_featured_pages = new WP_Query( array(
                 'no_found_rows'   => true,
                 'post_status'     => 'publish',
