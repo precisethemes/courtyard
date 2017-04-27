@@ -297,7 +297,7 @@ function courtyard_customize_register( $wp_customize ) {
     ) );
 
     $wp_customize->add_setting( 'courtyard_theme_color', array(
-        'default'               => 'maroon',
+        'default'               => 'sky-blue',
         'capability'            => 'edit_theme_options',
         'sanitize_callback'     => 'courtyard_sanitize_choices',
     ) );

@@ -12,7 +12,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'pt-post-wrap' ); ?>>
 
 	<?php
-	$custom_image = get_template_directory_uri() . '/inc/admin/images/7.jpg';
+	$custom_image = get_template_directory_uri() . '/inc/admin/images/courtyard-default.png';
 	$sidebar_class = courtyard_sidebar_layout_class();
 	if ( $sidebar_class == 'no_sidebar_full_width' ) {
 		$img_size = 'courtyard-1200x750';

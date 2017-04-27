@@ -227,7 +227,7 @@ class courtyard_recent_posts_widget extends WP_Widget
 
                     <?php if ($get_featured_posts->have_posts()) : ?>
                         <?php while ($get_featured_posts->have_posts()) : $get_featured_posts->the_post();
-                            $custom_image = get_template_directory_uri() . '/inc/admin/images/7.jpg';
+                            $custom_image = get_template_directory_uri() . '/inc/admin/images/courtyard-default.png';
                             $image_id       = get_post_thumbnail_id();
                             $image_path     = wp_get_attachment_image_src( $image_id, 'courtyard-400x260', true );
                             $image_alt      = get_post_meta( $image_id, '_wp_attachment_image_alt', true );
