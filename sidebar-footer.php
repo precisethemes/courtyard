@@ -10,7 +10,7 @@
 
 <?php
 //Set widget areas classes based on user choice
-$widget_areas = get_theme_mod('courtyard_footer_widget_area_layout', '1by3_1by3_1by3');
+$widget_areas = get_theme_mod('courtyard_footer_widget_area_layout', '1by4_1by4_1by4_1by4');
 if ($widget_areas == '1by4_1by4_1by4_1by4') {
     $cols = 'col-md-3 col-sm-6 col-sx-12';
 } elseif ($widget_areas == '1by3_1by3_1by3') {
