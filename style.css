@@ -986,6 +986,14 @@ a.pt-secondary-logo-show img,
 	color: #fff;
 }
 
+.pt-menu li.lang-item-first {
+	margin-left: 24px;
+}
+
+.pt-menu li.lang-item a {
+	padding: 38px 0 36px 8px;
+}
+
 .pt-menu li:hover > a,
 .pt-menu li.current-menu-item a,
 .pt-home-navbar li.current-menu-item a {
@@ -2291,6 +2299,10 @@ a.pt-holiday-package-read-more:visited {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
+.pt-footer-sep {
+	height: 100px;
+}
+
 .pt-footer-wrapper {
 	margin-top: 100px;
 	font-size: 15px;

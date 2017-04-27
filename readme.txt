@@ -1,7 +1,7 @@
 === Courtyard ===
 
 Contributors: Precise Themes
-Version: 1.0.9
+Version: 1.1.0
 Requires at least: 4.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -109,6 +109,8 @@ Screenshot images licensed under CC0 Public Domain (http://creativecommons.org/p
 
 Version: 1.1.0 - Apr 09, 2017
 * Added dynamic WooCommerce sidebar layout.
+* Fixed issue for CSS and JS for child theme compatible.
+* Added One click Demo Data importer.
 
 Version: 1.0.9 - Apr 05, 2017
 * Added dynamic related pages show option for rooms, services and packages.

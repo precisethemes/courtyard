@@ -21,36 +21,36 @@ function courtyard_scripts() {
     if ( get_theme_mod( 'courtyard_optimize_bootstrap_activate', '1' ) == 1 ) {
         
         // Enqueue Optimize Bootstrap Grid
-        wp_enqueue_style( 'bootstrap', get_theme_file_uri() . '/css/bootstrap.optimized.min.css', array(), '3.3.7', '' );
+        wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.optimized.min.css', array(), '3.3.7', '' );
     } else {
 
         // Enqueue Bootstrap Grid
-        wp_enqueue_style( 'bootstrap', get_theme_file_uri() . '/css/bootstrap.min.css', array(), '3.3.7', '' );
+        wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '3.3.7', '' );
     }
 
     // Enqueue animate css
-    wp_enqueue_style( 'animate', get_theme_file_uri() . '/css/animate.min.css', array(), '3.5.1', '' );
+    wp_enqueue_style( 'animate', get_template_directory_uri() . '/css/animate.min.css', array(), '3.5.1', '' );
 
     // Enqueue FontAwesome
-    wp_enqueue_style( 'font-awesome', get_theme_file_uri() . '/css/font-awesome.min.css', array(), '4.7.0', '' );
+    wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/css/font-awesome.min.css', array(), '4.7.0', '' );
 
     // Enqueue elegant_font
-    wp_enqueue_style( 'elegant-font', get_theme_file_uri() . '/css/elegant-font.custom.css', array(), '', '' );
+    wp_enqueue_style( 'elegant-font', get_template_directory_uri() . '/css/elegant-font.custom.css', array(), '', '' );
 
     // Enqueue Swiper.css
-    wp_enqueue_style( 'swiper', get_theme_file_uri() . '/css/swiper.min.css', array(), '3.4.0', '' );
+    wp_enqueue_style( 'swiper', get_template_directory_uri() . '/css/swiper.min.css', array(), '3.4.0', '' );
 
     wp_enqueue_style( 'courtyard-style', get_stylesheet_uri() );
 
     // Enqueue Swiper
-    wp_enqueue_script( 'swiper', get_theme_file_uri() . '/js/swiper.jquery.min.js', array( 'jquery' ), '3.4.0', true );
+    wp_enqueue_script( 'swiper', get_template_directory_uri() . '/js/swiper.jquery.min.js', array( 'jquery' ), '3.4.0', true );
 
     // Custom JS
-    wp_enqueue_script( 'courtyard-custom', get_theme_file_uri() . '/js/custom.js', array( 'jquery' ), $courtyard_version, true );
+    wp_enqueue_script( 'courtyard-custom', get_template_directory_uri() . '/js/custom.js', array( 'jquery' ), $courtyard_version, true );
 
-    wp_enqueue_script( 'courtyard-navigation', get_theme_file_uri() . '/js/navigation.js', array(), '20151215', true );
+    wp_enqueue_script( 'courtyard-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
-    wp_enqueue_script( 'courtyard-skip-link-focus-fix', get_theme_file_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+    wp_enqueue_script( 'courtyard-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
     if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
         wp_enqueue_script( 'comment-reply' );

@@ -10,6 +10,9 @@
  */
 
 ?>
+	<?php if ( ! is_front_page() ) : ?>
+		<div class="pt-footer-sep"></div>
+	<?php endif; ?>
 
 	<div class="pt-footer-wrapper">
 		<?php if ( is_active_sidebar( 'courtyard_footer_sidebar_1' ) || is_active_sidebar( 'courtyard_footer_sidebar_2' ) || is_active_sidebar( 'courtyard_footer_sidebar_3' ) || is_active_sidebar( 'courtyard_footer_sidebar_4' ) ) : ?>
