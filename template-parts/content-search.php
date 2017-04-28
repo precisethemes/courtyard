@@ -11,26 +11,24 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'pt-post-wrap' ); ?>>
 	<?php
-	$custom_image = get_template_directory_uri() . '/inc/admin/images/courtyard-default.png';
+	$custom_image 			= get_template_directory_uri() . '/inc/admin/images/courtyard-default.png';
 	$image_id               = get_post_thumbnail_id();
 	$image_path             = wp_get_attachment_image_src( $image_id, 'courtyard-800x500', true );
 	$image_alt              = get_post_meta( $image_id, '_wp_attachment_image_alt', true );
 	$alt 					= !empty( $image_alt ) ? $image_alt : the_title_attribute( 'echo=0' ) ;
 	?>
 
-	<?php if (has_post_thumbnail() || '' != $custom_image ) : ?>
-		<figure>
-			<a title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>">
-				<?php if ( !has_post_thumbnail() ) : ?>
-					<img src="<?php echo esc_url( $custom_image ); ?>" alt="<?php echo esc_attr( $alt ); ?>" title="<?php the_title_attribute(); ?>" />
-				<?php else : ?>
-					<img src="<?php echo esc_url( $image_path[0] ); ?>" alt="<?php echo esc_attr( $alt ); ?>" title="<?php the_title_attribute(); ?>" />
-				<?php endif; ?>
-			</a>
-		</figure>
-	<?php endif; ?>
+	<figure>
+		<a title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>">
+			<?php if ( !has_post_thumbnail() ) : ?>
+				<img src="<?php echo esc_url( $custom_image ); ?>" alt="<?php echo esc_attr( $alt ); ?>" title="<?php the_title_attribute(); ?>" />
+			<?php else : ?>
+				<img src="<?php echo esc_url( $image_path[0] ); ?>" alt="<?php echo esc_attr( $alt ); ?>" title="<?php the_title_attribute(); ?>" />
+			<?php endif; ?>
+		</a>
+	</figure>
 
-	<div class="pt-content-wrap<?php if( !has_post_thumbnail() ) { echo ' pt-content-wrap-border'; } ?>">
+	<div class="pt-content-wrap pt-content-wrap-border">
 		<header class="entry-header">
 			<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 

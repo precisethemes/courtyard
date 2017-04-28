@@ -25,31 +25,27 @@
 	$alt 					= !empty( $image_alt ) ? $image_alt : the_title_attribute( 'echo=0' ) ;
 	?>
 
-	<?php if( has_post_thumbnail() || '' != $custom_image ) : ?>
-		<?php if ( is_singular() ) : ?>
-			<figure>
+	<?php if ( is_singular() ) : ?>
+		<figure>
+			<?php if ( !has_post_thumbnail() ) : ?>
+				<img src="<?php echo esc_url( $custom_image ); ?>" alt="<?php echo esc_attr( $alt ); ?>" title="<?php the_title_attribute(); ?>" />
+			<?php else : ?>
+				<img src="<?php echo esc_url( $image_path[0] ); ?>" alt="<?php echo esc_attr( $alt ); ?>" title="<?php the_title_attribute(); ?>" />
+			<?php endif; ?>
+		</figure>
+	<?php else : ?>
+		<figure>
+			<a title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>">
 				<?php if ( !has_post_thumbnail() ) : ?>
 					<img src="<?php echo esc_url( $custom_image ); ?>" alt="<?php echo esc_attr( $alt ); ?>" title="<?php the_title_attribute(); ?>" />
 				<?php else : ?>
 					<img src="<?php echo esc_url( $image_path[0] ); ?>" alt="<?php echo esc_attr( $alt ); ?>" title="<?php the_title_attribute(); ?>" />
 				<?php endif; ?>
-			</figure>
-		<?php else : ?>
-			<figure>
-				<a title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>">
-					<?php if ( !has_post_thumbnail() ) : ?>
-						<img src="<?php echo esc_url( $custom_image ); ?>" alt="<?php echo esc_attr( $alt ); ?>" title="<?php the_title_attribute(); ?>" />
-					<?php else : ?>
-						<img src="<?php echo esc_url( $image_path[0] ); ?>" alt="<?php echo esc_attr( $alt ); ?>" title="<?php the_title_attribute(); ?>" />
-					<?php endif; ?>
-				</a>
-			</figure>
-		<?php
-		endif;
-	endif;
-	?>
+			</a>
+		</figure>
+	<?php endif; ?>
 
-	<div class="pt-content-wrap<?php if( !has_post_thumbnail() ) { echo ' pt-content-wrap-border'; } ?>">
+	<div class="pt-content-wrap pt-content-wrap-border">
 		<header class="entry-header">
 			<?php
 			if ( is_single() ) :

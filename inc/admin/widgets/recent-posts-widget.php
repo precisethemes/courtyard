@@ -236,31 +236,28 @@ class courtyard_recent_posts_widget extends WP_Widget
                             <div class="col-md-4 col-sm-6 col-sm-6">
                                 <div class="pt-recent-posts-col">
 
-                                    <?php if (has_post_thumbnail() || '' != $custom_image ) : ?>
+                                    <figure>
+                                        <a title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>">
+                                            <?php if ( !has_post_thumbnail() ) : ?>
 
-                                        <figure>
-                                            <a title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>">
-                                                <?php if ( !has_post_thumbnail() ) : ?>
+                                            <img src="<?php echo esc_url( $custom_image ); ?>" alt="<?php echo esc_attr( $alt ); ?>" title="<?php the_title_attribute(); ?>" />
 
-                                                <img src="<?php echo esc_url( $custom_image ); ?>" alt="<?php echo esc_attr( $alt ); ?>" title="<?php the_title_attribute(); ?>" />
+                                            <?php else : ?>
 
-                                                <?php else : ?>
+                                            <img src="<?php echo esc_url( $image_path[0] ); ?>" alt="<?php echo esc_attr( $alt ); ?>" title="<?php the_title_attribute(); ?>" />
 
-                                                <img src="<?php echo esc_url( $image_path[0] ); ?>" alt="<?php echo esc_attr( $alt ); ?>" title="<?php the_title_attribute(); ?>" />
+                                            <?php endif; ?>
+                                        </a>
 
-                                                <?php endif; ?>
-                                            </a>
+                                        <div class="pt-blog-date transition5">
+                                            <div class="pt-blog-post-month"><?php echo esc_html( get_the_time("M") ); ?><br/><?php echo esc_html( get_the_time("Y") ); ?></div>
+                                            <div class="pt-blog-post-day"><?php echo esc_html( get_the_time("d") ); ?></div>
+                                        </div>
 
-                                            <div class="pt-blog-date transition5">
-                                                <div class="pt-blog-post-month"><?php echo esc_html( get_the_time("M") ); ?><br/><?php echo esc_html( get_the_time("Y") ); ?></div>
-                                                <div class="pt-blog-post-day"><?php echo esc_html( get_the_time("d") ); ?></div>
-                                            </div>
-
-                                            <div class="pt-blog-post-more-icon transition5">
-                                                <a class="transition5" title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>" ><i class="pt-arrow-right transition5"></i></a>
-                                            </div>
-                                        </figure>
-                                    <?php endif; ?>
+                                        <div class="pt-blog-post-more-icon transition5">
+                                            <a class="transition5" title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>" ><i class="pt-arrow-right transition5"></i></a>
+                                        </div>
+                                    </figure>
 
                                     <article class="pt-recent-posts-cont">
                                         <h3><a title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
