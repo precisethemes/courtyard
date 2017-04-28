@@ -627,61 +627,64 @@ if ( ! function_exists ( 'courtyard_related_pages_listing' ) ) :
             $numbers = get_post_meta($post->ID, 'packages_related_posts_number', true);
             $template = 'page-templates/template-packages.php';
         }
-        
-        if ( '0' == $disable ) {
-            $get_featured_pages = new WP_Query( array(
-                'no_found_rows'   => true,
-                'post_status'     => 'publish',
-                'posts_per_page'  => intval ( $numbers ),
-                'post_type'       => array( 'page' ),
-                'orderby'         => array( 'menu_order' => 'ASC', 'date' => 'DESC' ),
-                'post__not_in'    => array($post->ID),
-                'meta_query' => array(
-                    array(
-                    'key'   => '_wp_page_template',
-                    'value' => $template
-                    )
-                ),
-            ) );
-            if ( $get_featured_pages->have_posts() ) { ?>
 
-                <aside id="pt-related-lists" class="widget widget_related_room">     
-                    <h4 class="widget-title"><?php echo esc_html( 'Related', 'courtyard');?></h4> 
+        if ( is_page_template( 'page-templates/template-packages.php' ) || is_page_template( 'page-templates/template-services.php' ) || is_page_template( 'page-templates/template-rooms.php' ) ) {
 
-                    <?php while( $get_featured_pages->have_posts() ) : $get_featured_pages->the_post();
+            if ( '0' == $disable || $disable == '' ) {
+                $get_featured_pages = new WP_Query( array(
+                    'no_found_rows'   => true,
+                    'post_status'     => 'publish',
+                    'posts_per_page'  => intval ( $numbers ),
+                    'post_type'       => array( 'page' ),
+                    'orderby'         => array( 'menu_order' => 'ASC', 'date' => 'DESC' ),
+                    'post__not_in'    => array($post->ID),
+                    'meta_query' => array(
+                        array(
+                        'key'   => '_wp_page_template',
+                        'value' => $template
+                        )
+                    ),
+                ) );
+                if ( $get_featured_pages->have_posts() ) { ?>
 
-                    $font_icon = get_post_meta($post->ID, 'service_icon', true);
-                    $title_attribute          = the_title_attribute( 'echo=0' );
-                    $image_id                 = get_post_thumbnail_id();
-                    $image_path               = wp_get_attachment_image_src( $image_id, 'courtyard-400x260', true );
-                    $image_alt                = get_post_meta( $image_id, '_wp_attachment_image_alt', true );
+                    <aside id="pt-related-lists" class="widget widget_related_room">     
+                        <h4 class="widget-title"><?php echo esc_html( 'Related', 'courtyard');?></h4> 
 
-                    if ( has_post_thumbnail() ) {
-                        $thumbnail = '<figure>';
-                        $thumbnail .= '<a title="'.esc_attr( $title_attribute ).'" href="'.esc_attr( get_the_permalink() ).'"><img src="' . esc_url($image_path[0]) . '" alt="' . esc_attr($image_alt) . '" title="'.esc_attr( $title_attribute ).'" /></a>';
-                        $thumbnail .= '</figure>';
-                    } elseif ( '' != $font_icon ) {
-                        $thumbnail = '<a title="'.esc_attr( $title_attribute ).'" href="'.esc_attr( get_the_permalink() ).'"><span class="pt-service-icon"><i class="fa ' . esc_attr($font_icon) . '"></i></span></a>';
-                    }
+                        <?php while( $get_featured_pages->have_posts() ) : $get_featured_pages->the_post();
 
-                    ?>
-                    <div class="pt-related-wrap">
+                        $font_icon = get_post_meta($post->ID, 'service_icon', true);
+                        $title_attribute          = the_title_attribute( 'echo=0' );
+                        $image_id                 = get_post_thumbnail_id();
+                        $image_path               = wp_get_attachment_image_src( $image_id, 'courtyard-400x260', true );
+                        $image_alt                = get_post_meta( $image_id, '_wp_attachment_image_alt', true );
 
-                        <?php echo $thumbnail; ?>
+                        if ( has_post_thumbnail() ) {
+                            $thumbnail = '<figure>';
+                            $thumbnail .= '<a title="'.esc_attr( $title_attribute ).'" href="'.esc_attr( get_the_permalink() ).'"><img src="' . esc_url($image_path[0]) . '" alt="' . esc_attr($image_alt) . '" title="'.esc_attr( $title_attribute ).'" /></a>';
+                            $thumbnail .= '</figure>';
+                        } elseif ( '' != $font_icon ) {
+                            $thumbnail = '<a title="'.esc_attr( $title_attribute ).'" href="'.esc_attr( get_the_permalink() ).'"><span class="pt-service-icon"><i class="fa ' . esc_attr($font_icon) . '"></i></span></a>';
+                        }
 
-                        <h3><a title="<?php esc_attr( $title_attribute ); ?>" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                        ?>
+                        <div class="pt-related-wrap">
 
-                        <p><?php echo wp_trim_words( get_the_excerpt(), 22, '' ); ?></p>
+                            <?php echo $thumbnail; ?>
 
-                    </div><!-- .pt-related-col -->
+                            <h3><a title="<?php esc_attr( $title_attribute ); ?>" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 
-                    <?php endwhile;
+                            <p><?php echo wp_trim_words( get_the_excerpt(), 22, '' ); ?></p>
 
-                    // Reset Post Data
-                    wp_reset_postdata(); ?>
-                </aside>
+                        </div><!-- .pt-related-col -->
 
-            <?php }
+                        <?php endwhile;
+
+                        // Reset Post Data
+                        wp_reset_postdata(); ?>
+                    </aside>
+
+                <?php }
+            }
         }
     }
 endif;
