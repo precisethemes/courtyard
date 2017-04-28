@@ -106,16 +106,16 @@ function courtyard_admin_scripts( ) {
 
     if( $pt_cScreen->id === "customize" || $pt_cScreen->id === "widgets" ) {
         // Run some code, only on the admin customize and wigets page
-        wp_enqueue_style( 'courtyard-admin-style', get_theme_file_uri() .'/css/admin/admin-style.css', $courtyard_version, '' );
+        wp_enqueue_style( 'courtyard-admin-style', get_template_directory_uri() .'/css/admin/admin-style.css', $courtyard_version, '' );
         wp_enqueue_media();
         wp_enqueue_style( 'wp-color-picker' );     
-        wp_enqueue_script( 'courtyard-color-picker', get_theme_file_uri() . '/js/admin/color-picker.js', array( 'wp-color-picker' ), $courtyard_version, true );
-        wp_enqueue_script( 'courtyard-customizer-script', get_theme_file_uri() .'/js/admin/customizer-scripts.js', array( 'jquery' ), $courtyard_version, true  );
+        wp_enqueue_script( 'courtyard-color-picker', get_template_directory_uri() . '/js/admin/color-picker.js', array( 'wp-color-picker' ), $courtyard_version, true );
+        wp_enqueue_script( 'courtyard-customizer-script', get_template_directory_uri() .'/js/admin/customizer-scripts.js', array( 'jquery' ), $courtyard_version, true  );
     }
 
     if( $pt_cScreen->id === "page" ) {
         // Enqueue Custom Admin Script, only on the admin Page page.
-        wp_enqueue_script( 'courtyard-admin-script', get_theme_file_uri() .'/js/admin/admin-scripts.js', array( 'jquery' ), $courtyard_version, true );
+        wp_enqueue_script( 'courtyard-admin-script', get_template_directory_uri() .'/js/admin/admin-scripts.js', array( 'jquery' ), $courtyard_version, true );
     }
 }
 add_action('admin_enqueue_scripts', 'courtyard_admin_scripts');
