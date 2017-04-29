@@ -13,7 +13,11 @@ if ( !class_exists('WooCommerce') )
  * Declare support
  */
 function courtyard_woocommerce_support() {
+    // adding the WooCommerce plugin support
     add_theme_support( 'woocommerce' );
+    add_theme_support( 'wc-product-gallery-zoom' );
+    add_theme_support( 'wc-product-gallery-lightbox' );
+    add_theme_support( 'wc-product-gallery-slider' );
 }
 add_action( 'after_setup_theme', 'courtyard_woocommerce_support' );
 
