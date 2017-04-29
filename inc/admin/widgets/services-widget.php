@@ -14,6 +14,7 @@ class courtyard_service_widget extends WP_Widget {
             (array) $instance, array(
                 'title'             => '',
                 'sub_title'         => '',
+                'service_limit'     => '8',
                 'button_text'       => esc_html__('View All Services','courtyard'),
                 'button_url'        => '#',
                 'background_color'  => '',
@@ -56,6 +57,24 @@ class courtyard_service_widget extends WP_Widget {
                     <textarea class="widefat" rows="5" cols="20" id="<?php echo $this->get_field_id('sub_title'); ?>"
                         name="<?php echo $this->get_field_name('sub_title'); ?>"
                         placeholder="<?php esc_attr_e('Short description', 'courtyard'); ?>"><?php echo esc_textarea($instance['sub_title']); ?></textarea>
+                </div><!-- .pt-admin-input-holder -->
+
+                <div class="clear"></div>
+ 
+            </div><!-- .pt-admin-input-wrap -->
+
+            <div class="pt-admin-input-wrap">
+
+                <div class="pt-admin-input-label">
+                    <label
+                    for="<?php echo $this->get_field_id('service_limit'); ?>"><?php esc_html_e('Count', 'courtyard'); ?></label>
+                </div><!-- .pt-admin-input-label -->
+
+                <div class="pt-admin-input-holder">
+                    <input type="number" min="1" max="50" id="<?php echo $this->get_field_id('service_limit'); ?>"
+                       name="<?php echo $this->get_field_name('service_limit'); ?>"
+                       value="<?php echo esc_attr($instance['service_limit']); ?>">
+                    <em><?php esc_html_e('Number of services to display.', 'courtyard'); ?></em>
                 </div><!-- .pt-admin-input-holder -->
 
                 <div class="clear"></div>
@@ -117,6 +136,7 @@ class courtyard_service_widget extends WP_Widget {
         $instance = $old_instance;
 
         $instance['title']             = sanitize_text_field( $new_instance['title'] );
+        $instance['service_limit']     = absint( $new_instance['service_limit'] );
         $instance['background_color']  = sanitize_text_field( $new_instance['background_color'] );
         $instance['button_text']       = sanitize_text_field( $new_instance['button_text'] );
         $instance['button_url']        = esc_url_raw( $new_instance['button_url'] );
@@ -131,27 +151,35 @@ class courtyard_service_widget extends WP_Widget {
     function widget( $args, $instance ) {
         ob_start();
         extract($args);
-        global $post;
 
+        global $post, $duplicate_posts;
         $title              = apply_filters( 'widget_title', isset( $instance['title'] ) ? $instance['title'] : '');
         $sub_title          = isset( $instance['sub_title'] ) ? $instance['sub_title'] : '';
+        $pt_service_limit   = isset( $instance['service_limit'] ) ? $instance['service_limit'] : '8';
         $button_text        = isset( $instance['button_text'] ) ? $instance['button_text'] : '';
         $button_url         = isset( $instance['button_url'] ) ? $instance['button_url'] : '';
         $background_color   = isset( $instance['background_color'] ) ? $instance['background_color'] : null;
 
+        $pt_service_pages = array();
+        $pt_pages = get_pages();
+        // get the pages associated with Service Template.
+        foreach ( $pt_pages as $pt_page ) {
+            $page_id = $pt_page->ID;
+            $template_name = get_post_meta( $page_id, '_wp_page_template', true );
+            if( $template_name == 'page-templates/template-services.php' && !in_array( $page_id , $duplicate_posts ) ) {
+                array_push( $pt_service_pages, $page_id );
+            }
+        }
+
         $get_featured_pages = new WP_Query( array(
-            'no_found_rows'   => true,
-            'post_status'     => 'publish',
-            'posts_per_page'  => intval( 10 ),
-            'post_type'       => array( 'page' ),
-            'orderby'         => array( 'menu_order' => 'ASC', 'date' => 'DESC' ),
-            'meta_query' => array(
-                array(
-                    'key'   => '_wp_page_template',
-                    'value' => 'page-templates/template-services.php'
-                )
-            )
+            'post_status'           => 'publish',
+            'posts_per_page'        => $pt_service_limit,
+            'post_type'             =>  array( 'page' ),
+            'post__in'              => $pt_service_pages,
+            'orderby'               => array( 'menu_order' => 'ASC', 'date' => 'DESC' )
         ) );
+
+        $countPosts = intval( $get_featured_pages->post_count );
 
         $inline_style = '';
         
@@ -176,13 +204,14 @@ class courtyard_service_widget extends WP_Widget {
                         <?php endif; ?>
                     </div><!-- .col-md-12 -->
 
-                    <div class="col-md-12">
-                        <div class="swiper-container pt-services-slider">
-                            <div class="swiper-wrapper">
+                    <?php if ( !empty( $pt_service_pages ) ) : ?>
 
-                                <?php if ($get_featured_pages->have_posts()) : ?>
+                        <div class="col-md-12">
+                            <div class="swiper-container pt-services-slider">
+                                <div class="swiper-wrapper">
 
                                     <?php while ($get_featured_pages->have_posts()) : $get_featured_pages->the_post();
+                                        $duplicate_posts[] = $post->ID;
                                         $image_id = get_post_thumbnail_id();
                                         $image_path = wp_get_attachment_image_src( $image_id, 'thumbnail', true );
                                         $image_alt = get_post_meta( $image_id, '_wp_attachment_image_alt', true );
@@ -220,22 +249,27 @@ class courtyard_service_widget extends WP_Widget {
                                     // Reset Post Data
                                     wp_reset_postdata(); ?>
 
+                                </div><!-- .swiper-wrapper -->
+
+                                <?php if ( !empty( $button_text ) ) : ?>
+
+                                    <div class="pt-services-more">
+                                        <div class="pt-services-more-holder">
+                                            <?php if ( ( $countPosts > 3 && $countPosts < 6 ) || ( $countPosts > 6 ) ) : ?>
+                                                <i class="pt-arrow-left transition35"></i>
+                                            <?php endif; ?>
+                                            <a href="<?php echo esc_url( $button_url ); ?>" class="transition35"><?php echo esc_html( $button_text ); ?></a>
+                                            <?php if ( ( $countPosts > 3 && $countPosts < 6 ) || ( $countPosts > 6 ) ) : ?>
+                                                <i class="pt-arrow-right transition35"></i>
+                                            <?php endif; ?>
+                                        </div><!-- .pt-services-more-holder -->
+                                    </div><!-- .pt-services-more -->
+
                                 <?php endif; ?>
-                            </div><!-- .swiper-wrapper -->
-
-                            <?php if ( !empty( $button_text ) ) : ?>
-
-                                <div class="pt-services-more">
-                                    <div class="pt-services-more-holder">
-                                        <i class="pt-arrow-left transition35"></i>
-                                        <a href="<?php echo esc_url( $button_url ); ?>" class="transition35"><?php echo esc_html( $button_text ); ?></a>
-                                        <i class="pt-arrow-right transition35"></i>
-                                    </div><!-- .pt-services-more-holder -->
-                                </div><!-- .pt-services-more -->
-
-                            <?php endif; ?>
-                        </div><!-- .swiper-container -->
-                    </div><!-- .col-md-12 -->
+                            </div><!-- .swiper-container -->
+                        </div><!-- .col-md-12 -->
+                    
+                    <?php endif; ?>
                 </div><!-- .row -->
             </div><!-- .container -->
         </div><!-- .pt-services-sec -->

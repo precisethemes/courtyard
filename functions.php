@@ -6,6 +6,8 @@
  *
  * @package courtyard
  */
+global $duplicate_posts;
+$duplicate_posts = array();
 
 if ( ! function_exists( 'courtyard_setup' ) ) :
 /**
