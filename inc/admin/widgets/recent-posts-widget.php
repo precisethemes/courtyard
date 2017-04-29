@@ -20,6 +20,7 @@ class courtyard_recent_posts_widget extends WP_Widget
                 'sub_title' => '',
                 'type' => 'latest',
                 'category' => '',
+                'post_limit' => '3',
                 'random_posts' => '0',
                 'background_color' => '',
             )
@@ -105,6 +106,24 @@ class courtyard_recent_posts_widget extends WP_Widget
 
                 <div class="pt-admin-input-label">
                     <label
+                    for="<?php echo $this->get_field_id('post_limit'); ?>"><?php esc_html_e('Count', 'courtyard'); ?></label>
+                </div><!-- .pt-admin-input-label -->
+
+                <div class="pt-admin-input-holder">
+                    <input type="number" min="1" max="50" id="<?php echo $this->get_field_id('post_limit'); ?>"
+                       name="<?php echo $this->get_field_name('post_limit'); ?>"
+                       value="<?php echo esc_attr($instance['post_limit']); ?>">
+                    <p><em><?php esc_html_e('Number of posts to display.', 'courtyard'); ?></em></p>
+                </div><!-- .pt-admin-input-holder -->
+
+                <div class="clear"></div>
+ 
+            </div><!-- .pt-admin-input-wrap -->
+
+            <div class="pt-admin-input-wrap">
+
+                <div class="pt-admin-input-label">
+                    <label
                     for="<?php echo $this->get_field_id('random_posts'); ?>"><?php esc_html_e('Random Post', 'courtyard'); ?></label>
                 </div><!-- .pt-admin-input-label -->
 
@@ -149,6 +168,7 @@ class courtyard_recent_posts_widget extends WP_Widget
         $instance['title'] = sanitize_text_field($new_instance['title']);
         $instance['type'] = $new_instance['type'];
         $instance['category'] = $new_instance['category'];
+        $instance['post_limit'] = absint($new_instance['post_limit']);
         $instance['random_posts'] = isset($new_instance['random_posts']) ? 1 : 0;
         $instance['background_color'] = sanitize_text_field($new_instance['background_color']);
         if ( current_user_can( 'unfiltered_html' ) )
@@ -167,19 +187,20 @@ class courtyard_recent_posts_widget extends WP_Widget
         $sub_title = isset($instance['sub_title']) ? $instance['sub_title'] : '';
         $type = isset($instance['type']) ? $instance['type'] : 'latest';
         $category = isset($instance['category']) ? $instance['category'] : '';
+        $pt_post_limit = isset($instance['post_limit']) ? $instance['post_limit'] : '3';
         $random_posts = !empty($instance['random_posts']) ? 'true' : 'false';
         $background_color = isset($instance['background_color']) ? $instance['background_color'] : null;
 
         if ($type == 'latest' && $random_posts == 'false') {
             $get_featured_posts = new WP_Query(array(
-                'posts_per_page' => intval(3),
+                'posts_per_page' => $pt_post_limit,
                 'post_type' => 'post',
                 'ignore_sticky_posts' => true,
                 'no_found_rows' => true,
             ));
         } elseif ($type == 'latest' && $random_posts == 'true') {
             $get_featured_posts = new WP_Query(array(
-                'posts_per_page' => intval(3),
+                'posts_per_page' => $pt_post_limit,
                 'post_type' => 'post',
                 'ignore_sticky_posts' => true,
                 'no_found_rows' => true,
@@ -187,14 +208,14 @@ class courtyard_recent_posts_widget extends WP_Widget
             ));
         } elseif ($type == 'category' && $random_posts == 'false') {
             $get_featured_posts = new WP_Query(array(
-                'posts_per_page' => intval(3),
+                'posts_per_page' => $pt_post_limit,
                 'post_type' => 'post',
                 'category__in' => $category,
                 'no_found_rows' => true,
             ));
         } elseif ($type == 'category' && $random_posts == 'true') {
             $get_featured_posts = new WP_Query(array(
-                'posts_per_page' => intval(3),
+                'posts_per_page' => $pt_post_limit,
                 'post_type' => 'post',
                 'category__in' => $category,
                 'no_found_rows' => true,
