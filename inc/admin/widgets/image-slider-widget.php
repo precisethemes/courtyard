@@ -18,7 +18,7 @@ class courtyard_image_slider_widget extends WP_Widget
             (array)$instance, array(
                 'title' => '',
                 'slide_no' => '4',
-                'scroll_down' => '0',
+                'scroll_down' => '1',
             )
         );
         $activate_bounce = $instance['scroll_down'] ? 'checked="checked"' : '';
@@ -60,7 +60,7 @@ class courtyard_image_slider_widget extends WP_Widget
                     <input type="number" min="1" max="30" id="<?php echo $this->get_field_id('slide_no'); ?>"
                        name="<?php echo $this->get_field_name('slide_no'); ?>"
                        value="<?php echo esc_attr($instance['slide_no']); ?>">
-                    <em><?php esc_html_e('Number of slides to display.', 'courtyard'); ?></em>
+                    <p><em><?php esc_html_e('Number of slides to display.', 'courtyard'); ?></em></p>
                 </div><!-- .pt-admin-input-holder -->
 
                 <div class="clear"></div>
@@ -79,7 +79,7 @@ class courtyard_image_slider_widget extends WP_Widget
                        id="<?php echo $this->get_field_id('scroll_down'); ?>"
                        name="<?php echo $this->get_field_name('scroll_down'); ?>"
                        value="<?php echo esc_attr($instance['scroll_down']); ?>">
-                    <p><em><?php esc_html_e('Check to disable the Scroll Down Arrow from slide.', 'courtyard'); ?></em></p>
+                    <p><em><?php esc_html_e('Uncheck to disable.', 'courtyard'); ?></em></p>
                 </div><!-- .pt-admin-input-holder -->
 
                 <div class="clear"></div>
@@ -135,6 +135,12 @@ class courtyard_image_slider_widget extends WP_Widget
 
         $countPosts = intval( $get_featured_pages->post_count );
 
+        if ( $countPosts == 1 ) {
+            $pt_slide_loop = 'false';
+        } else {
+            $pt_slide_loop = 'true';
+        }
+
         $data_attr = '';
         if ( $this->id == courtyard_fetch_first_frontpage_widget_id() ) {
             $data_attr = 'data-slider_id = "'.esc_attr( $this->id ).'"';
@@ -159,7 +165,7 @@ class courtyard_image_slider_widget extends WP_Widget
                         <?php if (has_post_thumbnail()) : ?>
 
                             <div class="swiper-slide">
-                                <div class="pt-hero-image-slide">
+                                <div class="pt-hero-image-slide" data-slide-loop="<?php echo esc_attr( $pt_slide_loop );?>">
                                     <figure>
                                         <img src="<?php echo esc_url( $image_path[0] ); ?>" alt="<?php echo esc_attr( $alt ); ?>" title="<?php the_title_attribute(); ?>" />
                                     </figure>
@@ -203,7 +209,7 @@ class courtyard_image_slider_widget extends WP_Widget
 
                 <?php endif; ?>
 
-                <?php if ( $pt_scroll_down != '1' ) : ?>
+                <?php if ( $pt_scroll_down == '1' ) : ?>
 
                     <i class="pt-arrow-down bounce transition5"></i>
 

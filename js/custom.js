@@ -82,16 +82,18 @@ jQuery(window).load(function() {
 			var container  = jQuery(this).find('.pt-hero-image-slider');
 			var nextButton = jQuery(this).find('.pt-hero-slider-nav .pt-arrow-right');
 			var prevButton = jQuery(this).find('.pt-hero-slider-nav .pt-arrow-left');
+			var pt_loop    = jQuery(this).find('.pt-hero-image-slide').data('slide-loop');
 
 			var dt_front_slider = new Swiper (container,{
 				nextButton: nextButton,
 				prevButton: prevButton,
 				slidesPerView: 1,
 				spaceBetween: 0,
-				loop: true,
+				loop: pt_loop,
 				autoplay: 3000,
 				speed: 1200,
 				effect: 'fade',
+				autoplayDisableOnInteraction: false,
 				preventClicks: false,
 				touchEventsTarget: 'swiper-wrapper',
 				paginationClickable: true,
