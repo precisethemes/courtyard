@@ -93,10 +93,11 @@
 
 		<?php courtyard_the_custom_header_markup(); ?>
 
-		<?php if( ! is_front_page() && ! is_home() ) :
+		<?php if( ! is_front_page() && ! is_home() && ( pt_is_realy_woocommerce_page() == false ) ) :
 
 			courtyard_display_breadcrumbs();
-			
-		endif; ?>
+
+		endif;
+        ?>
 
 	</header>

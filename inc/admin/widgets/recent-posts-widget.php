@@ -31,9 +31,7 @@ class courtyard_recent_posts_widget extends WP_Widget
         ?>
 
         <div class="pt-recent-posts">
-
             <div class="pt-admin-input-wrap">
-
                 <div class="pt-admin-input-label">
                     <label
                     for="<?php echo $this->get_field_id('title'); ?>"><?php esc_html_e('Title', 'courtyard'); ?></label>
@@ -47,11 +45,9 @@ class courtyard_recent_posts_widget extends WP_Widget
                 </div><!-- .pt-admin-input-holder -->
 
                 <div class="clear"></div>
- 
             </div><!-- .pt-admin-input-wrap -->
 
             <div class="pt-admin-input-wrap">
-
                 <div class="pt-admin-input-label">
                     <label
                     for="<?php echo $this->get_field_id('sub_title'); ?>"><?php esc_html_e('Sub Title', 'courtyard'); ?></label>
@@ -64,11 +60,9 @@ class courtyard_recent_posts_widget extends WP_Widget
                 </div><!-- .pt-admin-input-holder -->
 
                 <div class="clear"></div>
- 
             </div><!-- .pt-admin-input-wrap -->
 
             <div class="pt-admin-input-wrap">
-
                 <div class="pt-admin-input-label">
                     <label
                     for="<?php echo $this->get_field_id('type'); ?>"><?php esc_html_e('Post Type', 'courtyard'); ?></label>
@@ -84,11 +78,9 @@ class courtyard_recent_posts_widget extends WP_Widget
                 </div><!-- .pt-admin-input-holder -->
 
                 <div class="clear"></div>
- 
             </div><!-- .pt-admin-input-wrap -->
 
             <div class="pt-admin-input-wrap">
-
                 <div class="pt-admin-input-label">
                     <label
                     for="<?php echo $this->get_field_id('category'); ?>"><?php esc_html_e('Select Category', 'courtyard'); ?></label>
@@ -99,11 +91,9 @@ class courtyard_recent_posts_widget extends WP_Widget
                 </div><!-- .pt-admin-input-holder -->
 
                 <div class="clear"></div>
- 
             </div><!-- .pt-admin-input-wrap -->
 
             <div class="pt-admin-input-wrap">
-
                 <div class="pt-admin-input-label">
                     <label
                     for="<?php echo $this->get_field_id('post_limit'); ?>"><?php esc_html_e('Count', 'courtyard'); ?></label>
@@ -121,7 +111,6 @@ class courtyard_recent_posts_widget extends WP_Widget
             </div><!-- .pt-admin-input-wrap -->
 
             <div class="pt-admin-input-wrap">
-
                 <div class="pt-admin-input-label">
                     <label
                     for="<?php echo $this->get_field_id('random_posts'); ?>"><?php esc_html_e('Random Post', 'courtyard'); ?></label>
@@ -136,11 +125,9 @@ class courtyard_recent_posts_widget extends WP_Widget
                 </div><!-- .pt-admin-input-holder -->
 
                 <div class="clear"></div>
- 
             </div><!-- .pt-admin-input-wrap -->
 
             <div class="pt-admin-input-wrap">
-
                 <div class="pt-admin-input-label">
                     <label
                     for="<?php echo $this->get_field_id('background_color'); ?>"><?php esc_html_e('Color', 'courtyard'); ?></label>
@@ -155,7 +142,6 @@ class courtyard_recent_posts_widget extends WP_Widget
                 </div><!-- .pt-admin-input-holder -->
 
                 <div class="clear"></div>
- 
             </div><!-- .pt-admin-input-wrap -->
 
         </div><!-- .pt-recent-posts -->
@@ -256,7 +242,6 @@ class courtyard_recent_posts_widget extends WP_Widget
                             ?>
                             <div class="col-md-4 col-sm-6 col-sm-6">
                                 <div class="pt-recent-posts-col">
-
                                     <figure>
                                         <a title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>">
                                             <?php if ( !has_post_thumbnail() ) : ?>
@@ -285,13 +270,11 @@ class courtyard_recent_posts_widget extends WP_Widget
 
                                         <p><?php echo wp_trim_words(get_the_excerpt(), 18, ''); ?></p>
 
-                                        <div class="pt-recent-posts-read-more">
+                                        <div class="pt-read-more">
                                             <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php echo esc_html__('Read More', 'courtyard'); ?></a>
-                                        </div><!-- .pt-recent-posts-read-more -->
-
+                                        </div><!-- .pt-read-more -->
                                     </article><!-- .pt-recent-posts-cont -->
                                 </div><!-- .pt-recent-posts-col -->
-
                             </div><!-- .col-md-4 -->
                         <?php endwhile;
                         // Reset Post Data

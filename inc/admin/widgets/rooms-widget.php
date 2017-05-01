@@ -30,7 +30,6 @@ class courtyard_rooms_widget extends WP_Widget {
         </div><!-- .pt-admin-input-wrap -->
 
         <div class="pt-admin-input-wrap">
-
           <div class="pt-admin-input-label">
               <label
               for="<?php echo $this->get_field_id('title'); ?>"><?php esc_html_e('Title', 'courtyard'); ?></label>
@@ -44,11 +43,9 @@ class courtyard_rooms_widget extends WP_Widget {
           </div><!-- .pt-admin-input-holder -->
 
           <div class="clear"></div>
-
         </div><!-- .pt-admin-input-wrap -->
 
         <div class="pt-admin-input-wrap">
-
           <div class="pt-admin-input-label">
               <label
               for="<?php echo $this->get_field_id('sub_title'); ?>"><?php esc_html_e('Sub Title', 'courtyard'); ?></label>
@@ -61,11 +58,9 @@ class courtyard_rooms_widget extends WP_Widget {
           </div><!-- .pt-admin-input-holder -->
 
           <div class="clear"></div>
-
       </div><!-- .pt-admin-input-wrap -->
 
       <div class="pt-admin-input-wrap">
-
           <div class="pt-admin-input-label">
               <label
               for="<?php echo $this->get_field_id('room_limit'); ?>"><?php esc_html_e('Count', 'courtyard'); ?></label>
@@ -79,11 +74,9 @@ class courtyard_rooms_widget extends WP_Widget {
           </div><!-- .pt-admin-input-holder -->
 
           <div class="clear"></div>
-
         </div><!-- .pt-admin-input-wrap -->
 
       <div class="pt-admin-input-wrap">
-
         <div class="pt-admin-input-label">
           <label for="<?php echo $this->get_field_id( 'button_text' ); ?>"><?php esc_html_e( 'Button Text', 'courtyard' ); ?></label>
         </div><!-- .pt-admin-input-label -->
@@ -93,7 +86,6 @@ class courtyard_rooms_widget extends WP_Widget {
         </div><!-- .pt-admin-input-holder -->
 
         <div class="clear"></div>
-
       </div><!-- .pt-admin-input-wrap -->
 
       <div class="pt-admin-input-wrap">
@@ -107,11 +99,9 @@ class courtyard_rooms_widget extends WP_Widget {
         </div><!-- .pt-admin-input-holder -->
 
         <div class="clear"></div>
-
       </div><!-- .pt-admin-input-wrap -->
 
       <div class="pt-admin-input-wrap">
-
         <div class="pt-admin-input-label">
             <label
             for="<?php echo $this->get_field_id('background_color'); ?>"><?php esc_html_e('Color', 'courtyard'); ?></label>
@@ -125,8 +115,7 @@ class courtyard_rooms_widget extends WP_Widget {
             <p><em><?php esc_html_e('Choose the background color for the widget section.', 'courtyard'); ?></em></p>
         </div><!-- .pt-admin-input-holder -->
 
-          <div class="clear"></div>
-
+        <div class="clear"></div>
       </div><!-- .pt-admin-input-wrap -->
 
       </div><!-- .pt-room -->
@@ -235,7 +224,11 @@ class courtyard_rooms_widget extends WP_Widget {
                                       <a title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>"><i class="pt-arrow-right transition5"></i></a>
                                       <h3><a title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 
-                                      <p><?php echo wp_trim_words( get_the_excerpt(), 22, '' ); ?></p>
+                                      <p><?php echo wp_trim_words( get_the_excerpt(), 22, ' ...' ); ?></p>
+
+                                      <div class="pt-read-more">
+                                          <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php echo esc_html__('Read More', 'courtyard'); ?></a>
+                                      </div><!-- .pt-read-more -->
                                   </div><!-- .pt-room-cont -->
                               </div><!-- .pt-room-col -->
                             </div><!-- .swiper-slide -->

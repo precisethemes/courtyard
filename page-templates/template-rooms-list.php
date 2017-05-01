@@ -45,22 +45,27 @@ get_header(); ?>
 					$room_thumbnail = '<img src="'.esc_url( $image_path[0] ).'" alt="'.esc_attr( $image_alt ).'" title="'.esc_attr( $title_attribute ).'" />';
 					?>
 
-					<div class="pt-room-col col-md-4">
+					<div class="col-md-4">
+                        <div class="pt-room-col">
 
-						<?php if( has_post_thumbnail() ) : ?>
-							<figure>
-								<a title="<?php esc_attr( $title_attribute ); ?>" href="<?php the_permalink(); ?>"><?php echo $room_thumbnail; ?></a>
-							</figure>
-						<?php endif; ?>
+                            <?php if( has_post_thumbnail() ) : ?>
+                                <figure>
+                                    <a title="<?php esc_attr( $title_attribute ); ?>" href="<?php the_permalink(); ?>"><?php echo $room_thumbnail; ?></a>
+                                </figure>
+                            <?php endif; ?>
 
-						<div class="pt-room-cont transition35">
-							<a title="<?php esc_attr( $title_attribute ); ?>" href="<?php the_permalink(); ?>"><i class="pt-arrow-right transition5"></i></a>
-							<h3><a title="<?php esc_attr( $title_attribute ); ?>" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                            <div class="pt-room-cont transition35">
+                                <a title="<?php esc_attr( $title_attribute ); ?>" href="<?php the_permalink(); ?>"><i class="pt-arrow-right transition5"></i></a>
+                                <h3><a title="<?php esc_attr( $title_attribute ); ?>" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 
-							<p><?php echo wp_trim_words( get_the_excerpt(), 22, '' ); ?></p>
-						</div><!-- .pt-room-cont -->
+                                <p><?php echo wp_trim_words( get_the_excerpt(), 22, '' ); ?></p>
 
-					</div><!-- .pt-room-col -->
+                                <div class="pt-read-more">
+                                    <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php echo esc_html__('Read More', 'courtyard'); ?></a>
+                                </div><!-- .pt-read-more -->
+                            </div><!-- .pt-room-cont -->
+					    </div><!-- .pt-room-col -->
+                    </div>
 
 					<?php endwhile;
 

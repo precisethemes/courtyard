@@ -126,7 +126,7 @@ add_action('admin_enqueue_scripts', 'courtyard_admin_scripts');
 * Footer credits
 */
 function courtyard_footer_credits() {
-    printf( __( 'Copyright &copy; %1$s %3$s %2$s.', 'courtyard' ), date('Y'), esc_html__('All rights reserved','courtyard'), '<a href="'.esc_url( home_url( '/' ) ) .'">' . esc_html( get_bloginfo( 'name', 'display' ) ) . '</a>' );
+    printf( __( 'Copyright &copy; %1$s %3$s. %2$s.', 'courtyard' ), date('Y'), esc_html__('All rights reserved','courtyard'), '<a href="'.esc_url( home_url( '/' ) ) .'">' . esc_html( get_bloginfo( 'name', 'display' ) ) . '</a>' );
     echo '<span class="sep"> | </span>';
     printf( __( 'Designed by %2$s', 'courtyard' ), '', '<a href="'.esc_url( __('http://precisethemes.com/','courtyard' ) ) .'" rel="designer" target="_blank">Precise Themes</a>' );
 }
@@ -699,7 +699,6 @@ if ( ! function_exists( 'courtyard_fetch_first_frontpage_widget_id' ) ) :
 endif;
 
 /*--------------------------------------------------------------------------------------------------*/
-
 if ( ! function_exists ( 'courtyard_page_thumbnail' ) ) :
     function courtyard_page_thumbnail(){
         global $post;
@@ -729,5 +728,36 @@ if ( ! function_exists ( 'courtyard_page_thumbnail' ) ) :
             $thumbnail .= '</span>';
         }
         return $thumbnail;
+    }
+endif;
+
+/*--------------------------------------------------------------------------------------------------*/
+/**
+ * Returns true if on a page which uses WooCommerce templates.
+ */
+if ( ! function_exists ( 'pt_is_realy_woocommerce_page' ) ) :
+    function pt_is_realy_woocommerce_page () {
+        if(  function_exists ( "is_woocommerce" ) && is_woocommerce()){
+            return true;
+        }
+        $woocommerce_keys   =   array (
+            "woocommerce_shop_page_id" ,
+            "woocommerce_terms_page_id" ,
+            "woocommerce_cart_page_id" ,
+            "woocommerce_checkout_page_id" ,
+            "woocommerce_pay_page_id" ,
+            "woocommerce_thanks_page_id" ,
+            "woocommerce_myaccount_page_id" ,
+            "woocommerce_edit_address_page_id" ,
+            "woocommerce_view_order_page_id" ,
+            "woocommerce_change_password_page_id" ,
+            "woocommerce_logout_page_id" ,
+            "woocommerce_lost_password_page_id" ) ;
+        foreach ( $woocommerce_keys as $wc_page_id ) {
+            if ( get_the_ID () == get_option ( $wc_page_id , 0 ) ) {
+                return true ;
+            }
+        }
+        return false;
     }
 endif;

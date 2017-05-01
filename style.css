@@ -4,7 +4,7 @@ Theme URI: http://precisethemes.com/wordpress-theme/courtyard/
 Author: Precise Themes
 Author URI: https://precisethemes.com/
 Description: Courtyard - Responsive WordPress Theme is clean, minimalistic and beautifully designed theme perfectly for Hotel and Resorts. Courtyard theme can likewise be utilized to make site for Motel, Boarding House, Guest House, Lodge, Bed and Breakfast, B&B, Hostel, Inn Hospitality Business, Restaurant, Cuisine, Cafe, and some other kind of site you can envision with effectively adaptable and easily customizable landing page. Preview Demo is available at http://demo.precisethemes.com/courtyard/
-Version: 1.1.0
+Version: 1.1.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: courtyard
@@ -1228,7 +1228,6 @@ a.pt-secondary-logo-show img,
 }
 
 .pt-post-wrap {
-	margin-bottom: 80px;
 	background: #fff;
 }
 
@@ -1244,7 +1243,6 @@ a.pt-secondary-logo-show img,
 
 .pt-content-wrap .entry-title {
 	font-weight: normal;
-	text-align: center;
 	font-size: 36px;
 	line-height: 1.4em;
 }
@@ -1268,14 +1266,6 @@ a.pt-secondary-logo-show img,
 	font-size: 14px;
 }
 
-.pt-content-wrap .entry-meta {
-	text-align: center;
-}
-
-.pt-content-wrap .pt-single-entry-meta {
-	text-align: left;
-}
-
 .pt-content-wrap .entry-meta .fa {
 	margin-right: 5px;
 	font-size: 16px;
@@ -1283,14 +1273,7 @@ a.pt-secondary-logo-show img,
 }
 
 .pt-content-wrap .posted-on {
-	display: inline-block;
-	margin: 0 15px;
-	padding: 5px 10px;
-}
-
-.pt-content-wrap .pt-single-entry-meta span.posted-on,
-.pt-content-wrap .pt-single-entry-meta span.byline {
-	margin: 0 40px 0 0;
+	margin: 0 20px 0 0;
 	padding: 0;
 	display: inline-block;
 }
@@ -1326,33 +1309,6 @@ a.pt-secondary-logo-show img,
 	font-size: 16px;
 	line-height: 1.8em;
 	color: #757575;
-}
-
-.pt-content-wrap .entry-summary {
-	text-align: center;
-}
-
-.pt-content-wrap .read-more {
-	text-align: center;
-}
-
-.pt-content-wrap .read-more a {
-	display: inline-block;
-	margin: 10px 0 25px;
-	padding: 15px 30px 13px;
-	border: 2px solid rgba(39,48,57,.25);
-	color: rgba(39,48,57,.6);
-	font-weight: 500;
-	border-radius: 30px;
-	font-size: 15px;
-	line-height: 1em;
-	text-transform: uppercase;
-}
-
-.pt-content-wrap .read-more a:hover {
-	background: #673ab7;
-	border-color: transparent;
-	color: #fff;
 }
 
 /*--------------------------------------------------------------
@@ -1436,7 +1392,10 @@ a.pt-secondary-logo-show img,
 	padding: 80px 0;
 }
 
-.pt-front-page .widget-title {
+.pt-front-page .widget-title,
+.page-template-template-rooms-list h1,
+.page-template-template-services-list h1,
+.page-template-template-packages-list h1 {
 	margin-top: 0;
 	font-size: 48px;
 	line-height: 1.2em;
@@ -1712,7 +1671,7 @@ section.pt-image-slider-section {
 }
 
 .pt-room-cont p:before,
-.pt-recent-posts-read-more a:before {
+.pt-read-more a:before {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -1725,7 +1684,7 @@ section.pt-image-slider-section {
 }
 
 .pt-room-col:hover p:before,
-.pt-recent-posts-read-more:hover a:before {
+.pt-read-more:hover a:before {
 	background: #673ab7;
 	opacity: .8;
 	width: 80px;
@@ -1746,7 +1705,7 @@ section.pt-image-slider-section {
 	width: 320px;
 	margin: 0 auto;
 	position: relative;
-	padding: 10px 0 0;
+	padding: 10px 0;
 }
 
 .pt-services-more .pt-arrow-left,
@@ -1926,7 +1885,7 @@ section.pt-image-slider-section {
 .pt-services-more a,
 .pt-rooms-more a,
 .pt-recent-posts-posts-more a,
-.pt-recent-posts-read-more a {
+.pt-read-more a {
 	display: inline-block;
 	color: #424242;
 	font-size: 16px;
@@ -2201,18 +2160,18 @@ a.pt-holiday-package-read-more:visited {
 	padding: 13px;
 }
 
-.pt-recent-posts-read-more {
+.pt-read-more {
 	margin-top: 30px;
 }
 
-.pt-recent-posts-read-more a {
+.pt-read-more a {
 	position: relative;
 	padding-bottom: 10px;
 	color: #757575;
 	font-size: 15px;
 }
 
-.pt-recent-posts-read-more a:before {
+.pt-read-more a:before {
 	top: auto;
 	bottom: 0;
 	width: 30px;
@@ -2220,7 +2179,7 @@ a.pt-holiday-package-read-more:visited {
 	opacity: .8;
 }
 
-.pt-recent-posts-read-more:hover a:before {
+.pt-read-more:hover a:before {
 	width: 100%;
 }
 
@@ -2232,6 +2191,10 @@ a.pt-holiday-package-read-more:visited {
 	border: 1px solid #e0e0e0;
 	padding: 20px;
 	background: #fff;
+}
+
+#secondary .widget:nth-last-child(1) {
+	margin-bottom: 0;
 }
 
 #secondary .widget-title {
@@ -2304,7 +2267,6 @@ a.pt-holiday-package-read-more:visited {
 }
 
 .pt-footer-wrapper {
-	margin-top: 100px;
 	font-size: 15px;
 	line-height: 1.8em;
 	letter-spacing: .03em;
@@ -2430,9 +2392,25 @@ footer.site-footer a:hover {
 # Max width 1200px
 --------------------------------------------------------------*/
 @media screen and (max-width: 1200px) {
+	.pt-header-sep {
+		height: 88px;
+	}
+
+	.pt-header-sep-hide {
+		height: 0;
+	}
+
 	/*
 	** Main Menu
 	*/
+	.pt-menu {
+		display: none;
+	}
+
+	.pt-menu-sm {
+		display: block;
+	}
+
 	.pt-menu li {
 		font-size: 14px;
 	}
@@ -2443,6 +2421,10 @@ footer.site-footer a:hover {
 
 	.pt-menu li li a {
 		padding: 13px 20px 11px;
+	}
+
+	.pt-primary-wrap, #secondary {
+		margin-top: 20px;
 	}
 
 	/*
@@ -2509,17 +2491,6 @@ footer.site-footer a:hover {
 # Max width 992px
 --------------------------------------------------------------*/
 @media screen and (max-width: 992px) {
-	/*
-	** Main Menu
-	*/
-	.pt-menu {
-		display: none;
-	}
-
-	.pt-menu-sm {
-		display: block;
-	}
-
 	/*
 	** Hero Slider
 	*/
@@ -2602,6 +2573,13 @@ footer.site-footer a:hover {
 # Max width 768px
 --------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
+	.pt-header-sep {
+		height: 58px;
+	}
+
+	.pt-header-sep-hide {
+		height: 0;
+	}
 	/*
 	** Logo
 	*/
@@ -2648,7 +2626,7 @@ footer.site-footer a:hover {
 
 	.pt-hero-image-cont-holder {
 		height: 160px;
-		top: 0;
+		top: -45px;
 	}
 
 	.pt-hero-image-cont h1 {
@@ -2780,7 +2758,7 @@ footer.site-footer a:hover {
 	}
 
 	.pt-hero-image-cont article a {
-		margin-top: 0;
+		display: none;
 	}
 
 	/*
@@ -2836,6 +2814,19 @@ footer.site-footer a:hover {
 
 	.pt-recent-posts-col {
 		margin-bottom: 60px;
+	}
+
+	#back-to-top.show:hover {
+		width: 52px;
+	}
+
+	.back-to-top-text {
+		width: 0;
+		height: 0;
+	}
+
+	#back-to-top:hover .back-to-top-text {
+		right: 52px;
 	}
 
 }

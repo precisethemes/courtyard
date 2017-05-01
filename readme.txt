@@ -1,7 +1,7 @@
 === Courtyard ===
 
 Contributors: Precise Themes
-Version: 1.1.0
+Version: 1.1.1
 Requires at least: 4.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -106,6 +106,13 @@ Screenshot images licensed under CC0 Public Domain (http://creativecommons.org/p
   Source: https://unsplash.com/photos/w04Uo0y8UyI
 
 === Changelog ===
+
+Version: 1.1.1 - May 01, 2017
+* Changed blog layout.
+* Added read more for listing of page template: Room
+* Fixed Slider issues.
+* Added post limit for widgets: Hero Image Slider, Recent Posts, Rooms and Services.
+* Fixed WooCommerce breadcrumbs.
 
 Version: 1.1.0 - Apr 09, 2017
 * Added dynamic WooCommerce sidebar layout.

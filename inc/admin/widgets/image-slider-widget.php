@@ -32,7 +32,6 @@ class courtyard_image_slider_widget extends WP_Widget
             </div><!-- .pt-admin-input-wrap -->
 
             <div class="pt-admin-input-wrap">
-
                 <div class="pt-admin-input-label">
                     <label
                     for="<?php echo $this->get_field_id('title'); ?>"><?php esc_html_e('Title', 'courtyard'); ?></label>
@@ -46,11 +45,9 @@ class courtyard_image_slider_widget extends WP_Widget
                 </div><!-- .pt-admin-input-holder -->
 
                 <div class="clear"></div>
- 
             </div><!-- .pt-admin-input-wrap -->
 
             <div class="pt-admin-input-wrap">
-
                 <div class="pt-admin-input-label">
                     <label
                     for="<?php echo $this->get_field_id('slide_no'); ?>"><?php esc_html_e('Count', 'courtyard'); ?></label>
@@ -68,7 +65,6 @@ class courtyard_image_slider_widget extends WP_Widget
             </div><!-- .pt-admin-input-wrap -->
 
             <div class="pt-admin-input-wrap">
-
                 <div class="pt-admin-input-label">
                     <label
                     for="<?php echo $this->get_field_id('scroll_down'); ?>"><?php esc_html_e('Scroll Down', 'courtyard'); ?></label>
@@ -151,7 +147,6 @@ class courtyard_image_slider_widget extends WP_Widget
         <?php if ( !empty( $pt_slide_pages ) ) : ?>
 
             <div class="swiper-container pt-hero-image-slider" <?php echo $data_attr; ?>>
-            
                 <div class="swiper-wrapper">
 
                     <?php while ($get_featured_pages->have_posts()) : $get_featured_pages->the_post();
@@ -177,7 +172,7 @@ class courtyard_image_slider_widget extends WP_Widget
                                                     <div class="col-md-12">
                                                         <div class="pt-hero-image-cont">
                                                             <header class="animated fadeInUp">
-                                                                <h1><?php the_title(); ?></h1>
+                                                                <h1><a class="transition5" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
                                                             </header>
 
                                                             <article class="animated fadeInUp">
