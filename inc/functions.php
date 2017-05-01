@@ -530,12 +530,6 @@ if ( ! function_exists( 'courtyard_breadcrumbs' ) ) :
 
                 // 404 page
                 echo '<li class="pt-breadcrumbs-item"><span>'.esc_html__('404 Error', 'courtyard').'</span></li>';
-            } elseif ( is_shop() ) {
-
-                // Shop Page
-                $shop_page_id = wc_get_page_id( 'shop' );
-                $shop_page    = get_post( $shop_page_id );
-                echo '<li class="pt-breadcrumbs-item"><span>'.esc_html( get_the_title( $shop_page ) ).'</span></li>';
             }
 
             echo '</ul>';

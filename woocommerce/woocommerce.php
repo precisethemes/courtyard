@@ -33,13 +33,49 @@ function courtyard_woo_actions() {
     add_action('woocommerce_before_main_content', 'courtyard_wrapper_start', 10);
     add_action('woocommerce_after_main_content', 'courtyard_wrapper_end', 10);
     add_action( 'woocommerce_sidebar', 'courtyard_woocommerce_sidebar', 20 ); 
+    add_action( 'woo_custom_breadcrumb', 'courtyard_woocommerce_breadcrumb' );
+
+    add_filter( 'woocommerce_breadcrumb_defaults', 'my_woocommerce_breadcrumbs' );
 }
 add_action('wp','courtyard_woo_actions');
+
+/**
+ * WooCommerce Breadcrum before theme wrappers
+ */
+function courtyard_woocommerce_breadcrumb(){
+    echo '<div class="container">';
+    echo '<div class="row">';
+    echo '<div class="col-md-12">';
+    woocommerce_breadcrumb();
+    echo '</div>';
+    echo '</div>';
+    echo '</div>';
+
+}
+
+function my_woocommerce_breadcrumbs() {
+    $delimiter = get_theme_mod( 'courtyard_breadcrumbs_sep', '/' );
+    if ( $delimiter == '' ) {
+        $delimiter    = '/'; // delimiter between crumbs
+    }
+    $home_title       = esc_html__('Home', 'courtyard');
+    return array(
+        'delimiter'   => '<li class="pt-breadcrumbs-delimiter">'.$delimiter.'</li>',
+        'wrap_before' => '<ul class="pt-breadcrumbs-items">',
+        'wrap_after'  => '</ul>',
+        'before'      => '<li>',
+        'after'       => '</li>',
+        'home'        => $home_title,
+    );
+}
 
 /**
  * Theme wrappers
  */
 function courtyard_wrapper_start() {
+
+    do_action('woo_custom_breadcrumb');
+
     echo '<div class="container">';
     echo    '<div class="row"><div id="primary" class="pt-primary-wrap '.esc_attr( courtyard_woocommerce_primary_sidebar_class() ).'">';
     echo        '<div class="pt-content-wrap pt-content-wrap-border">';
@@ -55,33 +91,6 @@ function courtyard_woocommerce_sidebar( ) {
     echo    '</div>';
     echo '</div>';
 };
-
-/*---------------------------------------------------------------------------------------------------------------*/
-
-if ( ! function_exists( 'courtyard_woocommerce_widgets_init' ) ) :
-add_action( 'widgets_init', 'courtyard_woocommerce_widgets_init' );
-/**
- * Register widget area related to WooCommerce.
- *
- * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
- */
-function courtyard_woocommerce_widgets_init() {
-
-    // Register sidebar for WooCommerce Pages
-    $woocommerce_sidebar = get_theme_mod( 'courtyard_pro_woocommerce_new_sidebar_activate', '' );
-    if ( '' != $woocommerce_sidebar ) {
-        register_sidebar( array(
-            'name'          => esc_html__( 'WooCommerce - Sidebar', 'courtyard' ),
-            'id'            => 'pt_woocommerce_sidebar',
-            'description'   => esc_html__( 'Add widgets in your WooCommerce sidebar of theme.', 'courtyard' ),
-            'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-            'after_widget'  => '</aside>',
-            'before_title'  => '<h2 class="widget-title">',
-            'after_title'   => '</h2>'
-        ) );
-    }
-}
-endif;
 
 /*---------------------------------------------------------------------------------------------------------------*/
 
