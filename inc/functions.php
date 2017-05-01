@@ -630,7 +630,7 @@ if ( ! function_exists ( 'courtyard_related_pages_listing' ) ) :
 
         if ( is_page_template( 'page-templates/template-packages.php' ) || is_page_template( 'page-templates/template-services.php' ) || is_page_template( 'page-templates/template-rooms.php' ) ) {
 
-            if ( '0' == $disable || $disable == '' ) {
+            if ( '1' == $disable ) {
                 $get_featured_pages = new WP_Query( array(
                     'no_found_rows'   => true,
                     'post_status'     => 'publish',

@@ -251,7 +251,7 @@ class Courtyard_Room_Related_Post_Meta_Box {
 		<div class="pt-input-wrap">
 			<div class="pt-input-holder">
 				<input type="checkbox" id="room_related_posts_checkbox" name="room_related_posts_checkbox" value="<?php echo esc_attr( $room_checkbox ); ?>" <?php echo checked( $room_checkbox, '1', false ); ?>>
-				<em><?php echo esc_html__( 'Check to disable related rooms in single page widget sidebar area.', 'courtyard' ); ?></em>
+				<label for="room_related_posts_checkbox"><?php echo esc_html__( 'Enable related rooms.', 'courtyard' ); ?></label>
 			</div><!-- .pt-input-holder -->
 		</div><!-- .pt-input-wrap -->
 
@@ -347,7 +347,7 @@ class Courtyard_Service_Related_Post_Meta_Box {
 		<div class="pt-input-wrap">
 			<div class="pt-input-holder">
 				<input type="checkbox" id="service_related_posts_checkbox" name="service_related_posts_checkbox" value="<?php echo esc_attr( $service_checkbox ); ?>" <?php echo checked( $service_checkbox, '1', false ); ?>>
-				<em><?php echo esc_html__( 'Check to disable related services in single service page widget sidebar area.', 'courtyard' ); ?></em>
+				<label for="service_related_posts_checkbox"><?php echo esc_html__( 'Enable related services.', 'courtyard' ); ?></label>
 			</div><!-- .pt-input-holder -->
 		</div><!-- .pt-input-wrap -->
 
@@ -443,7 +443,7 @@ class Courtyard_Packages_Related_Post_Meta_Box {
 		<div class="pt-input-wrap">
 			<div class="pt-input-holder">
 				<input type="checkbox" id="packages_related_posts_checkbox" name="packages_related_posts_checkbox" value="<?php echo esc_attr( $packages_checkbox ); ?>" <?php echo checked( $packages_checkbox, '1', false ); ?>>
-				<em><?php echo esc_html__( 'Check to disable related packages in single packages page widget sidebar area.', 'courtyard' ); ?></em>
+				<label for="packages_related_posts_checkbox"><?php echo esc_html__( 'Enable related packages.', 'courtyard' ); ?></label>
 			</div><!-- .pt-input-holder -->
 		</div><!-- .pt-input-wrap -->
 
