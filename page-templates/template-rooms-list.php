@@ -38,21 +38,26 @@ get_header(); ?>
 				if ( $get_featured_pages->have_posts() ) : ?>
 
 					<?php while( $get_featured_pages->have_posts() ) : $get_featured_pages->the_post();
-					$title_attribute          = the_title_attribute( 'echo=0' );
-					$image_id                 = get_post_thumbnail_id();
-					$image_path               = wp_get_attachment_image_src( $image_id, 'courtyard-400x260', true );
-					$image_alt                = get_post_meta( $image_id, '_wp_attachment_image_alt', true );
-					$room_thumbnail = '<img src="'.esc_url( $image_path[0] ).'" alt="'.esc_attr( $image_alt ).'" title="'.esc_attr( $title_attribute ).'" />';
+					$custom_image = get_template_directory_uri() . '/inc/admin/images/courtyard-default-400x260.jpg';
+					$title_attribute = the_title_attribute( 'echo=0' );
+					$image_id = get_post_thumbnail_id();
+					$image_path = wp_get_attachment_image_src( $image_id, 'courtyard-400x260', true );
+					$image_alt = get_post_meta( $image_id, '_wp_attachment_image_alt', true );
+                    $alt = !empty( $image_alt ) ? $image_alt : the_title_attribute( 'echo=0' ) ;
 					?>
 
 					<div class="col-md-4">
                         <div class="pt-room-col">
 
-                            <?php if( has_post_thumbnail() ) : ?>
-                                <figure>
-                                    <a title="<?php esc_attr( $title_attribute ); ?>" href="<?php the_permalink(); ?>"><?php echo $room_thumbnail; ?></a>
-                                </figure>
-                            <?php endif; ?>
+                            <figure>
+                                <a title="<?php esc_attr( $title_attribute ); ?>" href="<?php the_permalink(); ?>">
+									<?php if ( has_post_thumbnail() ) : ?>
+										<img src="<?php echo esc_url( $image_path[0] ); ?>" alt="<?php echo esc_attr( $alt ); ?>" title="<?php the_title_attribute(); ?>" />
+									<?php else : ?>
+										<img src="<?php echo esc_url( $custom_image ); ?>" alt="<?php echo esc_attr( $alt ); ?>" title="<?php the_title_attribute(); ?>" />
+									<?php endif; ?>
+                                </a>
+                            </figure>
 
                             <div class="pt-room-cont transition35">
                                 <a title="<?php esc_attr( $title_attribute ); ?>" href="<?php the_permalink(); ?>"><i class="pt-arrow-right transition5"></i></a>

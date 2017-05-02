@@ -42,20 +42,23 @@ get_header(); ?>
                 <?php if ($get_featured_pages->have_posts()) : ?>
 
                     <?php while ($get_featured_pages->have_posts()) : $get_featured_pages->the_post();
+                        $custom_image = get_template_directory_uri() . '/inc/admin/images/courtyard-default.png';
                         $title_attribute = the_title_attribute('echo=0');
                         $image_id = get_post_thumbnail_id();
                         $image_path = wp_get_attachment_image_src($image_id, 'courtyard-400x300', true);
-                        $image_alt = get_post_meta($image_id, '_wp_attachment_image_alt', true);
-                        $holiday_package_thumbnail = '<img src="' . esc_url($image_path[0]) . '" alt="' . esc_attr($image_alt) . '" title="' . esc_attr($title_attribute) . '" />';
+                        $image_alt = get_post_meta( $image_id, '_wp_attachment_image_alt', true );
+                        $alt = !empty( $image_alt ) ? $image_alt : the_title_attribute( 'echo=0' ) ;
                         ?>
 
                         <div class="col-md-4">
                             <div class="pt-holiday-package">
-                                <?php if (has_post_thumbnail()) : ?>
-                                    <figure>
-                                        <?php echo $holiday_package_thumbnail; ?>
-                                    </figure>
-                                <?php endif; ?>
+                                <figure>
+                                    <?php if ( has_post_thumbnail() ) : ?>
+                                        <img src="<?php echo esc_url( $image_path[0] ); ?>" alt="<?php echo esc_attr( $alt ); ?>" title="<?php the_title_attribute(); ?>" />
+                                    <?php else : ?>
+                                        <img src="<?php echo esc_url( $custom_image ); ?>" alt="<?php echo esc_attr( $alt ); ?>" title="<?php the_title_attribute(); ?>" />
+                                    <?php endif; ?>
+                                </figure>
 
                                 <div class="pt-holiday-package-cont transition5">
                                     <div class="pt-holiday-package-cont-holder">
