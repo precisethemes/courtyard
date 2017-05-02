@@ -108,7 +108,7 @@ class courtyard_image_slider_widget extends WP_Widget
         global $post, $duplicate_posts;
         $title = apply_filters('widget_title', isset($instance['title']) ? $instance['title'] : '');
         $pt_slide_limit = isset($instance['slide_no']) ? $instance['slide_no'] : '4';
-        $pt_scroll_down = !empty($instance['scroll_down']) ? 1 : 0;
+        $pt_scroll_down = isset($instance['scroll_down']) ? $instance['scroll_down'] : '1';
 
         $pt_slide_pages = array();
         $pt_pages = get_pages();
