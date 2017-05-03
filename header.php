@@ -82,6 +82,19 @@
 									<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 							</div>
 						</nav><!-- .pt-menu -->
+
+						<?php if( class_exists( 'WooCommerce' ) ) : ?>
+							<div class="cart-wrap">
+								<div class="pt-cart-views">
+									<a href="<?php echo esc_url( WC()->cart->get_cart_url() ); ?>" class="wcmenucart-contents">
+										<i class="fa fa-shopping-cart"></i>
+										<span class="cart-value"><?php echo wp_kses_data ( WC()->cart->get_cart_contents_count() ); ?></span>
+									</a>
+								</div>
+								<?php the_widget( 'WC_Widget_Cart', '' ); ?>
+							</div><!-- .cart-wrap -->
+						<?php endif; ?>
+
 					</div><!-- .col-md-8 -->
 				</div><!-- .row -->
 			</div><!-- .container -->
