@@ -12,7 +12,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'pt-post-wrap' ); ?>>
 
 	<?php
-	$custom_image = get_template_directory_uri() . '/inc/admin/images/courtyard-default.png';
+	$pt_content_border = 'pt-content-wrap-border';
 	$sidebar_class = courtyard_sidebar_layout_class();
 	if ( $sidebar_class == 'no_sidebar_full_width' ) {
 		$img_size = 'courtyard-1200x750';
@@ -25,27 +25,19 @@
 	$alt 					= !empty( $image_alt ) ? $image_alt : the_title_attribute( 'echo=0' ) ;
 	?>
 
-	<?php if ( is_singular() ) : ?>
+	<?php if ( has_post_thumbnail() ) : $pt_content_border = ''; ?>
 		<figure>
-			<?php if ( !has_post_thumbnail() ) : ?>
-				<img src="<?php echo esc_url( $custom_image ); ?>" alt="<?php echo esc_attr( $alt ); ?>" title="<?php the_title_attribute(); ?>" />
-			<?php else : ?>
+			<?php if ( is_singular() ) : ?>
 				<img src="<?php echo esc_url( $image_path[0] ); ?>" alt="<?php echo esc_attr( $alt ); ?>" title="<?php the_title_attribute(); ?>" />
-			<?php endif; ?>
-		</figure>
-	<?php else : ?>
-		<figure>
-			<a title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>">
-				<?php if ( !has_post_thumbnail() ) : ?>
-					<img src="<?php echo esc_url( $custom_image ); ?>" alt="<?php echo esc_attr( $alt ); ?>" title="<?php the_title_attribute(); ?>" />
-				<?php else : ?>
+			<?php else : ?>
+				<a title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>">
 					<img src="<?php echo esc_url( $image_path[0] ); ?>" alt="<?php echo esc_attr( $alt ); ?>" title="<?php the_title_attribute(); ?>" />
-				<?php endif; ?>
-			</a>
+				</a>	
+			<?php endif; ?>
 		</figure>
 	<?php endif; ?>
 
-	<div class="pt-content-wrap pt-content-wrap-border">
+	<div class="pt-content-wrap <?php echo esc_attr( $pt_content_border ); ?>">
 		<header class="entry-header">
 			<?php
 			if ( is_single() ) :

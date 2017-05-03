@@ -11,24 +11,22 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'pt-post-wrap' ); ?>>
 	<?php
-	$custom_image 			= get_template_directory_uri() . '/inc/admin/images/courtyard-default.png';
+	$pt_content_border 		= 'pt-content-wrap-border';
 	$image_id               = get_post_thumbnail_id();
 	$image_path             = wp_get_attachment_image_src( $image_id, 'courtyard-800x500', true );
 	$image_alt              = get_post_meta( $image_id, '_wp_attachment_image_alt', true );
 	$alt 					= !empty( $image_alt ) ? $image_alt : the_title_attribute( 'echo=0' ) ;
 	?>
 
-	<figure>
-		<a title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>">
-			<?php if ( !has_post_thumbnail() ) : ?>
-				<img src="<?php echo esc_url( $custom_image ); ?>" alt="<?php echo esc_attr( $alt ); ?>" title="<?php the_title_attribute(); ?>" />
-			<?php else : ?>
+	<?php if ( has_post_thumbnail() ) : $pt_content_border = ''; ?>
+		<figure>
+			<a title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>">
 				<img src="<?php echo esc_url( $image_path[0] ); ?>" alt="<?php echo esc_attr( $alt ); ?>" title="<?php the_title_attribute(); ?>" />
-			<?php endif; ?>
-		</a>
-	</figure>
+			</a>
+		</figure>
+	<?php endif; ?>
 
-	<div class="pt-content-wrap pt-content-wrap-border">
+	<div class="pt-content-wrap <?php echo esc_attr( $pt_content_border ); ?>">
 		<header class="entry-header">
 			<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 
