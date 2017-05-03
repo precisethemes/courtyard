@@ -68,11 +68,12 @@ class Courtyard_Logo_Widget extends WP_Widget {
                 </div><!-- .pt-admin-input-label -->
 
                 <div class="pt-admin-input-holder">
-                    <input type="range" min="1" max="5" id="pt_range_logo_inputId" 
+                    <input type="number" min="1" max="5" id="<?php echo $this->get_field_id('number'); ?>" 
                        name="<?php echo $this->get_field_name('number'); ?>"
-                       value="<?php echo esc_attr($instance['number']); ?>"
-                       oninput="pt_range_logo_outputId.value = pt_range_logo_inputId.value">
-                    <output id="pt_range_logo_outputId"><?php echo esc_attr($instance['number']); ?></output>
+                       value="<?php echo esc_attr($instance['number']); ?>" >
+                    <p>
+                    <em><?php esc_html_e('Tip: Enter number to upload the number of logo ( default 3 ) and save it then enter the data in respective field.', 'courtyard'); ?></em>
+                </p>
                 </div><!-- .pt-admin-input-holder -->
                 
                 <div class="clear"></div>
