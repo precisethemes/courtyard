@@ -15,7 +15,7 @@ class courtyard_rooms_widget extends WP_Widget {
         (array) $instance, array(
           'title'             => '',
           'sub_title'         => '',
-          'room_limit'        => '5',
+          'room_limit'        => '3',
           'button_text'       => esc_html__( 'view all rooms', 'courtyard'),
           'button_url'        => '#',
           'background_color'  => '',
@@ -67,7 +67,7 @@ class courtyard_rooms_widget extends WP_Widget {
           </div><!-- .pt-admin-input-label -->
 
           <div class="pt-admin-input-holder">
-              <input type="number" min="1" max="50" id="<?php echo $this->get_field_id('room_limit'); ?>"
+              <input type="number" min="1" max="5" id="<?php echo $this->get_field_id('room_limit'); ?>"
                  name="<?php echo $this->get_field_name('room_limit'); ?>"
                  value="<?php echo esc_attr($instance['room_limit']); ?>">
               <p><em><?php esc_html_e('Number of rooms to display.', 'courtyard'); ?></em></p>
@@ -142,7 +142,7 @@ class courtyard_rooms_widget extends WP_Widget {
       
       global $post, $duplicate_posts;      
       $title              = apply_filters( 'widget_title', isset( $instance['title'] ) ? $instance['title'] : '');
-      $pt_room_limit      = isset( $instance['room_limit'] ) ? $instance['room_limit'] : '5';
+      $pt_room_limit      = isset( $instance['room_limit'] ) ? $instance['room_limit'] : '3';
       $sub_title          = isset( $instance['sub_title'] ) ? $instance['sub_title'] : '';
       $button_text        = isset( $instance['button_text'] ) ? $instance['button_text'] : '';
       $button_url         = isset( $instance['button_url'] ) ? $instance['button_url'] : '';

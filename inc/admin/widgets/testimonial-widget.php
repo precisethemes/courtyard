@@ -176,6 +176,7 @@ class Courtyard_Testimonials_Widget extends WP_Widget {
                   <div class="swiper-container pt-testimonials-slider">
                       <div class="swiper-wrapper">
                         <?php while( $get_featured_pages->have_posts() ) : $get_featured_pages->the_post();
+                            $custom_image = get_template_directory_uri() . '/inc/admin/images/courtyard-default-400x260.jpg';
                             $duplicate_posts[] = $post->ID;
                             $image_id     = get_post_thumbnail_id();
                             $image_path   = wp_get_attachment_image_src( $image_id, 'courtyard-400x260', true );
@@ -185,15 +186,16 @@ class Courtyard_Testimonials_Widget extends WP_Widget {
 
                             <div class="swiper-slide">
                                 <div class="pt-testimonial-col">
-
-                                    <?php if( has_post_thumbnail() ) : ?>
-                                        <figure>
-                                            <a title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>">
-                                              <img src="<?php echo esc_url( $image_path[0] ); ?>" alt="<?php echo esc_attr( $alt ); ?>" title="<?php the_title_attribute(); ?>" />
-                                            </a>
-                                        </figure>
-                                    <?php endif; ?>
-
+                                  <figure>
+                                    <a title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>">
+                                      <?php if ( !has_post_thumbnail() ) : ?>
+                                        <img src="<?php echo esc_url( $custom_image ); ?>" alt="<?php echo esc_attr( $alt ); ?>" title="<?php the_title_attribute(); ?>" />
+                                      <?php else : ?>
+                                        <img src="<?php echo esc_url( $image_path[0] ); ?>" alt="<?php echo esc_attr( $alt ); ?>" title="<?php the_title_attribute(); ?>" />
+                                      <?php endif; ?>
+                                    </a>
+                                  </figure>
+                                  
                                     <div class="pt-testimonial-cont transition35">
                                         <a title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>"><i class="pt-arrow-right transition5"></i></a>
                                         <h3><a title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>

@@ -71,7 +71,7 @@ class courtyard_service_widget extends WP_Widget {
                 </div><!-- .pt-admin-input-label -->
 
                 <div class="pt-admin-input-holder">
-                    <input type="number" min="1" max="50" id="<?php echo $this->get_field_id('service_limit'); ?>"
+                    <input type="number" min="1" max="10" id="<?php echo $this->get_field_id('service_limit'); ?>"
                        name="<?php echo $this->get_field_name('service_limit'); ?>"
                        value="<?php echo esc_attr($instance['service_limit']); ?>">
                     <p><em><?php esc_html_e('Number of services to display.', 'courtyard'); ?></em></p>

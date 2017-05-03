@@ -17,7 +17,7 @@ class courtyard_image_slider_widget extends WP_Widget
         $instance = wp_parse_args(
             (array)$instance, array(
                 'title' => '',
-                'slide_no' => '4',
+                'slide_no' => '3',
                 'scroll_down' => '1',
             )
         );
@@ -54,7 +54,7 @@ class courtyard_image_slider_widget extends WP_Widget
                 </div><!-- .pt-admin-input-label -->
 
                 <div class="pt-admin-input-holder">
-                    <input type="number" min="1" max="30" id="<?php echo $this->get_field_id('slide_no'); ?>"
+                    <input type="number" min="1" max="5" id="<?php echo $this->get_field_id('slide_no'); ?>"
                        name="<?php echo $this->get_field_name('slide_no'); ?>"
                        value="<?php echo esc_attr($instance['slide_no']); ?>">
                     <p><em><?php esc_html_e('Number of slides to display.', 'courtyard'); ?></em></p>
@@ -107,7 +107,7 @@ class courtyard_image_slider_widget extends WP_Widget
 
         global $post, $duplicate_posts;
         $title = apply_filters('widget_title', isset($instance['title']) ? $instance['title'] : '');
-        $pt_slide_limit = isset($instance['slide_no']) ? $instance['slide_no'] : '4';
+        $pt_slide_limit = isset($instance['slide_no']) ? $instance['slide_no'] : '3';
         $pt_scroll_down = isset($instance['scroll_down']) ? $instance['scroll_down'] : '1';
 
         $pt_slide_pages = array();

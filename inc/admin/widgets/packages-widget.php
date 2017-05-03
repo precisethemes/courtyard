@@ -18,7 +18,6 @@ class courtyard_packages_widget extends WP_Widget
             (array)$instance, array(
                 'title' => '',
                 'sub_title' => '',
-                'package_limit' => '5',
                 'background_color' => '',
             )
         );
@@ -71,24 +70,6 @@ class courtyard_packages_widget extends WP_Widget
 
                 <div class="pt-admin-input-label">
                     <label
-                    for="<?php echo $this->get_field_id('package_limit'); ?>"><?php esc_html_e('Count', 'courtyard'); ?></label>
-                </div><!-- .pt-admin-input-label -->
-
-                <div class="pt-admin-input-holder">
-                    <input type="number" min="1" max="50" id="<?php echo $this->get_field_id('package_limit'); ?>"
-                       name="<?php echo $this->get_field_name('package_limit'); ?>"
-                       value="<?php echo esc_attr($instance['package_limit']); ?>">
-                    <p><em><?php esc_html_e('Number of packages to display.', 'courtyard'); ?></em></p>
-                </div><!-- .pt-admin-input-holder -->
-
-                <div class="clear"></div>
- 
-            </div><!-- .pt-admin-input-wrap -->
-
-            <div class="pt-admin-input-wrap">
-
-                <div class="pt-admin-input-label">
-                    <label
                     for="<?php echo $this->get_field_id('background_color'); ?>"><?php esc_html_e('Color', 'courtyard'); ?></label>
                 </div><!-- .pt-admin-input-label -->
 
@@ -128,7 +109,6 @@ class courtyard_packages_widget extends WP_Widget
 
         global $post, $duplicate_posts;
         $title = apply_filters('widget_title', isset($instance['title']) ? $instance['title'] : '');
-        $pt_package_limit = isset($instance['package_limit']) ? $instance['package_limit'] : '5';
         $sub_title = isset($instance['sub_title']) ? $instance['sub_title'] : '';
         $background_color = isset($instance['background_color']) ? $instance['background_color'] : null;
 
@@ -145,7 +125,7 @@ class courtyard_packages_widget extends WP_Widget
 
         $get_featured_pages = new WP_Query( array(
             'post_status'           => 'publish',
-            'posts_per_page'        => $pt_package_limit,
+            'posts_per_page'        => 5,
             'post_type'             =>  array( 'page' ),
             'post__in'              => $pt_package_pages,
             'orderby'               => array( 'menu_order' => 'ASC', 'date' => 'DESC' )
