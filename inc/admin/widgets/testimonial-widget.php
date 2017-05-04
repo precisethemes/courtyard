@@ -28,7 +28,6 @@ class Courtyard_Testimonials_Widget extends WP_Widget {
         </div><!-- .pt-admin-input-wrap -->
 
         <div class="pt-admin-input-wrap">
-
           <div class="pt-admin-input-label">
               <label
               for="<?php echo $this->get_field_id('title'); ?>"><?php esc_html_e('Title', 'courtyard'); ?></label>
@@ -42,11 +41,9 @@ class Courtyard_Testimonials_Widget extends WP_Widget {
           </div><!-- .pt-admin-input-holder -->
 
           <div class="clear"></div>
-
         </div><!-- .pt-admin-input-wrap -->
 
         <div class="pt-admin-input-wrap">
-
           <div class="pt-admin-input-label">
               <label
               for="<?php echo $this->get_field_id('sub_title'); ?>"><?php esc_html_e('Sub Title', 'courtyard'); ?></label>
@@ -59,11 +56,9 @@ class Courtyard_Testimonials_Widget extends WP_Widget {
           </div><!-- .pt-admin-input-holder -->
 
           <div class="clear"></div>
+        </div><!-- .pt-admin-input-wrap -->
 
-      </div><!-- .pt-admin-input-wrap -->
-
-      <div class="pt-admin-input-wrap">
-
+        <div class="pt-admin-input-wrap">
           <div class="pt-admin-input-label">
               <label
               for="<?php echo $this->get_field_id('testimonial_limit'); ?>"><?php esc_html_e('Count', 'courtyard'); ?></label>
@@ -75,12 +70,11 @@ class Courtyard_Testimonials_Widget extends WP_Widget {
                  value="<?php echo esc_attr($instance['testimonial_limit']); ?>">
             <p><em><?php esc_html_e('Number of testimonials to display.', 'courtyard'); ?></em></p>
           </div><!-- .pt-admin-input-holder -->
+
           <div class="clear"></div>
+        </div><!-- .pt-admin-input-wrap -->
 
-      </div><!-- .pt-admin-input-wrap -->
-
-      <div class="pt-admin-input-wrap">
-
+        <div class="pt-admin-input-wrap">
         <div class="pt-admin-input-label">
             <label
             for="<?php echo $this->get_field_id('background_color'); ?>"><?php esc_html_e('Color', 'courtyard'); ?></label>
@@ -95,9 +89,7 @@ class Courtyard_Testimonials_Widget extends WP_Widget {
         </div><!-- .pt-admin-input-holder -->
 
           <div class="clear"></div>
-
-      </div><!-- .pt-admin-input-wrap -->
-
+        </div><!-- .pt-admin-input-wrap -->
       </div><!-- .pt-testimonial -->
     <?php }
 
@@ -153,7 +145,7 @@ class Courtyard_Testimonials_Widget extends WP_Widget {
 
       echo $args['before_widget'] = str_replace('<section', '<section' .$inline_style , $args['before_widget']); ?>
 
-      <div class="pt-rooms-sec">
+      <div class="pt-testimonials-sec">
         <div class="container">
           <div class="row">
               <div class="col-md-12">
@@ -176,7 +168,7 @@ class Courtyard_Testimonials_Widget extends WP_Widget {
                   <div class="swiper-container pt-testimonials-slider">
                       <div class="swiper-wrapper">
                         <?php while( $get_featured_pages->have_posts() ) : $get_featured_pages->the_post();
-                            $custom_image = get_template_directory_uri() . '/inc/admin/images/courtyard-default-400x260.jpg';
+                            $custom_image = get_template_directory_uri() . '/inc/admin/images/courtyard-default-400x260.png';
                             $duplicate_posts[] = $post->ID;
                             $image_id     = get_post_thumbnail_id();
                             $image_path   = wp_get_attachment_image_src( $image_id, 'courtyard-400x260', true );
@@ -186,42 +178,38 @@ class Courtyard_Testimonials_Widget extends WP_Widget {
 
                             <div class="swiper-slide">
                                 <div class="pt-testimonial-col">
-                                  <figure>
-                                    <a title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>">
-                                      <?php if ( !has_post_thumbnail() ) : ?>
-                                        <img src="<?php echo esc_url( $custom_image ); ?>" alt="<?php echo esc_attr( $alt ); ?>" title="<?php the_title_attribute(); ?>" />
-                                      <?php else : ?>
-                                        <img src="<?php echo esc_url( $image_path[0] ); ?>" alt="<?php echo esc_attr( $alt ); ?>" title="<?php the_title_attribute(); ?>" />
-                                      <?php endif; ?>
-                                    </a>
-                                  </figure>
-                                  
                                     <div class="pt-testimonial-cont transition35">
-                                        <a title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>"><i class="pt-arrow-right transition5"></i></a>
-                                        <h3><a title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-
                                         <p><?php echo wp_trim_words( get_the_excerpt(), 22, '' ); ?></p>
                                     </div><!-- .pt-testimonial-cont -->
+
+                                    <div class="pt-testimonial-user">
+                                        <figure>
+                                            <?php if ( !has_post_thumbnail() ) : ?>
+                                                <img src="<?php echo esc_url( $custom_image ); ?>" alt="<?php echo esc_attr( $alt ); ?>" title="<?php the_title_attribute(); ?>" />
+                                            <?php else : ?>
+                                                <img src="<?php echo esc_url( $image_path[0] ); ?>" alt="<?php echo esc_attr( $alt ); ?>" title="<?php the_title_attribute(); ?>" />
+                                            <?php endif; ?>
+                                        </figure>
+
+                                        <h3><?php the_title(); ?></h3>
+                                    </div>
                                 </div><!-- .pt-testimonial-col -->
                             </div><!-- .swiper-slide -->
 
                         <?php endwhile;
                         // Reset Post Data
                         wp_reset_postdata(); ?>
+
                       </div><!-- .swiper-wrapper -->
 
-                      <div class="pt-testimonials-more">
-                        <div class="pt-testimonials-more-holder">
-                            <?php if ( $countPosts > 3 ) : ?>
-                              <i class="pt-arrow-left transition35"></i>
-                            <?php endif; ?>
-                            
-                            <?php if ( $countPosts > 3 ) : ?>
-                              <i class="pt-arrow-right transition35"></i>
-                            <?php endif; ?> 
-                        </div><!-- .pt-rooms-more-holder -->
-                      </div><!-- .pt-services-more -->
-
+                        <?php if ( $countPosts > 2 ) : ?>
+                          <div class="pt-more-arrow">
+                              <div class="pt-more-arrow-holder">
+                                  <i class="pt-arrow-left transition35"></i>
+                                  <i class="pt-arrow-right transition35"></i>
+                              </div><!-- .pt-more-arrow-holder -->
+                          </div><!-- .pt-more-arrow -->
+                        <?php endif; ?>
                   </div><!-- .swiper-container -->
                 </div><!-- .col-md-12 -->
               <?php endif; ?>

@@ -38,7 +38,7 @@ get_header(); ?>
 				if ( $get_featured_pages->have_posts() ) : ?>
 
 					<?php while( $get_featured_pages->have_posts() ) : $get_featured_pages->the_post();
-					$custom_image = get_template_directory_uri() . '/inc/admin/images/courtyard-default-400x260.jpg';
+					$custom_image = get_template_directory_uri() . '/inc/admin/images/courtyard-default-400x260.png';
 					$title_attribute = the_title_attribute( 'echo=0' );
 					$image_id = get_post_thumbnail_id();
 					$image_path = wp_get_attachment_image_src( $image_id, 'courtyard-400x260', true );

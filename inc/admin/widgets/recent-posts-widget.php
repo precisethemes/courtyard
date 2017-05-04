@@ -34,14 +34,14 @@ class courtyard_recent_posts_widget extends WP_Widget
             <div class="pt-admin-input-wrap">
                 <div class="pt-admin-input-label">
                     <label
-                    for="<?php echo $this->get_field_id('title'); ?>"><?php esc_html_e('Title', 'courtyard'); ?></label>
+                            for="<?php echo $this->get_field_id('title'); ?>"><?php esc_html_e('Title', 'courtyard'); ?></label>
                 </div><!-- .pt-admin-input-label -->
 
                 <div class="pt-admin-input-holder">
                     <input type="text" id="<?php echo $this->get_field_id('title'); ?>"
-                       name="<?php echo $this->get_field_name('title'); ?>"
-                       value="<?php echo esc_attr($instance['title']); ?>"
-                       placeholder="<?php esc_attr_e('Title', 'courtyard'); ?>">
+                           name="<?php echo $this->get_field_name('title'); ?>"
+                           value="<?php echo esc_attr($instance['title']); ?>"
+                           placeholder="<?php esc_attr_e('Title', 'courtyard'); ?>">
                 </div><!-- .pt-admin-input-holder -->
 
                 <div class="clear"></div>
@@ -50,13 +50,13 @@ class courtyard_recent_posts_widget extends WP_Widget
             <div class="pt-admin-input-wrap">
                 <div class="pt-admin-input-label">
                     <label
-                    for="<?php echo $this->get_field_id('sub_title'); ?>"><?php esc_html_e('Sub Title', 'courtyard'); ?></label>
+                            for="<?php echo $this->get_field_id('sub_title'); ?>"><?php esc_html_e('Sub Title', 'courtyard'); ?></label>
                 </div><!-- .pt-admin-input-label -->
 
                 <div class="pt-admin-input-holder">
                     <textarea class="widefat" rows="5" cols="20" id="<?php echo $this->get_field_id('sub_title'); ?>"
-                        name="<?php echo $this->get_field_name('sub_title'); ?>"
-                        placeholder="<?php esc_attr_e('Short description', 'courtyard'); ?>"><?php echo esc_textarea($instance['sub_title']); ?></textarea>
+                              name="<?php echo $this->get_field_name('sub_title'); ?>"
+                              placeholder="<?php esc_attr_e('Short description', 'courtyard'); ?>"><?php echo esc_textarea($instance['sub_title']); ?></textarea>
                 </div><!-- .pt-admin-input-holder -->
 
                 <div class="clear"></div>
@@ -65,16 +65,16 @@ class courtyard_recent_posts_widget extends WP_Widget
             <div class="pt-admin-input-wrap">
                 <div class="pt-admin-input-label">
                     <label
-                    for="<?php echo $this->get_field_id('type'); ?>"><?php esc_html_e('Post Type', 'courtyard'); ?></label>
+                            for="<?php echo $this->get_field_id('type'); ?>"><?php esc_html_e('Post Type', 'courtyard'); ?></label>
                 </div><!-- .pt-admin-input-label -->
 
                 <div class="pt-admin-input-holder">
                     <input type="radio" <?php checked($type, 'latest') ?> id="<?php echo $this->get_field_id('type'); ?>"
-                       name="<?php echo $this->get_field_name('type'); ?>"
-                       value="latest"/><?php esc_html_e('Latest Posts', 'courtyard'); ?><br/>
+                           name="<?php echo $this->get_field_name('type'); ?>"
+                           value="latest"/><?php esc_html_e('Latest Posts', 'courtyard'); ?><br/>
                     <input type="radio" <?php checked($type, 'category') ?> id="<?php echo $this->get_field_id('type'); ?>"
-                       name="<?php echo $this->get_field_name('type'); ?>"
-                       value="category"/><?php esc_html_e('By Category', 'courtyard'); ?><br/>
+                           name="<?php echo $this->get_field_name('type'); ?>"
+                           value="category"/><?php esc_html_e('By Category', 'courtyard'); ?><br/>
                 </div><!-- .pt-admin-input-holder -->
 
                 <div class="clear"></div>
@@ -83,7 +83,7 @@ class courtyard_recent_posts_widget extends WP_Widget
             <div class="pt-admin-input-wrap">
                 <div class="pt-admin-input-label">
                     <label
-                    for="<?php echo $this->get_field_id('category'); ?>"><?php esc_html_e('Select Category', 'courtyard'); ?></label>
+                            for="<?php echo $this->get_field_id('category'); ?>"><?php esc_html_e('Select Category', 'courtyard'); ?></label>
                 </div><!-- .pt-admin-input-label -->
 
                 <div class="pt-admin-input-holder">
@@ -96,31 +96,31 @@ class courtyard_recent_posts_widget extends WP_Widget
             <div class="pt-admin-input-wrap">
                 <div class="pt-admin-input-label">
                     <label
-                    for="<?php echo $this->get_field_id('post_limit'); ?>"><?php esc_html_e('Count', 'courtyard'); ?></label>
+                            for="<?php echo $this->get_field_id('post_limit'); ?>"><?php esc_html_e('Count', 'courtyard'); ?></label>
                 </div><!-- .pt-admin-input-label -->
 
                 <div class="pt-admin-input-holder">
-                    <input type="number" min="1" max="50" id="<?php echo $this->get_field_id('post_limit'); ?>"
-                       name="<?php echo $this->get_field_name('post_limit'); ?>"
-                       value="<?php echo esc_attr($instance['post_limit']); ?>">
+                    <input type="number" min="1" max="9" id="<?php echo $this->get_field_id('post_limit'); ?>"
+                           name="<?php echo $this->get_field_name('post_limit'); ?>"
+                           value="<?php echo esc_attr($instance['post_limit']); ?>">
                     <p><em><?php esc_html_e('Number of posts to display.', 'courtyard'); ?></em></p>
                 </div><!-- .pt-admin-input-holder -->
 
                 <div class="clear"></div>
- 
+
             </div><!-- .pt-admin-input-wrap -->
 
             <div class="pt-admin-input-wrap">
                 <div class="pt-admin-input-label">
                     <label
-                    for="<?php echo $this->get_field_id('random_posts'); ?>"><?php esc_html_e('Random Post', 'courtyard'); ?></label>
+                            for="<?php echo $this->get_field_id('random_posts'); ?>"><?php esc_html_e('Random Post', 'courtyard'); ?></label>
                 </div><!-- .pt-admin-input-label -->
 
                 <div class="pt-admin-input-holder">
                     <input type="checkbox" <?php echo $random_posts; ?>
-                       id="<?php echo $this->get_field_id('random_posts'); ?>"
-                       name="<?php echo $this->get_field_name('random_posts'); ?>"
-                       value="<?php echo esc_attr($instance['random_posts']); ?>">
+                           id="<?php echo $this->get_field_id('random_posts'); ?>"
+                           name="<?php echo $this->get_field_name('random_posts'); ?>"
+                           value="<?php echo esc_attr($instance['random_posts']); ?>">
                     <p><em><?php esc_html_e('Check to display the random post from either the chosen category or from latest post.', 'courtyard'); ?></em></p>
                 </div><!-- .pt-admin-input-holder -->
 
@@ -130,14 +130,14 @@ class courtyard_recent_posts_widget extends WP_Widget
             <div class="pt-admin-input-wrap">
                 <div class="pt-admin-input-label">
                     <label
-                    for="<?php echo $this->get_field_id('background_color'); ?>"><?php esc_html_e('Color', 'courtyard'); ?></label>
+                            for="<?php echo $this->get_field_id('background_color'); ?>"><?php esc_html_e('Color', 'courtyard'); ?></label>
                 </div><!-- .pt-admin-input-label -->
 
                 <div class="pt-admin-input-holder">
                     <input type="text" id="<?php echo $this->get_field_id('background_color'); ?>"
-                        class="pt-color-picker"
-                        name="<?php echo $this->get_field_name('background_color'); ?>"
-                        value="<?php echo esc_attr($instance['background_color']); ?>">
+                           class="pt-color-picker"
+                           name="<?php echo $this->get_field_name('background_color'); ?>"
+                           value="<?php echo esc_attr($instance['background_color']); ?>">
                     <p><em><?php esc_html_e('Choose the background color for the widget section.', 'courtyard'); ?></em></p>
                 </div><!-- .pt-admin-input-holder -->
 
@@ -210,7 +210,7 @@ class courtyard_recent_posts_widget extends WP_Widget
         }
 
         $inline_style = '';
-        
+
         if ( $background_color != '') {
             $inline_style = ' style="background-color:' . esc_attr($background_color) . '"';
         }
@@ -230,56 +230,60 @@ class courtyard_recent_posts_widget extends WP_Widget
                                 <h4><?php echo wp_kses_post($sub_title); ?></h4>
                             <?php endif; ?>
                         </header>
+
+                        <div class="pt-recent-posts-wrap">
+
+                            <?php if ($get_featured_posts->have_posts()) : ?>
+                                <?php while ($get_featured_posts->have_posts()) : $get_featured_posts->the_post();
+                                    $custom_image = get_template_directory_uri() . '/inc/admin/images/courtyard-default-400x260.png';
+                                    $image_id       = get_post_thumbnail_id();
+                                    $image_path     = wp_get_attachment_image_src( $image_id, 'courtyard-400x260', true );
+                                    $image_alt      = get_post_meta( $image_id, '_wp_attachment_image_alt', true );
+                                    $alt            = !empty( $image_alt ) ? $image_alt : the_title_attribute( 'echo=0' ) ;
+                                    ?>
+
+                                    <div class="pt-recent-posts-col">
+                                        <figure>
+                                            <a title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>">
+                                                <?php if ( !has_post_thumbnail() ) : ?>
+
+                                                    <img src="<?php echo esc_url( $custom_image ); ?>" alt="<?php echo esc_attr( $alt ); ?>" title="<?php the_title_attribute(); ?>" />
+
+                                                <?php else : ?>
+
+                                                    <img src="<?php echo esc_url( $image_path[0] ); ?>" alt="<?php echo esc_attr( $alt ); ?>" title="<?php the_title_attribute(); ?>" />
+
+                                                <?php endif; ?>
+                                            </a>
+
+                                            <div class="pt-blog-date transition5">
+                                                <div class="pt-blog-post-month"><?php echo esc_html( get_the_time("M") ); ?><br/><?php echo esc_html( get_the_time("Y") ); ?></div>
+                                                <div class="pt-blog-post-day"><?php echo esc_html( get_the_time("d") ); ?></div>
+                                            </div>
+
+                                            <div class="pt-blog-post-more-icon transition5">
+                                                <a class="transition5" title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>" ><i class="pt-arrow-right transition5"></i></a>
+                                            </div>
+                                        </figure>
+
+                                        <article class="pt-recent-posts-cont">
+                                            <h3><a title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+
+                                            <p><?php echo wp_trim_words(get_the_excerpt(), 18, ''); ?></p>
+
+                                            <div class="pt-read-more">
+                                                <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php echo esc_html__('Read More', 'courtyard'); ?></a>
+                                            </div><!-- .pt-read-more -->
+                                        </article><!-- .pt-recent-posts-cont -->
+                                    </div><!-- .pt-recent-posts-col -->
+
+                                <?php endwhile;
+                                // Reset Post Data
+                                wp_reset_postdata(); ?>
+                            <?php endif; ?>
+
+                        </div><!-- .pt-recent-posts-wrap -->
                     </div><!-- .col-md-12 -->
-
-                    <?php if ($get_featured_posts->have_posts()) : ?>
-                        <?php while ($get_featured_posts->have_posts()) : $get_featured_posts->the_post();
-                            $custom_image = get_template_directory_uri() . '/inc/admin/images/courtyard-default-400x260.jpg';
-                            $image_id       = get_post_thumbnail_id();
-                            $image_path     = wp_get_attachment_image_src( $image_id, 'courtyard-400x260', true );
-                            $image_alt      = get_post_meta( $image_id, '_wp_attachment_image_alt', true );
-                            $alt            = !empty( $image_alt ) ? $image_alt : the_title_attribute( 'echo=0' ) ;
-                            ?>
-                            <div class="col-md-4 col-sm-6 col-sm-6">
-                                <div class="pt-recent-posts-col">
-                                    <figure>
-                                        <a title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>">
-                                            <?php if ( !has_post_thumbnail() ) : ?>
-
-                                            <img src="<?php echo esc_url( $custom_image ); ?>" alt="<?php echo esc_attr( $alt ); ?>" title="<?php the_title_attribute(); ?>" />
-
-                                            <?php else : ?>
-
-                                            <img src="<?php echo esc_url( $image_path[0] ); ?>" alt="<?php echo esc_attr( $alt ); ?>" title="<?php the_title_attribute(); ?>" />
-
-                                            <?php endif; ?>
-                                        </a>
-
-                                        <div class="pt-blog-date transition5">
-                                            <div class="pt-blog-post-month"><?php echo esc_html( get_the_time("M") ); ?><br/><?php echo esc_html( get_the_time("Y") ); ?></div>
-                                            <div class="pt-blog-post-day"><?php echo esc_html( get_the_time("d") ); ?></div>
-                                        </div>
-
-                                        <div class="pt-blog-post-more-icon transition5">
-                                            <a class="transition5" title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>" ><i class="pt-arrow-right transition5"></i></a>
-                                        </div>
-                                    </figure>
-
-                                    <article class="pt-recent-posts-cont">
-                                        <h3><a title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-
-                                        <p><?php echo wp_trim_words(get_the_excerpt(), 18, ''); ?></p>
-
-                                        <div class="pt-read-more">
-                                            <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php echo esc_html__('Read More', 'courtyard'); ?></a>
-                                        </div><!-- .pt-read-more -->
-                                    </article><!-- .pt-recent-posts-cont -->
-                                </div><!-- .pt-recent-posts-col -->
-                            </div><!-- .col-md-4 -->
-                        <?php endwhile;
-                        // Reset Post Data
-                        wp_reset_postdata(); ?>
-                    <?php endif; ?>
                 </div><!-- .row -->
             </div><!-- .container -->
         </div><!-- .pt-recent-posts-sec -->

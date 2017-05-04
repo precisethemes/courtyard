@@ -29,7 +29,6 @@ class courtyard_service_widget extends WP_Widget {
             </div><!-- .pt-admin-input-wrap -->
 
             <div class="pt-admin-input-wrap">
-
                 <div class="pt-admin-input-label">
                     <label
                     for="<?php echo $this->get_field_id('title'); ?>"><?php esc_html_e('Title', 'courtyard'); ?></label>
@@ -43,11 +42,9 @@ class courtyard_service_widget extends WP_Widget {
                 </div><!-- .pt-admin-input-holder -->
 
                 <div class="clear"></div>
- 
             </div><!-- .pt-admin-input-wrap -->
 
             <div class="pt-admin-input-wrap">
-
                 <div class="pt-admin-input-label">
                     <label
                     for="<?php echo $this->get_field_id('sub_title'); ?>"><?php esc_html_e('Sub Title', 'courtyard'); ?></label>
@@ -60,11 +57,9 @@ class courtyard_service_widget extends WP_Widget {
                 </div><!-- .pt-admin-input-holder -->
 
                 <div class="clear"></div>
- 
             </div><!-- .pt-admin-input-wrap -->
 
             <div class="pt-admin-input-wrap">
-
                 <div class="pt-admin-input-label">
                     <label
                     for="<?php echo $this->get_field_id('service_limit'); ?>"><?php esc_html_e('Count', 'courtyard'); ?></label>
@@ -78,11 +73,9 @@ class courtyard_service_widget extends WP_Widget {
                 </div><!-- .pt-admin-input-holder -->
 
                 <div class="clear"></div>
- 
             </div><!-- .pt-admin-input-wrap -->
 
             <div class="pt-admin-input-wrap">
-
                 <div class="pt-admin-input-label">
                     <label for="<?php echo $this->get_field_id( 'button_text' ); ?>"><?php esc_html_e( 'Button Text', 'courtyard' ); ?></label>
                 </div><!-- .pt-admin-input-label -->
@@ -92,11 +85,9 @@ class courtyard_service_widget extends WP_Widget {
                 </div><!-- .pt-admin-input-holder -->
 
                 <div class="clear"></div>
- 
             </div><!-- .pt-admin-input-wrap -->
 
             <div class="pt-admin-input-wrap">
-
                 <div class="pt-admin-input-label">
                     <label for="<?php echo $this->get_field_id( 'button_url' ); ?>"><?php esc_html_e( 'Button URL', 'courtyard' ); ?></label>
                 </div><!-- .pt-admin-input-label -->
@@ -106,12 +97,10 @@ class courtyard_service_widget extends WP_Widget {
                 </div><!-- .pt-admin-input-holder -->
 
                 <div class="clear"></div>
- 
             </div><!-- .pt-admin-input-wrap -->
 
 
             <div class="pt-admin-input-wrap">
-
                 <div class="pt-admin-input-label">
                     <label
                     for="<?php echo $this->get_field_id('background_color'); ?>"><?php esc_html_e('Color', 'courtyard'); ?></label>
@@ -126,9 +115,7 @@ class courtyard_service_widget extends WP_Widget {
                 </div><!-- .pt-admin-input-holder -->
 
                 <div class="clear"></div>
- 
             </div><!-- .pt-admin-input-wrap -->
-
         </div><!-- .pt-services -->
     <?php }
 
@@ -253,8 +240,8 @@ class courtyard_service_widget extends WP_Widget {
 
                                 <?php if ( !empty( $button_text ) ) : ?>
 
-                                    <div class="pt-services-more">
-                                        <div class="pt-services-more-holder">
+                                    <div class="pt-more-arrow">
+                                        <div class="pt-more-arrow-holder">
                                             <?php if ( ( $countPosts > 3 && $countPosts < 6 ) || ( $countPosts > 6 ) ) : ?>
                                                 <i class="pt-arrow-left transition35"></i>
                                             <?php endif; ?>
@@ -262,8 +249,8 @@ class courtyard_service_widget extends WP_Widget {
                                             <?php if ( ( $countPosts > 3 && $countPosts < 6 ) || ( $countPosts > 6 ) ) : ?>
                                                 <i class="pt-arrow-right transition35"></i>
                                             <?php endif; ?>
-                                        </div><!-- .pt-services-more-holder -->
-                                    </div><!-- .pt-services-more -->
+                                        </div><!-- .pt-more-arrow-holder -->
+                                    </div><!-- .pt-more-arrow -->
 
                                 <?php endif; ?>
                             </div><!-- .swiper-container -->

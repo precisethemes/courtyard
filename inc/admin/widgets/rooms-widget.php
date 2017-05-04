@@ -200,7 +200,7 @@ class courtyard_rooms_widget extends WP_Widget {
                   <div class="swiper-container pt-rooms-slider">
                       <div class="swiper-wrapper">
                         <?php while( $get_featured_pages->have_posts() ) : $get_featured_pages->the_post();
-                            $custom_image = get_template_directory_uri() . '/inc/admin/images/courtyard-default-400x260.jpg';
+                            $custom_image = get_template_directory_uri() . '/inc/admin/images/courtyard-default-400x260.png';
                             $duplicate_posts[] = $post->ID;
                             $image_id     = get_post_thumbnail_id();
                             $image_path   = wp_get_attachment_image_src( $image_id, 'courtyard-400x260', true );
@@ -238,9 +238,9 @@ class courtyard_rooms_widget extends WP_Widget {
                         wp_reset_postdata(); ?>
                       </div><!-- .swiper-wrapper -->
                       
-                      <div class="pt-rooms-more">
+                      <div class="pt-more-arrow">
                         <?php if ( !empty( $button_text ) ) : ?>
-                          <div class="pt-rooms-more-holder">
+                          <div class="pt-more-arrow-holder">
                             <?php if ( $countPosts > 3 ) : ?>
                               <i class="pt-arrow-left transition35"></i>
                             <?php endif; ?>
@@ -248,9 +248,9 @@ class courtyard_rooms_widget extends WP_Widget {
                             <?php if ( $countPosts > 3 ) : ?>
                               <i class="pt-arrow-right transition35"></i>
                             <?php endif; ?> 
-                          </div><!-- .pt-rooms-more-holder -->
+                          </div><!-- .pt-more-arrow-holder -->
                         <?php endif; ?>
-                      </div><!-- .pt-services-more --> 
+                      </div><!-- .pt-more-arrow -->
                   </div><!-- .swiper-container -->
                 </div><!-- .col-md-12 -->
               <?php endif; ?>

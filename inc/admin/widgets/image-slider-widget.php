@@ -200,7 +200,7 @@ class courtyard_image_slider_widget extends WP_Widget
                 <nav class="pt-hero-slider-nav">
                     <i class="pt-arrow-left transition35"></i>
                     <i class="pt-arrow-right transition35"></i>
-                </nav><!-- .pt-services-more -->
+                </nav><!-- .pt-more-arrow -->
 
                 <?php endif; ?>
 

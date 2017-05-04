@@ -20,9 +20,7 @@ class Courtyard_About_Widget extends WP_Widget {
         ?>
 
         <div class="pt-about">
-
             <div class="pt-admin-input-wrap">
-
                 <div class="pt-admin-input-label">
                     <label
                     for="<?php echo $this->get_field_id('title'); ?>"><?php esc_html_e('Title', 'courtyard'); ?></label>
@@ -36,11 +34,9 @@ class Courtyard_About_Widget extends WP_Widget {
                 </div><!-- .pt-admin-input-holder -->
 
                 <div class="clear"></div>
- 
             </div><!-- .pt-admin-input-wrap -->
 
             <div class="pt-admin-input-wrap">
-
                 <div class="pt-admin-input-label">
                     <label
                     for="<?php echo $this->get_field_id('page_id'); ?>"><?php esc_html_e('Page', 'courtyard'); ?></label>
@@ -56,11 +52,9 @@ class Courtyard_About_Widget extends WP_Widget {
                 </div><!-- .pt-admin-input-holder -->
 
                 <div class="clear"></div>
- 
             </div><!-- .pt-admin-input-wrap -->
 
             <div class="pt-admin-input-wrap">
-
                 <div class="pt-admin-input-label">
                     <label
                     for="<?php echo $this->get_field_id('background_color'); ?>"><?php esc_html_e('Color', 'courtyard'); ?></label>
@@ -75,9 +69,7 @@ class Courtyard_About_Widget extends WP_Widget {
                 </div><!-- .pt-admin-input-holder -->
 
                 <div class="clear"></div>
- 
             </div><!-- .pt-admin-input-wrap -->
-
         </div><!-- .pt-about -->
     <?php }
 
@@ -95,7 +87,6 @@ class Courtyard_About_Widget extends WP_Widget {
         extract($args);
 
         global $post;
-        $title              = apply_filters( 'widget_title', isset( $instance['title'] ) ? $instance['title'] : '');
         $pt_page_id         = isset( $instance['page_id'] ) ? $instance['page_id'] : '';
         $background_color   = isset( $instance['background_color'] ) ? $instance['background_color'] : null;
 
@@ -105,59 +96,45 @@ class Courtyard_About_Widget extends WP_Widget {
             'page_id'               => $pt_page_id,
         ) );
 
-        $inline_style = '';
-        
-        if ( $background_color != '') {
-            $inline_style = ' style="background-color:' . esc_attr($background_color) . '"';
-        }
+        echo $args['before_widget'] = str_replace('<section', '<section' .'' , $args['before_widget']); ?>
 
-        echo $args['before_widget'] = str_replace('<section', '<section' .$inline_style , $args['before_widget']); ?>
+        <?php if ( $get_featured_pages->have_posts() && !empty( $pt_page_id ) ) : ?>
 
-        <div class="pt-about-sec">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <?php if (!empty($title)) : ?>
-                            <header>
-                                <h2 class="widget-title"><?php echo esc_html($title); ?></h2>
-                            </header>
-                        <?php endif; ?>
-                    </div><!-- .col-md-12 -->
+            <?php while ($get_featured_pages->have_posts()) : $get_featured_pages->the_post();
+                $image_id = get_post_thumbnail_id();
+                $image_path = wp_get_attachment_image_src( $image_id, 'courtyard-1920x1080', true );
+                $image_alt = get_post_meta( $image_id, '_wp_attachment_image_alt', true );
+                $alt = !empty( $image_alt ) ? $image_alt : the_title_attribute( 'echo=0' ) ;
+                ?>
 
-                    <div class="col-md-12">
-
-                        <?php if ( $get_featured_pages->have_posts() && !empty( $pt_page_id ) ) : ?>
-
-                            <?php while ($get_featured_pages->have_posts()) : $get_featured_pages->the_post();
-                                $image_id = get_post_thumbnail_id();
-                                $image_path = wp_get_attachment_image_src( $image_id, 'courtyard-600x450', true );
-                                $image_alt = get_post_meta( $image_id, '_wp_attachment_image_alt', true );
-                                $alt = !empty( $image_alt ) ? $image_alt : the_title_attribute( 'echo=0' ) ;
-                                ?>
+                <div class="pt-about-wrap"<?php if( $image_path != '' ) : ?> style="background: url('<?php echo esc_url( $image_path[0] ); ?>') no-repeat;"<?php endif; ?>>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-7 col-sm-7 col-md-push-5 col-sm-push-5">
                                 <div class="pt-about-col">
-                                    <?php if ( has_post_thumbnail() ) : ?>
-                                        <figure>
-                                            <img title="<?php the_title_attribute(); ?>" src="<?php echo esc_url( $image_path[0] ); ?>" alt="<?php echo esc_attr( $alt ); ?>" />
-                                        </figure>
-                                    <?php endif; ?>
-                                    <article class="pt-about-cont">
-                                        <h3><a title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>"> <?php the_title(); ?></a></h3>
+                                    <article class="pt-about-cont"<?php if( $image_path != '' ) : ?> style="background: <?php echo $background_color; ?>"<?php endif; ?>>
+                                        <div class="pt-about-cont-holder">
+                                            <header>
+                                                <h3><?php the_title(); ?></h3>
+                                            </header>
 
-                                        <p><?php the_content(); ?></p>
+                                            <p><?php the_content(); ?></p>
+                                        </div><!-- .pt-about-cont-holder -->
                                     </article><!-- .pt-about-cont -->
                                 </div><!-- .pt-about-col -->
+                            </div><!-- .col-md-12 -->
+                        </div><!-- .row -->
+                    </div><!-- .container -->
+                </div><!-- .pt-about-wrap -->
 
-                            <?php endwhile;
+            <?php endwhile;
 
-                            // Reset Post Data
-                            wp_reset_postdata(); ?>
+            // Reset Post Data
+            wp_reset_postdata(); ?>
 
-                        <?php endif; ?>
+        <?php endif; ?>
 
-                    </div><!-- .col-md-12 -->
-                </div><!-- .row -->
-            </div><!-- .container -->
-        </div><!-- .pt-about-sec -->
+
 
         <?php echo $args['after_widget'];
         ob_end_flush();

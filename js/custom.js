@@ -134,8 +134,8 @@ jQuery(window).load(function() {
 		jQuery('.pt-service-section').each(function(index, element){
 			var container  = jQuery(this).find('.pt-services-slider');
 			var slideCount = jQuery(this).find('.swiper-slide').length;
-			var nextButton = jQuery(this).find('.pt-services-more .pt-arrow-right');
-			var prevButton = jQuery(this).find('.pt-services-more .pt-arrow-left');
+			var nextButton = jQuery(this).find('.pt-more-arrow .pt-arrow-right');
+			var prevButton = jQuery(this).find('.pt-more-arrow .pt-arrow-left');
 
 			if ( slideCount < 6 ) {
 				var courtyard_services_slider_per_col = 1;
@@ -162,8 +162,8 @@ jQuery(window).load(function() {
 		// Room Slider
 		jQuery('.pt-rooms-section').each(function(index, element){
 			var container  = jQuery(this).find('.pt-rooms-slider');
-			var nextButton = jQuery(this).find('.pt-rooms-more .pt-arrow-right');
-			var prevButton = jQuery(this).find('.pt-rooms-more .pt-arrow-left');
+			var nextButton = jQuery(this).find('.pt-more-arrow .pt-arrow-right');
+			var prevButton = jQuery(this).find('.pt-more-arrow .pt-arrow-left');
 
 			var pt_rooms_slider = new Swiper(container, {
 				nextButton: nextButton,
@@ -179,8 +179,14 @@ jQuery(window).load(function() {
 		// Testimonial Slider
 		jQuery('.pt-testimonials-section').each(function(index, element){
 			var container  = jQuery(this).find('.pt-testimonials-slider');
-			var nextButton = jQuery(this).find('.pt-testimonials-more .pt-arrow-right');
-			var prevButton = jQuery(this).find('.pt-testimonials-more .pt-arrow-left');
+            var nextButton = jQuery(this).find('.pt-more-arrow .pt-arrow-right');
+            var prevButton = jQuery(this).find('.pt-more-arrow .pt-arrow-left');
+
+			var courtyard_services_slider_num = 2;
+
+            if ( courtyard_window_width <= 768 ) {
+                var courtyard_services_slider_num = 1;
+            }
 
 			var pt_testimonials_slider = new Swiper(container, {
 				nextButton: nextButton,
@@ -189,6 +195,8 @@ jQuery(window).load(function() {
 				preventClicks: false,
 				slidesPerView: courtyard_services_slider_num,
 				touchEventsTarget: 'swiper-wrapper',
+                pagination: '.swiper-pagination',
+                paginationClickable: true,
 				speed: 800
 			});
 		});
