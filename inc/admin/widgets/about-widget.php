@@ -14,7 +14,7 @@ class Courtyard_About_Widget extends WP_Widget {
             (array) $instance, array(
                 'title'             => '',
                 'page_id'           => '',
-                'background_color'  => '',
+                'background_color'  => '#ffffff',
             )
         );
         ?>
@@ -65,7 +65,7 @@ class Courtyard_About_Widget extends WP_Widget {
                         class="pt-color-picker"
                         name="<?php echo $this->get_field_name('background_color'); ?>"
                         value="<?php echo esc_attr($instance['background_color']); ?>">
-                    <p><em><?php esc_html_e('Choose the background color for the widget section.', 'courtyard'); ?></em></p>
+                    <p><em><?php esc_html_e('Choose the background color for the widget content section.', 'courtyard'); ?></em></p>
                 </div><!-- .pt-admin-input-holder -->
 
                 <div class="clear"></div>
@@ -88,7 +88,7 @@ class Courtyard_About_Widget extends WP_Widget {
 
         global $post;
         $pt_page_id         = isset( $instance['page_id'] ) ? $instance['page_id'] : '';
-        $background_color   = isset( $instance['background_color'] ) ? $instance['background_color'] : null;
+        $background_color   = isset( $instance['background_color'] ) ? $instance['background_color'] : '#ffffff';
 
         $get_featured_pages = new WP_Query( array(
             'post_status'           => 'publish',
@@ -96,23 +96,34 @@ class Courtyard_About_Widget extends WP_Widget {
             'page_id'               => $pt_page_id,
         ) );
 
-        echo $args['before_widget'] = str_replace('<section', '<section' .'' , $args['before_widget']); ?>
+        $inline_style = '';
+
+        if ( $background_color != '') {
+            $inline_style = 'style="background-color:' . esc_attr($background_color) . ';"';
+        }
+
+        echo $args['before_widget'] = str_replace('<section', '<section', $args['before_widget']); ?>
 
         <?php if ( $get_featured_pages->have_posts() && !empty( $pt_page_id ) ) : ?>
 
             <?php while ($get_featured_pages->have_posts()) : $get_featured_pages->the_post();
+                $custom_image = get_template_directory_uri() . '/inc/admin/images/courtyard-default.png';
                 $image_id = get_post_thumbnail_id();
                 $image_path = wp_get_attachment_image_src( $image_id, 'courtyard-1920x1080', true );
+                if ( has_post_thumbnail() ) {
+                    $custom_image = $image_path[0];
+                }
                 $image_alt = get_post_meta( $image_id, '_wp_attachment_image_alt', true );
                 $alt = !empty( $image_alt ) ? $image_alt : the_title_attribute( 'echo=0' ) ;
+                $inline_img_style = 'style="background:url(' . esc_url($custom_image) . ') no-repeat;"';
                 ?>
 
-                <div class="pt-about-wrap"<?php if( $image_path != '' ) : ?> style="background: url('<?php echo esc_url( $image_path[0] ); ?>') no-repeat;"<?php endif; ?>>
+                <div class="pt-about-wrap" <?php echo $inline_img_style; ?>>
                     <div class="container">
                         <div class="row">
                             <div class="col-md-7 col-sm-7 col-md-push-5 col-sm-push-5">
                                 <div class="pt-about-col">
-                                    <article class="pt-about-cont"<?php if( $image_path != '' ) : ?> style="background: <?php echo $background_color; ?>"<?php endif; ?>>
+                                    <article class="pt-about-cont" <?php echo $inline_style; ?>>
                                         <div class="pt-about-cont-holder">
                                             <header>
                                                 <h3><?php the_title(); ?></h3>
