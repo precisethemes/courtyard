@@ -174,92 +174,96 @@ class courtyard_service_widget extends WP_Widget {
             $inline_style = ' style="background-color:' . esc_attr($background_color) . '"';
         }
 
-        echo $args['before_widget'] = str_replace('<section', '<section' .$inline_style , $args['before_widget']); ?>
+        echo $args['before_widget']; ?>
 
-        <div class="pt-services-sec">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <?php if (!empty($title)) : ?>
-                            <header>
-                                <h2 class="widget-title"><?php echo esc_html($title); ?></h2>
+        <div class="pt-widget-section" <?php echo $inline_style; ?>>
 
-                                <?php if (!empty($sub_title)) : ?>
-                                    <h4><?php echo wp_kses_post($sub_title); ?></h4>
-                                <?php endif; ?>
-                            </header>
-                        <?php endif; ?>
-                    </div><!-- .col-md-12 -->
-
-                    <?php if ( !empty( $pt_service_pages ) ) : ?>
-
+            <div class="pt-services-sec">
+                <div class="container">
+                    <div class="row">
                         <div class="col-md-12">
-                            <div class="swiper-container pt-services-slider">
-                                <div class="swiper-wrapper">
+                            <?php if (!empty($title)) : ?>
+                                <header>
+                                    <h2 class="widget-title"><?php echo esc_html($title); ?></h2>
 
-                                    <?php while ($get_featured_pages->have_posts()) : $get_featured_pages->the_post();
-                                        $duplicate_posts[] = $post->ID;
-                                        $image_id = get_post_thumbnail_id();
-                                        $image_path = wp_get_attachment_image_src( $image_id, 'thumbnail', true );
-                                        $image_alt = get_post_meta( $image_id, '_wp_attachment_image_alt', true );
-                                        $alt = !empty( $image_alt ) ? $image_alt : the_title_attribute( 'echo=0' ) ;
-                                        $service_icon = get_post_meta($post->ID, 'service_icon', true);
-
-                                        if (has_post_thumbnail()) {
-                                            $service_class = 'service-thumbnail';
-                                            $service_image_holder = '<img src="' . esc_url($image_path[0]) . '" alt="' . esc_attr($alt) . '" />';
-                                        } else {
-                                            $service_class = 'service-icon';
-                                            $service_image_holder = '<i class="fa ' . esc_attr($service_icon) . '"></i>';;
-                                        } ?>
-
-                                        <div class="swiper-slide">
-                                            <div class="pt-service-col">
-                                                <figure>
-                                                    <?php if (has_post_thumbnail() || !empty($service_icon)) : ?>
-                                                        <div class="<?php echo esc_attr($service_class); ?>">
-                                                            <?php echo $service_image_holder; ?>
-                                                        </div><!-- .thumbnail -->
-                                                    <?php endif; ?>
-                                                </figure>
-
-                                                <article class="pt-service-cont">
-                                                    <h3><a title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>"> <?php the_title(); ?></a></h3>
-
-                                                    <p><?php echo wp_trim_words(get_the_excerpt(), 12, ''); ?></p>
-                                                </article><!-- .pt-service-cont -->
-                                            </div><!-- .pt-service-col -->
-                                        </div><!-- .swiper-slide -->
-
-                                    <?php endwhile;
-
-                                    // Reset Post Data
-                                    wp_reset_postdata(); ?>
-
-                                </div><!-- .swiper-wrapper -->
-
-                                <?php if ( !empty( $button_text ) ) : ?>
-
-                                    <div class="pt-more-arrow">
-                                        <div class="pt-more-arrow-holder">
-                                            <?php if ( ( $countPosts > 3 && $countPosts < 6 ) || ( $countPosts > 6 ) ) : ?>
-                                                <i class="pt-arrow-left transition35"></i>
-                                            <?php endif; ?>
-                                            <a href="<?php echo esc_url( $button_url ); ?>" class="transition35"><?php echo esc_html( $button_text ); ?></a>
-                                            <?php if ( ( $countPosts > 3 && $countPosts < 6 ) || ( $countPosts > 6 ) ) : ?>
-                                                <i class="pt-arrow-right transition35"></i>
-                                            <?php endif; ?>
-                                        </div><!-- .pt-more-arrow-holder -->
-                                    </div><!-- .pt-more-arrow -->
-
-                                <?php endif; ?>
-                            </div><!-- .swiper-container -->
+                                    <?php if (!empty($sub_title)) : ?>
+                                        <h4><?php echo wp_kses_post($sub_title); ?></h4>
+                                    <?php endif; ?>
+                                </header>
+                            <?php endif; ?>
                         </div><!-- .col-md-12 -->
-                    
-                    <?php endif; ?>
-                </div><!-- .row -->
-            </div><!-- .container -->
-        </div><!-- .pt-services-sec -->
+
+                        <?php if ( !empty( $pt_service_pages ) ) : ?>
+
+                            <div class="col-md-12">
+                                <div class="swiper-container pt-services-slider">
+                                    <div class="swiper-wrapper">
+
+                                        <?php while ($get_featured_pages->have_posts()) : $get_featured_pages->the_post();
+                                            $duplicate_posts[] = $post->ID;
+                                            $image_id = get_post_thumbnail_id();
+                                            $image_path = wp_get_attachment_image_src( $image_id, 'thumbnail', true );
+                                            $image_alt = get_post_meta( $image_id, '_wp_attachment_image_alt', true );
+                                            $alt = !empty( $image_alt ) ? $image_alt : the_title_attribute( 'echo=0' ) ;
+                                            $service_icon = get_post_meta($post->ID, 'service_icon', true);
+
+                                            if (has_post_thumbnail()) {
+                                                $service_class = 'service-thumbnail';
+                                                $service_image_holder = '<img src="' . esc_url($image_path[0]) . '" alt="' . esc_attr($alt) . '" />';
+                                            } else {
+                                                $service_class = 'service-icon';
+                                                $service_image_holder = '<i class="fa ' . esc_attr($service_icon) . '"></i>';;
+                                            } ?>
+
+                                            <div class="swiper-slide">
+                                                <div class="pt-service-col">
+                                                    <figure>
+                                                        <?php if (has_post_thumbnail() || !empty($service_icon)) : ?>
+                                                            <div class="<?php echo esc_attr($service_class); ?>">
+                                                                <?php echo $service_image_holder; ?>
+                                                            </div><!-- .thumbnail -->
+                                                        <?php endif; ?>
+                                                    </figure>
+
+                                                    <article class="pt-service-cont">
+                                                        <h3><a title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>"> <?php the_title(); ?></a></h3>
+
+                                                        <p><?php echo wp_trim_words(get_the_excerpt(), 12, ''); ?></p>
+                                                    </article><!-- .pt-service-cont -->
+                                                </div><!-- .pt-service-col -->
+                                            </div><!-- .swiper-slide -->
+
+                                        <?php endwhile;
+
+                                        // Reset Post Data
+                                        wp_reset_postdata(); ?>
+
+                                    </div><!-- .swiper-wrapper -->
+
+                                    <?php if ( !empty( $button_text ) ) : ?>
+
+                                        <div class="pt-more-arrow">
+                                            <div class="pt-more-arrow-holder">
+                                                <?php if ( ( $countPosts > 3 && $countPosts < 6 ) || ( $countPosts > 6 ) ) : ?>
+                                                    <i class="pt-arrow-left transition35"></i>
+                                                <?php endif; ?>
+                                                <a href="<?php echo esc_url( $button_url ); ?>" class="transition35"><?php echo esc_html( $button_text ); ?></a>
+                                                <?php if ( ( $countPosts > 3 && $countPosts < 6 ) || ( $countPosts > 6 ) ) : ?>
+                                                    <i class="pt-arrow-right transition35"></i>
+                                                <?php endif; ?>
+                                            </div><!-- .pt-more-arrow-holder -->
+                                        </div><!-- .pt-more-arrow -->
+
+                                    <?php endif; ?>
+                                </div><!-- .swiper-container -->
+                            </div><!-- .col-md-12 -->
+                        
+                        <?php endif; ?>
+                    </div><!-- .row -->
+                </div><!-- .container -->
+            </div><!-- .pt-services-sec -->
+
+        </div><!-- .pt-widget-section -->
 
         <?php echo $args['after_widget'];
         ob_end_flush();

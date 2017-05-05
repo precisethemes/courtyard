@@ -88,35 +88,39 @@ class Courtyard_Social_Icons_Widget extends WP_Widget {
             $inline_style = ' style="background-color:' . esc_attr($background_color) . '"';
         }
 
-        echo $args['before_widget'] = str_replace('<section', '<section' . $inline_style, $args['before_widget']); ?>
+        echo $args['before_widget']; ?>
 
-        <div class="pt-social-icons-sec">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <header>
-                            <?php if (!empty($title)) : ?>
-                                <h2 class="widget-title"><?php echo esc_html($title); ?></h2>
+        <div class="pt-widget-section" <?php echo $inline_style; ?>>
+
+            <div class="pt-social-icons-sec">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <header>
+                                <?php if (!empty($title)) : ?>
+                                    <h2 class="widget-title"><?php echo esc_html($title); ?></h2>
+                                <?php endif; ?>
+                            </header>
+
+                            <?php if ( '' != $pt_social_icons ) : ?>
+
+                                <div class="pt-social-icons">
+                                    <ul>
+                                        <?php foreach ($pt_social_icons as $key => $value) {
+                                            if( '' != $pt_social_icons[$key]['pt_social_url'] ) { ?>
+                                                <li class="transition5"><a href="<?php echo esc_url( $pt_social_icons[$key]['pt_social_url'] );?>" target="_blank"><i class="fa <?php echo esc_attr( $pt_social_icons[$key]['pt_social_icon'] );?>"></i></a></li>
+                                        <?php } } ?>
+                                    </ul>
+                                </div><!-- .pt-social-icons -->
+
                             <?php endif; ?>
-                        </header>
 
-                        <?php if ( '' != $pt_social_icons ) : ?>
+                        </div><!-- .col-md-12 -->
+                    </div><!-- .row -->
+                </div><!-- .container -->
+            </div><!-- .pt-social-icons-sec -->
 
-                            <div class="pt-social-icons">
-                                <ul>
-                                    <?php foreach ($pt_social_icons as $key => $value) {
-                                        if( '' != $pt_social_icons[$key]['pt_social_url'] ) { ?>
-                                            <li class="transition5"><a href="<?php echo esc_url( $pt_social_icons[$key]['pt_social_url'] );?>" target="_blank"><i class="fa <?php echo esc_attr( $pt_social_icons[$key]['pt_social_icon'] );?>"></i></a></li>
-                                    <?php } } ?>
-                                </ul>
-                            </div><!-- .pt-social-icons -->
-
-                        <?php endif; ?>
-
-                    </div><!-- .col-md-12 -->
-                </div><!-- .row -->
-            </div><!-- .container -->
-        </div><!-- .pt-social-icons-sec -->
+        </div><!-- .pt-widget-section -->
 
         <?php echo $args['after_widget'];
         ob_end_flush();

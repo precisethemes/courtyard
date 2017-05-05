@@ -102,50 +102,52 @@ class Courtyard_About_Widget extends WP_Widget {
             $inline_style = 'style="background-color:' . esc_attr($background_color) . ';"';
         }
 
-        echo $args['before_widget'] = str_replace('<section', '<section', $args['before_widget']); ?>
+        echo $args['before_widget']; ?>
 
-        <?php if ( $get_featured_pages->have_posts() && !empty( $pt_page_id ) ) : ?>
+        <div class="pt-widget-section">
 
-            <?php while ($get_featured_pages->have_posts()) : $get_featured_pages->the_post();
-                $custom_image = get_template_directory_uri() . '/inc/admin/images/courtyard-default.png';
-                $image_id = get_post_thumbnail_id();
-                $image_path = wp_get_attachment_image_src( $image_id, 'courtyard-1920x1080', true );
-                if ( has_post_thumbnail() ) {
-                    $custom_image = $image_path[0];
-                }
-                $image_alt = get_post_meta( $image_id, '_wp_attachment_image_alt', true );
-                $alt = !empty( $image_alt ) ? $image_alt : the_title_attribute( 'echo=0' ) ;
-                $inline_img_style = 'style="background:url(' . esc_url($custom_image) . ') no-repeat;"';
-                ?>
+            <?php if ( $get_featured_pages->have_posts() && !empty( $pt_page_id ) ) : ?>
 
-                <div class="pt-about-wrap" <?php echo $inline_img_style; ?>>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-7 col-sm-7 col-md-push-5 col-sm-push-5">
-                                <div class="pt-about-col">
-                                    <article class="pt-about-cont" <?php echo $inline_style; ?>>
-                                        <div class="pt-about-cont-holder">
-                                            <header>
-                                                <h3><?php the_title(); ?></h3>
-                                            </header>
+                <?php while ($get_featured_pages->have_posts()) : $get_featured_pages->the_post();
+                    $custom_image = get_template_directory_uri() . '/inc/admin/images/courtyard-default.png';
+                    $image_id = get_post_thumbnail_id();
+                    $image_path = wp_get_attachment_image_src( $image_id, 'courtyard-1920x1080', true );
+                    if ( has_post_thumbnail() ) {
+                        $custom_image = $image_path[0];
+                    }
+                    $image_alt = get_post_meta( $image_id, '_wp_attachment_image_alt', true );
+                    $alt = !empty( $image_alt ) ? $image_alt : the_title_attribute( 'echo=0' ) ;
+                    $inline_img_style = 'style="background:url(' . esc_url($custom_image) . ') no-repeat;"';
+                    ?>
 
-                                            <p><?php the_content(); ?></p>
-                                        </div><!-- .pt-about-cont-holder -->
-                                    </article><!-- .pt-about-cont -->
-                                </div><!-- .pt-about-col -->
-                            </div><!-- .col-md-12 -->
-                        </div><!-- .row -->
-                    </div><!-- .container -->
-                </div><!-- .pt-about-wrap -->
+                    <div class="pt-about-wrap" <?php echo $inline_img_style; ?>>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-7 col-sm-7 col-md-push-5 col-sm-push-5">
+                                    <div class="pt-about-col">
+                                        <article class="pt-about-cont" <?php echo $inline_style; ?>>
+                                            <div class="pt-about-cont-holder">
+                                                <header>
+                                                    <h3><?php the_title(); ?></h3>
+                                                </header>
 
-            <?php endwhile;
+                                                <p><?php the_content(); ?></p>
+                                            </div><!-- .pt-about-cont-holder -->
+                                        </article><!-- .pt-about-cont -->
+                                    </div><!-- .pt-about-col -->
+                                </div><!-- .col-md-12 -->
+                            </div><!-- .row -->
+                        </div><!-- .container -->
+                    </div><!-- .pt-about-wrap -->
 
-            // Reset Post Data
-            wp_reset_postdata(); ?>
+                <?php endwhile;
 
-        <?php endif; ?>
+                // Reset Post Data
+                wp_reset_postdata(); ?>
 
+            <?php endif; ?>
 
+        </div><!-- .pt-widget-section -->
 
         <?php echo $args['after_widget'];
         ob_end_flush();

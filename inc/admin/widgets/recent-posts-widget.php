@@ -215,78 +215,82 @@ class courtyard_recent_posts_widget extends WP_Widget
             $inline_style = ' style="background-color:' . esc_attr($background_color) . '"';
         }
 
-        echo $args['before_widget'] = str_replace('<section', '<section' .$inline_style , $args['before_widget']); ?>
+        echo $args['before_widget']; ?>
 
-        <div class="pt-recent-posts-sec">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <header>
-                            <?php if (!empty($title)) : ?>
-                                <h2 class="widget-title"><?php echo esc_html($title); ?></h2>
-                            <?php endif; ?>
+        <div class="pt-widget-section" <?php echo $inline_style; ?>>
 
-                            <?php if (!empty($sub_title)) : ?>
-                                <h4><?php echo wp_kses_post($sub_title); ?></h4>
-                            <?php endif; ?>
-                        </header>
+            <div class="pt-recent-posts-sec">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <header>
+                                <?php if (!empty($title)) : ?>
+                                    <h2 class="widget-title"><?php echo esc_html($title); ?></h2>
+                                <?php endif; ?>
 
-                        <div class="pt-recent-posts-wrap">
+                                <?php if (!empty($sub_title)) : ?>
+                                    <h4><?php echo wp_kses_post($sub_title); ?></h4>
+                                <?php endif; ?>
+                            </header>
 
-                            <?php if ($get_featured_posts->have_posts()) : ?>
-                                <?php while ($get_featured_posts->have_posts()) : $get_featured_posts->the_post();
-                                    $custom_image = get_template_directory_uri() . '/inc/admin/images/courtyard-default-400x260.png';
-                                    $image_id       = get_post_thumbnail_id();
-                                    $image_path     = wp_get_attachment_image_src( $image_id, 'courtyard-400x260', true );
-                                    $image_alt      = get_post_meta( $image_id, '_wp_attachment_image_alt', true );
-                                    $alt            = !empty( $image_alt ) ? $image_alt : the_title_attribute( 'echo=0' ) ;
-                                    ?>
+                            <div class="pt-recent-posts-wrap">
 
-                                    <div class="pt-recent-posts-col">
-                                        <figure>
-                                            <a title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>">
-                                                <?php if ( !has_post_thumbnail() ) : ?>
+                                <?php if ($get_featured_posts->have_posts()) : ?>
+                                    <?php while ($get_featured_posts->have_posts()) : $get_featured_posts->the_post();
+                                        $custom_image = get_template_directory_uri() . '/inc/admin/images/courtyard-default-400x260.png';
+                                        $image_id       = get_post_thumbnail_id();
+                                        $image_path     = wp_get_attachment_image_src( $image_id, 'courtyard-400x260', true );
+                                        $image_alt      = get_post_meta( $image_id, '_wp_attachment_image_alt', true );
+                                        $alt            = !empty( $image_alt ) ? $image_alt : the_title_attribute( 'echo=0' ) ;
+                                        ?>
 
-                                                    <img src="<?php echo esc_url( $custom_image ); ?>" alt="<?php echo esc_attr( $alt ); ?>" title="<?php the_title_attribute(); ?>" />
+                                        <div class="pt-recent-posts-col">
+                                            <figure>
+                                                <a title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>">
+                                                    <?php if ( !has_post_thumbnail() ) : ?>
 
-                                                <?php else : ?>
+                                                        <img src="<?php echo esc_url( $custom_image ); ?>" alt="<?php echo esc_attr( $alt ); ?>" title="<?php the_title_attribute(); ?>" />
 
-                                                    <img src="<?php echo esc_url( $image_path[0] ); ?>" alt="<?php echo esc_attr( $alt ); ?>" title="<?php the_title_attribute(); ?>" />
+                                                    <?php else : ?>
 
-                                                <?php endif; ?>
-                                            </a>
+                                                        <img src="<?php echo esc_url( $image_path[0] ); ?>" alt="<?php echo esc_attr( $alt ); ?>" title="<?php the_title_attribute(); ?>" />
 
-                                            <div class="pt-blog-date transition5">
-                                                <div class="pt-blog-post-month"><?php echo esc_html( get_the_time("M") ); ?><br/><?php echo esc_html( get_the_time("Y") ); ?></div>
-                                                <div class="pt-blog-post-day"><?php echo esc_html( get_the_time("d") ); ?></div>
-                                            </div>
+                                                    <?php endif; ?>
+                                                </a>
 
-                                            <div class="pt-blog-post-more-icon transition5">
-                                                <a class="transition5" title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>" ><i class="pt-arrow-right transition5"></i></a>
-                                            </div>
-                                        </figure>
+                                                <div class="pt-blog-date transition5">
+                                                    <div class="pt-blog-post-month"><?php echo esc_html( get_the_time("M") ); ?><br/><?php echo esc_html( get_the_time("Y") ); ?></div>
+                                                    <div class="pt-blog-post-day"><?php echo esc_html( get_the_time("d") ); ?></div>
+                                                </div>
 
-                                        <article class="pt-recent-posts-cont">
-                                            <h3><a title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                                                <div class="pt-blog-post-more-icon transition5">
+                                                    <a class="transition5" title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>" ><i class="pt-arrow-right transition5"></i></a>
+                                                </div>
+                                            </figure>
 
-                                            <p><?php echo wp_trim_words(get_the_excerpt(), 18, ''); ?></p>
+                                            <article class="pt-recent-posts-cont">
+                                                <h3><a title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 
-                                            <div class="pt-read-more">
-                                                <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php echo esc_html__('Read More', 'courtyard'); ?></a>
-                                            </div><!-- .pt-read-more -->
-                                        </article><!-- .pt-recent-posts-cont -->
-                                    </div><!-- .pt-recent-posts-col -->
+                                                <p><?php echo wp_trim_words(get_the_excerpt(), 18, ''); ?></p>
 
-                                <?php endwhile;
-                                // Reset Post Data
-                                wp_reset_postdata(); ?>
-                            <?php endif; ?>
+                                                <div class="pt-read-more">
+                                                    <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php echo esc_html__('Read More', 'courtyard'); ?></a>
+                                                </div><!-- .pt-read-more -->
+                                            </article><!-- .pt-recent-posts-cont -->
+                                        </div><!-- .pt-recent-posts-col -->
 
-                        </div><!-- .pt-recent-posts-wrap -->
-                    </div><!-- .col-md-12 -->
-                </div><!-- .row -->
-            </div><!-- .container -->
-        </div><!-- .pt-recent-posts-sec -->
+                                    <?php endwhile;
+                                    // Reset Post Data
+                                    wp_reset_postdata(); ?>
+                                <?php endif; ?>
+
+                            </div><!-- .pt-recent-posts-wrap -->
+                        </div><!-- .col-md-12 -->
+                    </div><!-- .row -->
+                </div><!-- .container -->
+            </div><!-- .pt-recent-posts-sec -->
+
+        </div><!-- .pt-widget-section -->
 
         <?php echo $args['after_widget'];
         ob_end_flush();

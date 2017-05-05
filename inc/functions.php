@@ -110,7 +110,7 @@ function courtyard_admin_scripts( ) {
 
         // Image Uploader
         wp_enqueue_media();
-        wp_enqueue_script( 'courtyard-image-uploader', get_template_directory_uri() . '/js/admin/image-uploader.js', false, $courtyard_version, true );
+        wp_register_script( 'courtyard-image-uploader', get_template_directory_uri() . '/js/admin/image-uploader.js', false, $courtyard_version, true );
 
         // Color Picker
         wp_enqueue_style( 'wp-color-picker' );     
@@ -161,7 +161,10 @@ add_filter( 'excerpt_more', 'courtyard_excerpt_more' );
 /*--------------------------------------------------------------------------------------------------*/
 
 add_filter( 'manage_edit-page_columns', 'courtyard_page_columns' );
+add_filter( 'parse_query', 'pt_sort_page_by_template' );
 add_action( 'manage_page_posts_custom_column', 'courtyard_render_page_columns' );
+add_action( 'restrict_manage_posts', 'pt_template_filter' );
+
 
 /**
  * Define custom columns for page.
@@ -176,6 +179,19 @@ function courtyard_page_columns( $existing_columns ) {
         $new_column_list[$key] = $title;
     }
     return $new_column_list;
+}
+
+/**
+ * Listing the page by page templates
+ */
+function pt_sort_page_by_template($query) {
+    global $pagenow;
+    if ( isset( $_GET['pt_template_filter'] ) ) {
+        if(is_admin() && $pagenow=='edit.php' && isset($_GET['post_type']) && isset($_GET['post_type'])=='page'){
+            $query->query_vars['meta_key'] = '_wp_page_template';
+            $query->query_vars['meta_value'] = $_GET['pt_template_filter'];
+        }
+    }
 }
 
 /**
@@ -195,6 +211,31 @@ function courtyard_render_page_columns( $column ){
         }
 
         echo isset( $template ) ? esc_html( $template ) : esc_html__( 'Default Template', 'courtyard' );
+    }
+}
+
+/**
+ * Page Templates Dropdown filter list.
+ */
+function pt_template_filter() {
+    global $typenow;
+
+    if( $typenow == 'page' ){
+
+        $pt_templates = wp_get_theme()->get_page_templates();
+        echo '<select name="pt_template_filter">';
+        echo '<option value="">'.esc_html__('All Templates','courtyard').'</option>';
+        foreach ( $pt_templates as $pt_template_name => $pt_template_filename ) {
+
+            if ( isset( $_GET['pt_template_filter'] ) && ( $_GET['pt_template_filter'] == $pt_template_name ) ){
+                $selected = "selected";
+            } else {
+                $selected = '';
+            }
+            echo '<option value="'.esc_attr( $pt_template_name ).'" '.$selected.'>' . esc_html( $pt_template_filename ).'</option>';
+        }
+        echo '</select>';
+
     }
 }
 

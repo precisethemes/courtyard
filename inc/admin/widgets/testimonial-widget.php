@@ -143,79 +143,83 @@ class Courtyard_Testimonials_Widget extends WP_Widget {
         $inline_style = ' style="background-color:' . esc_attr($background_color) . '"';
       }
 
-      echo $args['before_widget'] = str_replace('<section', '<section' .$inline_style , $args['before_widget']); ?>
+      echo $args['before_widget']; ?>
 
-      <div class="pt-testimonials-sec">
-        <div class="container">
-          <div class="row">
-              <div class="col-md-12">
-                  <header>
-                    <?php if ( !empty( $title ) ) : ?>
+      <div class="pt-widget-section" <?php echo $inline_style; ?>>
 
-                      <h2 class="widget-title"><?php echo esc_html( $title ); ?></h2>
-
-                    <?php endif; ?>
-
-                    <?php if ( !empty( $sub_title ) ) : ?>
-                      <h4><?php echo wp_kses_post( $sub_title ); ?></h4>
-                    <?php endif; ?>
-                    
-                  </header>
-              </div><!-- .col-md-12 -->
-
-              <?php if ( !empty( $pt_testimonial_pages ) ) : ?>
+        <div class="pt-testimonials-sec">
+          <div class="container">
+            <div class="row">
                 <div class="col-md-12">
-                  <div class="swiper-container pt-testimonials-slider">
-                      <div class="swiper-wrapper">
-                        <?php while( $get_featured_pages->have_posts() ) : $get_featured_pages->the_post();
-                            $custom_image = get_template_directory_uri() . '/inc/admin/images/courtyard-default-400x260.png';
-                            $duplicate_posts[] = $post->ID;
-                            $image_id     = get_post_thumbnail_id();
-                            $image_path   = wp_get_attachment_image_src( $image_id, 'courtyard-400x260', true );
-                            $image_alt    = get_post_meta( $image_id, '_wp_attachment_image_alt', true );
-                            $alt          = !empty( $image_alt ) ? $image_alt : the_title_attribute( 'echo=0' ) ;
-                            ?>
+                    <header>
+                      <?php if ( !empty( $title ) ) : ?>
 
-                            <div class="swiper-slide">
-                                <div class="pt-testimonial-col">
-                                    <div class="pt-testimonial-cont transition35">
-                                        <p><?php echo wp_trim_words( get_the_excerpt(), 22, '' ); ?></p>
-                                    </div><!-- .pt-testimonial-cont -->
+                        <h2 class="widget-title"><?php echo esc_html( $title ); ?></h2>
 
-                                    <div class="pt-testimonial-user">
-                                        <figure>
-                                            <?php if ( !has_post_thumbnail() ) : ?>
-                                                <img src="<?php echo esc_url( $custom_image ); ?>" alt="<?php echo esc_attr( $alt ); ?>" title="<?php the_title_attribute(); ?>" />
-                                            <?php else : ?>
-                                                <img src="<?php echo esc_url( $image_path[0] ); ?>" alt="<?php echo esc_attr( $alt ); ?>" title="<?php the_title_attribute(); ?>" />
-                                            <?php endif; ?>
-                                        </figure>
+                      <?php endif; ?>
 
-                                        <h3><?php the_title(); ?></h3>
-                                    </div>
-                                </div><!-- .pt-testimonial-col -->
-                            </div><!-- .swiper-slide -->
-
-                        <?php endwhile;
-                        // Reset Post Data
-                        wp_reset_postdata(); ?>
-
-                      </div><!-- .swiper-wrapper -->
-
-                        <?php if ( $countPosts > 2 ) : ?>
-                          <div class="pt-more-arrow">
-                              <div class="pt-more-arrow-holder">
-                                  <i class="pt-arrow-left transition35"></i>
-                                  <i class="pt-arrow-right transition35"></i>
-                              </div><!-- .pt-more-arrow-holder -->
-                          </div><!-- .pt-more-arrow -->
-                        <?php endif; ?>
-                  </div><!-- .swiper-container -->
+                      <?php if ( !empty( $sub_title ) ) : ?>
+                        <h4><?php echo wp_kses_post( $sub_title ); ?></h4>
+                      <?php endif; ?>
+                      
+                    </header>
                 </div><!-- .col-md-12 -->
-              <?php endif; ?>
-          </div><!-- .row -->
-        </div><!-- .container -->
-      </div><!-- .pt-testimonial-sec -->
+
+                <?php if ( !empty( $pt_testimonial_pages ) ) : ?>
+                  <div class="col-md-12">
+                    <div class="swiper-container pt-testimonials-slider">
+                        <div class="swiper-wrapper">
+                          <?php while( $get_featured_pages->have_posts() ) : $get_featured_pages->the_post();
+                              $custom_image = get_template_directory_uri() . '/inc/admin/images/courtyard-default-400x260.png';
+                              $duplicate_posts[] = $post->ID;
+                              $image_id     = get_post_thumbnail_id();
+                              $image_path   = wp_get_attachment_image_src( $image_id, 'courtyard-400x260', true );
+                              $image_alt    = get_post_meta( $image_id, '_wp_attachment_image_alt', true );
+                              $alt          = !empty( $image_alt ) ? $image_alt : the_title_attribute( 'echo=0' ) ;
+                              ?>
+
+                              <div class="swiper-slide">
+                                  <div class="pt-testimonial-col">
+                                      <div class="pt-testimonial-cont transition35">
+                                          <p><?php echo wp_trim_words( get_the_excerpt(), 22, '' ); ?></p>
+                                      </div><!-- .pt-testimonial-cont -->
+
+                                      <div class="pt-testimonial-user">
+                                          <figure>
+                                              <?php if ( !has_post_thumbnail() ) : ?>
+                                                  <img src="<?php echo esc_url( $custom_image ); ?>" alt="<?php echo esc_attr( $alt ); ?>" title="<?php the_title_attribute(); ?>" />
+                                              <?php else : ?>
+                                                  <img src="<?php echo esc_url( $image_path[0] ); ?>" alt="<?php echo esc_attr( $alt ); ?>" title="<?php the_title_attribute(); ?>" />
+                                              <?php endif; ?>
+                                          </figure>
+
+                                          <h3><?php the_title(); ?></h3>
+                                      </div>
+                                  </div><!-- .pt-testimonial-col -->
+                              </div><!-- .swiper-slide -->
+
+                          <?php endwhile;
+                          // Reset Post Data
+                          wp_reset_postdata(); ?>
+
+                        </div><!-- .swiper-wrapper -->
+
+                          <?php if ( $countPosts > 2 ) : ?>
+                            <div class="pt-more-arrow">
+                                <div class="pt-more-arrow-holder">
+                                    <i class="pt-arrow-left transition35"></i>
+                                    <i class="pt-arrow-right transition35"></i>
+                                </div><!-- .pt-more-arrow-holder -->
+                            </div><!-- .pt-more-arrow -->
+                          <?php endif; ?>
+                    </div><!-- .swiper-container -->
+                  </div><!-- .col-md-12 -->
+                <?php endif; ?>
+            </div><!-- .row -->
+          </div><!-- .container -->
+        </div><!-- .pt-testimonial-sec -->
+
+      </div><!-- .pt-widget-section -->
 
       <?php echo $args['after_widget'];
       ob_end_flush();

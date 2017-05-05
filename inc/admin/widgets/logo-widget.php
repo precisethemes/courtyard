@@ -8,6 +8,17 @@ class Courtyard_Logo_Widget extends WP_Widget {
         $widget_ops = array('classname' => 'pt-logo-section', 'description' => esc_html__('Show your business patner logo.', 'courtyard'));
         $control_ops = array('width' => 200, 'height' => 250);
         parent::__construct(false, $name = esc_html__('PT: Logo', 'courtyard'), $widget_ops, $control_ops);
+        // Hooks.
+        add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_scripts' ) );
+    }
+
+    /**
+     * Enqueue styles and scripts.
+     */
+    public function enqueue_scripts() {
+        if ( is_active_widget( false, $this->id, $this->id_base, true ) || is_customize_preview() ) {
+            wp_enqueue_script( 'courtyard-image-uploader' );
+        }
     }
 
     function form($instance) {
@@ -199,39 +210,45 @@ class Courtyard_Logo_Widget extends WP_Widget {
             $inline_style = ' style="background-color:' . esc_attr($background_color) . '"';
         }
 
-        echo $args['before_widget'] = str_replace('<section', '<section' . $inline_style, $args['before_widget']); ?>
+        echo $args['before_widget']; ?>
 
-        <div class="pt-logo-sec">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <header>
-                            <?php if (!empty($title)) : ?>
-                                <h2 class="widget-title"><?php echo esc_html($title); ?></h2>
+        <div class="pt-widget-section" <?php echo $inline_style; ?>>
+
+            <div class="pt-logo-sec">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <header>
+                                <?php if (!empty($title)) : ?>
+                                    <h2 class="widget-title"><?php echo esc_html($title); ?></h2>
+                                <?php endif; ?>
+
+                                <?php if (!empty($sub_title)) : ?>
+                                    <h4><?php echo wp_kses_post($sub_title); ?></h4>
+                                <?php endif; ?>
+                            </header>
+
+                            <div class="pt-logos-wrap">
+                            <?php if ( !empty( $pt_logo ) ) : ?>
+                                <?php foreach ($pt_logo as $key => $value) {
+                                    if ( '' != $pt_logo[$key] ) :
+                                    $thumbnail_id = courtyard_get_attachment_id_from_url( $pt_logo[$key] );
+                                    $image_path = wp_get_attachment_image_src( $thumbnail_id, 'courtyard-400x260', true ); ?>
+                                        <div class="pt-logo-col">
+                                            <figure>
+                                                <a href="<?php if( !empty( $pt_logo_url[$key] ) ) { echo esc_url( $pt_logo_url[$key] ); } else { echo '#'; } ?>" <?php if( !empty( $pt_logo_url[$key] ) ) { echo 'target="_blank"'; } ?>><img src="<?php echo esc_url( $image_path[0] ); ?>" alt="<?php echo esc_attr( $pt_logo_title[$key] ); ?>" /></a>
+                                            </figure>
+                                        </div><!-- .pt-logo-col -->
+                                    <?php endif;
+                                }?>
                             <?php endif; ?>
 
-                            <?php if (!empty($sub_title)) : ?>
-                                <h4><?php echo wp_kses_post($sub_title); ?></h4>
-                            <?php endif; ?>
-                        </header>
+                            </div><!-- .pt-logos-wrap -->
+                        </div><!-- .col-md-12 -->
+                </div><!-- .container -->
+            </div><!-- .pt-logo-sec -->
 
-                        <div class="pt-logos-wrap">
-                        <?php if ( !empty( $pt_logo ) ) : ?>
-                            <?php foreach ($pt_logo as $key => $value) {
-                                if ( '' != $pt_logo[$key] ) : ?>
-                                    <div class="pt-logo-col">
-                                        <figure>
-                                            <a href="<?php if( !empty( $pt_logo_url[$key] ) ) { echo esc_url( $pt_logo_url[$key] ); } else { echo '#'; } ?>" <?php if( !empty( $pt_logo_url[$key] ) ) { echo 'target="_blank"'; } ?>><img src="<?php echo esc_url( $pt_logo[$key] ); ?>" alt="<?php echo esc_attr( $pt_logo_title[$key] ); ?>" /></a>
-                                        </figure>
-                                    </div><!-- .pt-logo-col -->
-                                <?php endif;
-                            }?>
-                        <?php endif; ?>
-
-                        </div><!-- .pt-logos-wrap -->
-                    </div><!-- .col-md-12 -->
-            </div><!-- .container -->
-        </div><!-- .pt-logo-sec -->
+        </div><!-- .pt-widget-section -->
 
         <?php echo $args['after_widget'];
         ob_end_flush();

@@ -137,73 +137,77 @@ class courtyard_packages_widget extends WP_Widget
             $inline_style = ' style="background-color:' . esc_attr($background_color) . '"';
         }
 
-        echo $args['before_widget'] = str_replace('<section', '<section' . $inline_style, $args['before_widget']); ?>
+        echo $args['before_widget']; ?>
 
-        <div class="pt-holiday-packages-sec">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <header>
-                            <?php if (!empty($title)) : ?>
-                                <h2 class="widget-title"><?php echo esc_html($title); ?></h2>
-                            <?php endif; ?>
+        <div class="pt-widget-section" <?php echo $inline_style; ?>>
 
-                            <?php if (!empty($sub_title)) : ?>
-                                <h4><?php echo wp_kses_post($sub_title); ?></h4>
-                            <?php endif; ?>
-                        </header>
-                    </div><!-- .col-md-12 -->
-
-                    <?php if ( !empty( $pt_package_pages ) ) : $pt_count = 1; ?>
-
+            <div class="pt-holiday-packages-sec">
+                <div class="container">
+                    <div class="row">
                         <div class="col-md-12">
+                            <header>
+                                <?php if (!empty($title)) : ?>
+                                    <h2 class="widget-title"><?php echo esc_html($title); ?></h2>
+                                <?php endif; ?>
 
-                            <?php while ($get_featured_pages->have_posts()) : $get_featured_pages->the_post();
-                                $custom_image = get_template_directory_uri() . '/inc/admin/images/courtyard-default.png';
-                                $duplicate_posts[] = $post->ID;
-                                $image_id       = get_post_thumbnail_id();
-                                $image_path     = wp_get_attachment_image_src( $image_id, 'courtyard-400x300', true );
-                                $image_alt      = get_post_meta( $image_id, '_wp_attachment_image_alt', true );
-                                $alt            = !empty( $image_alt ) ? $image_alt : the_title_attribute( 'echo=0' ) ;
-                                if ($pt_count == 1 ) {
-                                    $image_path = wp_get_attachment_image_src($image_id, 'courtyard-600x450', true);
-                                }
-                                ?>
-
-                                <div class="pt-holiday-package">
-                                    
-                                    <figure>
-                                        <?php if ( !has_post_thumbnail() ) : ?>
-                                            <img src="<?php echo esc_url( $custom_image ); ?>" alt="<?php echo esc_attr( $alt ); ?>" title="<?php the_title_attribute(); ?>" />
-                                        <?php else : ?>
-                                            <img src="<?php echo esc_url( $image_path[0] ); ?>" alt="<?php echo esc_attr( $alt ); ?>" title="<?php the_title_attribute(); ?>" />
-                                        <?php endif; ?>
-                                    </figure>
-                                    
-
-                                    <div class="pt-holiday-package-cont transition5">
-                                        <div class="pt-holiday-package-cont-holder">
-                                            <h3><a title="<?php the_title_attribute(); ?>"
-                                                   href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-
-                                            <a class="pt-holiday-package-read-more transition5"
-                                               title="<?php the_title_attribute(); ?>"
-                                               href="<?php the_permalink(); ?>"><?php echo esc_html__('View Details', 'courtyard'); ?></a>
-                                        </div>
-                                    </div><!-- .pt-holiday-packages-cont -->
-                                </div><!-- .pt-holiday-packages-col -->
-
-                            <?php $pt_count++; endwhile;
-                            // Reset Post Data
-                            wp_reset_postdata(); ?>
-
+                                <?php if (!empty($sub_title)) : ?>
+                                    <h4><?php echo wp_kses_post($sub_title); ?></h4>
+                                <?php endif; ?>
+                            </header>
                         </div><!-- .col-md-12 -->
 
-                    <?php endif; ?>
-                    
-                </div><!-- .row -->
-            </div><!-- .container -->
-        </div><!-- .pt-holiday-packages-sec -->
+                        <?php if ( !empty( $pt_package_pages ) ) : $pt_count = 1; ?>
+
+                            <div class="col-md-12">
+
+                                <?php while ($get_featured_pages->have_posts()) : $get_featured_pages->the_post();
+                                    $custom_image = get_template_directory_uri() . '/inc/admin/images/courtyard-default.png';
+                                    $duplicate_posts[] = $post->ID;
+                                    $image_id       = get_post_thumbnail_id();
+                                    $image_path     = wp_get_attachment_image_src( $image_id, 'courtyard-400x300', true );
+                                    $image_alt      = get_post_meta( $image_id, '_wp_attachment_image_alt', true );
+                                    $alt            = !empty( $image_alt ) ? $image_alt : the_title_attribute( 'echo=0' ) ;
+                                    if ($pt_count == 1 ) {
+                                        $image_path = wp_get_attachment_image_src($image_id, 'courtyard-600x450', true);
+                                    }
+                                    ?>
+
+                                    <div class="pt-holiday-package">
+                                        
+                                        <figure>
+                                            <?php if ( !has_post_thumbnail() ) : ?>
+                                                <img src="<?php echo esc_url( $custom_image ); ?>" alt="<?php echo esc_attr( $alt ); ?>" title="<?php the_title_attribute(); ?>" />
+                                            <?php else : ?>
+                                                <img src="<?php echo esc_url( $image_path[0] ); ?>" alt="<?php echo esc_attr( $alt ); ?>" title="<?php the_title_attribute(); ?>" />
+                                            <?php endif; ?>
+                                        </figure>
+                                        
+
+                                        <div class="pt-holiday-package-cont transition5">
+                                            <div class="pt-holiday-package-cont-holder">
+                                                <h3><a title="<?php the_title_attribute(); ?>"
+                                                       href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+
+                                                <a class="pt-holiday-package-read-more transition5"
+                                                   title="<?php the_title_attribute(); ?>"
+                                                   href="<?php the_permalink(); ?>"><?php echo esc_html__('View Details', 'courtyard'); ?></a>
+                                            </div>
+                                        </div><!-- .pt-holiday-packages-cont -->
+                                    </div><!-- .pt-holiday-packages-col -->
+
+                                <?php $pt_count++; endwhile;
+                                // Reset Post Data
+                                wp_reset_postdata(); ?>
+
+                            </div><!-- .col-md-12 -->
+
+                        <?php endif; ?>
+                        
+                    </div><!-- .row -->
+                </div><!-- .container -->
+            </div><!-- .pt-holiday-packages-sec -->
+
+        </div><!-- .pt-widget-section -->
 
         <?php echo $args['after_widget'];
         ob_end_flush();

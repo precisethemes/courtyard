@@ -880,7 +880,8 @@ a.pt-secondary-logo-show img,
 
 .pt-logo h1 {
 	margin: 0;
-	display: inline-block;
+	display: flex;
+	align-items: center;
 }
 
 .pt-logo a {
@@ -1387,7 +1388,7 @@ a.pt-secondary-logo-show img,
 /*--------------------------------------------------------------
 # Front Page
 --------------------------------------------------------------*/
-.pt-front-page section {
+.pt-front-page .pt-widget-section {
 	padding: 80px 0;
 }
 
@@ -2076,7 +2077,7 @@ a.pt-holiday-package-read-more:visited {
 /*--------------------------------------------------------------
 # About Widget
 --------------------------------------------------------------*/
-section.pt-about-section {
+section.pt-about-section .pt-widget-section {
 	padding: 0;
 }
 
@@ -2371,6 +2372,11 @@ section.pt-about-section {
 	border-bottom: 1px solid #e0e0e0;
 }
 
+#secondary .pt-recent-posts-col:nth-last-child(1) {
+	padding-bottom: 0;
+	border-bottom: 0;
+}
+
 #secondary .pt-recent-posts-section h4 {
 	display: none;
 }
@@ -2383,6 +2389,10 @@ section.pt-about-section {
 	padding: 20px 5px;
 }
 
+#footer-widgets .pt-social-icons-sec .col-md-12 {
+	padding: 0;
+}
+
 #secondary .pt-social-icons-sec ul,
 #footer-widgets .pt-social-icons-sec ul {
 	padding: 0;
@@ -2391,12 +2401,13 @@ section.pt-about-section {
 
 #secondary .pt-social-icons-sec li,
 #footer-widgets .pt-social-icons-sec li {
-	margin: 7px 3px 5px;
+	margin: 7px 6px 5px 0;
 	text-align: center;
-	font-size: 20px;
-	width: 48px;
-	height: 48px;
+	font-size: 18px;
+	width: 42px;
+	height: 42px;
 	border: 2px solid #d5d5d8;
+	padding: 0;
 }
 
 #footer-widgets .pt-social-icons-sec li {
@@ -2410,7 +2421,7 @@ section.pt-about-section {
 
 #secondary .pt-social-icons-sec li a,
 #footer-widgets .pt-social-icons-sec li a {
-	padding: 7px 0;
+	padding: 6px 0;
 	color: #828089;
 }
 
@@ -2510,6 +2521,10 @@ section.pt-about-section {
 #footer-widgets .pt-recent-posts-col {
 	width: 100%;
 	margin: 0 0 25px;
+}
+
+#footer-widgets .pt-recent-posts-col:nth-last-of-type(1) {
+	margin-bottom: 0;
 }
 
 #footer-widgets .pt-recent-posts-section h3 {
@@ -2882,7 +2897,7 @@ footer.site-footer a:hover {
 --------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
 	.pt-header-sep {
-		height: 58px;
+		height: 60px;
 	}
 
 	.pt-header-sep-hide {
@@ -3158,10 +3173,6 @@ footer.site-footer a:hover {
 	/*
 	** Recent Posts
 	*/
-	section.pt-recent-posts-section {
-		padding-bottom: 20px;
-	}
-
 	.pt-recent-posts-col {
 		margin-bottom: 60px;
 	}

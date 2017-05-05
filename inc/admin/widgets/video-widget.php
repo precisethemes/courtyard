@@ -139,36 +139,40 @@ class courtyard_video_widget extends WP_Widget
             $inline_style = ' style="background-color:' . esc_attr($background_color) . '"';
         }
 
-        echo $args['before_widget'] = str_replace('<section', '<section' .$inline_style , $args['before_widget']); ?>
+        echo $args['before_widget']; ?>
 
-        <div class="pt-video-sec">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <header>
+        <div class="pt-widget-section" <?php echo $inline_style; ?>>
 
-                            <?php if (!empty($title)) : ?>
-                                <h2 class="widget-title"><?php echo esc_html($title); ?></h2>
-                            <?php endif; ?>
-
-                            <?php if (!empty($sub_title)) : ?>
-                                <h4><?php echo wp_kses_post($sub_title); ?></h4>
-                            <?php endif; ?>
-
-                        </header>
-                    </div><!-- .col-md-12 -->
-
-                    <?php if (!empty($video_url)) : ?>
+            <div class="pt-video-sec">
+                <div class="container">
+                    <div class="row">
                         <div class="col-md-12">
-                            <div class="pt-video-col">
-                                <?php echo wp_oembed_get($video_url); ?>
-                            </div><!-- .pt-video-col -->
-                        </div><!-- .col-md-12 -->
-                    <?php endif; ?>
+                            <header>
 
-                </div><!-- .row -->
-            </div><!-- .container -->
-        </div><!-- .pt-video-sec -->
+                                <?php if (!empty($title)) : ?>
+                                    <h2 class="widget-title"><?php echo esc_html($title); ?></h2>
+                                <?php endif; ?>
+
+                                <?php if (!empty($sub_title)) : ?>
+                                    <h4><?php echo wp_kses_post($sub_title); ?></h4>
+                                <?php endif; ?>
+
+                            </header>
+                        </div><!-- .col-md-12 -->
+
+                        <?php if (!empty($video_url)) : ?>
+                            <div class="col-md-12">
+                                <div class="pt-video-col">
+                                    <?php echo wp_oembed_get($video_url); ?>
+                                </div><!-- .pt-video-col -->
+                            </div><!-- .col-md-12 -->
+                        <?php endif; ?>
+
+                    </div><!-- .row -->
+                </div><!-- .container -->
+            </div><!-- .pt-video-sec -->
+
+        </div><!--. pt-widget-section -->
 
         <?php echo $args['after_widget'];
         ob_end_flush();
