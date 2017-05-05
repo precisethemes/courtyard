@@ -2433,8 +2433,12 @@ section.pt-about-section .pt-widget-section {
 
 #secondary .pt-social-icons-sec li a,
 #footer-widgets .pt-social-icons-sec li a {
-	padding: 6px 0;
+	padding: 8px 0 7px;
 	color: #828089;
+}
+
+#footer-widgets .pt-social-icons-sec li a {
+	padding: 7px 0;
 }
 
 #secondary .pt-social-icons-sec li:hover a,
