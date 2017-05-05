@@ -2090,10 +2090,16 @@ section.pt-about-section .pt-widget-section {
 	padding: 60px;
 	margin-top: 220px;
 	margin-bottom: 30px;
+	box-shadow: 0 0 20px rgba(33,33,33,.2);
+	background: #fff;
 }
 
 .pt-about-cont-holder {
 	color: #757575;
+}
+
+.pt-about-cont-holder h3 {
+	text-align: left;
 }
 
 /*--------------------------------------------------------------
@@ -3118,6 +3124,20 @@ footer.site-footer a:hover {
 # Max width 480px
 --------------------------------------------------------------*/
 @media screen and (max-width: 480px) {
+	/*
+	** Logo
+	*/
+	.pt-home-navbar .pt-logo {
+		padding: 20px 0;
+	}
+
+	/*
+	** Mobile Nav
+	*/
+	.pt-home-navbar .pt-menu-sm {
+		top: 23px !important;
+	}
+
 	/*
 	** Hero Slider
 	*/
