@@ -2113,9 +2113,17 @@ section.pt-about-section .pt-widget-section {
 	text-align: center;
 }
 
+.pt-logo-col:hover {
+	opacity: .65;
+}
+
 /*--------------------------------------------------------------
 # Social Icons Widget
 --------------------------------------------------------------*/
+.pt-social-icons-sec .widget-title {
+	margin-bottom: 40px;
+}
+
 .pt-social-icons-sec ul {
 	padding: 0;
 	margin: 0;
@@ -2127,7 +2135,7 @@ section.pt-about-section .pt-widget-section {
 	font-size: 32px;
 	width: 72px;
 	height: 72px;
-	margin: 40px 10px 0 ;
+	margin: 0 10px 0 ;
 	border-radius: 50%;
 	border: 3px solid #d5d5d8;
 	background: #fff;
@@ -2151,8 +2159,10 @@ section.pt-about-section .pt-widget-section {
 # Testimonials Widget
 --------------------------------------------------------------*/
 .pt-testimonial-col {
-	margin-top: 60px;
-	padding: 0 60px;
+	margin: 60px 10px 0;
+	padding: 25px 50px 50px;
+	background: #fff;
+	box-shadow: 0 0 20px rgba(33,33,33,.065);
 }
 
 .pt-testimonial-user {
@@ -2169,7 +2179,7 @@ section.pt-about-section .pt-widget-section {
 	border-radius: 50%;
 	overflow: hidden;
 	text-align: center;
-	box-shadow: 0 0 12px rgba(33,33,33,.2);
+	box-shadow: 0 0 8px rgba(33,33,33,.05);
 }
 .pt-testimonial-user figure img {
 	position: absolute;
@@ -2188,12 +2198,14 @@ section.pt-about-section .pt-widget-section {
 }
 
 .pt-testimonials-sec .pt-more-arrow-holder {
+	width: 174px;
 	height: 44px;
 }
 
 .pt-testimonials-sec .pt-more-arrow {
-	padding-top: 15px;
-	margin-top: 60px;
+	padding-top: 40px;
+	margin-top: 0;
+	border: 0;
 }
 
 /*--------------------------------------------------------------

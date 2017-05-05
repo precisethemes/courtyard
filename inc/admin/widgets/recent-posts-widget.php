@@ -223,15 +223,17 @@ class courtyard_recent_posts_widget extends WP_Widget
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <header>
-                                <?php if (!empty($title)) : ?>
-                                    <h2 class="widget-title"><?php echo esc_html($title); ?></h2>
-                                <?php endif; ?>
+                            <?php if ( !empty( $title ) || !empty( $sub_title ) ) : ?>
+                                <header>
+                                    <?php if (!empty($title)) : ?>
+                                        <h2 class="widget-title"><?php echo esc_html($title); ?></h2>
+                                    <?php endif; ?>
 
-                                <?php if (!empty($sub_title)) : ?>
-                                    <h4><?php echo wp_kses_post($sub_title); ?></h4>
-                                <?php endif; ?>
-                            </header>
+                                    <?php if (!empty($sub_title)) : ?>
+                                        <h4><?php echo wp_kses_post($sub_title); ?></h4>
+                                    <?php endif; ?>
+                                </header>
+                            <?php endif; ?>
 
                             <div class="pt-recent-posts-wrap">
 

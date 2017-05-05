@@ -110,7 +110,7 @@ function courtyard_admin_scripts( ) {
 
         // Image Uploader
         wp_enqueue_media();
-        wp_register_script( 'courtyard-image-uploader', get_template_directory_uri() . '/js/admin/image-uploader.js', false, $courtyard_version, true );
+        wp_enqueue_script( 'courtyard-image-uploader', get_template_directory_uri() . '/js/admin/image-uploader.js', false, $courtyard_version, true );
 
         // Color Picker
         wp_enqueue_style( 'wp-color-picker' );     

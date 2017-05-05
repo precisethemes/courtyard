@@ -150,20 +150,20 @@ class Courtyard_Testimonials_Widget extends WP_Widget {
         <div class="pt-testimonials-sec">
           <div class="container">
             <div class="row">
+              <?php if ( !empty( $title ) || !empty( $sub_title ) ) : ?>
                 <div class="col-md-12">
-                    <header>
-                      <?php if ( !empty( $title ) ) : ?>
+                  <header>
+                    <?php if ( !empty( $title ) ) : ?>
+                      <h2 class="widget-title"><?php echo esc_html( $title ); ?></h2>
+                    <?php endif; ?>
 
-                        <h2 class="widget-title"><?php echo esc_html( $title ); ?></h2>
+                    <?php if ( !empty( $sub_title ) ) : ?>
+                      <h4><?php echo wp_kses_post( $sub_title ); ?></h4>
+                    <?php endif; ?>
 
-                      <?php endif; ?>
-
-                      <?php if ( !empty( $sub_title ) ) : ?>
-                        <h4><?php echo wp_kses_post( $sub_title ); ?></h4>
-                      <?php endif; ?>
-                      
-                    </header>
+                  </header>
                 </div><!-- .col-md-12 -->
+              <?php endif; ?>
 
                 <?php if ( !empty( $pt_testimonial_pages ) ) : ?>
                   <div class="col-md-12">

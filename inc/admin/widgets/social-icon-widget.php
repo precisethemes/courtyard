@@ -96,11 +96,11 @@ class Courtyard_Social_Icons_Widget extends WP_Widget {
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <header>
-                                <?php if (!empty($title)) : ?>
+                            <?php if (!empty($title)) : ?>
+                                <header>
                                     <h2 class="widget-title"><?php echo esc_html($title); ?></h2>
-                                <?php endif; ?>
-                            </header>
+                                </header>
+                            <?php endif; ?>
 
                             <?php if ( '' != $pt_social_icons ) : ?>
 

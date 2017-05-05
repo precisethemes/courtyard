@@ -131,7 +131,8 @@ class Courtyard_About_Widget extends WP_Widget {
                                                     <h3><?php the_title(); ?></h3>
                                                 </header>
 
-                                                <p><?php the_content(); ?></p>
+                                                <?php the_content(); ?>
+                                                
                                             </div><!-- .pt-about-cont-holder -->
                                         </article><!-- .pt-about-cont -->
                                     </div><!-- .pt-about-col -->

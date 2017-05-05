@@ -191,8 +191,11 @@ jQuery(window).load(function() {
 			var pt_testimonials_slider = new Swiper(container, {
 				nextButton: nextButton,
 				prevButton: prevButton,
+				loop: false,
+				autoplay: 3000,
 				spaceBetween: 30,
 				preventClicks: false,
+				autoplayDisableOnInteraction: false,
 				slidesPerView: courtyard_services_slider_num,
 				touchEventsTarget: 'swiper-wrapper',
                 pagination: '.swiper-pagination',

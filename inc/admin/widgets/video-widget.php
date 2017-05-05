@@ -146,19 +146,20 @@ class courtyard_video_widget extends WP_Widget
             <div class="pt-video-sec">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-12">
-                            <header>
+                        <?php if ( !empty( $title ) || !empty( $sub_title ) ) : ?>
+                            <div class="col-md-12">
+                                <header>
+                                    <?php if (!empty($title)) : ?>
+                                        <h2 class="widget-title"><?php echo esc_html($title); ?></h2>
+                                    <?php endif; ?>
 
-                                <?php if (!empty($title)) : ?>
-                                    <h2 class="widget-title"><?php echo esc_html($title); ?></h2>
-                                <?php endif; ?>
+                                    <?php if (!empty($sub_title)) : ?>
+                                        <h4><?php echo wp_kses_post($sub_title); ?></h4>
+                                    <?php endif; ?>
 
-                                <?php if (!empty($sub_title)) : ?>
-                                    <h4><?php echo wp_kses_post($sub_title); ?></h4>
-                                <?php endif; ?>
-
-                            </header>
-                        </div><!-- .col-md-12 -->
+                                </header>
+                            </div><!-- .col-md-12 -->
+                        <?php endif; ?>
 
                         <?php if (!empty($video_url)) : ?>
                             <div class="col-md-12">
