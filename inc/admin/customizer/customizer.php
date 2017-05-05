@@ -688,27 +688,27 @@ if ( class_exists( 'WooCommerce' ) ) :
         'title'                 => esc_html__( 'WooCommerce', 'courtyard' ),
     ) );
 
-    // WooCommerc Archive/Blog
-    $wp_customize->add_section( 'courtyard_woocommerce_blog_section', array(
+    // WooCommerc Shop
+    $wp_customize->add_section( 'courtyard_woocommerce_shop_section', array(
         'priority'              => 2,
-        'title'                 => esc_html__( 'Archive/Blog Page', 'courtyard' ),
+        'title'                 => esc_html__( 'Shop Sidebar', 'courtyard' ),
         'panel'                 => 'courtyard_woocommerce_panel',
     ) );
 
-    // Blog sidebar.
-    $wp_customize->add_setting( 'courtyard_woocommerce_blog_sidebar', array(
-        'default'           => 'right_sidebar',
+    // Shop sidebar.
+    $wp_customize->add_setting( 'courtyard_woocommerce_shop_sidebar', array(
+        'default'           => 'no_sidebar_full_width',
         'capability'        => 'edit_theme_options',
         'sanitize_callback' => 'courtyard_sanitize_choices',                
     ) );
 
-    $wp_customize->add_control( new WP_Customizer_Image_Radio_Control( $wp_customize, 'courtyard_woocommerce_blog_sidebar', array(
+    $wp_customize->add_control( new WP_Customizer_Image_Radio_Control( $wp_customize, 'courtyard_woocommerce_shop_sidebar', array(
         'type'               => 'radio',
         'priority'           => 1,
-        'label'              => esc_html__('Archive/Blog Sidebar', 'courtyard'),
-        'description'        => esc_html__('Select default sidebar. This sidebar will be reflected in archives, categories, search page etc. of WooCommerce.', 'courtyard'),
-        'section'            => 'courtyard_woocommerce_blog_section',
-        'settings'           => 'courtyard_woocommerce_blog_sidebar',
+        'label'              => esc_html__('Shop Sidebar', 'courtyard'),
+        'description'        => esc_html__('Select default sidebar. This sidebar will be reflected in shop page as well as archive pages of WooCommerce.', 'courtyard'),
+        'section'            => 'courtyard_woocommerce_shop_section',
+        'settings'           => 'courtyard_woocommerce_shop_sidebar',
         'choices'            => array(
             'right_sidebar'                 => get_template_directory_uri() . '/inc/admin/images/right-sidebar.svg',
             'left_sidebar'                  => get_template_directory_uri() . '/inc/admin/images/left-sidebar.svg',
@@ -719,7 +719,7 @@ if ( class_exists( 'WooCommerce' ) ) :
     // WooCommerc Product Page
     $wp_customize->add_section( 'courtyard_woocommerce_product_section', array(
         'priority'              => 3,
-        'title'                 => esc_html__( 'Product Page', 'courtyard' ),
+        'title'                 => esc_html__( 'Product Sidebar', 'courtyard' ),
         'panel'                 => 'courtyard_woocommerce_panel',
     ) );
 

@@ -101,7 +101,7 @@ if ( ! function_exists( 'courtyard_woocommerce_sidebar_layout_class' ) ) :
 function courtyard_woocommerce_sidebar_layout_class() {
     global $post;
 
-    $layout = get_theme_mod( 'courtyard_woocommerce_blog_sidebar', 'right_sidebar' );
+    $layout = get_theme_mod( 'courtyard_woocommerce_shop_sidebar', 'right_sidebar' );
 
 
     // Front page displays in Reading Settings
@@ -122,7 +122,7 @@ function courtyard_woocommerce_sidebar_layout_class() {
     }
 
     elseif( is_page() ) {
-        $layout = get_theme_mod( 'courtyard_woocommerce_blog_sidebar', 'right_sidebar' );
+        $layout = get_theme_mod( 'courtyard_woocommerce_shop_sidebar', 'right_sidebar' );
         if( $layout_meta != 'default_layout' && $layout_meta != '' ) {
             $layout = get_post_meta( $post->ID, 'page_specific_layout', true );
         }
