@@ -196,3 +196,31 @@ function courtyard_woocommerce_sidebar_select() {
     }
 }
 endif;
+
+/*--------------------------------------------------------------------------------------------------*/
+/**
+ * WooCommerce Cart Icon in Primary Menu
+ */
+function pt_woo_cart_icon( $items, $args ) {
+    if ( $args->theme_location == 'primary' ) {
+        if( class_exists( 'WooCommerce' ) ) :
+            $items .= '<a class="pt-cart"></a>';
+        endif;
+    }
+    return $items;
+}
+add_filter( 'wp_nav_menu_items', 'pt_woo_cart_icon', 10, 2 );
+
+function woocommerce_header_add_to_cart_fragment( $fragments ) {
+    global $woocommerce;
+
+   ob_start();
+    ?>
+    <a class="pt-cart" href="<?php echo $woocommerce->cart->get_cart_url(); ?>"><i class="fa fa-shopping-cart"></i><?php if( WC()->cart->get_cart_contents_count() >= 1 ) { ?><span class="pt-cart-value"><?php echo sprintf(_n('%d', '%d', $woocommerce->cart->cart_contents_count, 'courtyard'), $woocommerce->cart->cart_contents_count);?></span><?php } ?></a>
+    <?php
+
+   $fragments['a.pt-cart'] = ob_get_clean();
+
+   return $fragments;
+}
+add_filter('add_to_cart_fragments', 'woocommerce_header_add_to_cart_fragment');

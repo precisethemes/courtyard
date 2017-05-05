@@ -68,7 +68,12 @@
 
 					<div class="col-md-8 col-sm-4 col-xs-3">
 						<nav class="pt-menu-wrap transition5">
+                            <?php if( function_exists( 'WC' ) ): ?>
+                                <span class="pt-cart-sm transition35"><a class="pt-cart"></a></span>
+                            <?php endif; ?>
+
 							<div class="pt-menu-sm transition35">
+
 								<i class="fa fa-bars"></i>
 
 								<nav class="pt-menu-sm-wrap transition5">
@@ -97,5 +102,4 @@
 
 		endif;
         ?>
-
 	</header>
