@@ -29,6 +29,7 @@ function courtyard_woo_actions() {
     remove_action('woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10);
     remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0 );
     remove_action('woocommerce_sidebar', 'woocommerce_get_sidebar', 10);
+    remove_action( 'woocommerce_before_shop_loop', 'woocommerce_result_count', 20 );
 
     add_action('woocommerce_before_main_content', 'courtyard_wrapper_start', 10);
     add_action('woocommerce_after_main_content', 'courtyard_wrapper_end', 10);
