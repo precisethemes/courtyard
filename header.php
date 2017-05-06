@@ -68,7 +68,7 @@
 
 					<div class="col-md-8 col-sm-4 col-xs-3">
 						<nav class="pt-menu-wrap transition5">
-                            <?php if( function_exists( 'WC' ) ): ?>
+                            <?php if( function_exists( 'WC' ) && WC()->cart->get_cart_contents_count() >= 1 ) :  ?>
                                 <span class="pt-cart-sm transition35"><a class="pt-cart"></a></span>
                             <?php endif; ?>
 

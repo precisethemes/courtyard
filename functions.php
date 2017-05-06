@@ -186,6 +186,12 @@ function courtyard_register_required_plugins() {
 	 * If the source is NOT from the .org repo, then source is also required.
 	 */
 	$plugins = array(
+		// WooCommerce
+		array(
+			'name'      => 'WooCommerce',
+			'slug'      => 'woocommerce',
+			'required'  => false,
+		),
 		// Contact Form 7
 		array(
 			'name'      => 'Contact Form 7',
