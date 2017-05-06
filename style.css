@@ -1112,6 +1112,7 @@ a.pt-secondary-logo {
 	display: none;
 	padding: 18px 32px 7px 10px;
 	font-size: 16px;
+	background: transparent;
 }
 
 .pt-cart-sm a {
