@@ -12,8 +12,8 @@ get_header(); ?>
 			
 			<?php 
 			global $post;
-			$post_id = $post->ID;
-			$widget_id = sprintf("pt_widget_area_%s", absint( $post_id ));
+			$post_name = $post->post_name;
+			$widget_id = sprintf("pt_widget_area_%s", esc_html( $post_name ));
 			if ( is_active_sidebar( $widget_id ) ) :
 		 		dynamic_sidebar( $widget_id );
 			endif; ?>

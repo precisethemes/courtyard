@@ -8,7 +8,6 @@
  */
 
 ?>
-
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'pt-post-wrap' ); ?>>
 
 	<?php echo courtyard_page_thumbnail(); ?>

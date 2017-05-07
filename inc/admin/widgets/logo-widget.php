@@ -112,6 +112,7 @@ class Courtyard_Logo_Widget extends WP_Widget {
                             </div>
                             <input type="hidden" class="widefat custom_media_input" id="<?php echo $this->get_field_id( 'logo_'. $num ); ?>" name="<?php echo $this->get_field_name( 'logo_'. $num ); ?>" value="<?php echo esc_url( $instance['logo_'. $num] ); ?>" />
                             <button class="custom_media_upload button button-secondary button-large" id="<?php echo $this->get_field_id( 'logo_'. $num ); ?>" data-choose="<?php esc_attr_e( 'Choose an image', 'courtyard' ); ?>" data-update="<?php esc_attr_e( 'Use image', 'courtyard' ); ?>" style="width:100%;margin-top:6px;margin-right:30px;"><?php esc_html_e( 'Select an Image', 'courtyard' ); ?></button>
+                            <p><em><?php esc_html_e('Recommended size 400 x 260', 'courtyard'); ?></em></p>
                         </div>
                     </div><!-- .pt-admin-input-holder -->
 

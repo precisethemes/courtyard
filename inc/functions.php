@@ -161,9 +161,9 @@ add_filter( 'excerpt_more', 'courtyard_excerpt_more' );
 /*--------------------------------------------------------------------------------------------------*/
 
 add_filter( 'manage_edit-page_columns', 'courtyard_page_columns' );
-add_filter( 'parse_query', 'pt_sort_page_by_template' );
+add_filter( 'parse_query', 'courtyard_page_by_template' );
 add_action( 'manage_page_posts_custom_column', 'courtyard_render_page_columns' );
-add_action( 'restrict_manage_posts', 'pt_template_filter' );
+add_action( 'restrict_manage_posts', 'courtyard_template_filter' );
 
 
 /**
@@ -184,12 +184,12 @@ function courtyard_page_columns( $existing_columns ) {
 /**
  * Listing the page by page templates
  */
-function pt_sort_page_by_template($query) {
+function courtyard_page_by_template($query) {
     global $pagenow;
-    if ( isset( $_GET['pt_template_filter'] ) ) {
+    if ( isset( $_GET['courtyard_template_filter'] ) ) {
         if(is_admin() && $pagenow=='edit.php' && isset($_GET['post_type']) && isset($_GET['post_type'])=='page'){
             $query->query_vars['meta_key'] = '_wp_page_template';
-            $query->query_vars['meta_value'] = $_GET['pt_template_filter'];
+            $query->query_vars['meta_value'] = $_GET['courtyard_template_filter'];
         }
     }
 }
@@ -217,17 +217,17 @@ function courtyard_render_page_columns( $column ){
 /**
  * Page Templates Dropdown filter list.
  */
-function pt_template_filter() {
+function courtyard_template_filter() {
     global $typenow;
 
     if( $typenow == 'page' ){
 
         $pt_templates = wp_get_theme()->get_page_templates();
-        echo '<select name="pt_template_filter">';
+        echo '<select name="courtyard_template_filter">';
         echo '<option value="">'.esc_html__('All Templates','courtyard').'</option>';
         foreach ( $pt_templates as $pt_template_name => $pt_template_filename ) {
 
-            if ( isset( $_GET['pt_template_filter'] ) && ( $_GET['pt_template_filter'] == $pt_template_name ) ){
+            if ( isset( $_GET['courtyard_template_filter'] ) && ( $_GET['courtyard_template_filter'] == $pt_template_name ) ){
                 $selected = "selected";
             } else {
                 $selected = '';
@@ -738,8 +738,8 @@ if ( ! function_exists( 'courtyard_fetch_first_frontpage_widget_id' ) ) :
  */
     function courtyard_fetch_first_frontpage_widget_id() {
         global $_wp_sidebars_widgets,$post;
-        $post_id = $post->ID;
-        $widget_id = sprintf("pt_widget_area_%s", absint( $post_id ));
+        $post_name = $post->post_name;
+        $widget_id = sprintf("pt_widget_area_%s", esc_html( $post_name ));
         $first_widget_id = $_wp_sidebars_widgets[$widget_id][0];
         return esc_html( $first_widget_id );
     }

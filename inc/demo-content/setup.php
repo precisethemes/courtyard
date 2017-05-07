@@ -31,6 +31,7 @@ function courtyard_before_content_import( $selected_import ) {
     if ( 'Courtyard' === $selected_import['import_file_name'] ) {
         $homepage = array(
           'post_title'    => 'Home',
+          'post_name'     => 'home',
           'post_type'     => 'page',  
           'post_content'  => '',
           'post_status'   => 'publish',
