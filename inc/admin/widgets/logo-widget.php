@@ -222,12 +222,10 @@ class Courtyard_Logo_Widget extends WP_Widget {
                             <?php if ( !empty( $pt_logo ) ) : ?>
                                 <div class="pt-logos-wrap">
                                 <?php foreach ($pt_logo as $key => $value) {
-                                    if ( '' != $pt_logo[$key] ) :
-                                    $thumbnail_id = courtyard_get_attachment_id_from_url( $pt_logo[$key] );
-                                    $image_path = wp_get_attachment_image_src( $thumbnail_id, 'courtyard-400x260', true ); ?>
+                                    if ( '' != $pt_logo[$key] ) : ?>
                                         <div class="pt-logo-col transition5">
                                             <figure>
-                                                <a href="<?php if( !empty( $pt_logo_url[$key] ) ) { echo esc_url( $pt_logo_url[$key] ); } else { echo '#'; } ?>" <?php if( !empty( $pt_logo_url[$key] ) ) { echo 'target="_blank"'; } ?>><img src="<?php echo esc_url( $image_path[0] ); ?>" alt="<?php echo esc_attr( $pt_logo_title[$key] ); ?>" /></a>
+                                                <a href="<?php if( !empty( $pt_logo_url[$key] ) ) { echo esc_url( $pt_logo_url[$key] ); } else { echo '#'; } ?>" <?php if( !empty( $pt_logo_url[$key] ) ) { echo 'target="_blank"'; } ?>><img src="<?php echo esc_url( $pt_logo[$key] ); ?>" alt="<?php echo esc_attr( $pt_logo_title[$key] ); ?>" /></a>
                                             </figure>
                                         </div><!-- .pt-logo-col -->
                                     <?php endif;
