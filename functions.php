@@ -187,11 +187,11 @@ function courtyard_register_required_plugins() {
 	 */
 	$plugins = array(
 		// WooCommerce
-		array(
-			'name'      => 'WooCommerce',
-			'slug'      => 'woocommerce',
-			'required'  => false,
-		),
+		// array(
+		// 	'name'      => 'WooCommerce',
+		// 	'slug'      => 'woocommerce',
+		// 	'required'  => false,
+		// ),
 		// Contact Form 7
 		array(
 			'name'      => 'Contact Form 7',
