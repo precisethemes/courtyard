@@ -1,7 +1,7 @@
 === Courtyard ===
 
 Contributors: Precise Themes
-Version: 1.1.1
+Version: 1.2
 Requires at least: 4.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -106,6 +106,12 @@ Screenshot images licensed under CC0 Public Domain (http://creativecommons.org/p
   Source: https://unsplash.com/photos/w04Uo0y8UyI
 
 === Changelog ===
+
+Version: 1.2 - May 07, 2017
+
+* Extra Widgets Added: Logo widget, Testimonials Widget, Social Profile Widget, About Widget
+* Beautified WooCommerce Shop
+* Fixed some CSS issues
 
 Version: 1.1.1 - May 01, 2017
 * Changed blog layout.
