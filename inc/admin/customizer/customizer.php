@@ -387,7 +387,7 @@ function courtyard_customize_register( $wp_customize ) {
     ) );
 
     $wp_customize->add_control( new Courtyard_Customize_Repeatable_Control( $wp_customize, 'courtyard_repeatable_social_icons', array(
-            'label'         => esc_html__('Scoial', 'courtyard'),
+            'label'         => esc_html__('Social', 'courtyard'),
             'description'   => esc_html__('Add your social profiles.', 'courtyard'),
             'section'       => 'courtyard_pro_social_icon_section',
             'live_title_id' => 'pt_social_label', // apply for unput text and textarea only
