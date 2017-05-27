@@ -689,7 +689,7 @@ if ( ! function_exists ( 'courtyard_related_pages_listing' ) ) :
                 if ( $get_featured_pages->have_posts() ) { ?>
 
                     <aside id="pt-related-lists" class="widget widget_related_room">     
-                        <h4 class="widget-title"><?php echo esc_html( 'Related', 'courtyard');?></h4> 
+                        <h4 class="widget-title"><?php esc_html_e( 'Related', 'courtyard');?></h4>
 
                         <?php while( $get_featured_pages->have_posts() ) : $get_featured_pages->the_post();
 

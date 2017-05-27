@@ -351,7 +351,7 @@ class Courtyard_Customize_Repeatable_Control extends WP_Customize_Control {
                                             </div>
 
                                             <div class="actions">
-                                                <button class="button remove-button " <# if ( field.value.url == '' ){ #> style="display:none"; <# } #> type="button"><?php esc_html_e( 'Remove' ) ?></button>
+                                                <button class="button remove-button " <# if ( field.value.url == '' ){ #> style="display:none"; <# } #> type="button"><?php esc_html_e( 'Remove','courtyard' ) ?></button>
 
                                                 <button class="button upload-button" data-add-txt="<?php esc_attr_e( 'Add Image', 'courtyard' ); ?>" data-change-txt="<?php esc_attr_e( 'Change Image', 'courtyard' ); ?>" type="button"><# if ( field.value.url == '' ){ #> <?php esc_html_e( 'Add Image', 'courtyard' ); ?> <# } else { #> <?php esc_html_e( 'Change Image', 'courtyard' ); ?> <# } #> </button>
                                                 <div style="clear:both"></div>

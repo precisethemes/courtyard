@@ -227,7 +227,7 @@ class Courtyard_Room_Related_Post_Meta_Box {
 		// Adding room_checkbox meta box for Page
 		add_meta_box( 
 			'room_related_post', 
-			esc_html__( 'Relatd Rooms', 'courtyard' ), 
+			esc_html__( 'Related Rooms', 'courtyard' ),
 			array( $this, 'render_metabox' ),
 			'page', 
 			'side', 
@@ -419,7 +419,7 @@ class Courtyard_Packages_Related_Post_Meta_Box {
 		// Adding packages_checkbox meta box for Page
 		add_meta_box( 
 			'packages_related_post', 
-			esc_html__( 'Relatd Packages', 'courtyard' ), 
+			esc_html__( 'Related Packages', 'courtyard' ),
 			array( $this, 'render_metabox' ),
 			'page', 
 			'side', 
