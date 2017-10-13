@@ -139,7 +139,7 @@ class courtyard_service_widget extends WP_Widget {
         ob_start();
         extract($args);
 
-        global $post, $duplicate_posts;
+        global $post;
         $title              = apply_filters( 'widget_title', isset( $instance['title'] ) ? $instance['title'] : '');
         $sub_title          = isset( $instance['sub_title'] ) ? $instance['sub_title'] : '';
         $pt_service_limit   = isset( $instance['service_limit'] ) ? $instance['service_limit'] : '8';
@@ -147,22 +147,16 @@ class courtyard_service_widget extends WP_Widget {
         $button_url         = isset( $instance['button_url'] ) ? $instance['button_url'] : '';
         $background_color   = isset( $instance['background_color'] ) ? $instance['background_color'] : null;
 
-        $pt_service_pages = array();
-        $pt_pages = get_pages();
-        // get the pages associated with Service Template.
-        foreach ( $pt_pages as $pt_page ) {
-            $page_id = $pt_page->ID;
-            $template_name = get_post_meta( $page_id, '_wp_page_template', true );
-            if( $template_name == 'page-templates/template-services.php' && !in_array( $page_id , $duplicate_posts ) ) {
-                array_push( $pt_service_pages, $page_id );
-            }
-        }
-
         $get_featured_pages = new WP_Query( array(
             'post_status'           => 'publish',
             'posts_per_page'        => $pt_service_limit,
-            'post_type'             =>  array( 'page' ),
-            'post__in'              => $pt_service_pages,
+            'post_type'  			=> 'page',
+            'meta_query' 			=> array(
+                array(
+                    'key'   => '_wp_page_template',
+                    'value' => 'page-templates/template-services.php'
+                )
+            ),
             'orderby'               => array( 'menu_order' => 'ASC', 'date' => 'DESC' )
         ) );
 
@@ -195,14 +189,13 @@ class courtyard_service_widget extends WP_Widget {
                             </div><!-- .col-md-12 -->
                         <?php endif; ?>
 
-                        <?php if ( !empty( $pt_service_pages ) ) : ?>
+                        <?php if ( $get_featured_pages->have_posts() ) : ?>
 
                             <div class="col-md-12">
                                 <div class="swiper-container pt-services-slider">
                                     <div class="swiper-wrapper">
 
                                         <?php while ($get_featured_pages->have_posts()) : $get_featured_pages->the_post();
-                                            $duplicate_posts[] = $post->ID;
                                             $image_id = get_post_thumbnail_id();
                                             $image_path = wp_get_attachment_image_src( $image_id, 'thumbnail', true );
                                             $image_alt = get_post_meta( $image_id, '_wp_attachment_image_alt', true );

@@ -34,14 +34,14 @@ class courtyard_image_slider_widget extends WP_Widget
             <div class="pt-admin-input-wrap">
                 <div class="pt-admin-input-label">
                     <label
-                    for="<?php echo $this->get_field_id('title'); ?>"><?php esc_html_e('Title', 'courtyard'); ?></label>
+                            for="<?php echo $this->get_field_id('title'); ?>"><?php esc_html_e('Title', 'courtyard'); ?></label>
                 </div><!-- .pt-admin-input-label -->
 
                 <div class="pt-admin-input-holder">
                     <input type="text" id="<?php echo $this->get_field_id('title'); ?>"
-                       name="<?php echo $this->get_field_name('title'); ?>"
-                       value="<?php echo esc_attr($instance['title']); ?>"
-                       placeholder="<?php esc_attr_e('Title', 'courtyard'); ?>">
+                           name="<?php echo $this->get_field_name('title'); ?>"
+                           value="<?php echo esc_attr($instance['title']); ?>"
+                           placeholder="<?php esc_attr_e('Title', 'courtyard'); ?>">
                 </div><!-- .pt-admin-input-holder -->
 
                 <div class="clear"></div>
@@ -50,36 +50,36 @@ class courtyard_image_slider_widget extends WP_Widget
             <div class="pt-admin-input-wrap">
                 <div class="pt-admin-input-label">
                     <label
-                    for="<?php echo $this->get_field_id('slide_no'); ?>"><?php esc_html_e('Count', 'courtyard'); ?></label>
+                            for="<?php echo $this->get_field_id('slide_no'); ?>"><?php esc_html_e('Count', 'courtyard'); ?></label>
                 </div><!-- .pt-admin-input-label -->
 
                 <div class="pt-admin-input-holder">
                     <input type="number" min="1" max="5" id="<?php echo $this->get_field_id('slide_no'); ?>"
-                       name="<?php echo $this->get_field_name('slide_no'); ?>"
-                       value="<?php echo esc_attr($instance['slide_no']); ?>">
+                           name="<?php echo $this->get_field_name('slide_no'); ?>"
+                           value="<?php echo esc_attr($instance['slide_no']); ?>">
                     <p><em><?php esc_html_e('Number of slides to display.', 'courtyard'); ?></em></p>
                 </div><!-- .pt-admin-input-holder -->
 
                 <div class="clear"></div>
- 
+
             </div><!-- .pt-admin-input-wrap -->
 
             <div class="pt-admin-input-wrap">
                 <div class="pt-admin-input-label">
                     <label
-                    for="<?php echo $this->get_field_id('scroll_down'); ?>"><?php esc_html_e('Scroll Down', 'courtyard'); ?></label>
+                            for="<?php echo $this->get_field_id('scroll_down'); ?>"><?php esc_html_e('Scroll Down', 'courtyard'); ?></label>
                 </div><!-- .pt-admin-input-label -->
 
                 <div class="pt-admin-input-holder">
                     <input type="checkbox" <?php echo $activate_bounce; ?>
-                       id="<?php echo $this->get_field_id('scroll_down'); ?>"
-                       name="<?php echo $this->get_field_name('scroll_down'); ?>"
-                       value="<?php echo esc_attr($instance['scroll_down']); ?>">
+                           id="<?php echo $this->get_field_id('scroll_down'); ?>"
+                           name="<?php echo $this->get_field_name('scroll_down'); ?>"
+                           value="<?php echo esc_attr($instance['scroll_down']); ?>">
                     <p><em><?php esc_html_e('Uncheck to disable.', 'courtyard'); ?></em></p>
                 </div><!-- .pt-admin-input-holder -->
 
                 <div class="clear"></div>
- 
+
             </div><!-- .pt-admin-input-wrap -->
 
             <div class="pt-admin-input-wrap">
@@ -105,27 +105,21 @@ class courtyard_image_slider_widget extends WP_Widget
         ob_start();
         extract($args);
 
-        global $post, $duplicate_posts;
+        global $post;
         $title = apply_filters('widget_title', isset($instance['title']) ? $instance['title'] : '');
         $pt_slide_limit = isset($instance['slide_no']) ? $instance['slide_no'] : '3';
         $pt_scroll_down = isset($instance['scroll_down']) ? $instance['scroll_down'] : '1';
 
-        $pt_slide_pages = array();
-        $pt_pages = get_pages();
-        // get the pages associated with Hero Image Template.
-        foreach ( $pt_pages as $pt_page ) {
-            $page_id = $pt_page->ID;
-            $template_name = get_post_meta( $page_id, '_wp_page_template', true );
-            if( $template_name == 'page-templates/template-image-slider.php' && !in_array( $page_id , $duplicate_posts ) ) {
-                array_push( $pt_slide_pages, $page_id );
-            }
-        }
-
         $get_featured_pages = new WP_Query( array(
             'post_status'           => 'publish',
             'posts_per_page'        => $pt_slide_limit,
-            'post_type'             =>  array( 'page' ),
-            'post__in'              => $pt_slide_pages,
+            'post_type'  			=> 'page',
+            'meta_query' 			=> array(
+                array(
+                    'key'   => '_wp_page_template',
+                    'value' => 'page-templates/template-image-slider.php'
+                )
+            ),
             'orderby'               => array( 'menu_order' => 'ASC', 'date' => 'DESC' )
         ) );
 
@@ -144,13 +138,12 @@ class courtyard_image_slider_widget extends WP_Widget
 
         echo $args['before_widget']; ?>
 
-        <?php if ( !empty( $pt_slide_pages ) ) : ?>
+        <?php if ( $get_featured_pages->have_posts() ) : ?>
 
             <div class="swiper-container pt-hero-image-slider" <?php echo $data_attr; ?>>
                 <div class="swiper-wrapper">
 
                     <?php while ($get_featured_pages->have_posts()) : $get_featured_pages->the_post();
-                        $duplicate_posts[] = $post->ID;
                         $image_id = get_post_thumbnail_id();
                         $image_path = wp_get_attachment_image_src($image_id, 'courtyard-1920x1080', true);
                         $image_alt = get_post_meta($image_id, '_wp_attachment_image_alt', true);
@@ -197,10 +190,10 @@ class courtyard_image_slider_widget extends WP_Widget
 
                 <?php if ( $countPosts > 1 ) : ?>
 
-                <nav class="pt-hero-slider-nav">
-                    <i class="pt-arrow-left transition35"></i>
-                    <i class="pt-arrow-right transition35"></i>
-                </nav><!-- .pt-more-arrow -->
+                    <nav class="pt-hero-slider-nav">
+                        <i class="pt-arrow-left transition35"></i>
+                        <i class="pt-arrow-right transition35"></i>
+                    </nav><!-- .pt-more-arrow -->
 
                 <?php endif; ?>
 
