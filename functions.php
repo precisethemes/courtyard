@@ -167,6 +167,16 @@ require get_template_directory() . '/woocommerce/woocommerce.php';
  */
 require get_template_directory() . '/inc/demo-content/setup.php';
 
+
+/**
+ * Welcome Screen.
+ */
+require get_template_directory() . '/inc/welcome-screen/class-welcome-screen.php';
+
+
+
+
+
 /**
  * Load TGM Activation file.
  */
@@ -185,11 +195,11 @@ function courtyard_register_required_plugins() {
 	 */
 	$plugins = array(
 		// WooCommerce
-		// array(
-		// 	'name'      => 'WooCommerce',
-		// 	'slug'      => 'woocommerce',
-		// 	'required'  => false,
-		// ),
+		array(
+			'name'      => 'WooCommerce',
+			'slug'      => 'woocommerce',
+			'required'  => false,
+		),
 		// Contact Form 7
 		array(
 			'name'      => 'Contact Form 7',

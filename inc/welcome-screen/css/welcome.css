@@ -1,0 +1,111 @@
+/* ----------------------------------------------------------------------------
+ * Welcome Page CSS
+ * ------------------------------------------------------------------------- */
+.info-container {
+    background-color: #fff;
+    margin-right: 20px;
+    padding: 30px;
+    margin-top: 20px;
+    border: 1px solid #e5e5e5;
+}
+.info-container::before,
+.info-container::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+.info-title {
+    margin: 0 0 45px;
+}
+
+.hello-user {
+    font-size: 18px;
+    color: #bcbfc4;
+}
+.hello-user span {
+}
+.welcome-desc {
+    font-size: 16px;
+    max-width: 600px;
+}
+.envy-blog-theme-tabs {
+    margin-top: 45px;
+}
+.envy-blog-tab {
+    display: none;
+    padding: 30px 10px;
+}
+.envy-blog-tab.show {
+    display: block;
+}
+.envy-blog-tab-nav .nav-button {
+    font-size: 18px;
+}
+.envy-blog-tab-nav a:active,
+.envy-blog-tab-nav a:focus {
+    box-shadow: none;
+}
+.envy-blog-tab-nav .nav-button.active {
+    background-color: transparent;
+    border-bottom: 1px solid #fff;
+    margin-bottom: -1px;
+}
+.nav-tab:first-of-type {
+    margin-left: 0;
+}
+.tab-column {
+    width: 45%;
+}
+.tab-column:first-of-type {
+    float: left;
+}
+.tab-column:last-of-type {
+    float: right;
+}
+.envy-blog-tab.support .dashicons {
+    display: block;
+    font-size: 32px;
+    height: auto;
+    width: auto;
+    text-align: left;
+}
+.envy-blog-tab.table table {
+    border-collapse: collapse;
+}
+.envy-blog-tab.table th,
+.envy-blog-tab.table td {
+    border: 1px solid #ebebeb;
+    padding: 20px;
+    text-align: center;
+}
+.envy-blog-tab .dash-green {
+    color: #5ad15a;
+    font-size: 28px;
+    height: auto;
+    width: auto;
+}
+.envy-blog-tab .dash-red {
+    color: #fc6f6f;
+    font-size: 28px;
+    height: auto;
+    width: auto;
+}
+
+.epsilon-framework-notice.epsilon-big {
+    background: #e9eff3;
+    border: 10px solid #fff;
+    color: #608299;
+    padding: 30px 10px;
+    text-align: center;
+    box-shadow: none;
+}
+.epsilon-framework-notice.epsilon-big:after, .epsilon-framework-notice.epsilon-big:before {
+    content: "";
+    display: table;
+}
+.epsilon-framework-notice.epsilon-big:after {
+    clear: both;
+}
+.epsilon-framework-notice.epsilon-big .epsilon-author-logo {
+    max-width: 300px;
+}
