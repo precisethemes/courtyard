@@ -167,15 +167,15 @@ require get_template_directory() . '/woocommerce/woocommerce.php';
  */
 require get_template_directory() . '/inc/demo-content/setup.php';
 
+/**
+ * Admin notice
+ */
+require get_template_directory() . '/inc/notices/persist-admin-notices-dismissal.php';
 
 /**
  * Welcome Screen.
  */
 require get_template_directory() . '/inc/welcome-screen/class-welcome-screen.php';
-
-
-
-
 
 /**
  * Load TGM Activation file.

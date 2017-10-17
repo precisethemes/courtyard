@@ -30,10 +30,9 @@ if ( ! class_exists( 'Envy_Blog_Welcome_Screen' ) ) :
             define( 'TEXT_DOMAIN', $text_domain );
             define( 'VERSION', $version );
 
-
             add_action( 'admin_menu', array( $this, 'admin_menu' ) );
-            add_action( 'wp_loaded', array( __CLASS__, 'hide_notices' ) );
-            add_action( 'load-themes.php', array( $this, 'admin_notice' ) );
+            add_action( 'admin_init', array( 'PAnD', 'init' ) );
+            add_action( 'admin_notices', array( $this, 'welcome_notice' ) );
         }
 
         /**
@@ -56,46 +55,15 @@ if ( ! class_exists( 'Envy_Blog_Welcome_Screen' ) ) :
         }
 
         /**
-         * Add admin notice.
-         */
-        public function admin_notice() {
-            global $pagenow;
-
-            // Let's bail on theme activation.
-            if ( 'themes.php' == $pagenow && isset( $_GET['activated'] ) ) {
-                add_action( 'admin_notices', array( $this, 'welcome_notice' ) );
-                update_option( 'envy-blog_admin_notice_welcome', 1 );
-
-                // No option? Let run the notice wizard again..
-            } elseif( ! get_option( 'envy-blog_admin_notice_welcome' ) ) {
-                add_action( 'admin_notices', array( $this, 'welcome_notice' ) );
-            }
-        }
-
-        /**
-         * Hide a notice if the GET variable is set.
-         */
-        public static function hide_notices() {
-            if ( isset( $_GET['courtyard-hide-notice'] ) && isset( $_GET['_envy-blog_notice_nonce'] ) ) {
-                if ( ! wp_verify_nonce( $_GET['_envy-blog_notice_nonce'], 'envy-blog_hide_notices_nonce' ) ) {
-                    wp_die( __( 'Action failed. Please refresh the page and retry.', 'courtyard' ) );
-                }
-
-                if ( ! current_user_can( 'manage_options' ) ) {
-                    wp_die( __( 'Cheatin&#8217; huh?', 'courtyard' ) );
-                }
-
-                $hide_notice = sanitize_text_field( $_GET['courtyard-hide-notice'] );
-                update_option( 'envy-blog_admin_notice_' . $hide_notice, 1 );
-            }
-        }
-
-        /**
          * Show welcome notice.
          */
         public function welcome_notice() {
+            if ( ! PAnD::is_admin_notice_active( 'courtyard-welcome-forever' ) ) {
+                return;
+            }
+
             ?>
-            <div class="courtyard-notice is-dismissible notice">
+            <div data-dismissible="courtyard-welcome-forever" class="updated notice notice-success is-dismissible">
                 <h1><?php printf( esc_html__( 'Welcome to %s', 'courtyard' ), THEME ); ?></h1>
                 <p><?php printf( esc_html__( 'Welcome! Thank you for choosing %s ! To fully take advantage of the best our theme can offer please make sure you visit our %swelcome page%s.', 'courtyard' ),THEME,'<a href="' . esc_url( admin_url( 'themes.php?page=courtyard-welcome' ) ) . '">', '</a>' ); ?></p>
                 <p>
@@ -174,17 +142,21 @@ if ( ! class_exists( 'Envy_Blog_Welcome_Screen' ) ) :
         public function getting_started() {
             ?>
             <div id="#begin" class="courtyard-tab begin show">
+
                 <h3><?php esc_html_e( 'Step 1 - Implement recommended actions', 'courtyard' ); ?></h3>
                 <p><?php echo sprintf( __( 'We\'ve made a list of steps for you to follow to get the most of %s.', 'courtyard' ), THEME ); ?></p>
                 <p><a class="actions" href="#actions"><?php esc_html_e( 'Check recommended actions', 'courtyard' ); ?></a></p>
                 <hr>
+
                 <h3><?php esc_html_e( 'Step 2 - Read documentation', 'courtyard' ); ?></h3>
                 <p><?php esc_html_e( 'Our documentation (including video tutorials) will have you up and running in no time.', 'courtyard' ); ?></p>
-                <p><a href="http://docs.athemes.com/category/8-courtyard" target="_blank"><?php esc_html_e( 'Documentation', 'courtyard' ); ?></a></p>
+                <p><a href="<?php echo esc_attr( 'https://precisethemes.com/courtyard-documentation/' ); ?>" target="_blank"><?php esc_html_e( 'Documentation', 'courtyard' ); ?></a></p>
                 <hr>
+
                 <h3><?php esc_html_e( 'Step 3 - Customize', 'courtyard' ); ?></h3>
                 <p><?php echo sprintf( __( 'Use the Customizer to make %s your own.', 'courtyard' ), THEME ); ?></p>
                 <p><a class="button button-primary button-large" href="<?php echo admin_url( 'customize.php' ); ?>"><?php esc_html_e( 'Go to Customizer', 'courtyard' ); ?></a></p>
+
             </div>
             <?php
         }
@@ -206,8 +178,8 @@ if ( ! class_exists( 'Envy_Blog_Welcome_Screen' ) ) :
                 <?php else : ?>
                     <p style="color:#23d423;font-style:italic;font-size:14px;"><?php esc_html_e( 'Plugin installed and active!', 'courtyard' ); ?></p>
                 <?php endif; ?>
-
                 <hr>
+
                 <h3><?php esc_html_e( 'Install: WooCommerce', 'courtyard' ); ?></h3>
                 <p><?php esc_html_e( 'It is highly recommend that you install WooCommerce. It will create custom post types like services and employees for you to use on your website.', 'courtyard' ); ?></p>
                 <?php if ( !class_exists('WooCommerce') ) : ?>
@@ -219,12 +191,11 @@ if ( ! class_exists( 'Envy_Blog_Welcome_Screen' ) ) :
                     <p style="color:#23d423;font-style:italic;font-size:14px;"><?php esc_html_e( 'Plugin installed and active!', 'courtyard' ); ?></p>
                 <?php endif; ?>
                 <hr>
-                <h3><?php esc_html_e( 'Demo content', 'courtyard' ); ?></h3>
 
+                <h3><?php esc_html_e( 'Demo content', 'courtyard' ); ?></h3>
                 <div class="column-wrapper">
                     <h4><?php esc_html_e( 'Install:  One Click Demo Import', 'courtyard' ); ?></h4>
                     <p><?php esc_html_e( 'Install the following plugin and then come back here to access the importer. With it you can import all demo content and change your homepage and blog page to the ones from our demo site, automatically. It will also assign a menu.', 'courtyard' ); ?></p>
-
 
                     <?php if ( !class_exists('OCDI_Plugin') ) : ?>
                         <?php $odi_url = wp_nonce_url(self_admin_url('update.php?action=install-plugin&plugin=one-click-demo-import'), 'install-plugin_one-click-demo-import'); ?>
@@ -236,6 +207,7 @@ if ( ! class_exists( 'Envy_Blog_Welcome_Screen' ) ) :
                         <p style="color:#23d423;font-style:italic;font-size:14px;"><?php esc_html_e( 'Plugin installed and active!', 'courtyard' ); ?></p>
                         <a class="button button-primary button-large" href="<?php echo admin_url( 'themes.php?page=pt-one-click-demo-import.php' ); ?>"><?php esc_html_e( 'Go to the automatic importer', 'courtyard' ); ?></a>
                     <?php endif; ?>
+
                 </div>
             </div>
             <?php
