@@ -163,9 +163,10 @@ require get_template_directory() . '/inc/functions.php';
 require get_template_directory() . '/woocommerce/woocommerce.php';
 
 /**
- * Load Demo Files .
+ * Demo Importer
  */
-require get_template_directory() . '/inc/demo-content/setup.php';
+require get_template_directory() . '/inc/demo-importer/demo-importer.php';
+
 
 /**
  * Load TGM Activation file.
