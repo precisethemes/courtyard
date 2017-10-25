@@ -621,6 +621,7 @@ function courtyard_customize_register( $wp_customize ) {
         'default'               => esc_html__( 'Read More', 'courtyard' ),
         'capability'            => 'edit_theme_options',
         'sanitize_callback'     => 'courtyard_sanitize_text_return_default',
+        'transport'             => 'postMessage',
     ) );
 
     $wp_customize->add_control( 'courtyard_blog_read_more_text', array(

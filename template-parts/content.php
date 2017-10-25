@@ -76,11 +76,11 @@
 				<?php the_excerpt(); ?>
 			</div><!-- .entry-summary -->
 
-			<?php if ( get_theme_mod( 'courtyard_blog_show_read_more', '1' ) == 1 ) : ?>
+            <?php if ( get_theme_mod( 'courtyard_blog_show_read_more', 1 ) == 1 ) : ?>
                 <div class="pt-read-more">
-                    <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php echo esc_html__('Read More', 'courtyard'); ?></a>
+                    <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php echo esc_html( get_theme_mod( 'courtyard_blog_read_more_text', 'Read More' ) ); ?></a>
                 </div><!-- .pt-read-more -->
-			<?php endif; ?>
+            <?php endif; ?>
 
 		<?php endif; ?>
 

@@ -28,7 +28,7 @@
 	/* Shows a live preview of changing the readmore text. */
 	wp.customize( 'courtyard_blog_read_more_text', function( value ) {
 		value.bind( function( to ) {
-			$( '.pt-content-wrap .read-more' ).text( to ) ;
+			$( '.pt-content-wrap .pt-read-more a' ).text( to ) ;
 		});
 	});
 
