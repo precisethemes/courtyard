@@ -172,6 +172,16 @@ require get_template_directory() . '/inc/demo-importer/demo-importer.php';
 
 
 /**
+ * Admin notice
+ */
+require get_template_directory() . '/inc/notices/persist-admin-notices-dismissal.php';
+
+/**
+ * Welcome Screen.
+ */
+require get_template_directory() . '/inc/welcome-screen/class-welcome-screen.php';
+
+/**
  * Load TGM Activation file.
  */
 require get_template_directory() . '/inc/class-tgm-plugin-activation.php';
@@ -189,11 +199,11 @@ function courtyard_register_required_plugins() {
 	 */
 	$plugins = array(
 		// WooCommerce
-		// array(
-		// 	'name'      => 'WooCommerce',
-		// 	'slug'      => 'woocommerce',
-		// 	'required'  => false,
-		// ),
+		array(
+			'name'      => 'WooCommerce',
+			'slug'      => 'woocommerce',
+			'required'  => false,
+		),
 		// Contact Form 7
 		array(
 			'name'      => 'Contact Form 7',
