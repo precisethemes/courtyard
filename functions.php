@@ -87,6 +87,9 @@ function courtyard_setup() {
 		'caption',
 	) );
 
+    // Add theme support for selective refresh for widgets.
+    add_theme_support( 'customize-selective-refresh-widgets' );
+
 	// Set up the WordPress core custom background feature.
 	add_theme_support( 'custom-background', apply_filters( 'courtyard_custom_background_args', array(
 		'default-color' => 'ffffff',
