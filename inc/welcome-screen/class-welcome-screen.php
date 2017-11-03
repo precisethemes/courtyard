@@ -247,9 +247,9 @@ if ( ! class_exists( 'Envy_Blog_Welcome_Screen' ) ) :
                 <table class="widefat fixed featuresList">
                     <thead>
                     <tr>
-                        <th>Features</th>
-                        <th>Free Version</th>
-                        <th>Pro Version</th>
+                        <td><?php esc_html_e( 'Features', 'courtyard' ); ?></td>
+                        <th><?php esc_html_e( 'Free Version', 'courtyard' ); ?></th>
+                        <th><?php esc_html_e( 'Pro Version', 'courtyard' ); ?></th>
                     </tr>
                     </thead>
 
@@ -257,16 +257,16 @@ if ( ! class_exists( 'Envy_Blog_Welcome_Screen' ) ) :
 
 
                     <tr>
-                        <td>Number of Header Layouts</td>
-                        <td>1 (Default)</td>
-                        <td>3</td>
+                        <td><?php esc_html_e( 'Number of Header Layouts', 'courtyard' ); ?></td>
+                        <th><?php esc_html_e( '1 (Default', 'courtyard' ); ?></th>
+                        <th><?php esc_html_e( '3', 'courtyard' ); ?></th>
                     </tr>
 
 
                     <tr>
-                        <td>Number of Header Bar Type</td>
-                        <td>1 (Sticky Only)</td>
-                        <td>3 (Sticky, Scroll and Hide/Show on Scroll)</td>
+                        <td><?php esc_html_e( 'Number of Header Bar Type', 'courtyard' ); ?></td>
+                        <th><?php esc_html_e( '1 (Sticky Only)', 'courtyard' ); ?></th>
+                        <th><?php esc_html_e( '3 (Sticky, Scroll and Hide/Show on Scroll)', 'courtyard' ); ?></th>
                     </tr>
 
 
@@ -278,9 +278,9 @@ if ( ! class_exists( 'Envy_Blog_Welcome_Screen' ) ) :
 
 
                     <tr>
-                        <td>Number of Custom Widgets</td>
-                        <td>10</td>
-                        <td>15</td>
+                        <td><?php esc_html_e( 'Number of Custom Widgets', 'courtyard' ); ?></td>
+                        <th><?php esc_html_e( '10', 'courtyard' ); ?></th>
+                        <th><?php esc_html_e( '15', 'courtyard' ); ?></th>
                     </tr>
 
 
@@ -341,9 +341,9 @@ if ( ! class_exists( 'Envy_Blog_Welcome_Screen' ) ) :
 
 
                     <tr>
-                        <td>Number of Footer Layouts</td>
-                        <td>4</td>
-                        <td>8</td>
+                        <td><?php esc_html_e( 'Number of Footer Layouts', 'courtyard' ); ?></td>
+                        <th><?php esc_html_e( '4', 'courtyard' ); ?></th>
+                        <th><?php esc_html_e( '8', 'courtyard' ); ?></th>
                     </tr>
 
 
@@ -362,9 +362,9 @@ if ( ! class_exists( 'Envy_Blog_Welcome_Screen' ) ) :
 
 
                     <tr>
-                        <td>Theme Support</td>
-                        <td>Quick Ticket Support</td>
-                        <td>Support via Forum</td>
+                        <td><?php esc_html_e( 'Theme Support', 'courtyard' ); ?></td>
+                        <th><?php esc_html_e( 'Quick Ticket Support', 'courtyard' ); ?></th>
+                        <th><?php esc_html_e( 'Support via Forum', 'courtyard' ); ?></th>
                     </tr>
 
 
