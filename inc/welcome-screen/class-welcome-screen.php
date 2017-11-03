@@ -243,123 +243,135 @@ if ( ! class_exists( 'Envy_Blog_Welcome_Screen' ) ) :
         public function free_vs_pro() {
             ?>
             <div id="#free-vs-pro" class="courtyard-tab free-vs-pro">
+
                 <table class="widefat fixed featuresList">
                     <thead>
                     <tr>
-                        <td><strong><h3><?php esc_html_e( 'Feature', 'courtyard' ); ?></h3></strong></td>
-                        <td style="width:20%;"><strong><h3><?php echo esc_html( THEME ); ?></h3></strong></td>
-                        <td style="width:20%;"><strong><h3><?php echo sprintf( __( '%s Pro', 'courtyard' ), THEME ); ?></h3></strong></td>
+                        <th>Features</th>
+                        <th>Free Version</th>
+                        <th>Pro Version</th>
                     </tr>
                     </thead>
+
                     <tbody>
+
+
                     <tr>
-                        <td><?php esc_html_e( 'Access to all Google Fonts', 'courtyard' ); ?></td>
-                        <td class="greenFeature"><span class="dashicons dashicons-yes dash-green"></span></td>
-                        <td class="greenFeature"><span class="dashicons dashicons-yes dash-green"></span></td>
+                        <td>Number of Header Layouts</td>
+                        <td>1 (Default)</td>
+                        <td>3</td>
                     </tr>
+
+
                     <tr>
-                        <td><?php esc_html_e( 'Responsive', 'courtyard' ); ?></td>
-                        <td class="greenFeature"><span class="dashicons dashicons-yes dash-green"></span></td>
-                        <td class="greenFeature"><span class="dashicons dashicons-yes dash-green"></span></td>
+                        <td>Number of Header Bar Type</td>
+                        <td>1 (Sticky Only)</td>
+                        <td>3 (Sticky, Scroll and Hide/Show on Scroll)</td>
                     </tr>
+
+
                     <tr>
-                        <td><?php esc_html_e( 'Parallax backgrounds', 'courtyard' ); ?></td>
-                        <td class="greenFeature"><span class="dashicons dashicons-yes dash-green"></span></td>
-                        <td class="greenFeature"><span class="dashicons dashicons-yes dash-green"></span></td>
-                    </tr>
-                    <tr>
-                        <td><?php esc_html_e( 'Social Icons', 'courtyard' ); ?></td>
-                        <td class="greenFeature"><span class="dashicons dashicons-yes dash-green"></span></td>
-                        <td class="greenFeature"><span class="dashicons dashicons-yes dash-green"></span></td>
-                    </tr>
-                    <tr>
-                        <td><?php esc_html_e( 'Slider, image or video header', 'courtyard' ); ?></td>
-                        <td class="greenFeature"><span class="dashicons dashicons-yes dash-green"></span></td>
-                        <td class="greenFeature"><span class="dashicons dashicons-yes dash-green"></span></td>
-                    </tr>
-                    <tr>
-                        <td><?php esc_html_e( 'Front Page Blocks', 'courtyard' ); ?></td>
-                        <td class="greenFeature"><span class="dashicons dashicons-yes dash-green"></span></td>
-                        <td class="greenFeature"><span class="dashicons dashicons-yes dash-green"></span></td>
-                    </tr>
-                    <tr>
-                        <td><?php esc_html_e( 'Translation ready', 'courtyard' ); ?></td>
-                        <td class="greenFeature"><span class="dashicons dashicons-yes dash-green"></span></td>
-                        <td class="greenFeature"><span class="dashicons dashicons-yes dash-green"></span></td>
-                    </tr>
-                    <tr>
-                        <td><?php esc_html_e( 'Polylang integration', 'courtyard' ); ?></td>
-                        <td class="greenFeature"><span class="dashicons dashicons-yes dash-green"></span></td>
-                        <td class="greenFeature"><span class="dashicons dashicons-yes dash-green"></span></td>
-                    </tr>
-                    <tr>
-                        <td><?php esc_html_e( 'Color options', 'courtyard' ); ?></td>
-                        <td class="greenFeature"><span class="dashicons dashicons-yes dash-green"></span></td>
-                        <td class="greenFeature"><span class="dashicons dashicons-yes dash-green"></span></td>
-                    </tr>
-                    <tr>
-                        <td><?php esc_html_e( 'Blog options', 'courtyard' ); ?></td>
-                        <td class="greenFeature"><span class="dashicons dashicons-yes dash-green"></span></td>
-                        <td class="greenFeature"><span class="dashicons dashicons-yes dash-green"></span></td>
-                    </tr>
-                    <tr>
-                        <td><?php esc_html_e( 'Widgetized footer', 'courtyard' ); ?></td>
-                        <td class="greenFeature"><span class="dashicons dashicons-yes dash-green"></span></td>
-                        <td class="greenFeature"><span class="dashicons dashicons-yes dash-green"></span></td>
-                    </tr>
-                    <tr>
-                        <td><?php esc_html_e( 'Background image support', 'courtyard' ); ?></td>
-                        <td class="greenFeature"><span class="dashicons dashicons-yes dash-green"></span></td>
-                        <td class="greenFeature"><span class="dashicons dashicons-yes dash-green"></span></td>
-                    </tr>
-                    <tr>
-                        <td><?php esc_html_e( 'Footer Credits option', 'courtyard' ); ?></td>
+                        <td><?php esc_html_e( 'Header Top Bar', 'courtyard' ); ?></td>
                         <td class="redFeature"><span class="dashicons dashicons-no-alt dash-red"></span></td>
                         <td class="greenFeature"><span class="dashicons dashicons-yes dash-green"></span></td>
                     </tr>
+
+
                     <tr>
-                        <td><?php esc_html_e( 'Extra widgets (timeline, latest news in carousel, pricing tables, a new employees widget and a new contact widget)', 'courtyard' ); ?></td>
+                        <td>Number of Custom Widgets</td>
+                        <td>10</td>
+                        <td>15</td>
+                    </tr>
+
+
+                    <tr>
+                        <td><?php esc_html_e( 'Smooth Page Scroll', 'courtyard' ); ?></td>
                         <td class="redFeature"><span class="dashicons dashicons-no-alt dash-red"></span></td>
                         <td class="greenFeature"><span class="dashicons dashicons-yes dash-green"></span></td>
                     </tr>
+
+
                     <tr>
-                        <td><?php esc_html_e( 'Extra Customizer Options (Front Page Section Titles, Single Employees, Single Projects, Header Contact Info, Buttons)', 'courtyard' ); ?></td>
+                        <td><?php esc_html_e( 'Coming Soon Page', 'courtyard' ); ?></td>
                         <td class="redFeature"><span class="dashicons dashicons-no-alt dash-red"></span></td>
                         <td class="greenFeature"><span class="dashicons dashicons-yes dash-green"></span></td>
                     </tr>
+
+
                     <tr>
-                        <td><?php esc_html_e( 'Header support for Crelly Slider', 'courtyard' ); ?></td>
+                        <td><?php esc_html_e( 'Advanced Options for Homepage Widgets', 'courtyard' ); ?></td>
                         <td class="redFeature"><span class="dashicons dashicons-no-alt dash-red"></span></td>
                         <td class="greenFeature"><span class="dashicons dashicons-yes dash-green"></span></td>
                     </tr>
+
+
                     <tr>
-                        <td><?php esc_html_e( 'Header support for shortcodes', 'courtyard' ); ?></td>
+                        <td><?php esc_html_e( 'Google Fonts', 'courtyard' ); ?></td>
                         <td class="redFeature"><span class="dashicons dashicons-no-alt dash-red"></span></td>
                         <td class="greenFeature"><span class="dashicons dashicons-yes dash-green"></span></td>
                     </tr>
+
+
                     <tr>
-                        <td><?php esc_html_e( 'Single Post/Page Options', 'courtyard' ); ?></td>
+                        <td><?php esc_html_e( 'Advanced Post Settings', 'courtyard' ); ?></td>
                         <td class="redFeature"><span class="dashicons dashicons-no-alt dash-red"></span></td>
                         <td class="greenFeature"><span class="dashicons dashicons-yes dash-green"></span></td>
                     </tr>
+
+
                     <tr>
-                        <td><?php esc_html_e( 'Woocommerce compatible', 'courtyard' ); ?></td>
+                        <td><?php esc_html_e( 'Advanced Page Settings', 'courtyard' ); ?></td>
                         <td class="redFeature"><span class="dashicons dashicons-no-alt dash-red"></span></td>
                         <td class="greenFeature"><span class="dashicons dashicons-yes dash-green"></span></td>
                     </tr>
+
+
                     <tr>
-                        <td><?php esc_html_e( '5 Extra Page Templates (Contact, Featured Header - Default, Featured Header - Wide, No Header - Default, No Header - Wide)', 'courtyard' ); ?></td>
+                        <td><?php esc_html_e( 'Custom 404 Error Page', 'courtyard' ); ?></td>
                         <td class="redFeature"><span class="dashicons dashicons-no-alt dash-red"></span></td>
                         <td class="greenFeature"><span class="dashicons dashicons-yes dash-green"></span></td>
                     </tr>
+
+
                     <tr>
-                        <td><?php esc_html_e( 'Priority support', 'courtyard' ); ?></td>
+                        <td><?php esc_html_e( 'Advanced WooCommerce Settings', 'courtyard' ); ?></td>
                         <td class="redFeature"><span class="dashicons dashicons-no-alt dash-red"></span></td>
                         <td class="greenFeature"><span class="dashicons dashicons-yes dash-green"></span></td>
                     </tr>
+
+
+                    <tr>
+                        <td>Number of Footer Layouts</td>
+                        <td>4</td>
+                        <td>8</td>
+                    </tr>
+
+
+                    <tr>
+                        <td><?php esc_html_e( 'Sortable Footer Bar Elements', 'courtyard' ); ?></td>
+                        <td class="redFeature"><span class="dashicons dashicons-no-alt dash-red"></span></td>
+                        <td class="greenFeature"><span class="dashicons dashicons-yes dash-green"></span></td>
+                    </tr>
+
+
+                    <tr>
+                        <td><?php esc_html_e( 'Footer Copyright Editor', 'courtyard' ); ?></td>
+                        <td class="redFeature"><span class="dashicons dashicons-no-alt dash-red"></span></td>
+                        <td class="greenFeature"><span class="dashicons dashicons-yes dash-green"></span></td>
+                    </tr>
+
+
+                    <tr>
+                        <td>Theme Support</td>
+                        <td>Quick Ticket Support</td>
+                        <td>Support via Forum</td>
+                    </tr>
+
+
                     </tbody>
                 </table>
-                <p style="text-align: right;"><a class="button button-primary button-large" href="<?php echo esc_url( 'https://precisethemes.com/courtyard/' );?>" target="_blank"><?php echo sprintf( __( '%s Pro', 'courtyard' ), THEME ); ?></a></p>
+
+                <p style="text-align: right;"><a class="button button-primary button-large" href="<?php echo esc_url( 'https://precisethemes.com/courtyard-pro/' );?>" target="_blank"><?php echo sprintf( __( '%s Pro', 'courtyard' ), THEME ); ?></a></p>
             </div>
             <?php
         }
