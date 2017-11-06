@@ -31,9 +31,11 @@
 					<div class="col-md-4 col-sm-8 col-xs-9">
 						<div class="pt-logo<?php if( is_home() || is_front_page() ) { echo ' pt-front-page-logo'; } ?> transition5">
 							<h1>
-								<i class="pt-primary-logo">
-									<?php courtyard_the_custom_logo(); ?>
-								</i>
+                                <?php if ( has_custom_logo() ) : ?>
+                                    <i class="pt-primary-logo">
+                                        <?php courtyard_the_custom_logo(); ?>
+                                    </i>
+                                <?php endif; ?>
 
 								<?php if ( is_front_page() && get_theme_mod( 'courtyard_secondary_logo', 0 ) != '' ) : ?>
 

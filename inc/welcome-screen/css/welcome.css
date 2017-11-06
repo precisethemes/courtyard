@@ -1,90 +1,167 @@
-/* ----------------------------------------------------------------------------
- * Welcome Page CSS
- * ------------------------------------------------------------------------- */
-.info-container {
-    background-color: #fff;
-    margin-right: 20px;
-    padding: 30px;
-    margin-top: 20px;
-    border: 1px solid #e5e5e5;
+/*--------------------------------------------------------------
+# Welcome Container
+--------------------------------------------------------------*/
+.welcome-notice {
+    padding: 40px 15px !important;
+    text-align: center;
 }
-.info-container::before,
-.info-container::after {
+
+.welcome-notice h1 {
+    font-size: 3em;
+}
+
+.welcome-notice p {
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.welcome-notice a.button-secondary {
+    height: auto;
+    padding: 6px 20px;
+    margin-top: 40px;
+    border: 0;
+    box-shadow: none;
+    background: #46b450;
+    color: #fff;
+    font-size: 16px;
+}
+
+.welcome-notice a.button-secondary:hover {
+    background: #29292d;
+    color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Backend Welcome Page
+--------------------------------------------------------------*/
+.about-container {
+    padding: 30px;
+    margin: 15px;
+    border: 1px solid #eaeaea;
+    background-color: #fff;
+}
+
+.about-container::before,
+.about-container::after {
     content: '';
     clear: both;
     display: table;
 }
-.info-title {
-    margin: 0 0 45px;
+
+.flex {
+    display: flex;
 }
 
-.hello-user {
-    font-size: 18px;
-    color: #bcbfc4;
+.theme-info {
+    justify-content: space-between;
 }
-.hello-user span {
+
+.theme-info .theme-details,
+.theme-info .theme-screenshot {
+    width: calc(50% - 30px);
 }
-.welcome-desc {
-    font-size: 16px;
-    max-width: 600px;
+
+.theme-info .theme-screenshot img {
+    width: 100%;
+    max-width: 520px;
+    height: auto;
 }
-.courtyard-theme-tabs {
-    margin-top: 45px;
+
+.theme-info h1 {
+    font-size: 3em;
+    line-height: 1.2;
 }
-.courtyard-tab {
-    display: none;
-    padding: 30px 10px;
+
+.theme-info h4 {
+    font-size: 1.5em;
 }
-.courtyard-tab.show {
-    display: block;
+
+.theme-info p {
+    margin-top: 2.5em;
+    font-size: 15px;
+    line-height: 1.8;
 }
-.courtyard-tab-nav .nav-button {
-    font-size: 18px;
+
+.about-theme-tabs {
+    margin-top: 50px;
 }
-.courtyard-tab-nav a:active,
-.courtyard-tab-nav a:focus {
-    box-shadow: none;
+
+.about-theme-tab-nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
-.courtyard-tab-nav .nav-button.active {
-    background-color: transparent;
-    border-bottom: 1px solid #fff;
+
+.about-theme-tab-nav li {
+    display: inline-block;
+    padding: 10px 15px;
+    border: 1px solid #e5e5e5;
     margin-bottom: -1px;
+    margin-left: -5px;
+    cursor: pointer;
+    background: none;
+    color: #222;
 }
-.nav-tab:first-of-type {
+
+.about-theme-tab-nav li:nth-of-type(1) {
     margin-left: 0;
 }
-.tab-column {
-    width: 45%;
+
+.about-theme-tab-nav li.active {
+    border-bottom-color: #f4f4f4;
+    background: #f4f4f4;
+    color: #222;
 }
-.tab-column:first-of-type {
-    float: left;
+
+.about-theme-tab {
+    display: none;
+    border: 1px solid #e5e5e5;
+    background: #f4f4f4;
+    padding: 15px;
 }
-.tab-column:last-of-type {
-    float: right;
+
+.about-theme-tab.active{
+    display: inherit;
 }
-.courtyard-tab.support .dashicons {
+
+.about-theme-tab table {
+    border-spacing: 0;
+}
+
+.about-theme-tab table tbody {
     display: block;
-    font-size: 32px;
-    height: auto;
-    width: auto;
-    text-align: left;
+    border: 1px solid #d0d0d0;
 }
-.courtyard-tab.table table {
-    border-collapse: collapse;
-}
-.courtyard-tab.table th,
-.courtyard-tab.table td {
-    border: 1px solid #ebebeb;
-    padding: 20px;
+
+.about-theme-tab table tbody td {
+    border-bottom: 1px solid #d0d0d0;
     text-align: center;
+    padding: 0 20px;
+    height: 40px;
 }
-.courtyard-tab .dash-green {
+
+.about-theme-tab table tbody tr:nth-of-type(1) td {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.about-theme-tab table tbody tr:nth-last-of-type(1) td {
+    border-bottom: 0;
+}
+
+.about-theme-tab table tbody tr td:nth-of-type(1) {
+    text-align: left;
+    font-weight: 500;
+}
+
+.about-theme-tab .dash-green {
     color: #5ad15a;
     font-size: 28px;
     height: auto;
     width: auto;
 }
-.courtyard-tab .dash-red {
+
+.about-theme-tab .dash-red {
     color: #fc6f6f;
     font-size: 28px;
     height: auto;

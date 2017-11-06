@@ -7,7 +7,7 @@ class courtyard_video_widget extends WP_Widget
 {
     function __construct()
     {
-        $widget_ops = array('classname' => 'pt-video-section', 'description' => esc_html__('Display video from Youtube,Vimeo etc.', 'courtyard'));
+        $widget_ops = array('classname' => 'pt-video-section', 'description' => esc_html__('Display video from Youtube,Vimeo etc.', 'courtyard'), 'customize_selective_refresh' => true, );
         $control_ops = array('width' => 200, 'height' => 250);
         parent::__construct(false, $name = esc_html__('PT: Video', 'courtyard'), $widget_ops, $control_ops);
     }

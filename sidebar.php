@@ -6,9 +6,6 @@
  *
  * @package Courtyard
  */
-if ( ! is_active_sidebar( 'pt_sidebar' ) ) {
-   return;
-}
 ?>
 
 <aside id="secondary" role="complementary">

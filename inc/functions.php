@@ -104,6 +104,10 @@ function courtyard_admin_scripts( ) {
 
     $pt_cScreen = get_current_screen();
 
+    wp_enqueue_style( 'courtyard-welcome-style', get_template_directory_uri() . '/inc/welcome-screen/css/welcome.css', array(), true );
+
+    wp_enqueue_script( 'courtyard-welcome-style-script', get_template_directory_uri() . '/inc/welcome-screen/js/welcome.js', array('jquery'),'', true );
+
     if( $pt_cScreen->id === "customize" || $pt_cScreen->id === "widgets" ) {
         // Run some code, only on the admin customize and wigets page
         wp_enqueue_style( 'courtyard-admin-style', get_template_directory_uri() .'/css/admin/admin-style.css', $courtyard_version, '' );

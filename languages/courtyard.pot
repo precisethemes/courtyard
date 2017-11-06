@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-31 05:21+0000\n"
+"POT-Creation-Date: 2017-11-06 07:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -32,7 +32,7 @@ msgstr ""
 msgid "Next &raquo;"
 msgstr ""
 
-#: archive.php:47 index.php:51 search.php:44 inc/functions.php:569
+#: archive.php:47 index.php:51 search.php:44 inc/functions.php:573
 #: inc/admin/widgets/about-widget.php:42
 msgid "Page"
 msgstr ""
@@ -233,49 +233,49 @@ msgctxt "Courgette|Roboto font: on or off"
 msgid "on"
 msgstr ""
 
-#: inc/functions.php:135
+#: inc/functions.php:139
 #, php-format
 msgid "Copyright &copy; %1$s %3$s. %2$s."
 msgstr ""
 
-#: inc/functions.php:135
+#: inc/functions.php:139
 msgid "All rights reserved"
 msgstr ""
 
-#: inc/functions.php:137
+#: inc/functions.php:141
 #, php-format
 msgid "Designed by %2$s"
 msgstr ""
 
-#: inc/functions.php:137 inc/admin/widgets/rooms-widget.php:98
+#: inc/functions.php:141 inc/admin/widgets/rooms-widget.php:98
 msgid "http://precisethemes.com/"
 msgstr ""
 
-#: inc/functions.php:178
+#: inc/functions.php:182
 msgid "Page Template"
 msgstr ""
 
-#: inc/functions.php:213
+#: inc/functions.php:217
 msgid "Default Template"
 msgstr ""
 
-#: inc/functions.php:227
+#: inc/functions.php:231
 msgid "All Templates"
 msgstr ""
 
-#: inc/functions.php:402 woocommerce/woocommerce.php:62
+#: inc/functions.php:406 woocommerce/woocommerce.php:62
 msgid "Home"
 msgstr ""
 
-#: inc/functions.php:574
+#: inc/functions.php:578
 msgid "Search results for: "
 msgstr ""
 
-#: inc/functions.php:579
+#: inc/functions.php:583
 msgid "404 Error"
 msgstr ""
 
-#: inc/functions.php:692
+#: inc/functions.php:696
 msgid "Related"
 msgstr ""
 
@@ -399,160 +399,150 @@ msgid ""
 "After you import this demo, you will have to setup the slider separately."
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:43
-#: inc/welcome-screen/class-welcome-screen.php:43
-msgid "About"
+#: inc/welcome-screen/class-welcome-screen.php:45
+#: inc/welcome-screen/class-welcome-screen.php:46
+#: inc/welcome-screen/class-welcome-screen.php:100
+msgid "Getting Started"
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:67
+#: inc/welcome-screen/class-welcome-screen.php:63
 #, php-format
 msgid "Welcome to %s"
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:68
+#: inc/welcome-screen/class-welcome-screen.php:64
 #, php-format
 msgid ""
 "Welcome! Thank you for choosing %s ! To fully take advantage of the best our "
 "theme can offer please make sure you visit our %swelcome page%s."
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:71
+#: inc/welcome-screen/class-welcome-screen.php:67
 #, php-format
 msgid "Get started with %s"
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:76
+#: inc/welcome-screen/class-welcome-screen.php:72
 msgid "Dismiss"
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:92
+#: inc/welcome-screen/class-welcome-screen.php:88
 #, php-format
 msgid "Hello, %s,"
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:93
+#: inc/welcome-screen/class-welcome-screen.php:89
 #, php-format
 msgid "Welcome to %s version %s"
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:105
-msgid "Getting started"
+#: inc/welcome-screen/class-welcome-screen.php:101
+msgid "Recommendation"
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:106
-msgid "Recommended Actions"
+#: inc/welcome-screen/class-welcome-screen.php:102
+#: inc/welcome-screen/class-welcome-screen.php:354
+msgid "Theme Support"
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:107
-msgid "Support"
-msgstr ""
-
-#: inc/welcome-screen/class-welcome-screen.php:108
+#: inc/welcome-screen/class-welcome-screen.php:103
 msgid "Free vs Pro"
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:109
+#: inc/welcome-screen/class-welcome-screen.php:104
 msgid "Changelog"
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:127
-msgid "Return to Updates"
+#: inc/welcome-screen/class-welcome-screen.php:128
+msgid "Read Documentation & Installation Guide"
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:127
-msgid "Return to Dashboard &rarr; Updates"
-msgstr ""
-
-#: inc/welcome-screen/class-welcome-screen.php:130
-msgid "Go to Dashboard &rarr; Home"
-msgstr ""
-
-#: inc/welcome-screen/class-welcome-screen.php:130
-msgid "Go to Dashboard"
-msgstr ""
-
-#: inc/welcome-screen/class-welcome-screen.php:146
-msgid "Step 1 - Implement recommended actions"
-msgstr ""
-
-#: inc/welcome-screen/class-welcome-screen.php:147
-#, php-format
-msgid "We've made a list of steps for you to follow to get the most of %s."
-msgstr ""
-
-#: inc/welcome-screen/class-welcome-screen.php:148
-msgid "Check recommended actions"
-msgstr ""
-
-#: inc/welcome-screen/class-welcome-screen.php:151
-msgid "Step 2 - Read documentation"
-msgstr ""
-
-#: inc/welcome-screen/class-welcome-screen.php:152
+#: inc/welcome-screen/class-welcome-screen.php:129
 msgid ""
-"Our documentation (including video tutorials) will have you up and running "
-"in no time."
+"Theme documentation page will guide you to install and configure theme quick "
+"and easy. We have included details, screenshots and stepwise description "
+"about theme installation guides and tutorials. Follow the link: "
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:153
-#: inc/welcome-screen/class-welcome-screen.php:231
-msgid "Documentation"
+#: inc/welcome-screen/class-welcome-screen.php:129
+#: inc/welcome-screen/class-welcome-screen.php:218
+msgid "View Courtyard Documentation"
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:156
-msgid "Step 3 - Customize"
+#: inc/welcome-screen/class-welcome-screen.php:133
+msgid "Recommended Plugins"
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:157
+#: inc/welcome-screen/class-welcome-screen.php:134
 #, php-format
-msgid "Use the Customizer to make %s your own."
+msgid "We have listed some of recommended plugins that works perfect with %s."
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:158
+#: inc/welcome-screen/class-welcome-screen.php:138
+msgid "Import Demo Content"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:139
+msgid ""
+"Importing demo data may help you to get started with default content for "
+"quick and easy site setup."
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:143
+msgid "Theme Option & Customization"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:144
+msgid ""
+"Most of theme settings customization options are available through theme "
+"customizer. To setup and customise your website elements and sections "
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:144
 msgid "Go to Customizer"
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:170
+#: inc/welcome-screen/class-welcome-screen.php:156
 msgid "Install: Contact Form 7"
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:171
+#: inc/welcome-screen/class-welcome-screen.php:157
 msgid ""
 "It is highly recommended that you install Contact Form 7. It will enable you "
 "to create pages by adding widgets to them using drag and drop."
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:176
-#: inc/welcome-screen/class-welcome-screen.php:188
-#: inc/welcome-screen/class-welcome-screen.php:203
+#: inc/welcome-screen/class-welcome-screen.php:162
+#: inc/welcome-screen/class-welcome-screen.php:174
+#: inc/welcome-screen/class-welcome-screen.php:189
 msgid "Install and Activate"
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:179
-#: inc/welcome-screen/class-welcome-screen.php:191
-#: inc/welcome-screen/class-welcome-screen.php:207
+#: inc/welcome-screen/class-welcome-screen.php:165
+#: inc/welcome-screen/class-welcome-screen.php:177
+#: inc/welcome-screen/class-welcome-screen.php:193
 msgid "Plugin installed and active!"
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:183
+#: inc/welcome-screen/class-welcome-screen.php:169
 msgid "Install: WooCommerce"
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:184
+#: inc/welcome-screen/class-welcome-screen.php:170
 msgid ""
 "It is highly recommend that you install WooCommerce. It will create custom "
 "post types like services and employees for you to use on your website."
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:195
+#: inc/welcome-screen/class-welcome-screen.php:181
 msgid "Demo content"
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:197
+#: inc/welcome-screen/class-welcome-screen.php:183
 msgid "Install:  One Click Demo Import"
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:198
+#: inc/welcome-screen/class-welcome-screen.php:184
 msgid ""
 "Install the following plugin and then come back here to access the importer. "
 "With it you can import all demo content and change your homepage and blog "
@@ -560,136 +550,170 @@ msgid ""
 "menu."
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:204
+#: inc/welcome-screen/class-welcome-screen.php:190
 msgid "Go to the importer"
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:208
+#: inc/welcome-screen/class-welcome-screen.php:194
 msgid "Go to the automatic importer"
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:225
-msgid "Visit our forums"
+#: inc/welcome-screen/class-welcome-screen.php:206
+msgid "Support Forum"
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:226
+#: inc/welcome-screen/class-welcome-screen.php:208
+#, php-format
 msgid ""
-"Need help? Go ahead and visit our support forums and we'll be happy to "
-"assist you with any theme related questions you might have"
+"Need help to setup your website with %s theme? Visit our support forum and "
+"browse support topics or create new, one of our support member will follow "
+"and help you to solver your issue."
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:227
-msgid "Visit the forums"
+#: inc/welcome-screen/class-welcome-screen.php:210
+msgid "Visit Support Forum"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:214
+msgid "Documentation"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:216
+msgid ""
+"Theme documentation page will guide you to install and configure theme quick "
+"and easy. We have included details, screenshots and stepwise description "
+"about theme installation guides and tutorials."
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:231
+msgid "Theme Features"
 msgstr ""
 
 #: inc/welcome-screen/class-welcome-screen.php:232
-msgid ""
-"Our documentation can help you learn how to use the theme and also provides "
-"you with premade code snippets and answers to FAQs."
+msgid "Free Version"
 msgstr ""
 
 #: inc/welcome-screen/class-welcome-screen.php:233
-msgid "See the Documentation"
+msgid "Pro Version"
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:249
-msgid "Feature"
+#: inc/welcome-screen/class-welcome-screen.php:237
+msgid "Number of Header Layouts"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:239
+msgid "3"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:244
+msgid "Number of Header Bar Type"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:245
+msgid "1 (Sticky Only)"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:246
+msgid "3 (Sticky, Scroll and Hide/Show on Scroll)"
 msgstr ""
 
 #: inc/welcome-screen/class-welcome-screen.php:251
-#: inc/welcome-screen/class-welcome-screen.php:362
-#, php-format
-msgid "%s Pro"
+msgid "Header Top Bar"
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:256
-msgid "Access to all Google Fonts"
+#: inc/welcome-screen/class-welcome-screen.php:258
+msgid "Number of Custom Widgets"
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:261
-msgid "Responsive"
+#: inc/welcome-screen/class-welcome-screen.php:259
+msgid "10"
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:266
-msgid "Parallax backgrounds"
+#: inc/welcome-screen/class-welcome-screen.php:260
+msgid "15"
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:271
-msgid "Social Icons"
+#: inc/welcome-screen/class-welcome-screen.php:265
+msgid "Smooth Page Scroll"
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:276
-msgid "Slider, image or video header"
+#: inc/welcome-screen/class-welcome-screen.php:272
+msgid "Coming Soon Page"
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:281
-msgid "Front Page Blocks"
+#: inc/welcome-screen/class-welcome-screen.php:279
+msgid "Advanced Options for Homepage Widgets"
 msgstr ""
 
 #: inc/welcome-screen/class-welcome-screen.php:286
-msgid "Translation ready"
+msgid "Google Fonts"
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:291
-msgid "Polylang integration"
+#: inc/welcome-screen/class-welcome-screen.php:293
+msgid "Advanced Post Settings"
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:296
-msgid "Color options"
-msgstr ""
-
-#: inc/welcome-screen/class-welcome-screen.php:301
-msgid "Blog options"
+#: inc/welcome-screen/class-welcome-screen.php:300
+msgid "Advanced Page Settings"
 msgstr ""
 
 #: inc/welcome-screen/class-welcome-screen.php:306
-msgid "Widgetized footer"
+msgid "Custom 404 Error Page"
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:311
-msgid "Background image support"
+#: inc/welcome-screen/class-welcome-screen.php:312
+msgid "Advanced WooCommerce Settings"
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:316
-msgid "Footer Credits option"
+#: inc/welcome-screen/class-welcome-screen.php:318
+msgid "Number of Footer Layouts"
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:321
-msgid ""
-"Extra widgets (timeline, latest news in carousel, pricing tables, a new "
-"employees widget and a new contact widget)"
+#: inc/welcome-screen/class-welcome-screen.php:319
+msgid "4"
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:326
-msgid ""
-"Extra Customizer Options (Front Page Section Titles, Single Employees, "
-"Single Projects, Header Contact Info, Buttons)"
+#: inc/welcome-screen/class-welcome-screen.php:320
+msgid "8"
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:331
-msgid "Header support for Crelly Slider"
+#: inc/welcome-screen/class-welcome-screen.php:324
+msgid "Sortable Footer Bar Elements"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:330
+msgid "Footer Copyright Editor"
 msgstr ""
 
 #: inc/welcome-screen/class-welcome-screen.php:336
-msgid "Header support for shortcodes"
+msgid "WPML Compatible"
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:341
-msgid "Single Post/Page Options"
+#: inc/welcome-screen/class-welcome-screen.php:342
+msgid "Contact Form 7 Compatible"
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:346
-msgid "Woocommerce compatible"
+#: inc/welcome-screen/class-welcome-screen.php:348
+msgid "WooCommerce Compatible"
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:351
-msgid ""
-"5 Extra Page Templates (Contact, Featured Header - Default, Featured Header -"
-" Wide, No Header - Default, No Header - Wide)"
+#: inc/welcome-screen/class-welcome-screen.php:355
+msgid "Quick Ticket Support"
 msgstr ""
 
 #: inc/welcome-screen/class-welcome-screen.php:356
-msgid "Priority support"
+msgid "Support via Forum"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:362
+msgid ""
+"Need more features and customization option? Try Pro Version of Courtyard "
+"theme."
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:363
+#, php-format
+msgid "View %s Pro Version"
 msgstr ""
 
 #: inc/admin/customizer/customizer.php:161
@@ -859,7 +883,7 @@ msgid "Name"
 msgstr ""
 
 #: inc/admin/customizer/customizer.php:413
-#: inc/admin/widgets/logo-widget.php:141 inc/admin/widgets/logo-widget.php:148
+#: inc/admin/widgets/logo-widget.php:138 inc/admin/widgets/logo-widget.php:145
 msgid "URL"
 msgstr ""
 
@@ -1091,7 +1115,7 @@ msgstr ""
 #: inc/admin/widgets/image-slider-widget.php:37
 #: inc/admin/widgets/image-slider-widget.php:44
 #: inc/admin/widgets/logo-widget.php:32 inc/admin/widgets/logo-widget.php:39
-#: inc/admin/widgets/logo-widget.php:125 inc/admin/widgets/logo-widget.php:132
+#: inc/admin/widgets/logo-widget.php:124 inc/admin/widgets/logo-widget.php:131
 #: inc/admin/widgets/packages-widget.php:38
 #: inc/admin/widgets/packages-widget.php:45
 #: inc/admin/widgets/recent-posts-widget.php:37
@@ -1221,19 +1245,19 @@ msgstr ""
 msgid "Logo"
 msgstr ""
 
-#: inc/admin/widgets/logo-widget.php:114
+#: inc/admin/widgets/logo-widget.php:115
 msgid "Choose an image"
 msgstr ""
 
-#: inc/admin/widgets/logo-widget.php:114
+#: inc/admin/widgets/logo-widget.php:115
 msgid "Use image"
 msgstr ""
 
-#: inc/admin/widgets/logo-widget.php:114
+#: inc/admin/widgets/logo-widget.php:115
 msgid "Select an Image"
 msgstr ""
 
-#: inc/admin/widgets/logo-widget.php:115
+#: inc/admin/widgets/logo-widget.php:116
 msgid "Recommended size 400 x 260"
 msgstr ""
 

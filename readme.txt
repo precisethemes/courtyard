@@ -1,7 +1,7 @@
 === Courtyard ===
 
 Contributors: Precise Themes
-Version: 1.2
+Version: 1.3
 Requires at least: 4.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -83,6 +83,10 @@ Courtyard - Responsive WordPress Theme is clean, minimalistic and beautifully de
    Licensed under the MIT license - http://opensource.org/licenses/MIT
    Copyright (c) 2014 Vladimir Kharlampidi
 
+2. Persist Admin notices Dismissal(dismiss-notice.js) - https://github.com/collizo4sky/persist-admin-notices-dismissal
+  http://www.gnu.org/licenses GNU General Public License
+  Copyright (C) 2016  Agbonghama Collins <http://w3guy.com>
+
 === Fonts ===
 
 1. Font Awesome: - http://fontawesome.io/
@@ -106,6 +110,13 @@ Screenshot images licensed under CC0 Public Domain (http://creativecommons.org/p
   Source: https://unsplash.com/photos/w04Uo0y8UyI
 
 === Changelog ===
+
+Version: 1.3 - Nov 06, 2017
+
+* Introduce selective refresh for site title and description
+* Add support for customize selective refresh widgets
+* Fixed Demo Import Image Issue
+* Fixed Secondary Logo Images Issue
 
 Version: 1.2 - May 07, 2017
 

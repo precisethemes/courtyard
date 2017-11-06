@@ -6,7 +6,7 @@
 class Courtyard_Social_Icons_Widget extends WP_Widget {
 
     function __construct() {
-        $widget_ops = array('classname' => 'pt-social-icons-section', 'description' => esc_html__('Social Icons.', 'courtyard'));
+        $widget_ops = array('classname' => 'pt-social-icons-section', 'description' => esc_html__('Social Icons.', 'courtyard'), 'customize_selective_refresh' => true, );
         $control_ops = array('width' => 200, 'height' => 250);
         parent::__construct(false, $name = esc_html__('PT: Social Icons', 'courtyard'), $widget_ops, $control_ops);
     }

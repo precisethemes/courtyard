@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-<!-- generator="WordPress/4.8.2" created="2017-10-24 09:52" -->
+<!-- generator="WordPress/4.8.3" created="2017-11-06 08:04" -->
 <rss version="2.0"
 	 xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
 	 xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -29,13 +29,14 @@
 		<title>Courtyard</title>
 		<link>http://demo.precisethemes.com/courtyard</link>
 		<description>Just another WordPress site</description>
-		<pubDate>Tue, 24 Oct 2017 09:52:01 +0000</pubDate>
+		<pubDate>Mon, 06 Nov 2017 08:04:36 +0000</pubDate>
 		<language>en-US</language>
 		<wp:wxr_version>1.2</wp:wxr_version>
 		<wp:base_site_url>http://demo.precisethemes.com/courtyard</wp:base_site_url>
 		<wp:base_blog_url>http://demo.precisethemes.com/courtyard</wp:base_blog_url>
 
 		<wp:author><wp:author_id>1</wp:author_id><wp:author_login><![CDATA[rabindra]]></wp:author_login><wp:author_email><![CDATA[rabindra.tharu.np@gmail.com]]></wp:author_email><wp:author_display_name><![CDATA[rabindra]]></wp:author_display_name><wp:author_first_name><![CDATA[]]></wp:author_first_name><wp:author_last_name><![CDATA[]]></wp:author_last_name></wp:author>
+		<wp:author><wp:author_id>3</wp:author_id><wp:author_login><![CDATA[precisethemes]]></wp:author_login><wp:author_email><![CDATA[demo@precisethemes.com]]></wp:author_email><wp:author_display_name><![CDATA[Precise Themes]]></wp:author_display_name><wp:author_first_name><![CDATA[Precise]]></wp:author_first_name><wp:author_last_name><![CDATA[Themes]]></wp:author_last_name></wp:author>
 
 		<wp:category>
 			<wp:term_id>2</wp:term_id>
@@ -339,7 +340,7 @@
 		<wp:term><wp:term_id>16</wp:term_id><wp:term_taxonomy>nav_menu</wp:term_taxonomy><wp:term_slug><![CDATA[quick-links]]></wp:term_slug><wp:term_name><![CDATA[Quick Links]]></wp:term_name>
 		</wp:term>
 
-		<generator>https://wordpress.org/?v=4.8.2</generator>
+		<generator>https://wordpress.org/?v=4.8.3</generator>
 
 		<image>
 			<url>http://demo.precisethemes.com/courtyard/wp-content/uploads/2016/12/cy-3-1.png</url>
@@ -351,7 +352,7 @@
 
 		<item>
 			<title>T_1_front</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=16</link>
+			<link>http://demo.precisethemes.com/courtyard/product/woo-logo/t_1_front/</link>
 			<pubDate>Fri, 07 Jun 2013 10:35:28 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2013/06/T_1_front.jpg</guid>
@@ -382,7 +383,7 @@
 		</item>
 		<item>
 			<title>T_1_back</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=17</link>
+			<link>http://demo.precisethemes.com/courtyard/product/woo-logo/t_1_back/</link>
 			<pubDate>Fri, 07 Jun 2013 10:35:39 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2013/06/T_1_back.jpg</guid>
@@ -413,7 +414,7 @@
 		</item>
 		<item>
 			<title>T_2_front</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=20</link>
+			<link>http://demo.precisethemes.com/courtyard/product/premium-quality/t_2_front/</link>
 			<pubDate>Fri, 07 Jun 2013 10:41:23 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2013/06/T_2_front.jpg</guid>
@@ -444,7 +445,7 @@
 		</item>
 		<item>
 			<title>T_2_back</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=21</link>
+			<link>http://demo.precisethemes.com/courtyard/product/premium-quality/t_2_back/</link>
 			<pubDate>Fri, 07 Jun 2013 10:41:34 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2013/06/T_2_back.jpg</guid>
@@ -475,7 +476,7 @@
 		</item>
 		<item>
 			<title>T_4_front</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=25</link>
+			<link>http://demo.precisethemes.com/courtyard/product/ship-your-idea/t_4_front/</link>
 			<pubDate>Fri, 07 Jun 2013 10:45:14 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2013/06/T_4_front.jpg</guid>
@@ -506,7 +507,7 @@
 		</item>
 		<item>
 			<title>T_3_back</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=26</link>
+			<link>http://demo.precisethemes.com/courtyard/product/ship-your-idea/t_3_back/</link>
 			<pubDate>Fri, 07 Jun 2013 10:45:26 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2013/06/T_3_back.jpg</guid>
@@ -537,7 +538,7 @@
 		</item>
 		<item>
 			<title>T_3_front</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=27</link>
+			<link>http://demo.precisethemes.com/courtyard/product/ship-your-idea/t_3_front/</link>
 			<pubDate>Fri, 07 Jun 2013 10:45:27 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2013/06/T_3_front.jpg</guid>
@@ -568,7 +569,7 @@
 		</item>
 		<item>
 			<title>T_4_back</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=28</link>
+			<link>http://demo.precisethemes.com/courtyard/product/ship-your-idea/t_4_back/</link>
 			<pubDate>Fri, 07 Jun 2013 10:45:29 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2013/06/T_4_back.jpg</guid>
@@ -599,7 +600,7 @@
 		</item>
 		<item>
 			<title>T_4_front</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=29</link>
+			<link>http://demo.precisethemes.com/courtyard/product/ship-your-idea/t_4_front-2/</link>
 			<pubDate>Fri, 07 Jun 2013 10:45:30 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2013/06/T_4_front1.jpg</guid>
@@ -630,7 +631,7 @@
 		</item>
 		<item>
 			<title>T_5_front</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=32</link>
+			<link>http://demo.precisethemes.com/courtyard/product/ninja-silhouette/t_5_front/</link>
 			<pubDate>Fri, 07 Jun 2013 10:49:13 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2013/06/T_5_front.jpg</guid>
@@ -661,7 +662,7 @@
 		</item>
 		<item>
 			<title>T_5_back</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=33</link>
+			<link>http://demo.precisethemes.com/courtyard/product/ninja-silhouette/t_5_back/</link>
 			<pubDate>Fri, 07 Jun 2013 10:49:23 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2013/06/T_5_back.jpg</guid>
@@ -692,7 +693,7 @@
 		</item>
 		<item>
 			<title>T_6_back</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=36</link>
+			<link>http://demo.precisethemes.com/courtyard/product/woo-ninja/t_6_back/</link>
 			<pubDate>Fri, 07 Jun 2013 10:52:02 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2013/06/T_6_back.jpg</guid>
@@ -723,7 +724,7 @@
 		</item>
 		<item>
 			<title>T_7_back</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=39</link>
+			<link>http://demo.precisethemes.com/courtyard/product/happy-ninja/t_7_back/</link>
 			<pubDate>Fri, 07 Jun 2013 10:53:29 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2013/06/T_7_back.jpg</guid>
@@ -754,7 +755,7 @@
 		</item>
 		<item>
 			<title>hoodie_7_back</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=44</link>
+			<link>http://demo.precisethemes.com/courtyard/product/ship-your-idea-2/hoodie_7_back/</link>
 			<pubDate>Fri, 07 Jun 2013 10:59:54 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2013/06/hoodie_7_back.jpg</guid>
@@ -785,7 +786,7 @@
 		</item>
 		<item>
 			<title>hoodie_1_back</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=45</link>
+			<link>http://demo.precisethemes.com/courtyard/product/ship-your-idea-2/hoodie_1_back/</link>
 			<pubDate>Fri, 07 Jun 2013 11:00:00 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2013/06/hoodie_1_back.jpg</guid>
@@ -816,7 +817,7 @@
 		</item>
 		<item>
 			<title>hoodie_1_front</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=46</link>
+			<link>http://demo.precisethemes.com/courtyard/product/ship-your-idea-2/hoodie_1_front/</link>
 			<pubDate>Fri, 07 Jun 2013 11:00:01 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2013/06/hoodie_1_front.jpg</guid>
@@ -847,7 +848,7 @@
 		</item>
 		<item>
 			<title>hoodie_2_front</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=48</link>
+			<link>http://demo.precisethemes.com/courtyard/product/woo-ninja-2/hoodie_2_front/</link>
 			<pubDate>Fri, 07 Jun 2013 11:01:23 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2013/06/hoodie_2_front.jpg</guid>
@@ -878,7 +879,7 @@
 		</item>
 		<item>
 			<title>T_6_front</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=273</link>
+			<link>http://demo.precisethemes.com/courtyard/product/woo-ninja/t_6_front/</link>
 			<pubDate>Fri, 07 Jun 2013 10:51:51 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2013/06/T_6_front.jpg</guid>
@@ -909,7 +910,7 @@
 		</item>
 		<item>
 			<title>T_7_front</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=274</link>
+			<link>http://demo.precisethemes.com/courtyard/product/happy-ninja/t_7_front/</link>
 			<pubDate>Fri, 07 Jun 2013 10:52:55 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2013/06/T_7_front.jpg</guid>
@@ -940,7 +941,7 @@
 		</item>
 		<item>
 			<title>hoodie_7_front</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=275</link>
+			<link>http://demo.precisethemes.com/courtyard/product/ship-your-idea-2/hoodie_7_front/</link>
 			<pubDate>Fri, 07 Jun 2013 10:59:40 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2013/06/hoodie_7_front.jpg</guid>
@@ -971,7 +972,7 @@
 		</item>
 		<item>
 			<title>hoodie_2_back</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=49</link>
+			<link>http://demo.precisethemes.com/courtyard/product/woo-ninja-2/hoodie_2_back/</link>
 			<pubDate>Fri, 07 Jun 2013 11:02:26 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2013/06/hoodie_2_back.jpg</guid>
@@ -1002,7 +1003,7 @@
 		</item>
 		<item>
 			<title>hoodie_3_front</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=51</link>
+			<link>http://demo.precisethemes.com/courtyard/product/patient-ninja/hoodie_3_front/</link>
 			<pubDate>Fri, 07 Jun 2013 11:03:16 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2013/06/hoodie_3_front.jpg</guid>
@@ -1033,7 +1034,7 @@
 		</item>
 		<item>
 			<title>hoodie_3_back</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=52</link>
+			<link>http://demo.precisethemes.com/courtyard/product/patient-ninja/hoodie_3_back/</link>
 			<pubDate>Fri, 07 Jun 2013 11:03:50 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2013/06/hoodie_3_back.jpg</guid>
@@ -1064,7 +1065,7 @@
 		</item>
 		<item>
 			<title>hoodie_4_front</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=54</link>
+			<link>http://demo.precisethemes.com/courtyard/product/happy-ninja-2/hoodie_4_front/</link>
 			<pubDate>Fri, 07 Jun 2013 11:05:03 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2013/06/hoodie_4_front.jpg</guid>
@@ -1095,7 +1096,7 @@
 		</item>
 		<item>
 			<title>hoodie_4_back</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=55</link>
+			<link>http://demo.precisethemes.com/courtyard/product/happy-ninja-2/hoodie_4_back/</link>
 			<pubDate>Fri, 07 Jun 2013 11:05:13 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2013/06/hoodie_4_back.jpg</guid>
@@ -1126,7 +1127,7 @@
 		</item>
 		<item>
 			<title>hoodie_5_front</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=57</link>
+			<link>http://demo.precisethemes.com/courtyard/product/ninja-silhouette-2/hoodie_5_front/</link>
 			<pubDate>Fri, 07 Jun 2013 11:06:32 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2013/06/hoodie_5_front.jpg</guid>
@@ -1157,7 +1158,7 @@
 		</item>
 		<item>
 			<title>hoodie_6_front</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=61</link>
+			<link>http://demo.precisethemes.com/courtyard/product/woo-logo-2/hoodie_6_front/</link>
 			<pubDate>Fri, 07 Jun 2013 11:12:02 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2013/06/hoodie_6_front.jpg</guid>
@@ -1188,7 +1189,7 @@
 		</item>
 		<item>
 			<title>Poster_1_flat</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=69</link>
+			<link>http://demo.precisethemes.com/courtyard/product/ship-your-idea-3/poster_1_flat/</link>
 			<pubDate>Fri, 07 Jun 2013 11:22:05 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2013/06/Poster_1_flat.jpg</guid>
@@ -1219,7 +1220,7 @@
 		</item>
 		<item>
 			<title>Poster_2_flat</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=72</link>
+			<link>http://demo.precisethemes.com/courtyard/product/flying-ninja/poster_2_flat/</link>
 			<pubDate>Fri, 07 Jun 2013 11:24:47 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2013/06/Poster_2_flat.jpg</guid>
@@ -1250,7 +1251,7 @@
 		</item>
 		<item>
 			<title>poster_3_up</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=74</link>
+			<link>http://demo.precisethemes.com/courtyard/product/premium-quality-2/poster_3_up/</link>
 			<pubDate>Fri, 07 Jun 2013 11:26:47 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2013/06/poster_3_up.jpg</guid>
@@ -1281,7 +1282,7 @@
 		</item>
 		<item>
 			<title>Poster_4_flat</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=78</link>
+			<link>http://demo.precisethemes.com/courtyard/product/woo-ninja-3/poster_4_flat/</link>
 			<pubDate>Fri, 07 Jun 2013 11:28:20 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2013/06/Poster_4_flat.jpg</guid>
@@ -1312,7 +1313,7 @@
 		</item>
 		<item>
 			<title>poster_5_up</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=80</link>
+			<link>http://demo.precisethemes.com/courtyard/product/woo-logo-3/poster_5_up/</link>
 			<pubDate>Fri, 07 Jun 2013 11:29:26 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2013/06/poster_5_up.jpg</guid>
@@ -1343,7 +1344,7 @@
 		</item>
 		<item>
 			<title>cd_1_angle</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=84</link>
+			<link>http://demo.precisethemes.com/courtyard/product/woo-album-1/cd_1_angle/</link>
 			<pubDate>Fri, 07 Jun 2013 11:32:44 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2013/06/cd_1_angle.jpg</guid>
@@ -1374,7 +1375,7 @@
 		</item>
 		<item>
 			<title>hoodie_5_back</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=276</link>
+			<link>http://demo.precisethemes.com/courtyard/product/ninja-silhouette-2/hoodie_5_back/</link>
 			<pubDate>Fri, 07 Jun 2013 11:07:10 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2013/06/hoodie_5_back.jpg</guid>
@@ -1405,7 +1406,7 @@
 		</item>
 		<item>
 			<title>hoodie_6_back</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=277</link>
+			<link>http://demo.precisethemes.com/courtyard/product/woo-logo-2/hoodie_6_back/</link>
 			<pubDate>Fri, 07 Jun 2013 11:12:16 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2013/06/hoodie_6_back.jpg</guid>
@@ -1436,7 +1437,7 @@
 		</item>
 		<item>
 			<title>poster_1_up</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=278</link>
+			<link>http://demo.precisethemes.com/courtyard/product/ship-your-idea-3/poster_1_up/</link>
 			<pubDate>Fri, 07 Jun 2013 11:21:34 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2013/06/poster_1_up.jpg</guid>
@@ -1467,7 +1468,7 @@
 		</item>
 		<item>
 			<title>poster_2_up</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=279</link>
+			<link>http://demo.precisethemes.com/courtyard/product/flying-ninja/poster_2_up/</link>
 			<pubDate>Fri, 07 Jun 2013 11:24:19 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2013/06/poster_2_up.jpg</guid>
@@ -1498,7 +1499,7 @@
 		</item>
 		<item>
 			<title>Poster_3_flat</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=280</link>
+			<link>http://demo.precisethemes.com/courtyard/product/premium-quality-2/poster_3_flat/</link>
 			<pubDate>Fri, 07 Jun 2013 11:27:31 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2013/06/Poster_3_flat.jpg</guid>
@@ -1529,7 +1530,7 @@
 		</item>
 		<item>
 			<title>poster_4_up</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=281</link>
+			<link>http://demo.precisethemes.com/courtyard/product/woo-ninja-3/poster_4_up/</link>
 			<pubDate>Fri, 07 Jun 2013 11:28:07 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2013/06/poster_4_up.jpg</guid>
@@ -1560,7 +1561,7 @@
 		</item>
 		<item>
 			<title>Poster_5_flat</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=282</link>
+			<link>http://demo.precisethemes.com/courtyard/product/woo-logo-3/poster_5_flat/</link>
 			<pubDate>Fri, 07 Jun 2013 11:29:37 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2013/06/Poster_5_flat.jpg</guid>
@@ -1591,7 +1592,7 @@
 		</item>
 		<item>
 			<title>pexels-photo-90317</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=10</link>
+			<link>http://demo.precisethemes.com/courtyard/deluxe-room/pexels-photo-90317/</link>
 			<pubDate>Wed, 07 Dec 2016 12:42:24 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2016/12/pexels-photo-90317.jpeg</guid>
@@ -1622,7 +1623,7 @@
 		</item>
 		<item>
 			<title>pexels-photo-164595</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=11</link>
+			<link>http://demo.precisethemes.com/courtyard/family-room/pexels-photo-164595/</link>
 			<pubDate>Wed, 07 Dec 2016 12:45:18 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2016/12/pexels-photo-164595.jpeg</guid>
@@ -1653,7 +1654,7 @@
 		</item>
 		<item>
 			<title>bed-bedroom-room-furniture</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=35</link>
+			<link>http://demo.precisethemes.com/courtyard/economy-room/bed-bedroom-room-furniture/</link>
 			<pubDate>Wed, 07 Dec 2016 13:58:50 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2016/12/bed-bedroom-room-furniture.jpg</guid>
@@ -1684,7 +1685,7 @@
 		</item>
 		<item>
 			<title>pexels-photo-189293</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=38</link>
+			<link>http://demo.precisethemes.com/courtyard/standard-room/pexels-photo-189293/</link>
 			<pubDate>Wed, 07 Dec 2016 13:59:46 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2016/12/pexels-photo-189293.jpeg</guid>
@@ -1715,7 +1716,7 @@
 		</item>
 		<item>
 			<title>cy</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=42</link>
+			<link>http://demo.precisethemes.com/courtyard/cy/</link>
 			<pubDate>Wed, 07 Dec 2016 14:00:30 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2016/12/cy.png</guid>
@@ -1746,7 +1747,7 @@
 		</item>
 		<item>
 			<title>logo</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=43</link>
+			<link>http://demo.precisethemes.com/courtyard/logo/</link>
 			<pubDate>Wed, 07 Dec 2016 14:00:59 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2016/12/logo.png</guid>
@@ -1777,7 +1778,7 @@
 		</item>
 		<item>
 			<title>bedroom-architectural-interior-lifestyle-53603</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=60</link>
+			<link>http://demo.precisethemes.com/courtyard/super-room/bedroom-architectural-interior-lifestyle-53603/</link>
 			<pubDate>Wed, 07 Dec 2016 14:06:12 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2016/12/bedroom-architectural-interior-lifestyle-53603.jpeg</guid>
@@ -1808,7 +1809,7 @@
 		</item>
 		<item>
 			<title>pexels-photo-97083</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=62</link>
+			<link>http://demo.precisethemes.com/courtyard/standard-room/pexels-photo-97083/</link>
 			<pubDate>Wed, 07 Dec 2016 14:07:23 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2016/12/pexels-photo-97083.jpeg</guid>
@@ -1839,7 +1840,7 @@
 		</item>
 		<item>
 			<title>pexels-photo-129062</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=63</link>
+			<link>http://demo.precisethemes.com/courtyard/economy-room/pexels-photo-129062/</link>
 			<pubDate>Wed, 07 Dec 2016 14:07:43 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2016/12/pexels-photo-129062.jpeg</guid>
@@ -1870,7 +1871,7 @@
 		</item>
 		<item>
 			<title>cd_2_angle</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=88</link>
+			<link>http://demo.precisethemes.com/courtyard/product/woo-album-2/cd_2_angle/</link>
 			<pubDate>Fri, 07 Jun 2013 11:33:53 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2013/06/cd_2_angle.jpg</guid>
@@ -1901,7 +1902,7 @@
 		</item>
 		<item>
 			<title>cd_2_flat</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=89</link>
+			<link>http://demo.precisethemes.com/courtyard/product/woo-album-2/cd_2_flat/</link>
 			<pubDate>Fri, 07 Jun 2013 11:34:07 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2013/06/cd_2_flat.jpg</guid>
@@ -1932,7 +1933,7 @@
 		</item>
 		<item>
 			<title>cd_3_angle</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=91</link>
+			<link>http://demo.precisethemes.com/courtyard/product/woo-album-3/cd_3_angle/</link>
 			<pubDate>Fri, 07 Jun 2013 11:34:58 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2013/06/cd_3_angle.jpg</guid>
@@ -1963,7 +1964,7 @@
 		</item>
 		<item>
 			<title>cd_4_flat</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=94</link>
+			<link>http://demo.precisethemes.com/courtyard/product/woo-single-1/cd_4_flat/</link>
 			<pubDate>Fri, 07 Jun 2013 11:36:10 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2013/06/cd_4_flat.jpg</guid>
@@ -1994,7 +1995,7 @@
 		</item>
 		<item>
 			<title>cd_5_angle</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=97</link>
+			<link>http://demo.precisethemes.com/courtyard/product/woo-album-4/cd_5_angle/</link>
 			<pubDate>Fri, 07 Jun 2013 11:37:04 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2013/06/cd_5_angle.jpg</guid>
@@ -2025,7 +2026,7 @@
 		</item>
 		<item>
 			<title>cd_6_angle</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=100</link>
+			<link>http://demo.precisethemes.com/courtyard/product/woo-single-2/cd_6_angle/</link>
 			<pubDate>Fri, 07 Jun 2013 11:37:51 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2013/06/cd_6_angle.jpg</guid>
@@ -2056,7 +2057,7 @@
 		</item>
 		<item>
 			<title>cd_1_flat</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=283</link>
+			<link>http://demo.precisethemes.com/courtyard/product/woo-album-1/cd_1_flat/</link>
 			<pubDate>Fri, 07 Jun 2013 11:32:57 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2013/06/cd_1_flat.jpg</guid>
@@ -2087,7 +2088,7 @@
 		</item>
 		<item>
 			<title>cd_3_flat</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=284</link>
+			<link>http://demo.precisethemes.com/courtyard/product/woo-album-3/cd_3_flat/</link>
 			<pubDate>Fri, 07 Jun 2013 11:35:10 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2013/06/cd_3_flat.jpg</guid>
@@ -2118,7 +2119,7 @@
 		</item>
 		<item>
 			<title>cd_4_angle</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=285</link>
+			<link>http://demo.precisethemes.com/courtyard/product/woo-single-1/cd_4_angle/</link>
 			<pubDate>Fri, 07 Jun 2013 11:36:22 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2013/06/cd_4_angle.jpg</guid>
@@ -2149,7 +2150,7 @@
 		</item>
 		<item>
 			<title>cd_5_flat</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=286</link>
+			<link>http://demo.precisethemes.com/courtyard/product/woo-album-4/cd_5_flat/</link>
 			<pubDate>Fri, 07 Jun 2013 11:37:17 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2013/06/cd_5_flat.jpg</guid>
@@ -2180,7 +2181,7 @@
 		</item>
 		<item>
 			<title>cd_6_flat</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=287</link>
+			<link>http://demo.precisethemes.com/courtyard/product/woo-single-2/cd_6_flat/</link>
 			<pubDate>Fri, 07 Jun 2013 11:38:03 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2013/06/cd_6_flat.jpg</guid>
@@ -2211,7 +2212,7 @@
 		</item>
 		<item>
 			<title>pexels-photo-29683</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=64</link>
+			<link>http://demo.precisethemes.com/courtyard/standard-room/pexels-photo-29683/</link>
 			<pubDate>Wed, 07 Dec 2016 14:09:16 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2016/12/pexels-photo-29683.jpg</guid>
@@ -2242,7 +2243,7 @@
 		</item>
 		<item>
 			<title>photo-1473233549235-59a9de4c2cc1</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=68</link>
+			<link>http://demo.precisethemes.com/courtyard/welcome-to-hotel-courtyard/photo-1473233549235-59a9de4c2cc1/</link>
 			<pubDate>Thu, 08 Dec 2016 07:15:32 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2016/12/photo-1473233549235-59a9de4c2cc1.jpg</guid>
@@ -2273,7 +2274,7 @@
 		</item>
 		<item>
 			<title>pexels-photo-179124</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=71</link>
+			<link>http://demo.precisethemes.com/courtyard/enjoy-family-vacation/pexels-photo-179124/</link>
 			<pubDate>Thu, 08 Dec 2016 07:22:21 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2016/12/pexels-photo-179124.jpeg</guid>
@@ -2304,7 +2305,7 @@
 		</item>
 		<item>
 			<title>pexels-photo-188934---2</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=93</link>
+			<link>http://demo.precisethemes.com/courtyard/family-vacations/pexels-photo-188934-2/</link>
 			<pubDate>Thu, 08 Dec 2016 08:29:04 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2016/12/pexels-photo-188934-2.jpg</guid>
@@ -2335,7 +2336,7 @@
 		</item>
 		<item>
 			<title>photo-1472586662442-3eec04b9dbda</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=96</link>
+			<link>http://demo.precisethemes.com/courtyard/birthday-celebration-party/photo-1472586662442-3eec04b9dbda/</link>
 			<pubDate>Thu, 08 Dec 2016 08:30:12 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2016/12/photo-1472586662442-3eec04b9dbda.jpg</guid>
@@ -2366,7 +2367,7 @@
 		</item>
 		<item>
 			<title>pexels-photo-115087</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=99</link>
+			<link>http://demo.precisethemes.com/courtyard/unforgettable-holidays/pexels-photo-115087/</link>
 			<pubDate>Thu, 08 Dec 2016 08:30:57 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2016/12/pexels-photo-115087.jpeg</guid>
@@ -2397,7 +2398,7 @@
 		</item>
 		<item>
 			<title>pexels-photo-119664</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=102</link>
+			<link>http://demo.precisethemes.com/courtyard/honeymoon-packages/pexels-photo-119664/</link>
 			<pubDate>Thu, 08 Dec 2016 08:31:44 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2016/12/pexels-photo-119664.jpeg</guid>
@@ -2428,7 +2429,7 @@
 		</item>
 		<item>
 			<title>photo-1466220549276-aef9ce186540</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=105</link>
+			<link>http://demo.precisethemes.com/courtyard/overnight-campfire/photo-1466220549276-aef9ce186540/</link>
 			<pubDate>Thu, 08 Dec 2016 08:32:37 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2016/12/photo-1466220549276-aef9ce186540.jpg</guid>
@@ -2459,7 +2460,7 @@
 		</item>
 		<item>
 			<title>photo-1474378867955-38ec208e08e2</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=107</link>
+			<link>http://demo.precisethemes.com/courtyard/honeymoon-packages/photo-1474378867955-38ec208e08e2/</link>
 			<pubDate>Thu, 08 Dec 2016 08:37:04 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2016/12/photo-1474378867955-38ec208e08e2.jpg</guid>
@@ -2490,7 +2491,7 @@
 		</item>
 		<item>
 			<title>rouwhmswmp0-nathalia-bariani</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=108</link>
+			<link>http://demo.precisethemes.com/courtyard/honeymoon-packages/rouwhmswmp0-nathalia-bariani/</link>
 			<pubDate>Thu, 08 Dec 2016 08:41:43 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2016/12/rouwhmswmp0-nathalia-bariani.jpg</guid>
@@ -2521,7 +2522,7 @@
 		</item>
 		<item>
 			<title>ftqx-1sob4w-alice-donovan-rouse</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=109</link>
+			<link>http://demo.precisethemes.com/courtyard/honeymoon-packages/ftqx-1sob4w-alice-donovan-rouse/</link>
 			<pubDate>Thu, 08 Dec 2016 08:42:34 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2016/12/ftqx-1sob4w-alice-donovan-rouse.jpg</guid>
@@ -2552,7 +2553,7 @@
 		</item>
 		<item>
 			<title>d2quija2h-i-beauty-cocktails-girltalk</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=111</link>
+			<link>http://demo.precisethemes.com/courtyard/automattic-clarifies-blog-landrush-process-after-bait-and-switch-allegations/d2quija2h-i-beauty-cocktails-girltalk/</link>
 			<pubDate>Thu, 08 Dec 2016 08:50:27 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2016/12/d2quija2h-i-beauty-cocktails-girltalk.jpg</guid>
@@ -2583,7 +2584,7 @@
 		</item>
 		<item>
 			<title>08swtco0syg-ben-white</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=114</link>
+			<link>http://demo.precisethemes.com/courtyard/why-are-you-thankful-for-wordpress/08swtco0syg-ben-white/</link>
 			<pubDate>Thu, 08 Dec 2016 08:52:36 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2016/12/08swtco0syg-ben-white.jpg</guid>
@@ -2614,7 +2615,7 @@
 		</item>
 		<item>
 			<title>op2eq5g-zkw-william-iven</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=117</link>
+			<link>http://demo.precisethemes.com/courtyard/improvements-to-media-in-wordpress-4-7/op2eq5g-zkw-william-iven/</link>
 			<pubDate>Thu, 08 Dec 2016 08:54:41 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2016/12/op2eq5g-zkw-william-iven.jpg</guid>
@@ -2645,7 +2646,7 @@
 		</item>
 		<item>
 			<title>logo-flywheel</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=120</link>
+			<link>http://demo.precisethemes.com/courtyard/flywheel-acquires-wordpress-local-development-tool-pressmatic/logo-flywheel/</link>
 			<pubDate>Thu, 08 Dec 2016 08:58:25 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2016/12/logo-flywheel.png</guid>
@@ -2676,7 +2677,7 @@
 		</item>
 		<item>
 			<title>14152514_l</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=123</link>
+			<link>http://demo.precisethemes.com/courtyard/wordpress-will-only-recommend-hosting-companies-offering-ssl-by-default-in-2017/14152514_l/</link>
 			<pubDate>Thu, 08 Dec 2016 09:00:05 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2016/12/14152514_l.jpg</guid>
@@ -2707,7 +2708,7 @@
 		</item>
 		<item>
 			<title>mullenweg-matt-howididit-pan_36325</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=126</link>
+			<link>http://demo.precisethemes.com/courtyard/state-of-the-word-2016-mullenweg-pushes-calypso-as-future-of-wordpress/mullenweg-matt-howididit-pan_36325/</link>
 			<pubDate>Thu, 08 Dec 2016 09:02:09 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2016/12/mullenweg-matt-howididit-pan_36325.jpg</guid>
@@ -2738,7 +2739,7 @@
 		</item>
 		<item>
 			<title>Sarah_Vaughan_-_William_P._Gottlieb_-_No._1</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=131</link>
+			<link>http://demo.precisethemes.com/courtyard/wordpress-4-7-introduces-twenty-seventeen-default-theme/sarah_vaughan_-_william_p-_gottlieb_-_no-_1/</link>
 			<pubDate>Thu, 08 Dec 2016 09:04:44 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2016/12/Sarah_Vaughan_-_William_P._Gottlieb_-_No._1.jpg</guid>
@@ -2769,7 +2770,7 @@
 		</item>
 		<item>
 			<title>WordCamp San Francisco Overview</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=133</link>
+			<link>http://demo.precisethemes.com/courtyard/the-value-of-sponsoring-a-wordcamp/wordcamp-san-francisco-overview/</link>
 			<pubDate>Thu, 08 Dec 2016 09:06:45 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2016/12/WCSF13-crowd.jpg</guid>
@@ -2800,7 +2801,7 @@
 		</item>
 		<item>
 			<title>bexy1yqniii-jason-chen</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=139</link>
+			<link>http://demo.precisethemes.com/courtyard/a-new-way-to-search-preview-and-install-themes/bexy1yqniii-jason-chen/</link>
 			<pubDate>Thu, 08 Dec 2016 09:10:25 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2016/12/bexy1yqniii-jason-chen.jpg</guid>
@@ -2831,7 +2832,7 @@
 		</item>
 		<item>
 			<title></title>
-			<link>http://demo.precisethemes.com/courtyard/?p=58</link>
+			<link>http://demo.precisethemes.com/courtyard/58/</link>
 			<pubDate>Wed, 07 Dec 2016 14:04:00 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/2016/12/07/58/</guid>
@@ -2886,7 +2887,7 @@
 		</item>
 		<item>
 			<title>eao9vgyktoq-tim-gouw</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=141</link>
+			<link>http://demo.precisethemes.com/courtyard/bbpress-2-5-11-adds-wordpress-4-7-compatibility/eao9vgyktoq-tim-gouw/</link>
 			<pubDate>Thu, 08 Dec 2016 09:10:59 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2016/12/eao9vgyktoq-tim-gouw.jpg</guid>
@@ -2917,7 +2918,7 @@
 		</item>
 		<item>
 			<title>gvm_kmm3-9o-quentin-dr</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=144</link>
+			<link>http://demo.precisethemes.com/courtyard/buddypress-2-8-development-kicks-off/gvm_kmm3-9o-quentin-dr/</link>
 			<pubDate>Thu, 08 Dec 2016 09:12:39 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2016/12/gvm_kmm3-9o-quentin-dr.jpg</guid>
@@ -2948,7 +2949,7 @@
 		</item>
 		<item>
 			<title></title>
-			<link>http://demo.precisethemes.com/courtyard/?p=147</link>
+			<link>http://demo.precisethemes.com/courtyard/147/</link>
 			<pubDate>Thu, 08 Dec 2016 09:17:51 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/?p=147</guid>
@@ -2987,7 +2988,7 @@
 		</item>
 		<item>
 			<title>precise-logo-1</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=204</link>
+			<link>http://demo.precisethemes.com/courtyard/precise-logo-1/</link>
 			<pubDate>Wed, 22 Mar 2017 09:00:11 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2017/03/precise-logo-1.png</guid>
@@ -3018,7 +3019,7 @@
 		</item>
 		<item>
 			<title>logo-1</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=205</link>
+			<link>http://demo.precisethemes.com/courtyard/logo-1/</link>
 			<pubDate>Wed, 22 Mar 2017 09:03:58 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2017/03/logo-1.png</guid>
@@ -3049,7 +3050,7 @@
 		</item>
 		<item>
 			<title>logo-2</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=206</link>
+			<link>http://demo.precisethemes.com/courtyard/logo-2/</link>
 			<pubDate>Wed, 22 Mar 2017 09:03:59 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2017/03/logo-2.png</guid>
@@ -3080,16 +3081,12 @@
 		</item>
 		<item>
 			<title>courtyard</title>
-			<link>http://demo.precisethemes.com/courtyard/?p=227</link>
+			<link>http://demo.precisethemes.com/courtyard/courtyard/</link>
 			<pubDate>Wed, 05 Apr 2017 06:46:11 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/2017/04/05/courtyard/</guid>
 			<description></description>
-			<content:encoded><![CDATA[/*
-You can add your own CSS here.
-
-Click the help icon above to learn more.
-*/]]></content:encoded>
+			<content:encoded><![CDATA[]]></content:encoded>
 			<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 			<wp:post_id>227</wp:post_id>
 			<wp:post_date><![CDATA[2017-04-05 06:46:11]]></wp:post_date>
@@ -3106,7 +3103,7 @@ Click the help icon above to learn more.
 		</item>
 		<item>
 			<title>logo-2</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=247</link>
+			<link>http://demo.precisethemes.com/courtyard/logo-2-2/</link>
 			<pubDate>Thu, 27 Apr 2017 07:55:40 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2017/04/logo-2.png</guid>
@@ -3137,7 +3134,7 @@ Click the help icon above to learn more.
 		</item>
 		<item>
 			<title>logo-2</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=249</link>
+			<link>http://demo.precisethemes.com/courtyard/logo-2-3/</link>
 			<pubDate>Sun, 07 May 2017 03:33:11 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/demo-widgets/wp-content/uploads/2017/05/logo-2.png</guid>
@@ -3168,7 +3165,7 @@ Click the help icon above to learn more.
 		</item>
 		<item>
 			<title>about</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=251</link>
+			<link>http://demo.precisethemes.com/courtyard/about-us/about/</link>
 			<pubDate>Sun, 07 May 2017 03:35:59 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/demo-widgets/wp-content/uploads/2017/05/about.jpg</guid>
@@ -3199,7 +3196,7 @@ Click the help icon above to learn more.
 		</item>
 		<item>
 			<title>client-one</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=254</link>
+			<link>http://demo.precisethemes.com/courtyard/jenine/client-one/</link>
 			<pubDate>Sun, 07 May 2017 03:39:30 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/demo-widgets/wp-content/uploads/2017/05/client-one.png</guid>
@@ -3230,7 +3227,7 @@ Click the help icon above to learn more.
 		</item>
 		<item>
 			<title>client-three</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=255</link>
+			<link>http://demo.precisethemes.com/courtyard/jenine/client-three/</link>
 			<pubDate>Sun, 07 May 2017 03:39:31 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/demo-widgets/wp-content/uploads/2017/05/client-three.png</guid>
@@ -3261,7 +3258,7 @@ Click the help icon above to learn more.
 		</item>
 		<item>
 			<title>client-two</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=256</link>
+			<link>http://demo.precisethemes.com/courtyard/jenine/client-two/</link>
 			<pubDate>Sun, 07 May 2017 03:39:32 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/demo-widgets/wp-content/uploads/2017/05/client-two.png</guid>
@@ -3292,7 +3289,7 @@ Click the help icon above to learn more.
 		</item>
 		<item>
 			<title>logo-five</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=257</link>
+			<link>http://demo.precisethemes.com/courtyard/jenine/logo-five/</link>
 			<pubDate>Sun, 07 May 2017 03:39:33 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/demo-widgets/wp-content/uploads/2017/05/logo-five.png</guid>
@@ -3323,7 +3320,7 @@ Click the help icon above to learn more.
 		</item>
 		<item>
 			<title>logo-nine</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=258</link>
+			<link>http://demo.precisethemes.com/courtyard/jenine/logo-nine/</link>
 			<pubDate>Sun, 07 May 2017 03:39:34 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/demo-widgets/wp-content/uploads/2017/05/logo-nine.png</guid>
@@ -3354,7 +3351,7 @@ Click the help icon above to learn more.
 		</item>
 		<item>
 			<title>logo-one</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=259</link>
+			<link>http://demo.precisethemes.com/courtyard/jenine/logo-one/</link>
 			<pubDate>Sun, 07 May 2017 03:39:34 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/demo-widgets/wp-content/uploads/2017/05/logo-one.png</guid>
@@ -3385,7 +3382,7 @@ Click the help icon above to learn more.
 		</item>
 		<item>
 			<title>logo-seven</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=260</link>
+			<link>http://demo.precisethemes.com/courtyard/jenine/logo-seven/</link>
 			<pubDate>Sun, 07 May 2017 03:39:35 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/demo-widgets/wp-content/uploads/2017/05/logo-seven.png</guid>
@@ -3416,7 +3413,7 @@ Click the help icon above to learn more.
 		</item>
 		<item>
 			<title>logo-two</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=261</link>
+			<link>http://demo.precisethemes.com/courtyard/jenine/logo-two/</link>
 			<pubDate>Sun, 07 May 2017 03:39:36 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/demo-widgets/wp-content/uploads/2017/05/logo-two.png</guid>
@@ -3447,7 +3444,7 @@ Click the help icon above to learn more.
 		</item>
 		<item>
 			<title>logo-2-1</title>
-			<link>http://demo.precisethemes.com/courtyard/?attachment_id=266</link>
+			<link>http://demo.precisethemes.com/courtyard/logo-2-1/</link>
 			<pubDate>Sun, 07 May 2017 05:13:53 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/wp-content/uploads/2017/05/logo-2-1.png</guid>
@@ -3478,7 +3475,7 @@ Click the help icon above to learn more.
 		</item>
 		<item>
 			<title></title>
-			<link>http://demo.precisethemes.com/courtyard/?p=148</link>
+			<link>http://demo.precisethemes.com/courtyard/148/</link>
 			<pubDate>Thu, 08 Dec 2016 09:17:51 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/?p=148</guid>
@@ -3517,7 +3514,7 @@ Click the help icon above to learn more.
 		</item>
 		<item>
 			<title></title>
-			<link>http://demo.precisethemes.com/courtyard/?p=149</link>
+			<link>http://demo.precisethemes.com/courtyard/149/</link>
 			<pubDate>Thu, 08 Dec 2016 09:17:51 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/?p=149</guid>
@@ -3556,7 +3553,7 @@ Click the help icon above to learn more.
 		</item>
 		<item>
 			<title></title>
-			<link>http://demo.precisethemes.com/courtyard/?p=150</link>
+			<link>http://demo.precisethemes.com/courtyard/150/</link>
 			<pubDate>Thu, 08 Dec 2016 09:17:51 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/?p=150</guid>
@@ -3595,7 +3592,7 @@ Click the help icon above to learn more.
 		</item>
 		<item>
 			<title></title>
-			<link>http://demo.precisethemes.com/courtyard/?p=151</link>
+			<link>http://demo.precisethemes.com/courtyard/151/</link>
 			<pubDate>Thu, 08 Dec 2016 09:17:51 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/?p=151</guid>
@@ -3634,7 +3631,7 @@ Click the help icon above to learn more.
 		</item>
 		<item>
 			<title>Home</title>
-			<link>http://demo.precisethemes.com/courtyard/?p=152</link>
+			<link>http://demo.precisethemes.com/courtyard/home-2/</link>
 			<pubDate>Thu, 08 Dec 2016 09:21:11 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/?p=152</guid>
@@ -3677,7 +3674,7 @@ Click the help icon above to learn more.
 		</item>
 		<item>
 			<title></title>
-			<link>http://demo.precisethemes.com/courtyard/?p=153</link>
+			<link>http://demo.precisethemes.com/courtyard/153/</link>
 			<pubDate>Thu, 08 Dec 2016 09:21:11 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/?p=153</guid>
@@ -3716,7 +3713,7 @@ Click the help icon above to learn more.
 		</item>
 		<item>
 			<title></title>
-			<link>http://demo.precisethemes.com/courtyard/?p=154</link>
+			<link>http://demo.precisethemes.com/courtyard/154/</link>
 			<pubDate>Thu, 08 Dec 2016 09:21:11 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/?p=154</guid>
@@ -3755,7 +3752,7 @@ Click the help icon above to learn more.
 		</item>
 		<item>
 			<title>Rooms &amp; Rates</title>
-			<link>http://demo.precisethemes.com/courtyard/?p=155</link>
+			<link>http://demo.precisethemes.com/courtyard/rooms-rates/</link>
 			<pubDate>Thu, 08 Dec 2016 09:21:11 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/?p=155</guid>
@@ -3794,7 +3791,7 @@ Click the help icon above to learn more.
 		</item>
 		<item>
 			<title>Our Services</title>
-			<link>http://demo.precisethemes.com/courtyard/?p=156</link>
+			<link>http://demo.precisethemes.com/courtyard/our-services/</link>
 			<pubDate>Thu, 08 Dec 2016 09:21:11 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/?p=156</guid>
@@ -3833,7 +3830,7 @@ Click the help icon above to learn more.
 		</item>
 		<item>
 			<title>Rooms &amp; Rates</title>
-			<link>http://demo.precisethemes.com/courtyard/?p=157</link>
+			<link>http://demo.precisethemes.com/courtyard/rooms-rates-2/</link>
 			<pubDate>Thu, 08 Dec 2016 09:29:48 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/?p=157</guid>
@@ -3888,7 +3885,7 @@ Click the help icon above to learn more.
 		</item>
 		<item>
 			<title>Services</title>
-			<link>http://demo.precisethemes.com/courtyard/?p=158</link>
+			<link>http://demo.precisethemes.com/courtyard/our-services-2/</link>
 			<pubDate>Thu, 08 Dec 2016 09:29:48 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/?p=158</guid>
@@ -3943,7 +3940,7 @@ Click the help icon above to learn more.
 		</item>
 		<item>
 			<title>Features</title>
-			<link>http://demo.precisethemes.com/courtyard/?p=160</link>
+			<link>http://demo.precisethemes.com/courtyard/reservation/</link>
 			<pubDate>Thu, 08 Dec 2016 09:30:31 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/?p=160</guid>
@@ -3998,7 +3995,7 @@ Click the help icon above to learn more.
 		</item>
 		<item>
 			<title></title>
-			<link>http://demo.precisethemes.com/courtyard/?p=172</link>
+			<link>http://demo.precisethemes.com/courtyard/172/</link>
 			<pubDate>Thu, 08 Dec 2016 09:40:47 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/2016/12/08/172/</guid>
@@ -4053,7 +4050,7 @@ Click the help icon above to learn more.
 		</item>
 		<item>
 			<title></title>
-			<link>http://demo.precisethemes.com/courtyard/?p=173</link>
+			<link>http://demo.precisethemes.com/courtyard/173/</link>
 			<pubDate>Thu, 08 Dec 2016 09:40:47 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/2016/12/08/173/</guid>
@@ -4108,7 +4105,7 @@ Click the help icon above to learn more.
 		</item>
 		<item>
 			<title></title>
-			<link>http://demo.precisethemes.com/courtyard/?p=174</link>
+			<link>http://demo.precisethemes.com/courtyard/174/</link>
 			<pubDate>Thu, 08 Dec 2016 09:40:47 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/2016/12/08/174/</guid>
@@ -4163,7 +4160,7 @@ Click the help icon above to learn more.
 		</item>
 		<item>
 			<title></title>
-			<link>http://demo.precisethemes.com/courtyard/?p=175</link>
+			<link>http://demo.precisethemes.com/courtyard/175/</link>
 			<pubDate>Thu, 08 Dec 2016 09:40:47 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/2016/12/08/175/</guid>
@@ -4218,7 +4215,7 @@ Click the help icon above to learn more.
 		</item>
 		<item>
 			<title>Level 2</title>
-			<link>http://demo.precisethemes.com/courtyard/?p=176</link>
+			<link>http://demo.precisethemes.com/courtyard/level-2/</link>
 			<pubDate>Thu, 08 Dec 2016 09:40:47 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/2016/12/08/level-2/</guid>
@@ -4273,7 +4270,7 @@ Click the help icon above to learn more.
 		</item>
 		<item>
 			<title>Level 3</title>
-			<link>http://demo.precisethemes.com/courtyard/?p=177</link>
+			<link>http://demo.precisethemes.com/courtyard/level-3/</link>
 			<pubDate>Thu, 08 Dec 2016 09:40:47 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/2016/12/08/level-3/</guid>
@@ -4328,7 +4325,7 @@ Click the help icon above to learn more.
 		</item>
 		<item>
 			<title>Level 3 A</title>
-			<link>http://demo.precisethemes.com/courtyard/?p=178</link>
+			<link>http://demo.precisethemes.com/courtyard/level-3-a/</link>
 			<pubDate>Thu, 08 Dec 2016 09:40:47 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/2016/12/08/level-3-a/</guid>
@@ -4383,7 +4380,7 @@ Click the help icon above to learn more.
 		</item>
 		<item>
 			<title>Level 3 B</title>
-			<link>http://demo.precisethemes.com/courtyard/?p=179</link>
+			<link>http://demo.precisethemes.com/courtyard/level-3-b/</link>
 			<pubDate>Thu, 08 Dec 2016 09:40:47 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/2016/12/08/level-3-b/</guid>
@@ -4438,9 +4435,9 @@ Click the help icon above to learn more.
 		</item>
 		<item>
 			<title>Economy Room</title>
-			<link>http://demo.precisethemes.com/courtyard/?page_id=34</link>
+			<link>http://demo.precisethemes.com/courtyard/economy-room/</link>
 			<pubDate>Wed, 07 Dec 2016 13:58:57 +0000</pubDate>
-			<dc:creator><![CDATA[rabindra]]></dc:creator>
+			<dc:creator><![CDATA[precisethemes]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/?page_id=34</guid>
 			<description></description>
 			<content:encoded><![CDATA[In ac felis quis tortor malesuada pretium. Pellentesque auctor neque nec urna. Proin sapien ipsum, porta a, auctor quis, euismod ut, mi. Aenean viverra rhoncus pede. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut non enim eleifend felis pretium feugiat. Vivamus quis mi. Phasellus a est. Phasellus magna. In hac habitasse platea dictumst.
@@ -4496,9 +4493,9 @@ Donec interdum, metus et hendrerit aliquet, dolor diam sagittis ligula, eget ege
 		</item>
 		<item>
 			<title>Standard Room</title>
-			<link>http://demo.precisethemes.com/courtyard/?page_id=37</link>
+			<link>http://demo.precisethemes.com/courtyard/standard-room/</link>
 			<pubDate>Wed, 07 Dec 2016 13:59:52 +0000</pubDate>
-			<dc:creator><![CDATA[rabindra]]></dc:creator>
+			<dc:creator><![CDATA[precisethemes]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/?page_id=37</guid>
 			<description></description>
 			<content:encoded><![CDATA[Sed magna purus, fermentum eu, tincidunt eu, varius ut, felis. In auctor lobortis lacus. Quisque libero metus, condimentum nec, tempor a, commodo mollis, magna. Vestibulum ullamcorper mauris at ligula. Fusce fermentum. Nullam cursus lacinia erat. Praesent blandit laoreet nibh. Fusce convallis metus id felis luctus adipiscing.
@@ -4554,9 +4551,9 @@ Curabitur nisi. Quisque malesuada placerat nisl. Nam ipsum risus, rutrum vitae, 
 		</item>
 		<item>
 			<title>Blog</title>
-			<link>http://demo.precisethemes.com/courtyard/?page_id=56</link>
+			<link>http://demo.precisethemes.com/courtyard/blog/</link>
 			<pubDate>Wed, 07 Dec 2016 14:03:20 +0000</pubDate>
-			<dc:creator><![CDATA[rabindra]]></dc:creator>
+			<dc:creator><![CDATA[precisethemes]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/?page_id=56</guid>
 			<description></description>
 			<content:encoded><![CDATA[]]></content:encoded>
@@ -4600,9 +4597,9 @@ Curabitur nisi. Quisque malesuada placerat nisl. Nam ipsum risus, rutrum vitae, 
 		</item>
 		<item>
 			<title>Super Room</title>
-			<link>http://demo.precisethemes.com/courtyard/?page_id=59</link>
+			<link>http://demo.precisethemes.com/courtyard/super-room/</link>
 			<pubDate>Wed, 07 Dec 2016 10:06:43 +0000</pubDate>
-			<dc:creator><![CDATA[rabindra]]></dc:creator>
+			<dc:creator><![CDATA[precisethemes]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/?page_id=59</guid>
 			<description></description>
 			<content:encoded><![CDATA[Nunc interdum lacus sit amet orci. Vestibulum rutrum, mi nec elementum vehicula, eros quam gravida nisl, id fringilla neque ante vel mi. Morbi mollis tellus ac sapien. Phasellus volutpat, metus eget egestas mollis, lacus lacus blandit dui, id egestas quam mauris ut lacus. Fusce vel dui. Sed in libero ut nibh placerat accumsan. Proin faucibus arcu quis ante.
@@ -4662,9 +4659,9 @@ Ut id nisl quis enim dignissim sagittis. Etiam sollicitudin, ipsum eu pulvinar r
 		</item>
 		<item>
 			<title>Available Rooms</title>
-			<link>http://demo.precisethemes.com/courtyard/?page_id=65</link>
+			<link>http://demo.precisethemes.com/courtyard/available-rooms/</link>
 			<pubDate>Wed, 07 Dec 2016 14:10:21 +0000</pubDate>
-			<dc:creator><![CDATA[rabindra]]></dc:creator>
+			<dc:creator><![CDATA[precisethemes]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/?page_id=65</guid>
 			<description></description>
 			<content:encoded><![CDATA[]]></content:encoded>
@@ -4712,9 +4709,9 @@ Ut id nisl quis enim dignissim sagittis. Etiam sollicitudin, ipsum eu pulvinar r
 		</item>
 		<item>
 			<title>Welcome to Hotel Courtyard</title>
-			<link>http://demo.precisethemes.com/courtyard/?page_id=67</link>
+			<link>http://demo.precisethemes.com/courtyard/welcome-to-hotel-courtyard/</link>
 			<pubDate>Thu, 08 Dec 2016 07:15:46 +0000</pubDate>
-			<dc:creator><![CDATA[rabindra]]></dc:creator>
+			<dc:creator><![CDATA[precisethemes]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/?page_id=67</guid>
 			<description></description>
 			<content:encoded><![CDATA[Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
@@ -4766,9 +4763,9 @@ Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdie
 		</item>
 		<item>
 			<title>Enjoy Family Vacation</title>
-			<link>http://demo.precisethemes.com/courtyard/?page_id=70</link>
+			<link>http://demo.precisethemes.com/courtyard/enjoy-family-vacation/</link>
 			<pubDate>Thu, 08 Dec 2016 06:22:29 +0000</pubDate>
-			<dc:creator><![CDATA[rabindra]]></dc:creator>
+			<dc:creator><![CDATA[precisethemes]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/?page_id=70</guid>
 			<description></description>
 			<content:encoded><![CDATA[Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien.
@@ -4820,9 +4817,9 @@ Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, p
 		</item>
 		<item>
 			<title>Air Ticketing</title>
-			<link>http://demo.precisethemes.com/courtyard/?page_id=73</link>
+			<link>http://demo.precisethemes.com/courtyard/air-ticketing/</link>
 			<pubDate>Thu, 08 Dec 2016 07:27:36 +0000</pubDate>
-			<dc:creator><![CDATA[rabindra]]></dc:creator>
+			<dc:creator><![CDATA[precisethemes]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/?page_id=73</guid>
 			<description></description>
 			<content:encoded><![CDATA[Donec mollis hendrerit risus. Phasellus nec sem in justo pellentesque facilisis. Etiam imperdiet imperdiet orci. Nunc nec neque. Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi. Curabitur ligula sapien, tincidunt non, euismod vitae, posuere imperdiet, leo. Maecenas malesuada. Praesent congue erat at massa. Sed cursus turpis vitae tortor. Donec posuere vulputate arcu.
@@ -4886,9 +4883,9 @@ Pellentesque posuere. Praesent turpis. Aenean posuere, tortor sed cursus feugiat
 		</item>
 		<item>
 			<title>All Services</title>
-			<link>http://demo.precisethemes.com/courtyard/?page_id=75</link>
+			<link>http://demo.precisethemes.com/courtyard/all-services/</link>
 			<pubDate>Thu, 08 Dec 2016 07:30:10 +0000</pubDate>
-			<dc:creator><![CDATA[rabindra]]></dc:creator>
+			<dc:creator><![CDATA[precisethemes]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/?page_id=75</guid>
 			<description></description>
 			<content:encoded><![CDATA[]]></content:encoded>
@@ -4936,9 +4933,9 @@ Pellentesque posuere. Praesent turpis. Aenean posuere, tortor sed cursus feugiat
 		</item>
 		<item>
 			<title>Free 24h Internet</title>
-			<link>http://demo.precisethemes.com/courtyard/?page_id=77</link>
+			<link>http://demo.precisethemes.com/courtyard/free-24h-internet/</link>
 			<pubDate>Thu, 08 Dec 2016 07:57:16 +0000</pubDate>
-			<dc:creator><![CDATA[rabindra]]></dc:creator>
+			<dc:creator><![CDATA[precisethemes]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/?page_id=77</guid>
 			<description></description>
 			<content:encoded><![CDATA[Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce id purus. Ut varius tincidunt libero. Phasellus dolor. Maecenas vestibulum mollis diam. Pellentesque ut neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In dui magna, posuere eget, vestibulum et, tempor auctor, justo.
@@ -5002,9 +4999,9 @@ Curabitur at lacus ac velit ornare lobortis. Curabitur a felis in nunc fringilla
 		</item>
 		<item>
 			<title>Free Health Checkup</title>
-			<link>http://demo.precisethemes.com/courtyard/?page_id=79</link>
+			<link>http://demo.precisethemes.com/courtyard/free-health-checkup/</link>
 			<pubDate>Thu, 08 Dec 2016 08:00:31 +0000</pubDate>
-			<dc:creator><![CDATA[rabindra]]></dc:creator>
+			<dc:creator><![CDATA[precisethemes]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/?page_id=79</guid>
 			<description></description>
 			<content:encoded><![CDATA[Donec interdum, metus et hendrerit aliquet, dolor diam sagittis ligula, eget egestas libero turpis vel mi. Nunc nulla. Fusce risus nisl, viverra et, tempor et, pretium in, sapien. Donec venenatis vulputate lorem. Morbi nec metus. Phasellus blandit leo ut odio. Maecenas ullamcorper, dui et placerat feugiat, eros pede varius nisi, condimentum viverra felis nunc et lorem.
@@ -5068,7 +5065,7 @@ Pellentesque egestas, neque sit amet convallis pulvinar, justo nulla eleifend au
 		</item>
 		<item>
 			<title>Level 3 C</title>
-			<link>http://demo.precisethemes.com/courtyard/?p=180</link>
+			<link>http://demo.precisethemes.com/courtyard/level-3-c/</link>
 			<pubDate>Thu, 08 Dec 2016 09:40:47 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/2016/12/08/level-3-c/</guid>
@@ -5123,7 +5120,7 @@ Pellentesque egestas, neque sit amet convallis pulvinar, justo nulla eleifend au
 		</item>
 		<item>
 			<title>Holiday Packages</title>
-			<link>http://demo.precisethemes.com/courtyard/?p=220</link>
+			<link>http://demo.precisethemes.com/courtyard/holiday-packages-2/</link>
 			<pubDate>Wed, 05 Apr 2017 04:44:41 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/?p=220</guid>
@@ -5178,9 +5175,9 @@ Pellentesque egestas, neque sit amet convallis pulvinar, justo nulla eleifend au
 		</item>
 		<item>
 			<title>Family Room</title>
-			<link>http://demo.precisethemes.com/courtyard/?page_id=228</link>
+			<link>http://demo.precisethemes.com/courtyard/family-room/</link>
 			<pubDate>Wed, 07 Dec 2016 12:45:38 +0000</pubDate>
-			<dc:creator><![CDATA[rabindra]]></dc:creator>
+			<dc:creator><![CDATA[precisethemes]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/?page_id=8</guid>
 			<description></description>
 			<content:encoded><![CDATA[Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien.
@@ -5240,7 +5237,7 @@ Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, p
 		</item>
 		<item>
 			<title>Home</title>
-			<link>http://demo.precisethemes.com/courtyard/?p=246</link>
+			<link>http://demo.precisethemes.com/courtyard/home/</link>
 			<pubDate>Thu, 27 Apr 2017 07:08:04 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/?p=246</guid>
@@ -5295,9 +5292,9 @@ Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, p
 		</item>
 		<item>
 			<title>Deluxe Room</title>
-			<link>http://demo.precisethemes.com/courtyard/?page_id=248</link>
+			<link>http://demo.precisethemes.com/courtyard/deluxe-room/</link>
 			<pubDate>Wed, 07 Dec 2016 12:42:32 +0000</pubDate>
-			<dc:creator><![CDATA[rabindra]]></dc:creator>
+			<dc:creator><![CDATA[precisethemes]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/?page_id=4</guid>
 			<description></description>
 			<content:encoded><![CDATA[Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
@@ -5353,7 +5350,7 @@ Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdie
 		</item>
 		<item>
 			<title></title>
-			<link>http://demo.precisethemes.com/courtyard/?p=303</link>
+			<link>http://demo.precisethemes.com/courtyard/303/</link>
 			<pubDate>Sun, 07 May 2017 07:31:35 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/?p=303</guid>
@@ -5408,7 +5405,7 @@ Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdie
 		</item>
 		<item>
 			<title></title>
-			<link>http://demo.precisethemes.com/courtyard/?p=304</link>
+			<link>http://demo.precisethemes.com/courtyard/304/</link>
 			<pubDate>Sun, 07 May 2017 07:31:35 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/?p=304</guid>
@@ -5463,7 +5460,7 @@ Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdie
 		</item>
 		<item>
 			<title></title>
-			<link>http://demo.precisethemes.com/courtyard/?p=305</link>
+			<link>http://demo.precisethemes.com/courtyard/305/</link>
 			<pubDate>Sun, 07 May 2017 07:31:35 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/?p=305</guid>
@@ -5518,7 +5515,7 @@ Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdie
 		</item>
 		<item>
 			<title></title>
-			<link>http://demo.precisethemes.com/courtyard/?p=306</link>
+			<link>http://demo.precisethemes.com/courtyard/306/</link>
 			<pubDate>Sun, 07 May 2017 07:31:35 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/?p=306</guid>
@@ -5573,9 +5570,9 @@ Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdie
 		</item>
 		<item>
 			<title>Sample Page</title>
-			<link>http://demo.precisethemes.com/courtyard/?page_id=2</link>
+			<link>http://demo.precisethemes.com/courtyard/sample-page/</link>
 			<pubDate>Sun, 07 May 2017 05:11:02 +0000</pubDate>
-			<dc:creator><![CDATA[rabindra]]></dc:creator>
+			<dc:creator><![CDATA[precisethemes]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/?page_id=2</guid>
 			<description></description>
 			<content:encoded><![CDATA[This is an example page. It's different from a blog post because it will stay in one place and will show up in your site navigation (in most themes). Most people start with an About page that introduces them to potential site visitors. It might say something like this:
@@ -5607,9 +5604,9 @@ As a new WordPress user, you should go to <a href="http://demo.precisethemes.com
 		</item>
 		<item>
 			<title>Money Exchange</title>
-			<link>http://demo.precisethemes.com/courtyard/?page_id=81</link>
+			<link>http://demo.precisethemes.com/courtyard/money-exchange/</link>
 			<pubDate>Thu, 08 Dec 2016 08:01:18 +0000</pubDate>
-			<dc:creator><![CDATA[rabindra]]></dc:creator>
+			<dc:creator><![CDATA[precisethemes]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/?page_id=81</guid>
 			<description></description>
 			<content:encoded><![CDATA[Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc.
@@ -5673,9 +5670,9 @@ Curabitur ligula sapien, tincidunt non, euismod vitae, posuere imperdiet, leo. M
 		</item>
 		<item>
 			<title>Private Gym</title>
-			<link>http://demo.precisethemes.com/courtyard/?page_id=83</link>
+			<link>http://demo.precisethemes.com/courtyard/private-gym/</link>
 			<pubDate>Thu, 08 Dec 2016 08:05:55 +0000</pubDate>
-			<dc:creator><![CDATA[rabindra]]></dc:creator>
+			<dc:creator><![CDATA[precisethemes]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/?page_id=83</guid>
 			<description></description>
 			<content:encoded><![CDATA[Nulla neque dolor, sagittis eget, iaculis quis, molestie non, velit. Mauris turpis nunc, blandit et, volutpat molestie, porta ut, ligula. Fusce pharetra convallis urna. Quisque ut nisi. Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi. Suspendisse non nisl sit amet velit hendrerit rutrum. Ut leo. Ut a nisl id ante tempus hendrerit.
@@ -5739,9 +5736,9 @@ Ut id nisl quis enim dignissim sagittis. Etiam sollicitudin, ipsum eu pulvinar r
 		</item>
 		<item>
 			<title>Special Celebration</title>
-			<link>http://demo.precisethemes.com/courtyard/?page_id=85</link>
+			<link>http://demo.precisethemes.com/courtyard/special-celebration/</link>
 			<pubDate>Thu, 08 Dec 2016 08:07:03 +0000</pubDate>
-			<dc:creator><![CDATA[rabindra]]></dc:creator>
+			<dc:creator><![CDATA[precisethemes]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/?page_id=85</guid>
 			<description></description>
 			<content:encoded><![CDATA[Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
@@ -5805,9 +5802,9 @@ Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue ve
 		</item>
 		<item>
 			<title>Airport Pickup &amp; Drop</title>
-			<link>http://demo.precisethemes.com/courtyard/?page_id=87</link>
+			<link>http://demo.precisethemes.com/courtyard/airport-pickup-drop/</link>
 			<pubDate>Thu, 08 Dec 2016 08:08:35 +0000</pubDate>
-			<dc:creator><![CDATA[rabindra]]></dc:creator>
+			<dc:creator><![CDATA[precisethemes]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/?page_id=87</guid>
 			<description></description>
 			<content:encoded><![CDATA[Cras non dolor. Vivamus in erat ut urna cursus vestibulum. Fusce commodo aliquam arcu. Nam commodo suscipit quam. Quisque id odio. Praesent venenatis metus at tortor pulvinar varius. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
@@ -5869,9 +5866,9 @@ Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla conse
 		</item>
 		<item>
 			<title>Family Vacations</title>
-			<link>http://demo.precisethemes.com/courtyard/?page_id=92</link>
+			<link>http://demo.precisethemes.com/courtyard/family-vacations/</link>
 			<pubDate>Thu, 08 Dec 2016 08:29:18 +0000</pubDate>
-			<dc:creator><![CDATA[rabindra]]></dc:creator>
+			<dc:creator><![CDATA[precisethemes]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/?page_id=92</guid>
 			<description></description>
 			<content:encoded><![CDATA[Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed aliquam, nisi quis porttitor congue, elit erat euismod orci, ac placerat dolor lectus quis orci. Phasellus consectetuer vestibulum elit. Aenean tellus metus, bibendum sed, posuere ac, mattis non, nunc. Vestibulum fringilla pede sit amet augue. In turpis. Pellentesque posuere. Praesent turpis.
@@ -5931,9 +5928,9 @@ Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
 		</item>
 		<item>
 			<title>Birthday Celebration Party</title>
-			<link>http://demo.precisethemes.com/courtyard/?page_id=95</link>
+			<link>http://demo.precisethemes.com/courtyard/birthday-celebration-party/</link>
 			<pubDate>Thu, 08 Dec 2016 08:30:27 +0000</pubDate>
-			<dc:creator><![CDATA[rabindra]]></dc:creator>
+			<dc:creator><![CDATA[precisethemes]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/?page_id=95</guid>
 			<description></description>
 			<content:encoded><![CDATA[In ac felis quis tortor malesuada pretium. Pellentesque auctor neque nec urna. Proin sapien ipsum, porta a, auctor quis, euismod ut, mi. Aenean viverra rhoncus pede. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut non enim eleifend felis pretium feugiat. Vivamus quis mi. Phasellus a est. Phasellus magna. In hac habitasse platea dictumst.
@@ -5993,9 +5990,9 @@ Donec interdum, metus et hendrerit aliquet, dolor diam sagittis ligula, eget ege
 		</item>
 		<item>
 			<title>Unforgettable Holidays</title>
-			<link>http://demo.precisethemes.com/courtyard/?page_id=98</link>
+			<link>http://demo.precisethemes.com/courtyard/unforgettable-holidays/</link>
 			<pubDate>Thu, 08 Dec 2016 08:31:01 +0000</pubDate>
-			<dc:creator><![CDATA[rabindra]]></dc:creator>
+			<dc:creator><![CDATA[precisethemes]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/?page_id=98</guid>
 			<description></description>
 			<content:encoded><![CDATA[Sed magna purus, fermentum eu, tincidunt eu, varius ut, felis. In auctor lobortis lacus. Quisque libero metus, condimentum nec, tempor a, commodo mollis, magna. Vestibulum ullamcorper mauris at ligula. Fusce fermentum. Nullam cursus lacinia erat. Praesent blandit laoreet nibh. Fusce convallis metus id felis luctus adipiscing.
@@ -6055,9 +6052,9 @@ Quisque malesuada placerat nisl. Nam ipsum risus, rutrum vitae, vestibulum eu, m
 		</item>
 		<item>
 			<title>Honeymoon Packages</title>
-			<link>http://demo.precisethemes.com/courtyard/?page_id=101</link>
+			<link>http://demo.precisethemes.com/courtyard/honeymoon-packages/</link>
 			<pubDate>Thu, 08 Dec 2016 08:34:47 +0000</pubDate>
-			<dc:creator><![CDATA[rabindra]]></dc:creator>
+			<dc:creator><![CDATA[precisethemes]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/?page_id=101</guid>
 			<description></description>
 			<content:encoded><![CDATA[Vestibulum rutrum, mi nec elementum vehicula, eros quam gravida nisl, id fringilla neque ante vel mi. Morbi mollis tellus ac sapien. Phasellus volutpat, metus eget egestas mollis, lacus lacus blandit dui, id egestas quam mauris ut lacus. Fusce vel dui. Sed in libero ut nibh placerat accumsan. Proin faucibus arcu quis ante. In consectetuer turpis ut velit. Nulla sit amet est.
@@ -6117,9 +6114,9 @@ Mauris turpis nunc, blandit et, volutpat molestie, porta ut, ligula. Fusce phare
 		</item>
 		<item>
 			<title>Overnight Campfire</title>
-			<link>http://demo.precisethemes.com/courtyard/?page_id=104</link>
+			<link>http://demo.precisethemes.com/courtyard/overnight-campfire/</link>
 			<pubDate>Thu, 08 Dec 2016 08:32:41 +0000</pubDate>
-			<dc:creator><![CDATA[rabindra]]></dc:creator>
+			<dc:creator><![CDATA[precisethemes]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/?page_id=104</guid>
 			<description></description>
 			<content:encoded><![CDATA[Suspendisse eu ligula. Nulla facilisi. Donec id justo. Praesent porttitor, nulla vitae posuere iaculis, arcu nisl dignissim dolor, a pretium mi sem ut ipsum. Curabitur suscipit suscipit tellus. Praesent vestibulum dapibus nibh. Etiam iaculis nunc ac metus. Ut id nisl quis enim dignissim sagittis.
@@ -6179,9 +6176,9 @@ Pellentesque commodo eros a enim. Vestibulum turpis sem, aliquet eget, lobortis 
 		</item>
 		<item>
 			<title>Lorem Ipsum</title>
-			<link>http://demo.precisethemes.com/courtyard/?page_id=161</link>
+			<link>http://demo.precisethemes.com/courtyard/lorem-ipsum/</link>
 			<pubDate>Thu, 08 Dec 2016 09:35:03 +0000</pubDate>
-			<dc:creator><![CDATA[rabindra]]></dc:creator>
+			<dc:creator><![CDATA[precisethemes]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/?page_id=161</guid>
 			<description></description>
 			<content:encoded><![CDATA[Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec mollis. Quisque convallis libero in sapien pharetra tincidunt. Aliquam elit ante, malesuada id, tempor eu, gravida id, odio. Maecenas suscipit, risus et eleifend imperdiet, nisi orci ullamcorper massa, et adipiscing orci velit quis magna. Praesent sit amet ligula id orci venenatis auctor. Phasellus porttitor, metus non tincidunt dapibus, orci pede pretium neque, sit amet adipiscing ipsum lectus et libero. Aenean bibendum. Curabitur mattis quam id urna. Vivamus dui. Donec nonummy lacinia lorem. Cras risus arcu, sodales ac, ultrices ac, mollis quis, justo. Sed a libero. Quisque risus erat, posuere at, tristique non, lacinia quis, eros.
@@ -6275,9 +6272,9 @@ Lorem Ipsum је једноставно модел текста који се к
 		</item>
 		<item>
 			<title>Page with comments</title>
-			<link>http://demo.precisethemes.com/courtyard/?page_id=165</link>
+			<link>http://demo.precisethemes.com/courtyard/page-with-comments/</link>
 			<pubDate>Thu, 08 Dec 2016 09:35:43 +0000</pubDate>
-			<dc:creator><![CDATA[rabindra]]></dc:creator>
+			<dc:creator><![CDATA[precisethemes]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/?page_id=165</guid>
 			<description></description>
 			<content:encoded><![CDATA[Repository-hosted Themes are required to support display of comments on static Pages as well as on single blog Posts.  This static Page has comments, and these comments should be displayed.
@@ -6381,9 +6378,9 @@ Also, verify that this Page does not display taxonomy information (e.g. categori
 		</item>
 		<item>
 			<title>Page Image Alignment</title>
-			<link>http://demo.precisethemes.com/courtyard/?page_id=167</link>
+			<link>http://demo.precisethemes.com/courtyard/page-image-alignment/</link>
 			<pubDate>Thu, 08 Dec 2016 09:37:25 +0000</pubDate>
-			<dc:creator><![CDATA[rabindra]]></dc:creator>
+			<dc:creator><![CDATA[precisethemes]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/?page_id=167</guid>
 			<description></description>
 			<content:encoded><![CDATA[Welcome to image alignment! The best way to demonstrate the ebb and flow of the various image positioning options is to nestle them snuggly among an ocean of words. Grab a paddle and let’s get started.
@@ -6484,9 +6481,9 @@ And that’s a wrap, yo! You survived the tumultuous waters of alignment. Imag
 		</item>
 		<item>
 			<title>Page Markup And Formatting</title>
-			<link>http://demo.precisethemes.com/courtyard/?page_id=169</link>
+			<link>http://demo.precisethemes.com/courtyard/page-markup-and-formatting/</link>
 			<pubDate>Thu, 08 Dec 2016 09:37:50 +0000</pubDate>
-			<dc:creator><![CDATA[rabindra]]></dc:creator>
+			<dc:creator><![CDATA[precisethemes]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/?page_id=169</guid>
 			<description></description>
 			<content:encoded><![CDATA[<strong>Headings</strong>
@@ -6707,9 +6704,9 @@ This allows you to denote <var>variables</var>.]]></content:encoded>
 		</item>
 		<item>
 			<title>Available Packages</title>
-			<link>http://demo.precisethemes.com/courtyard/?page_id=218</link>
+			<link>http://demo.precisethemes.com/courtyard/available-packages/</link>
 			<pubDate>Wed, 05 Apr 2017 04:43:46 +0000</pubDate>
-			<dc:creator><![CDATA[rabindra]]></dc:creator>
+			<dc:creator><![CDATA[precisethemes]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/?page_id=218</guid>
 			<description></description>
 			<content:encoded><![CDATA[]]></content:encoded>
@@ -6753,9 +6750,9 @@ This allows you to denote <var>variables</var>.]]></content:encoded>
 		</item>
 		<item>
 			<title>Say Hello</title>
-			<link>http://demo.precisethemes.com/courtyard/?page_id=222</link>
+			<link>http://demo.precisethemes.com/courtyard/say-hello/</link>
 			<pubDate>Wed, 05 Apr 2017 05:01:08 +0000</pubDate>
-			<dc:creator><![CDATA[rabindra]]></dc:creator>
+			<dc:creator><![CDATA[precisethemes]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/?page_id=222</guid>
 			<description></description>
 			<content:encoded><![CDATA[Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
@@ -6801,9 +6798,9 @@ This allows you to denote <var>variables</var>.]]></content:encoded>
 		</item>
 		<item>
 			<title>About US</title>
-			<link>http://demo.precisethemes.com/courtyard/?page_id=250</link>
+			<link>http://demo.precisethemes.com/courtyard/about-us/</link>
 			<pubDate>Sun, 07 May 2017 03:36:09 +0000</pubDate>
-			<dc:creator><![CDATA[rabindra]]></dc:creator>
+			<dc:creator><![CDATA[precisethemes]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/demo-widgets/?page_id=250</guid>
 			<description></description>
 			<content:encoded><![CDATA[Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
@@ -6851,9 +6848,9 @@ Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lor
 		</item>
 		<item>
 			<title>Jenine</title>
-			<link>http://demo.precisethemes.com/courtyard/?page_id=253</link>
+			<link>http://demo.precisethemes.com/courtyard/jenine/</link>
 			<pubDate>Sun, 07 May 2017 03:39:49 +0000</pubDate>
-			<dc:creator><![CDATA[rabindra]]></dc:creator>
+			<dc:creator><![CDATA[precisethemes]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/demo-widgets/?page_id=253</guid>
 			<description></description>
 			<content:encoded><![CDATA[Good job and well done. I look forward to working with you in our next project.]]></content:encoded>
@@ -6897,9 +6894,9 @@ Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lor
 		</item>
 		<item>
 			<title>Mannie Smith</title>
-			<link>http://demo.precisethemes.com/courtyard/?page_id=264</link>
+			<link>http://demo.precisethemes.com/courtyard/mannie-smith/</link>
 			<pubDate>Sun, 07 May 2017 03:41:19 +0000</pubDate>
-			<dc:creator><![CDATA[rabindra]]></dc:creator>
+			<dc:creator><![CDATA[precisethemes]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/demo-widgets/?page_id=263</guid>
 			<description></description>
 			<content:encoded><![CDATA[We are very pleased with your service and the professional way all our queries and problems have been handled.]]></content:encoded>
@@ -6943,9 +6940,9 @@ Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lor
 		</item>
 		<item>
 			<title>Lindsey Molina</title>
-			<link>http://demo.precisethemes.com/courtyard/?page_id=265</link>
+			<link>http://demo.precisethemes.com/courtyard/lindsey-molina/</link>
 			<pubDate>Sun, 07 May 2017 03:42:11 +0000</pubDate>
-			<dc:creator><![CDATA[rabindra]]></dc:creator>
+			<dc:creator><![CDATA[precisethemes]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/demo-widgets/?page_id=265</guid>
 			<description></description>
 			<content:encoded><![CDATA[The team was very prompt and responsive and worked as a true business partner.]]></content:encoded>
@@ -6989,7 +6986,7 @@ Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lor
 		</item>
 		<item>
 			<title>Woo Logo</title>
-			<link>http://demo.precisethemes.com/courtyard/?product=woo-logo</link>
+			<link>http://demo.precisethemes.com/courtyard/product/woo-logo/</link>
 			<pubDate>Fri, 07 Jun 2013 10:35:51 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.woothemes.com/woocommerce/?post_type=product&#038;p=15</guid>
@@ -7172,7 +7169,7 @@ Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lor
 		</item>
 		<item>
 			<title>Premium Quality</title>
-			<link>http://demo.precisethemes.com/courtyard/?product=premium-quality</link>
+			<link>http://demo.precisethemes.com/courtyard/product/premium-quality/</link>
 			<pubDate>Fri, 07 Jun 2013 10:41:52 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.woothemes.com/woocommerce/?post_type=product&#038;p=19</guid>
@@ -7391,7 +7388,7 @@ I'm ordering mine next week]]></wp:comment_content>
 		</item>
 		<item>
 			<title>Ship Your Idea</title>
-			<link>http://demo.precisethemes.com/courtyard/?product=ship-your-idea</link>
+			<link>http://demo.precisethemes.com/courtyard/product/ship-your-idea/</link>
 			<pubDate>Fri, 07 Jun 2013 10:46:01 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.woothemes.com/woocommerce/?post_type=product&#038;p=22</guid>
@@ -7684,7 +7681,7 @@ I'm ordering mine next week]]></wp:comment_content>
 		</item>
 		<item>
 			<title>Ninja Silhouette</title>
-			<link>http://demo.precisethemes.com/courtyard/?product=ninja-silhouette</link>
+			<link>http://demo.precisethemes.com/courtyard/product/ninja-silhouette/</link>
 			<pubDate>Fri, 07 Jun 2013 10:49:51 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.woothemes.com/woocommerce/?post_type=product&#038;p=31</guid>
@@ -7871,9 +7868,9 @@ I'm ordering mine next week]]></wp:comment_content>
 		</item>
 		<item>
 			<title>Automattic Clarifies .blog Landrush Process After Bait and Switch Allegations</title>
-			<link>http://demo.precisethemes.com/courtyard/?p=110</link>
+			<link>http://demo.precisethemes.com/courtyard/automattic-clarifies-blog-landrush-process-after-bait-and-switch-allegations/</link>
 			<pubDate>Thu, 08 Dec 2016 08:50:39 +0000</pubDate>
-			<dc:creator><![CDATA[rabindra]]></dc:creator>
+			<dc:creator><![CDATA[precisethemes]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/?p=110</guid>
 			<description></description>
 			<content:encoded><![CDATA[Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Pellentesque dapibus hendrerit tortor. Praesent egestas tristique nibh. Sed a libero. Cras varius. Donec vitae orci sed dolor rutrum auctor. Fusce egestas elit eget lorem. Suspendisse nisl elit, rhoncus eget, elementum ac, condimentum eget, diam. Nam at tortor in tellus interdum sagittis. Aliquam lobortis.
@@ -7918,9 +7915,9 @@ Vivamus in erat ut urna cursus vestibulum. Fusce commodo aliquam arcu. Nam commo
 		</item>
 		<item>
 			<title>Why Are You Thankful for WordPress?</title>
-			<link>http://demo.precisethemes.com/courtyard/?p=113</link>
+			<link>http://demo.precisethemes.com/courtyard/why-are-you-thankful-for-wordpress/</link>
 			<pubDate>Thu, 08 Dec 2016 08:52:48 +0000</pubDate>
-			<dc:creator><![CDATA[rabindra]]></dc:creator>
+			<dc:creator><![CDATA[precisethemes]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/?p=113</guid>
 			<description></description>
 			<content:encoded><![CDATA[Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
@@ -7966,9 +7963,9 @@ Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue ve
 		</item>
 		<item>
 			<title>Improvements to Media in WordPress 4.7</title>
-			<link>http://demo.precisethemes.com/courtyard/?p=116</link>
+			<link>http://demo.precisethemes.com/courtyard/improvements-to-media-in-wordpress-4-7/</link>
 			<pubDate>Thu, 08 Dec 2016 08:54:57 +0000</pubDate>
-			<dc:creator><![CDATA[rabindra]]></dc:creator>
+			<dc:creator><![CDATA[precisethemes]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/?p=116</guid>
 			<description></description>
 			<content:encoded><![CDATA[Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus.
@@ -8015,9 +8012,9 @@ Phasellus consectetuer vestibulum elit. Aenean tellus metus, bibendum sed, posue
 		</item>
 		<item>
 			<title>Flywheel Acquires WordPress Local Development Tool Pressmatic</title>
-			<link>http://demo.precisethemes.com/courtyard/?p=119</link>
+			<link>http://demo.precisethemes.com/courtyard/flywheel-acquires-wordpress-local-development-tool-pressmatic/</link>
 			<pubDate>Thu, 08 Dec 2016 08:58:30 +0000</pubDate>
-			<dc:creator><![CDATA[rabindra]]></dc:creator>
+			<dc:creator><![CDATA[precisethemes]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/?p=119</guid>
 			<description></description>
 			<content:encoded><![CDATA[Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce id purus. Ut varius tincidunt libero. Phasellus dolor. Maecenas vestibulum mollis diam. Pellentesque ut neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
@@ -8062,9 +8059,9 @@ Donec interdum, metus et hendrerit aliquet, dolor diam sagittis ligula, eget ege
 		</item>
 		<item>
 			<title>WordPress Will Only Recommend Hosting Companies Offering SSL by Default in 2017</title>
-			<link>http://demo.precisethemes.com/courtyard/?p=122</link>
+			<link>http://demo.precisethemes.com/courtyard/wordpress-will-only-recommend-hosting-companies-offering-ssl-by-default-in-2017/</link>
 			<pubDate>Thu, 08 Dec 2016 09:00:35 +0000</pubDate>
-			<dc:creator><![CDATA[rabindra]]></dc:creator>
+			<dc:creator><![CDATA[precisethemes]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/?p=122</guid>
 			<description></description>
 			<content:encoded><![CDATA[Sed magna purus, fermentum eu, tincidunt eu, varius ut, felis. In auctor lobortis lacus. Quisque libero metus, condimentum nec, tempor a, commodo mollis, magna. Vestibulum ullamcorper mauris at ligula. Fusce fermentum. Nullam cursus lacinia erat. Praesent blandit laoreet nibh. Fusce convallis metus id felis luctus adipiscing.
@@ -8110,9 +8107,9 @@ Vestibulum rutrum, mi nec elementum vehicula, eros quam gravida nisl, id fringil
 		</item>
 		<item>
 			<title>State of the Word 2016: Mullenweg Pushes Calypso as Future of WordPress</title>
-			<link>http://demo.precisethemes.com/courtyard/?p=125</link>
+			<link>http://demo.precisethemes.com/courtyard/state-of-the-word-2016-mullenweg-pushes-calypso-as-future-of-wordpress/</link>
 			<pubDate>Thu, 08 Dec 2016 09:02:13 +0000</pubDate>
-			<dc:creator><![CDATA[rabindra]]></dc:creator>
+			<dc:creator><![CDATA[precisethemes]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/?p=125</guid>
 			<description></description>
 			<content:encoded><![CDATA[Praesent metus tellus, elementum eu, semper a, adipiscing nec, purus. Cras risus ipsum, faucibus ut, ullamcorper id, varius ac, leo. Suspendisse feugiat. Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. Praesent nec nisl a purus blandit viverra. Praesent ac massa at ligula laoreet iaculis. Nulla neque dolor, sagittis eget, iaculis quis, molestie non, velit.
@@ -8171,9 +8168,9 @@ Curabitur turpis. Vestibulum suscipit nulla quis orci. Fusce ac felis sit amet l
 		</item>
 		<item>
 			<title>WordPress 4.7 Introduces Twenty Seventeen Default Theme</title>
-			<link>http://demo.precisethemes.com/courtyard/?p=128</link>
+			<link>http://demo.precisethemes.com/courtyard/wordpress-4-7-introduces-twenty-seventeen-default-theme/</link>
 			<pubDate>Thu, 08 Dec 2016 09:03:47 +0000</pubDate>
-			<dc:creator><![CDATA[rabindra]]></dc:creator>
+			<dc:creator><![CDATA[precisethemes]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/?p=128</guid>
 			<description></description>
 			<content:encoded><![CDATA[Nunc sed turpis. Sed mollis, eros et ultrices tempus, mauris ipsum aliquam libero, non adipiscing dolor urna a orci. Nulla porta dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Pellentesque dapibus hendrerit tortor. Praesent egestas tristique nibh. Sed a libero. Cras varius. Donec vitae orci sed dolor rutrum auctor. Fusce egestas elit eget lorem.
@@ -8220,9 +8217,9 @@ Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
 		</item>
 		<item>
 			<title>The Value of Sponsoring a WordCamp</title>
-			<link>http://demo.precisethemes.com/courtyard/?p=132</link>
+			<link>http://demo.precisethemes.com/courtyard/the-value-of-sponsoring-a-wordcamp/</link>
 			<pubDate>Thu, 08 Dec 2016 09:07:11 +0000</pubDate>
-			<dc:creator><![CDATA[rabindra]]></dc:creator>
+			<dc:creator><![CDATA[precisethemes]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/?p=132</guid>
 			<description></description>
 			<content:encoded><![CDATA[Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
@@ -8268,9 +8265,9 @@ Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed al
 		</item>
 		<item>
 			<title>bbPress 2.5.11 Adds WordPress 4.7 Compatibility</title>
-			<link>http://demo.precisethemes.com/courtyard/?p=135</link>
+			<link>http://demo.precisethemes.com/courtyard/bbpress-2-5-11-adds-wordpress-4-7-compatibility/</link>
 			<pubDate>Thu, 08 Dec 2016 09:09:04 +0000</pubDate>
-			<dc:creator><![CDATA[rabindra]]></dc:creator>
+			<dc:creator><![CDATA[precisethemes]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/?p=135</guid>
 			<description></description>
 			<content:encoded><![CDATA[Donec mollis hendrerit risus. Phasellus nec sem in justo pellentesque facilisis. Etiam imperdiet imperdiet orci. Nunc nec neque. Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi. Curabitur ligula sapien, tincidunt non, euismod vitae, posuere imperdiet, leo. Maecenas malesuada. Praesent congue erat at massa. Sed cursus turpis vitae tortor. Donec posuere vulputate arcu. Phasellus accumsan cursus velit.
@@ -8331,9 +8328,9 @@ website or even a weblog from start to end.]]></wp:comment_content>
 		</item>
 		<item>
 			<title>A New Way to Search, Preview, and Install Themes</title>
-			<link>http://demo.precisethemes.com/courtyard/?p=138</link>
+			<link>http://demo.precisethemes.com/courtyard/a-new-way-to-search-preview-and-install-themes/</link>
 			<pubDate>Thu, 08 Dec 2016 09:10:31 +0000</pubDate>
-			<dc:creator><![CDATA[rabindra]]></dc:creator>
+			<dc:creator><![CDATA[precisethemes]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/?p=138</guid>
 			<description></description>
 			<content:encoded><![CDATA[Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut non enim eleifend felis pretium feugiat. Vivamus quis mi. Phasellus a est. Phasellus magna. In hac habitasse platea dictumst. Curabitur at lacus ac velit ornare lobortis. Curabitur a felis in nunc fringilla tristique. Morbi mattis ullamcorper velit. Phasellus gravida semper nisi. Nullam vel sem.
@@ -8379,9 +8376,9 @@ Fusce convallis metus id felis luctus adipiscing. Pellentesque egestas, neque si
 		</item>
 		<item>
 			<title>BuddyPress 2.8 Development Kicks Off</title>
-			<link>http://demo.precisethemes.com/courtyard/?p=143</link>
+			<link>http://demo.precisethemes.com/courtyard/buddypress-2-8-development-kicks-off/</link>
 			<pubDate>Thu, 08 Dec 2016 08:12:51 +0000</pubDate>
-			<dc:creator><![CDATA[rabindra]]></dc:creator>
+			<dc:creator><![CDATA[precisethemes]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/?p=143</guid>
 			<description></description>
 			<content:encoded><![CDATA[Quisque malesuada placerat nisl. Nam ipsum risus, rutrum vitae, vestibulum eu, molestie vel, lacus. Sed augue ipsum, egestas nec, vestibulum et, malesuada adipiscing, dui. Vestibulum facilisis, purus nec pulvinar iaculis, ligula mi congue nunc, vitae euismod ligula urna in dolor. Mauris sollicitudin fermentum libero. Praesent nonummy mi in odio. Nunc interdum lacus sit amet orci.
@@ -8429,9 +8426,9 @@ Praesent vestibulum dapibus nibh. Etiam iaculis nunc ac metus. Ut id nisl quis e
 		</item>
 		<item>
 			<title>Shop</title>
-			<link>http://demo.precisethemes.com/courtyard/?page_id=268</link>
+			<link>http://demo.precisethemes.com/courtyard/shop/</link>
 			<pubDate>Sun, 07 May 2017 07:27:43 +0000</pubDate>
-			<dc:creator><![CDATA[rabindra]]></dc:creator>
+			<dc:creator><![CDATA[precisethemes]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/?page_id=268</guid>
 			<description></description>
 			<content:encoded><![CDATA[]]></content:encoded>
@@ -8451,9 +8448,9 @@ Praesent vestibulum dapibus nibh. Etiam iaculis nunc ac metus. Ut id nisl quis e
 		</item>
 		<item>
 			<title>Cart</title>
-			<link>http://demo.precisethemes.com/courtyard/?page_id=269</link>
+			<link>http://demo.precisethemes.com/courtyard/cart/</link>
 			<pubDate>Sun, 07 May 2017 07:27:43 +0000</pubDate>
-			<dc:creator><![CDATA[rabindra]]></dc:creator>
+			<dc:creator><![CDATA[precisethemes]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/?page_id=269</guid>
 			<description></description>
 			<content:encoded><![CDATA[[woocommerce_cart]]]></content:encoded>
@@ -8513,9 +8510,9 @@ Praesent vestibulum dapibus nibh. Etiam iaculis nunc ac metus. Ut id nisl quis e
 		</item>
 		<item>
 			<title>Checkout</title>
-			<link>http://demo.precisethemes.com/courtyard/?page_id=270</link>
+			<link>http://demo.precisethemes.com/courtyard/checkout/</link>
 			<pubDate>Sun, 07 May 2017 07:27:43 +0000</pubDate>
-			<dc:creator><![CDATA[rabindra]]></dc:creator>
+			<dc:creator><![CDATA[precisethemes]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/?page_id=270</guid>
 			<description></description>
 			<content:encoded><![CDATA[[woocommerce_checkout]]]></content:encoded>
@@ -8575,9 +8572,9 @@ Praesent vestibulum dapibus nibh. Etiam iaculis nunc ac metus. Ut id nisl quis e
 		</item>
 		<item>
 			<title>My account</title>
-			<link>http://demo.precisethemes.com/courtyard/?page_id=271</link>
+			<link>http://demo.precisethemes.com/courtyard/my-account/</link>
 			<pubDate>Sun, 07 May 2017 07:27:43 +0000</pubDate>
-			<dc:creator><![CDATA[rabindra]]></dc:creator>
+			<dc:creator><![CDATA[precisethemes]]></dc:creator>
 			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/?page_id=271</guid>
 			<description></description>
 			<content:encoded><![CDATA[[woocommerce_my_account]]]></content:encoded>
@@ -8636,157 +8633,86 @@ Praesent vestibulum dapibus nibh. Etiam iaculis nunc ac metus. Ut id nisl quis e
 			</wp:postmeta>
 		</item>
 		<item>
-			<title>Woo Ninja</title>
-			<link>http://demo.precisethemes.com/courtyard/?product=woo-ninja</link>
-			<pubDate>Fri, 07 Jun 2013 10:52:06 +0000</pubDate>
-			<dc:creator><![CDATA[rabindra]]></dc:creator>
-			<guid isPermaLink="false">http://demo.woothemes.com/woocommerce/?post_type=product&#038;p=34</guid>
+			<title>Home</title>
+			<link>http://demo.precisethemes.com/courtyard/home__trashed/</link>
+			<pubDate>Tue, 24 Oct 2017 09:58:24 +0000</pubDate>
+			<dc:creator><![CDATA[precisethemes]]></dc:creator>
+			<guid isPermaLink="false">http://demo.precisethemes.com/courtyard/?page_id=350</guid>
 			<description></description>
-			<content:encoded><![CDATA[Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.]]></content:encoded>
-			<excerpt:encoded><![CDATA[Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.]]></excerpt:encoded>
-			<wp:post_id>288</wp:post_id>
-			<wp:post_date><![CDATA[2013-06-07 10:52:06]]></wp:post_date>
-			<wp:post_date_gmt><![CDATA[2013-06-07 10:52:06]]></wp:post_date_gmt>
-			<wp:comment_status><![CDATA[open]]></wp:comment_status>
+			<content:encoded><![CDATA[]]></content:encoded>
+			<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+			<wp:post_id>350</wp:post_id>
+			<wp:post_date><![CDATA[2017-10-24 09:58:24]]></wp:post_date>
+			<wp:post_date_gmt><![CDATA[2017-10-24 09:58:24]]></wp:post_date_gmt>
+			<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 			<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-			<wp:post_name><![CDATA[woo-ninja]]></wp:post_name>
-			<wp:status><![CDATA[publish]]></wp:status>
+			<wp:post_name><![CDATA[home__trashed]]></wp:post_name>
+			<wp:status><![CDATA[trash]]></wp:status>
 			<wp:post_parent>0</wp:post_parent>
 			<wp:menu_order>0</wp:menu_order>
-			<wp:post_type><![CDATA[product]]></wp:post_type>
+			<wp:post_type><![CDATA[page]]></wp:post_type>
 			<wp:post_password><![CDATA[]]></wp:post_password>
 			<wp:is_sticky>0</wp:is_sticky>
-			<category domain="product_type" nicename="simple"><![CDATA[simple]]></category>
-			<category domain="product_cat" nicename="clothing"><![CDATA[Clothing]]></category>
-			<category domain="product_cat" nicename="t-shirts"><![CDATA[T-shirts]]></category>
 			<wp:postmeta>
-				<wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key>
-				<wp:meta_value><![CDATA[273]]></wp:meta_value>
+				<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+				<wp:meta_value><![CDATA[1]]></wp:meta_value>
 			</wp:postmeta>
 			<wp:postmeta>
-				<wp:meta_key><![CDATA[_visibility]]></wp:meta_key>
-				<wp:meta_value><![CDATA[visible]]></wp:meta_value>
+				<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
+				<wp:meta_value><![CDATA[page-templates/template-front-page.php]]></wp:meta_value>
 			</wp:postmeta>
 			<wp:postmeta>
-				<wp:meta_key><![CDATA[_stock_status]]></wp:meta_key>
-				<wp:meta_value><![CDATA[instock]]></wp:meta_value>
+				<wp:meta_key><![CDATA[service_icon]]></wp:meta_key>
+				<wp:meta_value><![CDATA[]]></wp:meta_value>
 			</wp:postmeta>
 			<wp:postmeta>
-				<wp:meta_key><![CDATA[total_sales]]></wp:meta_key>
+				<wp:meta_key><![CDATA[page_specific_layout]]></wp:meta_key>
+				<wp:meta_value><![CDATA[default_layout]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[room_related_posts_checkbox]]></wp:meta_key>
 				<wp:meta_value><![CDATA[0]]></wp:meta_value>
 			</wp:postmeta>
 			<wp:postmeta>
-				<wp:meta_key><![CDATA[_downloadable]]></wp:meta_key>
-				<wp:meta_value><![CDATA[no]]></wp:meta_value>
+				<wp:meta_key><![CDATA[room_related_posts_number]]></wp:meta_key>
+				<wp:meta_value><![CDATA[5]]></wp:meta_value>
 			</wp:postmeta>
 			<wp:postmeta>
-				<wp:meta_key><![CDATA[_virtual]]></wp:meta_key>
-				<wp:meta_value><![CDATA[no]]></wp:meta_value>
-			</wp:postmeta>
-			<wp:postmeta>
-				<wp:meta_key><![CDATA[_product_image_gallery]]></wp:meta_key>
-				<wp:meta_value><![CDATA[36]]></wp:meta_value>
-			</wp:postmeta>
-			<wp:postmeta>
-				<wp:meta_key><![CDATA[_regular_price]]></wp:meta_key>
-				<wp:meta_value><![CDATA[20]]></wp:meta_value>
-			</wp:postmeta>
-			<wp:postmeta>
-				<wp:meta_key><![CDATA[_sale_price]]></wp:meta_key>
-				<wp:meta_value><![CDATA[]]></wp:meta_value>
-			</wp:postmeta>
-			<wp:postmeta>
-				<wp:meta_key><![CDATA[_tax_status]]></wp:meta_key>
-				<wp:meta_value><![CDATA[]]></wp:meta_value>
-			</wp:postmeta>
-			<wp:postmeta>
-				<wp:meta_key><![CDATA[_tax_class]]></wp:meta_key>
-				<wp:meta_value><![CDATA[]]></wp:meta_value>
-			</wp:postmeta>
-			<wp:postmeta>
-				<wp:meta_key><![CDATA[_purchase_note]]></wp:meta_key>
-				<wp:meta_value><![CDATA[]]></wp:meta_value>
-			</wp:postmeta>
-			<wp:postmeta>
-				<wp:meta_key><![CDATA[_featured]]></wp:meta_key>
-				<wp:meta_value><![CDATA[no]]></wp:meta_value>
-			</wp:postmeta>
-			<wp:postmeta>
-				<wp:meta_key><![CDATA[_weight]]></wp:meta_key>
-				<wp:meta_value><![CDATA[]]></wp:meta_value>
-			</wp:postmeta>
-			<wp:postmeta>
-				<wp:meta_key><![CDATA[_length]]></wp:meta_key>
-				<wp:meta_value><![CDATA[]]></wp:meta_value>
-			</wp:postmeta>
-			<wp:postmeta>
-				<wp:meta_key><![CDATA[_width]]></wp:meta_key>
-				<wp:meta_value><![CDATA[]]></wp:meta_value>
-			</wp:postmeta>
-			<wp:postmeta>
-				<wp:meta_key><![CDATA[_height]]></wp:meta_key>
-				<wp:meta_value><![CDATA[]]></wp:meta_value>
-			</wp:postmeta>
-			<wp:postmeta>
-				<wp:meta_key><![CDATA[_sku]]></wp:meta_key>
-				<wp:meta_value><![CDATA[]]></wp:meta_value>
-			</wp:postmeta>
-			<wp:postmeta>
-				<wp:meta_key><![CDATA[_product_attributes]]></wp:meta_key>
-				<wp:meta_value><![CDATA[a:0:{}]]></wp:meta_value>
-			</wp:postmeta>
-			<wp:postmeta>
-				<wp:meta_key><![CDATA[_sale_price_dates_from]]></wp:meta_key>
-				<wp:meta_value><![CDATA[]]></wp:meta_value>
-			</wp:postmeta>
-			<wp:postmeta>
-				<wp:meta_key><![CDATA[_sale_price_dates_to]]></wp:meta_key>
-				<wp:meta_value><![CDATA[]]></wp:meta_value>
-			</wp:postmeta>
-			<wp:postmeta>
-				<wp:meta_key><![CDATA[_price]]></wp:meta_key>
-				<wp:meta_value><![CDATA[20]]></wp:meta_value>
-			</wp:postmeta>
-			<wp:postmeta>
-				<wp:meta_key><![CDATA[_sold_individually]]></wp:meta_key>
-				<wp:meta_value><![CDATA[]]></wp:meta_value>
-			</wp:postmeta>
-			<wp:postmeta>
-				<wp:meta_key><![CDATA[_stock]]></wp:meta_key>
-				<wp:meta_value><![CDATA[]]></wp:meta_value>
-			</wp:postmeta>
-			<wp:postmeta>
-				<wp:meta_key><![CDATA[_backorders]]></wp:meta_key>
-				<wp:meta_value><![CDATA[no]]></wp:meta_value>
-			</wp:postmeta>
-			<wp:postmeta>
-				<wp:meta_key><![CDATA[_manage_stock]]></wp:meta_key>
-				<wp:meta_value><![CDATA[no]]></wp:meta_value>
-			</wp:postmeta>
-			<wp:postmeta>
-				<wp:meta_key><![CDATA[_crosssell_ids]]></wp:meta_key>
-				<wp:meta_value><![CDATA[a:2:{i:0;s:2:"37";i:1;s:2:"31";}]]></wp:meta_value>
-			</wp:postmeta>
-			<wp:postmeta>
-				<wp:meta_key><![CDATA[_upsell_ids]]></wp:meta_key>
-				<wp:meta_value><![CDATA[a:1:{i:0;s:2:"47";}]]></wp:meta_value>
-			</wp:postmeta>
-			<wp:postmeta>
-				<wp:meta_key><![CDATA[_wc_review_count]]></wp:meta_key>
+				<wp:meta_key><![CDATA[service_related_posts_checkbox]]></wp:meta_key>
 				<wp:meta_value><![CDATA[0]]></wp:meta_value>
 			</wp:postmeta>
 			<wp:postmeta>
-				<wp:meta_key><![CDATA[_wc_rating_count]]></wp:meta_key>
-				<wp:meta_value><![CDATA[a:0:{}]]></wp:meta_value>
+				<wp:meta_key><![CDATA[service_related_posts_number]]></wp:meta_key>
+				<wp:meta_value><![CDATA[5]]></wp:meta_value>
 			</wp:postmeta>
 			<wp:postmeta>
-				<wp:meta_key><![CDATA[_wc_average_rating]]></wp:meta_key>
+				<wp:meta_key><![CDATA[packages_related_posts_checkbox]]></wp:meta_key>
 				<wp:meta_value><![CDATA[0]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[packages_related_posts_number]]></wp:meta_key>
+				<wp:meta_value><![CDATA[5]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_yoast_wpseo_content_score]]></wp:meta_key>
+				<wp:meta_value><![CDATA[30]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
+				<wp:meta_value><![CDATA[publish]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
+				<wp:meta_value><![CDATA[1509955460]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
+				<wp:meta_value><![CDATA[home]]></wp:meta_value>
 			</wp:postmeta>
 		</item>
 		<item>
 			<title>Ship Your Idea - Black</title>
-			<link>http://demo.precisethemes.com/courtyard/?product=ship-your-idea&#038;attribute_pa_color=black</link>
+			<link>http://demo.precisethemes.com/courtyard/product/ship-your-idea/?attribute_pa_color=black</link>
 			<pubDate>Fri, 07 Jun 2013 10:44:57 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.woothemes.com/woocommerce/?product_variation=product-22-variation</guid>
@@ -8883,106 +8809,8 @@ Praesent vestibulum dapibus nibh. Etiam iaculis nunc ac metus. Ut id nisl quis e
 			</wp:postmeta>
 		</item>
 		<item>
-			<title>Ship Your Idea - Green</title>
-			<link>http://demo.precisethemes.com/courtyard/?product=ship-your-idea&#038;attribute_pa_color=green</link>
-			<pubDate>Fri, 07 Jun 2013 10:44:58 +0000</pubDate>
-			<dc:creator><![CDATA[rabindra]]></dc:creator>
-			<guid isPermaLink="false">http://demo.woothemes.com/woocommerce/?product_variation=product-22-variation-2</guid>
-			<description></description>
-			<content:encoded><![CDATA[]]></content:encoded>
-			<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-			<wp:post_id>24</wp:post_id>
-			<wp:post_date><![CDATA[2013-06-07 10:44:58]]></wp:post_date>
-			<wp:post_date_gmt><![CDATA[2013-06-07 10:44:58]]></wp:post_date_gmt>
-			<wp:comment_status><![CDATA[open]]></wp:comment_status>
-			<wp:ping_status><![CDATA[open]]></wp:ping_status>
-			<wp:post_name><![CDATA[product-22-variation-2]]></wp:post_name>
-			<wp:status><![CDATA[publish]]></wp:status>
-			<wp:post_parent>22</wp:post_parent>
-			<wp:menu_order>1</wp:menu_order>
-			<wp:post_type><![CDATA[product_variation]]></wp:post_type>
-			<wp:post_password><![CDATA[]]></wp:post_password>
-			<wp:is_sticky>0</wp:is_sticky>
-			<wp:postmeta>
-				<wp:meta_key><![CDATA[_sku]]></wp:meta_key>
-				<wp:meta_value><![CDATA[]]></wp:meta_value>
-			</wp:postmeta>
-			<wp:postmeta>
-				<wp:meta_key><![CDATA[_weight]]></wp:meta_key>
-				<wp:meta_value><![CDATA[]]></wp:meta_value>
-			</wp:postmeta>
-			<wp:postmeta>
-				<wp:meta_key><![CDATA[_length]]></wp:meta_key>
-				<wp:meta_value><![CDATA[]]></wp:meta_value>
-			</wp:postmeta>
-			<wp:postmeta>
-				<wp:meta_key><![CDATA[_width]]></wp:meta_key>
-				<wp:meta_value><![CDATA[]]></wp:meta_value>
-			</wp:postmeta>
-			<wp:postmeta>
-				<wp:meta_key><![CDATA[_height]]></wp:meta_key>
-				<wp:meta_value><![CDATA[]]></wp:meta_value>
-			</wp:postmeta>
-			<wp:postmeta>
-				<wp:meta_key><![CDATA[_stock]]></wp:meta_key>
-				<wp:meta_value><![CDATA[]]></wp:meta_value>
-			</wp:postmeta>
-			<wp:postmeta>
-				<wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key>
-				<wp:meta_value><![CDATA[27]]></wp:meta_value>
-			</wp:postmeta>
-			<wp:postmeta>
-				<wp:meta_key><![CDATA[_virtual]]></wp:meta_key>
-				<wp:meta_value><![CDATA[no]]></wp:meta_value>
-			</wp:postmeta>
-			<wp:postmeta>
-				<wp:meta_key><![CDATA[_downloadable]]></wp:meta_key>
-				<wp:meta_value><![CDATA[no]]></wp:meta_value>
-			</wp:postmeta>
-			<wp:postmeta>
-				<wp:meta_key><![CDATA[_regular_price]]></wp:meta_key>
-				<wp:meta_value><![CDATA[20]]></wp:meta_value>
-			</wp:postmeta>
-			<wp:postmeta>
-				<wp:meta_key><![CDATA[_sale_price]]></wp:meta_key>
-				<wp:meta_value><![CDATA[]]></wp:meta_value>
-			</wp:postmeta>
-			<wp:postmeta>
-				<wp:meta_key><![CDATA[_sale_price_dates_from]]></wp:meta_key>
-				<wp:meta_value><![CDATA[]]></wp:meta_value>
-			</wp:postmeta>
-			<wp:postmeta>
-				<wp:meta_key><![CDATA[_sale_price_dates_to]]></wp:meta_key>
-				<wp:meta_value><![CDATA[]]></wp:meta_value>
-			</wp:postmeta>
-			<wp:postmeta>
-				<wp:meta_key><![CDATA[_price]]></wp:meta_key>
-				<wp:meta_value><![CDATA[20]]></wp:meta_value>
-			</wp:postmeta>
-			<wp:postmeta>
-				<wp:meta_key><![CDATA[_tax_class]]></wp:meta_key>
-				<wp:meta_value><![CDATA[]]></wp:meta_value>
-			</wp:postmeta>
-			<wp:postmeta>
-				<wp:meta_key><![CDATA[_download_limit]]></wp:meta_key>
-				<wp:meta_value><![CDATA[]]></wp:meta_value>
-			</wp:postmeta>
-			<wp:postmeta>
-				<wp:meta_key><![CDATA[_download_expiry]]></wp:meta_key>
-				<wp:meta_value><![CDATA[]]></wp:meta_value>
-			</wp:postmeta>
-			<wp:postmeta>
-				<wp:meta_key><![CDATA[_file_paths]]></wp:meta_key>
-				<wp:meta_value><![CDATA[]]></wp:meta_value>
-			</wp:postmeta>
-			<wp:postmeta>
-				<wp:meta_key><![CDATA[attribute_pa_color]]></wp:meta_key>
-				<wp:meta_value><![CDATA[green]]></wp:meta_value>
-			</wp:postmeta>
-		</item>
-		<item>
 			<title>Ship Your Idea</title>
-			<link>http://demo.precisethemes.com/courtyard/?product=ship-your-idea-2</link>
+			<link>http://demo.precisethemes.com/courtyard/product/ship-your-idea-2/</link>
 			<pubDate>Fri, 07 Jun 2013 11:00:28 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.woothemes.com/woocommerce/?post_type=product&#038;p=40</guid>
@@ -9271,7 +9099,7 @@ Praesent vestibulum dapibus nibh. Etiam iaculis nunc ac metus. Ut id nisl quis e
 		</item>
 		<item>
 			<title>Woo Ninja</title>
-			<link>http://demo.precisethemes.com/courtyard/?product=woo-ninja-2</link>
+			<link>http://demo.precisethemes.com/courtyard/product/woo-ninja-2/</link>
 			<pubDate>Fri, 07 Jun 2013 11:02:31 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.woothemes.com/woocommerce/?post_type=product&#038;p=47</guid>
@@ -9492,7 +9320,7 @@ Praesent vestibulum dapibus nibh. Etiam iaculis nunc ac metus. Ut id nisl quis e
 		</item>
 		<item>
 			<title>Patient Ninja</title>
-			<link>http://demo.precisethemes.com/courtyard/?product=patient-ninja</link>
+			<link>http://demo.precisethemes.com/courtyard/product/patient-ninja/</link>
 			<pubDate>Fri, 07 Jun 2013 11:03:56 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.woothemes.com/woocommerce/?post_type=product&#038;p=50</guid>
@@ -9753,7 +9581,7 @@ If only it came in red as well!]]></wp:comment_content>
 		</item>
 		<item>
 			<title>Happy Ninja</title>
-			<link>http://demo.precisethemes.com/courtyard/?product=happy-ninja-2</link>
+			<link>http://demo.precisethemes.com/courtyard/product/happy-ninja-2/</link>
 			<pubDate>Fri, 07 Jun 2013 11:05:37 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.woothemes.com/woocommerce/?post_type=product&#038;p=53</guid>
@@ -9974,7 +9802,7 @@ If only it came in red as well!]]></wp:comment_content>
 		</item>
 		<item>
 			<title>Woo Ninja</title>
-			<link>http://demo.precisethemes.com/courtyard/?product=woo-ninja-3</link>
+			<link>http://demo.precisethemes.com/courtyard/product/woo-ninja-3/</link>
 			<pubDate>Fri, 07 Jun 2013 11:28:45 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.woothemes.com/woocommerce/?post_type=product&#038;p=76</guid>
@@ -10156,7 +9984,7 @@ If only it came in red as well!]]></wp:comment_content>
 		</item>
 		<item>
 			<title>Woo Album #3</title>
-			<link>http://demo.precisethemes.com/courtyard/?product=woo-album-3</link>
+			<link>http://demo.precisethemes.com/courtyard/product/woo-album-3/</link>
 			<pubDate>Fri, 07 Jun 2013 11:35:18 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.woothemes.com/woocommerce/?post_type=product&#038;p=90</guid>
@@ -10346,8 +10174,157 @@ If only it came in red as well!]]></wp:comment_content>
 			</wp:comment>
 		</item>
 		<item>
+			<title>Woo Ninja</title>
+			<link>http://demo.precisethemes.com/courtyard/product/woo-ninja/</link>
+			<pubDate>Fri, 07 Jun 2013 10:52:06 +0000</pubDate>
+			<dc:creator><![CDATA[rabindra]]></dc:creator>
+			<guid isPermaLink="false">http://demo.woothemes.com/woocommerce/?post_type=product&#038;p=34</guid>
+			<description></description>
+			<content:encoded><![CDATA[Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.]]></content:encoded>
+			<excerpt:encoded><![CDATA[Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.]]></excerpt:encoded>
+			<wp:post_id>288</wp:post_id>
+			<wp:post_date><![CDATA[2013-06-07 10:52:06]]></wp:post_date>
+			<wp:post_date_gmt><![CDATA[2013-06-07 10:52:06]]></wp:post_date_gmt>
+			<wp:comment_status><![CDATA[open]]></wp:comment_status>
+			<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+			<wp:post_name><![CDATA[woo-ninja]]></wp:post_name>
+			<wp:status><![CDATA[publish]]></wp:status>
+			<wp:post_parent>0</wp:post_parent>
+			<wp:menu_order>0</wp:menu_order>
+			<wp:post_type><![CDATA[product]]></wp:post_type>
+			<wp:post_password><![CDATA[]]></wp:post_password>
+			<wp:is_sticky>0</wp:is_sticky>
+			<category domain="product_type" nicename="simple"><![CDATA[simple]]></category>
+			<category domain="product_cat" nicename="clothing"><![CDATA[Clothing]]></category>
+			<category domain="product_cat" nicename="t-shirts"><![CDATA[T-shirts]]></category>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key>
+				<wp:meta_value><![CDATA[273]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_visibility]]></wp:meta_key>
+				<wp:meta_value><![CDATA[visible]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_stock_status]]></wp:meta_key>
+				<wp:meta_value><![CDATA[instock]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[total_sales]]></wp:meta_key>
+				<wp:meta_value><![CDATA[0]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_downloadable]]></wp:meta_key>
+				<wp:meta_value><![CDATA[no]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_virtual]]></wp:meta_key>
+				<wp:meta_value><![CDATA[no]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_product_image_gallery]]></wp:meta_key>
+				<wp:meta_value><![CDATA[36]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_regular_price]]></wp:meta_key>
+				<wp:meta_value><![CDATA[20]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_sale_price]]></wp:meta_key>
+				<wp:meta_value><![CDATA[]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_tax_status]]></wp:meta_key>
+				<wp:meta_value><![CDATA[]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_tax_class]]></wp:meta_key>
+				<wp:meta_value><![CDATA[]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_purchase_note]]></wp:meta_key>
+				<wp:meta_value><![CDATA[]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_featured]]></wp:meta_key>
+				<wp:meta_value><![CDATA[no]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_weight]]></wp:meta_key>
+				<wp:meta_value><![CDATA[]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_length]]></wp:meta_key>
+				<wp:meta_value><![CDATA[]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_width]]></wp:meta_key>
+				<wp:meta_value><![CDATA[]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_height]]></wp:meta_key>
+				<wp:meta_value><![CDATA[]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_sku]]></wp:meta_key>
+				<wp:meta_value><![CDATA[]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_product_attributes]]></wp:meta_key>
+				<wp:meta_value><![CDATA[a:0:{}]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_sale_price_dates_from]]></wp:meta_key>
+				<wp:meta_value><![CDATA[]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_sale_price_dates_to]]></wp:meta_key>
+				<wp:meta_value><![CDATA[]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_price]]></wp:meta_key>
+				<wp:meta_value><![CDATA[20]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_sold_individually]]></wp:meta_key>
+				<wp:meta_value><![CDATA[]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_stock]]></wp:meta_key>
+				<wp:meta_value><![CDATA[]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_backorders]]></wp:meta_key>
+				<wp:meta_value><![CDATA[no]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_manage_stock]]></wp:meta_key>
+				<wp:meta_value><![CDATA[no]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_crosssell_ids]]></wp:meta_key>
+				<wp:meta_value><![CDATA[a:2:{i:0;s:2:"37";i:1;s:2:"31";}]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_upsell_ids]]></wp:meta_key>
+				<wp:meta_value><![CDATA[a:1:{i:0;s:2:"47";}]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_wc_review_count]]></wp:meta_key>
+				<wp:meta_value><![CDATA[0]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_wc_rating_count]]></wp:meta_key>
+				<wp:meta_value><![CDATA[a:0:{}]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_wc_average_rating]]></wp:meta_key>
+				<wp:meta_value><![CDATA[0]]></wp:meta_value>
+			</wp:postmeta>
+		</item>
+		<item>
 			<title>Happy Ninja</title>
-			<link>http://demo.precisethemes.com/courtyard/?product=happy-ninja</link>
+			<link>http://demo.precisethemes.com/courtyard/product/happy-ninja/</link>
 			<pubDate>Fri, 07 Jun 2013 10:53:15 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.woothemes.com/woocommerce/?post_type=product&#038;p=37</guid>
@@ -10572,7 +10549,7 @@ If only it came in red as well!]]></wp:comment_content>
 		</item>
 		<item>
 			<title>Ninja Silhouette</title>
-			<link>http://demo.precisethemes.com/courtyard/?product=ninja-silhouette-2</link>
+			<link>http://demo.precisethemes.com/courtyard/product/ninja-silhouette-2/</link>
 			<pubDate>Fri, 07 Jun 2013 11:07:19 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.woothemes.com/woocommerce/?post_type=product&#038;p=56</guid>
@@ -10937,7 +10914,7 @@ If only it came in red as well!]]></wp:comment_content>
 		</item>
 		<item>
 			<title>Woo Logo</title>
-			<link>http://demo.precisethemes.com/courtyard/?product=woo-logo-2</link>
+			<link>http://demo.precisethemes.com/courtyard/product/woo-logo-2/</link>
 			<pubDate>Fri, 07 Jun 2013 11:12:55 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.woothemes.com/woocommerce/?post_type=product&#038;p=60</guid>
@@ -11158,7 +11135,7 @@ If only it came in red as well!]]></wp:comment_content>
 		</item>
 		<item>
 			<title>Ship Your Idea</title>
-			<link>http://demo.precisethemes.com/courtyard/?product=ship-your-idea-3</link>
+			<link>http://demo.precisethemes.com/courtyard/product/ship-your-idea-3/</link>
 			<pubDate>Fri, 07 Jun 2013 11:22:50 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.woothemes.com/woocommerce/?post_type=product&#038;p=67</guid>
@@ -11306,7 +11283,7 @@ If only it came in red as well!]]></wp:comment_content>
 		</item>
 		<item>
 			<title>Flying Ninja</title>
-			<link>http://demo.precisethemes.com/courtyard/?product=flying-ninja</link>
+			<link>http://demo.precisethemes.com/courtyard/product/flying-ninja/</link>
 			<pubDate>Fri, 07 Jun 2013 11:25:01 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.woothemes.com/woocommerce/?post_type=product&#038;p=70</guid>
@@ -11598,7 +11575,7 @@ If only it came in red as well!]]></wp:comment_content>
 		</item>
 		<item>
 			<title>Premium Quality</title>
-			<link>http://demo.precisethemes.com/courtyard/?product=premium-quality-2</link>
+			<link>http://demo.precisethemes.com/courtyard/product/premium-quality-2/</link>
 			<pubDate>Fri, 07 Jun 2013 11:27:38 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.woothemes.com/woocommerce/?post_type=product&#038;p=73</guid>
@@ -11818,7 +11795,7 @@ If only it came in red as well!]]></wp:comment_content>
 		</item>
 		<item>
 			<title>Woo Logo</title>
-			<link>http://demo.precisethemes.com/courtyard/?product=woo-logo-3</link>
+			<link>http://demo.precisethemes.com/courtyard/product/woo-logo-3/</link>
 			<pubDate>Fri, 07 Jun 2013 11:29:44 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.woothemes.com/woocommerce/?post_type=product&#038;p=79</guid>
@@ -11962,7 +11939,7 @@ If only it came in red as well!]]></wp:comment_content>
 		</item>
 		<item>
 			<title>Woo Album #1</title>
-			<link>http://demo.precisethemes.com/courtyard/?product=woo-album-1</link>
+			<link>http://demo.precisethemes.com/courtyard/product/woo-album-1/</link>
 			<pubDate>Fri, 07 Jun 2013 11:33:05 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.woothemes.com/woocommerce/?post_type=product&#038;p=83</guid>
@@ -12115,7 +12092,7 @@ If only it came in red as well!]]></wp:comment_content>
 		</item>
 		<item>
 			<title>Woo Album #2</title>
-			<link>http://demo.precisethemes.com/courtyard/?product=woo-album-2</link>
+			<link>http://demo.precisethemes.com/courtyard/product/woo-album-2/</link>
 			<pubDate>Fri, 07 Jun 2013 11:34:14 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.woothemes.com/woocommerce/?post_type=product&#038;p=87</guid>
@@ -12306,7 +12283,7 @@ If only it came in red as well!]]></wp:comment_content>
 		</item>
 		<item>
 			<title>Woo Single #1</title>
-			<link>http://demo.precisethemes.com/courtyard/?product=woo-single-1</link>
+			<link>http://demo.precisethemes.com/courtyard/product/woo-single-1/</link>
 			<pubDate>Fri, 07 Jun 2013 11:36:34 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.woothemes.com/woocommerce/?post_type=product&#038;p=93</guid>
@@ -12459,7 +12436,7 @@ If only it came in red as well!]]></wp:comment_content>
 		</item>
 		<item>
 			<title>Woo Album #4</title>
-			<link>http://demo.precisethemes.com/courtyard/?product=woo-album-4</link>
+			<link>http://demo.precisethemes.com/courtyard/product/woo-album-4/</link>
 			<pubDate>Fri, 07 Jun 2013 11:37:23 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.woothemes.com/woocommerce/?post_type=product&#038;p=96</guid>
@@ -12688,7 +12665,7 @@ If only it came in red as well!]]></wp:comment_content>
 		</item>
 		<item>
 			<title>Woo Single #2</title>
-			<link>http://demo.precisethemes.com/courtyard/?product=woo-single-2</link>
+			<link>http://demo.precisethemes.com/courtyard/product/woo-single-2/</link>
 			<pubDate>Fri, 07 Jun 2013 11:38:12 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.woothemes.com/woocommerce/?post_type=product&#038;p=99</guid>
@@ -13021,8 +12998,106 @@ This e-mail was sent from a contact form on Courtyard (http://demo.precisethemes
 			</wp:postmeta>
 		</item>
 		<item>
+			<title>Ship Your Idea - Green</title>
+			<link>http://demo.precisethemes.com/courtyard/product/ship-your-idea/?attribute_pa_color=green</link>
+			<pubDate>Fri, 07 Jun 2013 10:44:58 +0000</pubDate>
+			<dc:creator><![CDATA[rabindra]]></dc:creator>
+			<guid isPermaLink="false">http://demo.woothemes.com/woocommerce/?product_variation=product-22-variation-2</guid>
+			<description></description>
+			<content:encoded><![CDATA[]]></content:encoded>
+			<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+			<wp:post_id>24</wp:post_id>
+			<wp:post_date><![CDATA[2013-06-07 10:44:58]]></wp:post_date>
+			<wp:post_date_gmt><![CDATA[2013-06-07 10:44:58]]></wp:post_date_gmt>
+			<wp:comment_status><![CDATA[open]]></wp:comment_status>
+			<wp:ping_status><![CDATA[open]]></wp:ping_status>
+			<wp:post_name><![CDATA[product-22-variation-2]]></wp:post_name>
+			<wp:status><![CDATA[publish]]></wp:status>
+			<wp:post_parent>22</wp:post_parent>
+			<wp:menu_order>1</wp:menu_order>
+			<wp:post_type><![CDATA[product_variation]]></wp:post_type>
+			<wp:post_password><![CDATA[]]></wp:post_password>
+			<wp:is_sticky>0</wp:is_sticky>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_sku]]></wp:meta_key>
+				<wp:meta_value><![CDATA[]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_weight]]></wp:meta_key>
+				<wp:meta_value><![CDATA[]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_length]]></wp:meta_key>
+				<wp:meta_value><![CDATA[]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_width]]></wp:meta_key>
+				<wp:meta_value><![CDATA[]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_height]]></wp:meta_key>
+				<wp:meta_value><![CDATA[]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_stock]]></wp:meta_key>
+				<wp:meta_value><![CDATA[]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key>
+				<wp:meta_value><![CDATA[27]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_virtual]]></wp:meta_key>
+				<wp:meta_value><![CDATA[no]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_downloadable]]></wp:meta_key>
+				<wp:meta_value><![CDATA[no]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_regular_price]]></wp:meta_key>
+				<wp:meta_value><![CDATA[20]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_sale_price]]></wp:meta_key>
+				<wp:meta_value><![CDATA[]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_sale_price_dates_from]]></wp:meta_key>
+				<wp:meta_value><![CDATA[]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_sale_price_dates_to]]></wp:meta_key>
+				<wp:meta_value><![CDATA[]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_price]]></wp:meta_key>
+				<wp:meta_value><![CDATA[20]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_tax_class]]></wp:meta_key>
+				<wp:meta_value><![CDATA[]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_download_limit]]></wp:meta_key>
+				<wp:meta_value><![CDATA[]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_download_expiry]]></wp:meta_key>
+				<wp:meta_value><![CDATA[]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_file_paths]]></wp:meta_key>
+				<wp:meta_value><![CDATA[]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[attribute_pa_color]]></wp:meta_key>
+				<wp:meta_value><![CDATA[green]]></wp:meta_value>
+			</wp:postmeta>
+		</item>
+		<item>
 			<title>Ship Your Idea - Black</title>
-			<link>http://demo.precisethemes.com/courtyard/?product=ship-your-idea-2&#038;attribute_pa_color=black</link>
+			<link>http://demo.precisethemes.com/courtyard/product/ship-your-idea-2/?attribute_pa_color=black</link>
 			<pubDate>Fri, 07 Jun 2013 10:59:15 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.woothemes.com/woocommerce/?product_variation=product-40-variation</guid>
@@ -13426,7 +13501,7 @@ The field is too short.]]></content:encoded>
 		</item>
 		<item>
 			<title>Ship Your Idea - Blue</title>
-			<link>http://demo.precisethemes.com/courtyard/?product=ship-your-idea-2&#038;attribute_pa_color=blue</link>
+			<link>http://demo.precisethemes.com/courtyard/product/ship-your-idea-2/?attribute_pa_color=blue</link>
 			<pubDate>Fri, 07 Jun 2013 10:59:15 +0000</pubDate>
 			<dc:creator><![CDATA[rabindra]]></dc:creator>
 			<guid isPermaLink="false">http://demo.woothemes.com/woocommerce/?product_variation=product-40-variation-2</guid>
