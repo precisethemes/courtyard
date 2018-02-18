@@ -1,7 +1,7 @@
 === Courtyard ===
 
 Contributors: Precise Themes
-Version: 1.3
+Version: 1.3.2
 Requires at least: 4.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -110,6 +110,12 @@ Screenshot images licensed under CC0 Public Domain (http://creativecommons.org/p
   Source: https://unsplash.com/photos/w04Uo0y8UyI
 
 === Changelog ===
+
+Version: 1.3.2
+* Enhancement WooCommerce Compatible with Version 3.3.1
+
+Version: 1.3.1 - Jan 10, 2018
+* Fixed some minor css issues
 
 Version: 1.3 - Nov 06, 2017
 

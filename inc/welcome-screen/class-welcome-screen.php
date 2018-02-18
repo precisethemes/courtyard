@@ -166,18 +166,6 @@ if ( ! class_exists( 'Courtyard_Welcome_Screen' ) ) :
                 <?php endif; ?>
                 <hr>
 
-                <h3><?php esc_html_e( 'Install: WooCommerce', 'courtyard' ); ?></h3>
-                <p><?php esc_html_e( 'It is highly recommend that you install WooCommerce. It will create custom post types like services and employees for you to use on your website.', 'courtyard' ); ?></p>
-                <?php if ( !class_exists('WooCommerce') ) : ?>
-                    <?php $st_url = wp_nonce_url(self_admin_url('update.php?action=install-plugin&plugin=woocommerce'), 'install-plugin_woocommerce'); ?>
-                    <p>
-                        <a target="_blank" class="install-now button" href="<?php echo esc_url( $st_url ); ?>"><?php esc_html_e( 'Install and Activate', 'courtyard' ); ?></a>
-                    </p>
-                <?php else : ?>
-                    <p style="color:#23d423;font-style:italic;font-size:14px;"><?php esc_html_e( 'Plugin installed and active!', 'courtyard' ); ?></p>
-                <?php endif; ?>
-                <hr>
-
                 <h3><?php esc_html_e( 'Demo content', 'courtyard' ); ?></h3>
 
                 <h4><?php esc_html_e( 'Install:  One Click Demo Import', 'courtyard' ); ?></h4>

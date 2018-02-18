@@ -32,7 +32,7 @@ jQuery( document ).ready( function( $ ) {
 
             // Initialize input and preview change.
             if ( attachment.id ) {
-                file_target_input.val( attachment.id ).trigger('change');
+                file_target_input.val( attachment.id );
                 file_target_preview.css({ display: 'none' }).find( 'img' ).remove();
                 file_target_preview.css({ display: 'block' }).append( '<img src="' + attachment.url + '" style="max-width:100%">' );
             }
@@ -46,7 +46,7 @@ jQuery( document ).ready( function( $ ) {
     // Remove Media Preview
     $( document.body ).on( 'click', '.delete_media_image', function(){
         var $el = $( this ).closest( '.media-uploader' );
-        $el.find( '.custom_media_input' ).val( '' ).trigger('change');
+        $el.find( '.custom_media_input' ).val( '' );
         $el.find( '.custom_media_preview' ).css({ display: 'none' }).find( 'img' ).remove();
 
         return false;
