@@ -1,7 +1,7 @@
 === Courtyard ===
 
 Contributors: Precise Themes
-Version: 1.3.2
+Version: 1.3.4
 Requires at least: 4.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -87,6 +87,10 @@ Courtyard - Responsive WordPress Theme is clean, minimalistic and beautifully de
   http://www.gnu.org/licenses GNU General Public License
   Copyright (C) 2016  Agbonghama Collins <http://w3guy.com>
 
+3. Customizer Polylang - https://github.com/soderlind/customizer-polylang
+http://www.gnu.org/licenses GNU General Public License
+by  Soderlind
+
 === Fonts ===
 
 1. Font Awesome: - http://fontawesome.io/
@@ -110,6 +114,14 @@ Screenshot images licensed under CC0 Public Domain (http://creativecommons.org/p
   Source: https://unsplash.com/photos/w04Uo0y8UyI
 
 === Changelog ===
+
+Version 1.3.4
+* Update Swiper to v4.3.3
+* Fixed to show swiper navigation arrow in responsive mode for room and package slider.
+* Added polylang support for the customizer options.
+
+Version: 1.3.3
+* Added Page Links
 
 Version: 1.3.2
 * Enhancement WooCommerce Compatible with Version 3.3.1

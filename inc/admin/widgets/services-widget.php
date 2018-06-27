@@ -239,13 +239,9 @@ class courtyard_service_widget extends WP_Widget {
 
                                         <div class="pt-more-arrow">
                                             <div class="pt-more-arrow-holder">
-                                                <?php if ( ( $countPosts > 3 && $countPosts < 6 ) || ( $countPosts > 6 ) ) : ?>
-                                                    <i class="pt-arrow-left transition35"></i>
-                                                <?php endif; ?>
+                                                <i class="pt-arrow-left transition35 hide-arrow<?php if ( ( $countPosts > 3 && $countPosts < 6 ) || ( $countPosts > 6 ) ){ echo ' '.esc_attr( 'hide-arrow' ); }?>"></i>
                                                 <a href="<?php echo esc_url( $button_url ); ?>" class="transition35"><?php echo esc_html( $button_text ); ?></a>
-                                                <?php if ( ( $countPosts > 3 && $countPosts < 6 ) || ( $countPosts > 6 ) ) : ?>
-                                                    <i class="pt-arrow-right transition35"></i>
-                                                <?php endif; ?>
+                                                <i class="pt-arrow-right transition35 hide-arrow<?php if ( ( $countPosts > 3 && $countPosts < 6 ) || ( $countPosts > 6 ) ){ echo ' '.esc_attr( 'hide-arrow' ); }?>"></i>
                                             </div><!-- .pt-more-arrow-holder -->
                                         </div><!-- .pt-more-arrow -->
 

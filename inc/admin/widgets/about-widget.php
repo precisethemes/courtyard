@@ -131,7 +131,17 @@ class Courtyard_About_Widget extends WP_Widget {
                                                     <h3><?php the_title(); ?></h3>
                                                 </header>
 
-                                                <?php the_content(); ?>
+                                                <?php
+                                                the_content();
+                                                wp_link_pages(
+                                                    array(
+                                                        'before'      => '<div class="page-links">' . __( 'Pages:', 'courtyard' ),
+                                                        'after'       => '</div>',
+                                                        'link_before' => '<span class="page-number">',
+                                                        'link_after'  => '</span>',
+                                                    )
+                                                );
+                                                ?>
                                                 
                                             </div><!-- .pt-about-cont-holder -->
                                         </article><!-- .pt-about-cont -->

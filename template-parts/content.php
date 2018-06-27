@@ -67,7 +67,17 @@
 		<?php if ( is_singular() ) : ?>
 
 			<div class="entry-content">
-				<?php the_content(); ?>
+                <?php
+                the_content();
+                wp_link_pages(
+                    array(
+                        'before'      => '<div class="page-links">' . __( 'Pages:', 'courtyard' ),
+                        'after'       => '</div>',
+                        'link_before' => '<span class="page-number">',
+                        'link_after'  => '</span>',
+                    )
+                );
+                ?>
 			</div><!-- .entry-content -->
 
 		<?php else: ?>
@@ -83,13 +93,6 @@
             <?php endif; ?>
 
 		<?php endif; ?>
-
-		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'courtyard' ),
-				'after'  => '</div>',
-			) );
-		?>
 
 		<?php if ( is_singular() ) : ?>
 		<footer class="entry-footer">

@@ -49,11 +49,7 @@ function courtyard_setup() {
     add_image_size( 'courtyard-800x500', 800, 500, true );
     add_image_size( 'courtyard-1200x750', 1200, 750, true );
     add_image_size( 'courtyard-1920x1080', 1920, 1080, true );
-
-    // Header Image Size
-    define( 'HEADER_IMAGE_WIDTH', apply_filters( 'courtyard_header_image_width', 1920 ) );
-    define( 'HEADER_IMAGE_HEIGHT', apply_filters( 'courtyard_header_image_height', 300 ) );
-
+    
     /*
 	 * Enable support for custom logo.
 	 *
@@ -180,6 +176,11 @@ require get_template_directory() . '/inc/notices/persist-admin-notices-dismissal
  * Welcome Screen.
  */
 require get_template_directory() . '/inc/welcome-screen/class-welcome-screen.php';
+
+/**
+ * Polylang Compatible
+ */
+require get_template_directory() . '/inc/polylang/customizer-polylang.php';
 
 /**
  * Load TGM Activation file.

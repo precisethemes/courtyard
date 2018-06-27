@@ -67,141 +67,151 @@ jQuery(document).ready(function($) {
 	}
 });
 
-
-// Hero Slider
+// Swiper
 jQuery(window).load(function() {
-	if(typeof Swiper === 'function'){
-		var courtyard_window_width = jQuery(window).width();
+    
+    // Swiper Slider Integration
+    if(typeof Swiper === 'function'){
 
-		var courtyard_services_slider_num = 3;
+        // Hero Slider
+        jQuery('.pt-image-slider-section').each(function(index, element){
+            var container  = jQuery(this).find('.pt-hero-image-slider');
 
-		if ( courtyard_window_width <= 992 ) {
-			var courtyard_services_slider_num = 2;
-		}
+            var pt_front_slider = new Swiper (container,{
+                slidesPerView: 1,
+                spaceBetween: 0,
+                loop: container.find('.pt-hero-image-slide').data('slide-loop'),
+                autoplay: {
+                    delay: 3000,
+                },
+                speed: 1200,
+                effect: 'fade',
+                autoplayDisableOnInteraction: false,
+                preventClicks: false,
+                touchEventsTarget: 'swiper-wrapper',
+                paginationClickable: true,
+                navigation: {
+                    nextEl: container.find('.pt-hero-slider-nav .pt-arrow-right'),
+                    prevEl: container.find('.pt-hero-slider-nav .pt-arrow-left')
+                },
 
-		if ( courtyard_window_width <= 580 ) {
-			var courtyard_services_slider_num = 1;
-		}
+                onTransitionStart: function(slider) {
 
-		jQuery('.pt-image-slider-section').each(function(index, element){
-			var container  = jQuery(this).find('.pt-hero-image-slider');
-			var nextButton = jQuery(this).find('.pt-hero-slider-nav .pt-arrow-right');
-			var prevButton = jQuery(this).find('.pt-hero-slider-nav .pt-arrow-left');
-			var pt_loop    = jQuery(this).find('.pt-hero-image-slide').data('slide-loop');
+                    var active_slide = slider.activeIndex;
 
-			var pt_front_slider = new Swiper (container,{
-				nextButton: nextButton,
-				prevButton: prevButton,
-				slidesPerView: 1,
-				spaceBetween: 0,
-				loop: pt_loop,
-				autoplay: 3000,
-				speed: 1200,
-				effect: 'fade',
-				autoplayDisableOnInteraction: false,
-				preventClicks: false,
-				touchEventsTarget: 'swiper-wrapper',
-				paginationClickable: true,
+                    setTimeout(function () {
+                        container.find('.swiper-slide').eq(active_slide).find('.entry-header, .entry-content, .entry-footer').fadeIn().addClass('animated fadeInUp');
+                    },1000);
+                },
 
-				onTransitionStart: function(slider) {
+                onSlideChangeEnd: function(slider) {
 
-					var active_slide = slider.activeIndex;
+                    var next_slide = slider.activeIndex+1;
+                    var previous_slide = slider.activeIndex-1;
+                    container.find('.swiper-slide').eq(next_slide).find('.entry-header, .entry-content, .entry-footer').hide();
+                    container.find('.swiper-slide').eq(previous_slide).find('.entry-header, .entry-content, .entry-footer').hide();
+                }
 
-					setTimeout(function () {
-						jQuery('.swiper-slide').eq(active_slide).find('.pt-hero-image-cont header').fadeIn().addClass('animated fadeInUp');
-					},400);
+            });
+        });
 
-					setTimeout(function () {
-						jQuery('.swiper-slide').eq(active_slide).find('.pt-hero-image-cont article').fadeIn().addClass('animated fadeInUp');
-					},600);
-				},
+        // Room Listing Slider
+        jQuery('.pt-rooms-section').each(function(index, element){
+            var container           = jQuery(this).find('.pt-rooms-slider');
 
-				onSlideChangeEnd: function(slider) {
+            var pt_rooms_slider = new Swiper(container, {
+                spaceBetween: 30,
+                preventClicks: false,
+                slidesPerView: 3,
+                slidesPerColumn: 1,
+                touchEventsTarget: 'swiper-wrapper',
+                speed: 800,
+                navigation: {
+                    nextEl: container.find('.pt-more-arrow .pt-arrow-right'),
+                    prevEl: container.find('.pt-more-arrow .pt-arrow-left')
+                },
+                breakpoints: {
+                    992: {
+                        slidesPerView: 3
+                    },
+                    768: {
+                        slidesPerView: 2
+                    },
+                    576: {
+                        slidesPerView: 1
+                    }
+                }
+            });
+        });
 
-					var next_slide = slider.activeIndex+1;
-					var previous_slide = slider.activeIndex-1;
+        // Service Slider
+        jQuery('.pt-service-section').each(function(index, element){
+            var container           = jQuery(this).find('.pt-services-slider'),
+                slideCount          = container.find('.swiper-slide').length;
 
-					jQuery('.swiper-slide').eq(next_slide).find('.pt-hero-image-cont header').hide();
-					jQuery('.swiper-slide').eq(previous_slide).find('.pt-hero-image-cont header').hide();
+            var pt_services_slider = new Swiper(container, {
+                spaceBetween: 0,
+                preventClicks: false,
+                slidesPerView: 3,
+                slidesPerColumn: ( slideCount > 5 ) ? 2 : 1 ,
+                touchEventsTarget: 'swiper-wrapper',
+                speed: 800,
+                navigation: {
+                    nextEl: container.find('.pt-more-arrow .pt-arrow-right'),
+                    prevEl: container.find('.pt-more-arrow .pt-arrow-left')
+                },
+                breakpoints: {
+                    992: {
+                        slidesPerView: 3,
+                        slidesPerColumn: 1
+                    },
+                    768: {
+                        slidesPerView: 2,
+                        slidesPerColumn: 1
+                    },
+                    576: {
+                        slidesPerView: 1,
+                        slidesPerColumn: 1
+                    }
+                }
+            });
+        });
 
-					jQuery('.swiper-slide').eq(next_slide).find('.pt-hero-image-cont article').hide();
-					jQuery('.swiper-slide').eq(previous_slide).find('.pt-hero-image-cont article').hide();
-				}
-			});
-		});
+        // Testimonial Slider
+        jQuery('.pt-testimonials-section').each(function(index, element){
+            var container  = jQuery(this).find('.pt-testimonials-slider');
 
-		// Service Slider
-		jQuery('.pt-service-section').each(function(index, element){
-			var container  = jQuery(this).find('.pt-services-slider');
-			var slideCount = jQuery(this).find('.swiper-slide').length;
-			var nextButton = jQuery(this).find('.pt-more-arrow .pt-arrow-right');
-			var prevButton = jQuery(this).find('.pt-more-arrow .pt-arrow-left');
-
-			if ( slideCount < 6 ) {
-				var courtyard_services_slider_per_col = 1;
-			}
-			if ( slideCount >= 6 ) {
-				var courtyard_services_slider_per_col = 2;
-			}
-			if ( courtyard_window_width <= 580 ) {
-				var courtyard_services_slider_per_col = 1;
-			}
-
-			var pt_services_slider = new Swiper(container, {
-				nextButton: nextButton,
-				prevButton: prevButton,
-				spaceBetween: 0,
-				preventClicks: false,
-				slidesPerView: courtyard_services_slider_num,
-				slidesPerColumn: courtyard_services_slider_per_col,
-				touchEventsTarget: 'swiper-wrapper',
-				speed: 800
-			});
-		});
-
-		// Room Slider
-		jQuery('.pt-rooms-section').each(function(index, element){
-			var container  = jQuery(this).find('.pt-rooms-slider');
-			var nextButton = jQuery(this).find('.pt-more-arrow .pt-arrow-right');
-			var prevButton = jQuery(this).find('.pt-more-arrow .pt-arrow-left');
-
-			var pt_rooms_slider = new Swiper(container, {
-				nextButton: nextButton,
-				prevButton: prevButton,
-				spaceBetween: 30,
-				preventClicks: false,
-				slidesPerView: courtyard_services_slider_num,
-				touchEventsTarget: 'swiper-wrapper',
-				speed: 800
-			});
-		});
-
-		// Testimonial Slider
-		jQuery('.pt-testimonials-section').each(function(index, element){
-			var container  = jQuery(this).find('.pt-testimonials-slider');
-            var nextButton = jQuery(this).find('.pt-more-arrow .pt-arrow-right');
-            var prevButton = jQuery(this).find('.pt-more-arrow .pt-arrow-left');
-
-			var courtyard_services_slider_num = 2;
-
-            if ( courtyard_window_width <= 768 ) {
-                var courtyard_services_slider_num = 1;
-            }
-
-			var pt_testimonials_slider = new Swiper(container, {
-				nextButton: nextButton,
-				prevButton: prevButton,
-				loop: false,
-				autoplay: 3000,
-				spaceBetween: 30,
-				preventClicks: false,
-				autoplayDisableOnInteraction: false,
-				slidesPerView: courtyard_services_slider_num,
-				touchEventsTarget: 'swiper-wrapper',
+            var pt_testimonials_slider = new Swiper(container, {
+                loop: true,
+                autoplay: {
+                    delay: 3000,
+                },
+                spaceBetween: 30,
+                preventClicks: false,
+                autoplayDisableOnInteraction: false,
+                slidesPerView: 2,
+                touchEventsTarget: 'swiper-wrapper',
                 pagination: '.swiper-pagination',
                 paginationClickable: true,
-				speed: 800
-			});
-		});
-	}
+                speed: 800,
+                navigation: {
+                    nextEl: container.find('.pt-more-arrow .pt-arrow-right'),
+                    prevEl: container.find('.pt-more-arrow .pt-arrow-left')
+                },
+                breakpoints: {
+                    992: {
+                        slidesPerView: 1
+                    },
+                    768: {
+                        slidesPerView: 1
+                    },
+                    576: {
+                        slidesPerView: 1
+                    }
+                }
+            });
+        });
+
+    }
+
 });

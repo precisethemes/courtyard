@@ -236,13 +236,11 @@ class courtyard_rooms_widget extends WP_Widget {
                                     <div class="pt-more-arrow">
                                         <?php if ( !empty( $button_text ) ) : ?>
                                             <div class="pt-more-arrow-holder">
-                                                <?php if ( $countPosts > 3 ) : ?>
-                                                    <i class="pt-arrow-left transition35"></i>
-                                                <?php endif; ?>
+                                                <i class="pt-arrow-left transition35<?php if ( $countPosts >= 3 ) { echo' '.esc_attr('hide-arrow'); } ?>"></i>
+
                                                 <a href="<?php echo esc_url( $button_url ); ?>" class="transition35"><?php echo esc_html( $button_text ); ?></a>
-                                                <?php if ( $countPosts > 3 ) : ?>
-                                                    <i class="pt-arrow-right transition35"></i>
-                                                <?php endif; ?>
+
+                                                <i class="pt-arrow-right transition35<?php if ( $countPosts >= 3 ) { echo' '.esc_attr('hide-arrow'); } ?>"></i>
                                             </div><!-- .pt-more-arrow-holder -->
                                         <?php endif; ?>
                                     </div><!-- .pt-more-arrow -->

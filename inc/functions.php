@@ -43,7 +43,7 @@ function courtyard_scripts() {
     wp_enqueue_style( 'courtyard-style', get_stylesheet_uri() );
 
     // Enqueue Swiper
-    wp_enqueue_script( 'swiper', get_template_directory_uri() . '/js/swiper.jquery.min.js', array( 'jquery' ), '3.4.0', true );
+    wp_enqueue_script( 'swiper', get_template_directory_uri() . '/js/swiper.min.js', array( 'jquery' ), '4.3.3', true );
 
     // Custom JS
     wp_enqueue_script( 'courtyard-custom', get_template_directory_uri() . '/js/custom.js', array( 'jquery' ), $courtyard_version, true );

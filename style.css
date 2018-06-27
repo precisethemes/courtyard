@@ -4,7 +4,7 @@ Theme URI: http://precisethemes.com/wordpress-theme/courtyard/
 Author: Precise Themes
 Author URI: https://precisethemes.com/
 Description: Courtyard - Responsive WordPress Theme is clean, minimalistic and beautifully designed theme perfectly for Hotel and Resorts. Courtyard theme can likewise be utilized to make site for Motel, Boarding House, Guest House, Lodge, Bed and Breakfast, B&B, Hostel, Inn Hospitality Business, Restaurant, Cuisine, Cafe, and some other kind of site you can envision with effectively adaptable and easily customizable landing page. Preview Demo is available at http://demo.precisethemes.com/courtyard/
-Version: 1.3.2
+Version: 1.3.4
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: courtyard
@@ -1402,8 +1402,10 @@ a.pt-secondary-logo {
 /*--------------------------------------------------------------
 # Pagination
 --------------------------------------------------------------*/
+.page-links > span.page-number,
 .pt-pagination-nav a,
-.pt-pagination-nav .current {
+.pt-pagination-nav .current,
+.page-links a {
 	display: inline-block;
 	margin: 15px 2px 0;
 	min-width: 32px;
@@ -1413,13 +1415,14 @@ a.pt-secondary-logo {
 	border: 1px solid #e0e0e0;
 	border-radius: 2px;
 	background: #fff;
-	color: #757575;
+	color: #757575 !important;
 }
 
 .pt-pagination-nav a:hover,
 .pt-pagination-nav .current:hover,
-.pt-pagination-nav .current {
-	color: #fff;
+.pt-pagination-nav .current,
+.page-links a:hover {
+	color: #fff !important;
 	background: #673ab7;
 	border-color: transparent;
 }
@@ -1486,13 +1489,15 @@ section.pt-image-slider-section {
 }
 
 .pt-hero-image-slide figure {
+    height: 100%;
 	margin: 0;
 	text-align: center;
 }
 
 .pt-hero-image-slide img {
-	width: auto;
-	max-width: 200%;
+	object-fit: cover;
+	object-position: center;
+	width: 100%;
 	height: 100%;
 }
 
@@ -1584,6 +1589,7 @@ section.pt-image-slider-section {
 	cursor: pointer;
 	z-index: 999;
 	text-align: center;
+	outline: none;
 }
 
 .pt-hero-slider-nav .pt-arrow-right {
@@ -1709,6 +1715,7 @@ section.pt-image-slider-section {
 	opacity: 0;
 	visibility: hidden;
 	z-index: 99;
+	outline: none;
 }
 
 .pt-room-col:hover .pt-arrow-right {
@@ -1778,6 +1785,7 @@ section.pt-image-slider-section {
 	left: 0;
 	color: #616161;
 	background: none;
+	outline: none;
 }
 
 
@@ -3104,6 +3112,13 @@ footer.site-footer a:hover {
 
 	.pt-holiday-package:nth-of-type(1) {
 		width: calc(51.25% - 20px);
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.pt-more-arrow .pt-arrow-left.hide-arrow,
+	.pt-more-arrow .pt-arrow-right.hide-arrow {
+		display: none;
 	}
 }
 

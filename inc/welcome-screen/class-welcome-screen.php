@@ -339,6 +339,12 @@ if ( ! class_exists( 'Courtyard_Welcome_Screen' ) ) :
                     </tr>
 
                     <tr>
+                        <td><?php esc_html_e( 'Polylang Compatible', 'courtyard' ); ?></td>
+                        <td class="greenFeature"><span class="dashicons dashicons-yes dash-green"></span></td>
+                        <td class="greenFeature"><span class="dashicons dashicons-yes dash-green"></span></td>
+                    </tr>
+
+                    <tr>
                         <td><?php esc_html_e( 'Theme Support', 'courtyard' ); ?></td>
                         <td><?php esc_html_e( 'Quick Ticket Support', 'courtyard' ); ?></td>
                         <td><?php esc_html_e( 'Support via Forum', 'courtyard' ); ?></td>
