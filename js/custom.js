@@ -69,7 +69,7 @@ jQuery(document).ready(function($) {
 
 // Swiper
 jQuery(window).load(function() {
-    
+
     // Swiper Slider Integration
     if(typeof Swiper === 'function'){
 
@@ -82,7 +82,7 @@ jQuery(window).load(function() {
                 spaceBetween: 0,
                 loop: container.find('.pt-hero-image-slide').data('slide-loop'),
                 autoplay: {
-                    delay: 3000,
+                    delay: 3000
                 },
                 speed: 1200,
                 effect: 'fade',
@@ -184,7 +184,7 @@ jQuery(window).load(function() {
             var pt_testimonials_slider = new Swiper(container, {
                 loop: true,
                 autoplay: {
-                    delay: 3000,
+                    delay: 3000
                 },
                 spaceBetween: 30,
                 preventClicks: false,

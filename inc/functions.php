@@ -14,6 +14,8 @@ function courtyard_scripts() {
 
     global $courtyard_version;
 
+    $suffix = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';
+
     // Add custom fonts, used in the main stylesheet.
     wp_enqueue_style( 'courtyard-fonts', courtyard_fonts_url(), array(), null );
 
@@ -46,7 +48,7 @@ function courtyard_scripts() {
     wp_enqueue_script( 'swiper', get_template_directory_uri() . '/js/swiper.min.js', array( 'jquery' ), '4.3.3', true );
 
     // Custom JS
-    wp_enqueue_script( 'courtyard-custom', get_template_directory_uri() . '/js/custom.js', array( 'jquery' ), $courtyard_version, true );
+    wp_enqueue_script( 'courtyard-custom', get_template_directory_uri() . '/js/custom' .$suffix. '.js', array( 'jquery' ), $courtyard_version, true );
 
     wp_enqueue_script( 'courtyard-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
