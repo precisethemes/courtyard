@@ -153,7 +153,7 @@ if ( !function_exists( 'filter_courtyard_wc_add_to_cart_fragments' ) ) {
 
         ob_start();
         ?>
-        <a class="pt-cart" href="<?php echo $woocommerce->cart->get_cart_url(); ?>"><i class="fa fa-shopping-cart"></i><?php if( WC()->cart->get_cart_contents_count() >= 1 ) { ?><span class="pt-cart-value"><?php echo sprintf(_n('%d', '%d', $woocommerce->cart->cart_contents_count, 'courtyard'), $woocommerce->cart->cart_contents_count);?></span><?php } ?></a>
+        <a class="pt-cart" href="<?php echo $woocommerce->cart->get_cart_url(); ?>"><i class="fa fa-shopping-cart"></i><?php if( WC()->cart->get_cart_contents_count() >= 1 ) { ?><span class="pt-cart-value"><?php echo $woocommerce->cart->cart_contents_count; ?></span><?php } ?></a>
         <?php
 
         $fragments['a.pt-cart'] = ob_get_clean();

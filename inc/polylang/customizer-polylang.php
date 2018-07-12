@@ -18,7 +18,6 @@ if ( ! \function_exists( 'pll_current_language' ) ) {
 \add_action( 'after_setup_theme'                 , __NAMESPACE__ . '\CustomizerPolylang::load_settings' );
 \add_action( 'customize_controls_enqueue_scripts', __NAMESPACE__ . '\CustomizerPolylang::add_lang_to_customizer_previewer', 9 );
 \add_action( 'wp_before_admin_bar_render'        , __NAMESPACE__ . '\CustomizerPolylang::on_wp_before_admin_bar_render', 100 );
-\add_action( 'admin_menu'                        , __NAMESPACE__ . '\CustomizerPolylang::on_admin_menu', 100 );
 
 
 interface CustimizerPolylangInterface {
@@ -35,7 +34,7 @@ class CustomizerPolylang implements CustimizerPolylangInterface {
 
 		$language = pll_current_language();
 
-		$theme    = get_stylesheet();
+		$courtyard_theme_name    = get_stylesheet();
 		$template = get_template();
 		$charset  = get_option( 'blog_charset' );
 		$mods     = get_theme_mods();
@@ -173,26 +172,6 @@ class CustomizerPolylang implements CustimizerPolylangInterface {
 			$wp_admin_bar->add_node( $customize_node );
 		}
 	}
-
-	/**
-	 * Append lang="contrycode" to the customizer url in the Admin->Apperance->Customize menu
-	 *
-	 * @return void
-	 */
-	public static function on_admin_menu() {
-		global $menu, $submenu;
-		$parent = 'themes.php';
-		if ( ! isset( $submenu[ $parent ] ) ) {
-			return;
-		}
-		foreach ( $submenu[ $parent ] as $k => $d ) {
-			if ( 'customize' == $d['1'] ) {
-				$submenu[ $parent ][ $k ]['2'] = add_query_arg( 'lang', pll_current_language(), $submenu[ $parent ][ $k ]['2'] );
-				break;
-			}
-		}
-	}
-
 }
 
 if ( class_exists( 'WP_Customize_Setting' ) ) {

@@ -21,15 +21,15 @@ if ( ! class_exists( 'Courtyard_Welcome_Screen' ) ) :
          * Constructor.
          */
         public function __construct() {
-            $theme_options = wp_get_theme( get_template() );
-            $theme = $theme_options->get( 'Name' );
-            $description = $theme_options->get( 'Description' );
-            $text_domain = $theme_options->get( 'TextDomain' );
-            $version = $theme_options->get( 'Version' );
-            define( 'THEME', $theme );
-            define( 'DESCRIPTION', $description );
-            define( 'TEXT_DOMAIN', $text_domain );
-            define( 'VERSION', $version );
+            $courtyard_theme_options = wp_get_theme( get_template() );
+            $courtyard_theme_name = $courtyard_theme_options->get( 'Name' );
+            $courtyard_desc = $courtyard_theme_options->get( 'Description' );
+            $courtyard_text_domain = $courtyard_theme_options->get( 'TextDomain' );
+            $courtyard_version = $courtyard_theme_options->get( 'Version' );
+            define( 'COURTYARD_THEME', $courtyard_theme_name );
+            define( 'COURTYARD_DESC', $courtyard_desc );
+            define( 'COURTYARD_TEXT_DOMAIN', $courtyard_text_domain );
+            define( 'COURTYARD_VERSION', $courtyard_version );
 
             add_action( 'admin_menu', array( $this, 'admin_menu' ) );
             add_action( 'admin_init', array( 'PAnD', 'init' ) );
@@ -60,15 +60,15 @@ if ( ! class_exists( 'Courtyard_Welcome_Screen' ) ) :
 
             ?>
             <div data-dismissible="courtyard-welcome-forever" class="updated notice notice-success is-dismissible welcome-notice">
-                <h1><?php printf( esc_html__( 'Welcome to %s', 'courtyard' ), THEME ); ?></h1>
-                <p><?php printf( esc_html__( 'Welcome! Thank you for choosing %s ! To fully take advantage of the best our theme can offer please make sure you visit our %swelcome page%s.', 'courtyard' ),THEME,'<a href="' . esc_url( admin_url( 'themes.php?page=courtyard-welcome' ) ) . '">', '</a>' ); ?></p>
+                <h1><?php printf( esc_html__( 'Welcome to %s', 'courtyard' ), COURTYARD_THEME ); ?></h1>
+                <p><?php printf( esc_html__( 'Welcome! Thank you for choosing %1$s ! To fully take advantage of the best our theme can offer please make sure you visit our %2$sswelcome page%3$s.', 'courtyard' ),COURTYARD_THEME,'<a href="' . esc_url( admin_url( 'themes.php?page=courtyard-welcome' ) ) . '">', '</a>' ); ?></p>
                 <p>
                     <a class="button-secondary" href="<?php echo esc_url( admin_url( 'themes.php?page=courtyard-welcome' ) ); ?>">
-                        <?php printf( esc_html__( 'Get started with %s', 'courtyard' ), THEME ); ?>
+                        <?php printf( esc_html__( 'Get started with %s', 'courtyard' ), COURTYARD_THEME ); ?>
                     </a>
                 </p>
                 <button type="button" class="notice-dismiss">
-                    <a class="courtyard-message-close notice-dismiss" href="<?php echo esc_url( wp_nonce_url( remove_query_arg( array( 'activated' ), add_query_arg( 'courtyard-hide-notice', 'welcome' ) ), 'envy-blog_hide_notices_nonce', '_envy-blog_notice_nonce' ) ); ?>">
+                    <a class="courtyard-message-close notice-dismiss" href="<?php echo esc_url( wp_nonce_url( remove_query_arg( array( 'activated' ), add_query_arg( 'courtyard-hide-notice', 'welcome' ) ), 'courtyard_hide_notices_nonce', '_courtyard_notice_nonce' ) ); ?>">
                         <span class="screen-reader-text"><?php esc_html_e( 'Dismiss', 'courtyard' ); ?></span>
                     </a>
                 </button>
@@ -86,8 +86,8 @@ if ( ! class_exists( 'Courtyard_Welcome_Screen' ) ) :
                 <div class="flex theme-info">
                     <div class="theme-details">
                         <h4><?php echo sprintf( __( 'Hello, %s,', 'courtyard' ), '<span>' . esc_html( ucfirst( $user->display_name ) ) . '</span>' ); ?></h4>
-                        <h1 class="entry-title"><?php echo sprintf( __( 'Welcome to %s version %s', 'courtyard' ), THEME, VERSION ); ?></h1>
-                        <p class="entry-content"><?php echo wp_kses_post( DESCRIPTION ); ?></p>
+                        <h1 class="entry-title"><?php echo sprintf( __( 'Welcome to %1$s version %2$s', 'courtyard' ), COURTYARD_THEME, COURTYARD_VERSION ); ?></h1>
+                        <p class="entry-content"><?php echo wp_kses_post( COURTYARD_DESC ); ?></p>
                     </div>
 
                     <figure class="theme-screenshot">
@@ -126,22 +126,22 @@ if ( ! class_exists( 'Courtyard_Welcome_Screen' ) ) :
             <div id="getting_started" class="about-theme-tab active">
 
                 <h3><?php esc_html_e( 'Read Documentation & Installation Guide', 'courtyard' ); ?></h3>
-                <p><?php echo sprintf( __( 'Theme documentation page will guide you to install and configure theme quick and easy. We have included details, screenshots and stepwise description about theme installation guides and tutorials. Follow the link: ', 'courtyard' ), THEME ); ?><a class="button button-primary button-large" href="<?php echo esc_attr( 'https://precisethemes.com/courtyard-documentation/' ); ?>" target="_blank"><?php esc_html_e( 'View Courtyard Documentation', 'courtyard' ); ?></a></p>
+                <p><?php echo sprintf( __( 'Theme documentation page will guide you to install and configure theme quick and easy. We have included details, screenshots and stepwise description about theme installation guides and tutorials. Follow the link: ', 'courtyard' ), COURTYARD_THEME ); ?><a class="button button-primary button-large" href="<?php echo esc_attr( 'https://precisethemes.com/courtyard-documentation/' ); ?>" target="_blank"><?php esc_html_e( 'View Courtyard Documentation', 'courtyard' ); ?></a></p>
 
                 <hr>
 
                 <h3><?php esc_html_e( 'Recommended Plugins', 'courtyard' ); ?></h3>
-                <p><?php echo sprintf( __( 'We have listed some of recommended plugins that works perfect with %s.', 'courtyard' ), THEME ); ?></p>
+                <p><?php echo sprintf( __( 'We have listed some of recommended plugins that works perfect with %s.', 'courtyard' ), COURTYARD_THEME ); ?></p>
 
                 <hr>
 
                 <h3><?php esc_html_e( 'Import Demo Content', 'courtyard' ); ?></h3>
-                <p><?php echo sprintf( __( 'Importing demo data may help you to get started with default content for quick and easy site setup.', 'courtyard' ), THEME ); ?></p>
+                <p><?php echo sprintf( __( 'Importing demo data may help you to get started with default content for quick and easy site setup.', 'courtyard' ), COURTYARD_THEME ); ?></p>
 
                 <hr>
 
                 <h3><?php esc_html_e( 'Theme Option & Customization', 'courtyard' ); ?></h3>
-                <p><?php echo sprintf( __( 'Most of theme settings customization options are available through theme customizer. To setup and customise your website elements and sections ', 'courtyard' ), THEME ); ?><a class="button button-primary button-large" href="<?php echo admin_url( 'customize.php' ); ?>"><?php esc_html_e( 'Go to Customizer', 'courtyard' ); ?></a></p>
+                <p><?php echo sprintf( __( 'Most of theme settings customization options are available through theme customizer. To setup and customise your website elements and sections ', 'courtyard' ), COURTYARD_THEME ); ?><a class="button button-primary button-large" href="<?php echo admin_url( 'customize.php' ); ?>"><?php esc_html_e( 'Go to Customizer', 'courtyard' ); ?></a></p>
 
             </div>
             <?php
@@ -193,7 +193,7 @@ if ( ! class_exists( 'Courtyard_Welcome_Screen' ) ) :
             <div id="support" class="about-theme-tab flex">
                 <h3><?php esc_html_e( 'Support Forum', 'courtyard' ); ?></h3>
 
-                <p><?php echo sprintf( __( 'Need help to setup your website with %s theme? Visit our support forum and browse support topics or create new, one of our support member will follow and help you to solver your issue.', 'courtyard' ), THEME ); ?></p>
+                <p><?php echo sprintf( __( 'Need help to setup your website with %s theme? Visit our support forum and browse support topics or create new, one of our support member will follow and help you to solver your issue.', 'courtyard' ), COURTYARD_THEME ); ?></p>
 
                 <p><a class="button button-primary button-large" href="<?php echo esc_url( 'https://precisethemes.com/support-forum/forum/courtyard-free-wordpress-hotel-theme/' ); ?>" target="_blank"><?php esc_html_e( 'Visit Support Forum', 'courtyard' ); ?></a></p>
 
@@ -354,7 +354,7 @@ if ( ! class_exists( 'Courtyard_Welcome_Screen' ) ) :
                 <br>
 
                 <p><?php esc_html_e( 'Need more features and customization option? Try Pro Version of Courtyard theme.', 'courtyard' ); ?></p>
-                <p><a class="button button-primary button-large" href="<?php echo esc_url( 'https://precisethemes.com/courtyard-pro/' );?>" target="_blank"><?php echo sprintf( __( 'View %s Pro Version', 'courtyard' ), THEME ); ?></a><br></p>
+                <p><a class="button button-primary button-large" href="<?php echo esc_url( 'https://precisethemes.com/courtyard-pro/' );?>" target="_blank"><?php echo sprintf( __( 'View %s Pro Version', 'courtyard' ), COURTYARD_THEME ); ?></a><br></p>
             </div>
             <?php
         }
@@ -370,7 +370,7 @@ if ( ! class_exists( 'Courtyard_Welcome_Screen' ) ) :
 
                     <?php
 
-                    $changelog_file = apply_filters( 'envy_blog_changelog_file', get_template_directory() . '/readme.txt' );
+                    $changelog_file = apply_filters( 'courtyard_changelog_file', get_template_directory() . '/readme.txt' );
 
                     // Check if the changelog file exists and is readable.
                     if ( $changelog_file && is_readable( $changelog_file ) ) {

@@ -77,73 +77,73 @@ add_action( 'wp_head', 'courtyard_custom_style' );
  */
 function courtyard_custom_style() {
 
-	$theme_color = get_theme_mod( 'courtyard_theme_color', '#00bcd4' );
+	$courtyard_theme_name_color = get_theme_mod( 'courtyard_theme_color', '#00bcd4' );
 
-    if ( $theme_color == 'watermelon' ) {
-        $theme_primary_color = '#ef717a';
-    } elseif ( $theme_color == 'red' ) {
-        $theme_primary_color = '#e74c3c';
-    } elseif ( $theme_color == 'orange' ) {
-        $theme_primary_color = '#e67e22';
-    } elseif ( $theme_color == 'yellow' ) {
-        $theme_primary_color = '#ffcd02';
-    } elseif ( $theme_color == 'lime' ) {
-        $theme_primary_color = '#a5c63b';
-    } elseif ( $theme_color == 'green' ) {
-        $theme_primary_color = '#2ecc71';
-    } elseif ( $theme_color == 'mint' ) {
-        $theme_primary_color = '#1abc9c';
-    } elseif ( $theme_color == 'teal' ) {
-        $theme_primary_color = '#3a6f81';
-    } elseif ( $theme_color == 'sky-blue' ) {
-        $theme_primary_color = '#00bcd4';
-    } elseif ( $theme_color == 'blue' ) {
-        $theme_primary_color = '#5065a1';
-    } elseif ( $theme_color == 'purple' ) {
-        $theme_primary_color = '#673ab7';
-    } elseif ( $theme_color == 'pink' ) {
-        $theme_primary_color = '#f47cc3';
-    } elseif ( $theme_color == 'magenta' ) {
-        $theme_primary_color = '#9b59b6';
-    } elseif ( $theme_color == 'plum' ) {
-        $theme_primary_color = '#5e345e';
-    } elseif ( $theme_color == 'brown' ) {
-        $theme_primary_color = '#5e4534';
+    if ( $courtyard_theme_name_color == 'watermelon' ) {
+        $courtyard_theme_name_primary_color = '#ef717a';
+    } elseif ( $courtyard_theme_name_color == 'red' ) {
+        $courtyard_theme_name_primary_color = '#e74c3c';
+    } elseif ( $courtyard_theme_name_color == 'orange' ) {
+        $courtyard_theme_name_primary_color = '#e67e22';
+    } elseif ( $courtyard_theme_name_color == 'yellow' ) {
+        $courtyard_theme_name_primary_color = '#ffcd02';
+    } elseif ( $courtyard_theme_name_color == 'lime' ) {
+        $courtyard_theme_name_primary_color = '#a5c63b';
+    } elseif ( $courtyard_theme_name_color == 'green' ) {
+        $courtyard_theme_name_primary_color = '#2ecc71';
+    } elseif ( $courtyard_theme_name_color == 'mint' ) {
+        $courtyard_theme_name_primary_color = '#1abc9c';
+    } elseif ( $courtyard_theme_name_color == 'teal' ) {
+        $courtyard_theme_name_primary_color = '#3a6f81';
+    } elseif ( $courtyard_theme_name_color == 'sky-blue' ) {
+        $courtyard_theme_name_primary_color = '#00bcd4';
+    } elseif ( $courtyard_theme_name_color == 'blue' ) {
+        $courtyard_theme_name_primary_color = '#5065a1';
+    } elseif ( $courtyard_theme_name_color == 'purple' ) {
+        $courtyard_theme_name_primary_color = '#673ab7';
+    } elseif ( $courtyard_theme_name_color == 'pink' ) {
+        $courtyard_theme_name_primary_color = '#f47cc3';
+    } elseif ( $courtyard_theme_name_color == 'magenta' ) {
+        $courtyard_theme_name_primary_color = '#9b59b6';
+    } elseif ( $courtyard_theme_name_color == 'plum' ) {
+        $courtyard_theme_name_primary_color = '#5e345e';
+    } elseif ( $courtyard_theme_name_color == 'brown' ) {
+        $courtyard_theme_name_primary_color = '#5e4534';
     } else {
-        $theme_primary_color = '#79302a';
+        $courtyard_theme_name_primary_color = '#79302a';
     }
 
     // Custom Primary Color
     $custom_primary_color = get_theme_mod( 'courtyard_custom_primary_color', '');
 	if ( $custom_primary_color != '' ) {
-        $theme_primary_color = $custom_primary_color;
+        $courtyard_theme_name_primary_color = $custom_primary_color;
     }
 
-    $primary_opacity = courtyard_hex2rgba($theme_primary_color);
-	$theme_secondary_color    = courtyard_darkcolor($theme_primary_color, -30);
+    $primary_opacity = courtyard_hex2rgba($courtyard_theme_name_primary_color);
+	$courtyard_theme_name_secondary_color    = courtyard_darkcolor($courtyard_theme_name_primary_color, -30);
 
 	// Custom Secondary Color
     $custom_secondary_color = get_theme_mod( 'courtyard_custom_secondary_color', '');
 	if ( $custom_secondary_color != '' ) {
-        $theme_secondary_color = $custom_secondary_color;
+        $courtyard_theme_name_secondary_color = $custom_secondary_color;
     }
 
 	$custom = '';
 	if( $custom_primary_color != '#00bcd4' ) {
 		// Primary Color
-		$custom .= "a, a:visited, .pt-logo .site-title a, .pt-menu li:hover > a, .pt-menu li.current-menu-item a, .pt-home-navbar li.current-menu-item a, .pt-home-navbar .pt-menu li li:hover > a, .pt-service-col .fa,.pt-hero-image-cont h1 a:hover, .pt-service-col h3:hover a, .pt-room-cont h3:hover a, .pt-recent-posts-col:hover h3 a, .pt-more-arrow a:hover, .pt-read-more a:hover, .pt-read-more a:hover, .pt-more-arrow .pt-arrow-left:hover, .pt-more-arrow .pt-arrow-right:hover, .pt-room-cont:hover h3 a, .pt-recent-posts-col:hover h3 a, .pt-read-more a:hover, .entry-meta .posted-on a, .entry-meta .byline a, .entry-footer .edit-link a, .comments-area .comment-list a, .comment-respond .logged-in-as a, .pt-breadcrumbs .trail-items .trail-item a, .pt-footer-wrapper li a:hover, footer.site-footer a:hover, .pt-content-wrap .entry-title a:hover, .pt-content-wrap span.posted-on a:hover, .pt-content-wrap span.byline a:hover, .pt-content-wrap span.cat-links a:hover, .pt-content-wrap span.tags-links a:hover, .post-navigation .nav-links a:hover, .pt-breadcrumbs-items li a:hover, #secondary li a:hover, .pt-menu-sm:hover, .page-template-template-services .pt-service-icon, #footer-widgets .pt-recent-posts-section h3 a:hover, .woocommerce ul.products li.product .woocommerce-loop-category__title:hover, .woocommerce ul.products li.product .woocommerce-loop-product__title:hover, .woocommerce ul.products li.product h3:hover, .woocommerce div.product .woocommerce-review-link:hover, .woocommerce div.product .product_meta a:hover, .woocommerce ul.products li.product .button { color: " . esc_attr( $theme_primary_color ) . "}"."\n";
+		$custom .= "a, a:visited, .pt-logo .site-title a, .pt-menu li:hover > a, .pt-menu li.current-menu-item a, .pt-home-navbar li.current-menu-item a, .pt-home-navbar .pt-menu li li:hover > a, .pt-service-col .fa,.pt-hero-image-cont h1 a:hover, .pt-service-col h3:hover a, .pt-room-cont h3:hover a, .pt-recent-posts-col:hover h3 a, .pt-more-arrow a:hover, .pt-read-more a:hover, .pt-read-more a:hover, .pt-more-arrow .pt-arrow-left:hover, .pt-more-arrow .pt-arrow-right:hover, .pt-room-cont:hover h3 a, .pt-recent-posts-col:hover h3 a, .pt-read-more a:hover, .entry-meta .posted-on a, .entry-meta .byline a, .entry-footer .edit-link a, .comments-area .comment-list a, .comment-respond .logged-in-as a, .pt-breadcrumbs .trail-items .trail-item a, .pt-footer-wrapper li a:hover, footer.site-footer a:hover, .pt-content-wrap .entry-title a:hover, .pt-content-wrap span.posted-on a:hover, .pt-content-wrap span.byline a:hover, .pt-content-wrap span.cat-links a:hover, .pt-content-wrap span.tags-links a:hover, .post-navigation .nav-links a:hover, .pt-breadcrumbs-items li a:hover, #secondary li a:hover, .pt-menu-sm:hover, .page-template-template-services .pt-service-icon, #footer-widgets .pt-recent-posts-section h3 a:hover, .woocommerce ul.products li.product .woocommerce-loop-category__title:hover, .woocommerce ul.products li.product .woocommerce-loop-product__title:hover, .woocommerce ul.products li.product h3:hover, .woocommerce div.product .woocommerce-review-link:hover, .woocommerce div.product .product_meta a:hover, .woocommerce ul.products li.product .button { color: " . esc_attr( $courtyard_theme_name_primary_color ) . "}"."\n";
 
 		//Secondary Color
-		$custom .= "a:hover, a:focus, a:active, .pt-logo .site-title:hover a, .pt-service-col .fa:hover { color: " . esc_attr( $theme_secondary_color ) . "}"."\n";
+		$custom .= "a:hover, a:focus, a:active, .pt-logo .site-title:hover a, .pt-service-col .fa:hover { color: " . esc_attr( $courtyard_theme_name_secondary_color ) . "}"."\n";
 
 		// Background Color
-		$custom .= ".pt-hero-image-cont article a:hover, .pt-hero-slider-nav .pt-arrow-left:hover, .pt-hero-slider-nav .pt-arrow-right:hover, .pt-hero-image-slider .pt-arrow-down:hover, .pt-room-col:hover p:before, .pt-read-more a:before, .pt-read-more:hover a:before, #back-to-top, #back-to-top a, .pt-room-col:hover p:before, .pt-room-cont .pt-arrow-right, .pt-holiday-package-read-more:hover, .pt-recent-posts-col .pt-blog-post-more-icon, button:hover, input[type='button']:hover, input[type='reset']:hover, input[type='submit']:hover, .pt-content-wrap .read-more a:hover, .pt-pagination-nav a:hover, .pt-pagination-nav .current:hover, .pt-pagination-nav .current, .page-links a:hover, .tagcloud a:hover, .pt-social-icons-sec li:hover, .pt-cart-sm .pt-cart-value, .pt-menu .pt-cart .pt-cart-value, .woocommerce ul.products li.product .button:hover, .woocommerce span.onsale, .woocommerce div.product form.cart .button:hover, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt { background-color: " . esc_attr($theme_primary_color) . "}"."\n";
+		$custom .= ".pt-hero-image-cont article a:hover, .pt-hero-slider-nav .pt-arrow-left:hover, .pt-hero-slider-nav .pt-arrow-right:hover, .pt-hero-image-slider .pt-arrow-down:hover, .pt-room-col:hover p:before, .pt-read-more a:before, .pt-read-more:hover a:before, #back-to-top, #back-to-top a, .pt-room-col:hover p:before, .pt-room-cont .pt-arrow-right, .pt-holiday-package-read-more:hover, .pt-recent-posts-col .pt-blog-post-more-icon, button:hover, input[type='button']:hover, input[type='reset']:hover, input[type='submit']:hover, .pt-content-wrap .read-more a:hover, .pt-pagination-nav a:hover, .pt-pagination-nav .current:hover, .pt-pagination-nav .current, .page-links a:hover, .tagcloud a:hover, .pt-social-icons-sec li:hover, .pt-cart-sm .pt-cart-value, .pt-menu .pt-cart .pt-cart-value, .woocommerce ul.products li.product .button:hover, .woocommerce span.onsale, .woocommerce div.product form.cart .button:hover, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt { background-color: " . esc_attr($courtyard_theme_name_primary_color) . "}"."\n";
 
 		// Background Secondary Color
-		$custom .= "button:focus, input[type='button']:focus, input[type='reset']:focus, input[type='submit']:focus, button:active, input[type='button']:active, input[type='reset']:active, input[type='submit']:active, .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover { background-color: " . esc_attr($theme_secondary_color) . "}"."\n";
+		$custom .= "button:focus, input[type='button']:focus, input[type='reset']:focus, input[type='submit']:focus, button:active, input[type='button']:active, input[type='reset']:active, input[type='submit']:active, .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover { background-color: " . esc_attr($courtyard_theme_name_secondary_color) . "}"."\n";
 
 		// Border Color
-		$custom .= "input[type='text']:focus, input[type='email']:focus, input[type='url']:focus, input[type='password']:focus, input[type='search']:focus, input[type='number']:focus, input[type='tel']:focus, input[type='range']:focus, input[type='date']:focus, input[type='month']:focus, input[type='week']:focus, input[type='time']:focus, input[type='datetime']:focus, input[type='datetime-local']:focus, input[type='color']:focus, textarea:focus, .woocommerce ul.products li.product .button { border-color: " . esc_attr($theme_primary_color) . "}"."\n";
+		$custom .= "input[type='text']:focus, input[type='email']:focus, input[type='url']:focus, input[type='password']:focus, input[type='search']:focus, input[type='number']:focus, input[type='tel']:focus, input[type='range']:focus, input[type='date']:focus, input[type='month']:focus, input[type='week']:focus, input[type='time']:focus, input[type='datetime']:focus, input[type='datetime-local']:focus, input[type='color']:focus, textarea:focus, .woocommerce ul.products li.product .button { border-color: " . esc_attr($courtyard_theme_name_primary_color) . "}"."\n";
 	}
 
 	if ( is_admin_bar_showing() ) {
