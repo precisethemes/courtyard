@@ -1,7 +1,7 @@
 === Courtyard ===
 
 Contributors: Precise Themes
-Version: 1.3.4
+Version: 1.3.5
 Requires at least: 4.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -114,6 +114,10 @@ Screenshot images licensed under CC0 Public Domain (http://creativecommons.org/p
   Source: https://unsplash.com/photos/w04Uo0y8UyI
 
 === Changelog ===
+
+Version 1.3.5
+* Added Back compatible functionality for PHP version.
+* Enhancement of theme coding standard.
 
 Version 1.3.4
 * Update Swiper to v4.3.3
