@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/maheshwaghmare/_s.git"
+    "url": "git+https://github.com/maheshwaghmare/_s.git"
   },
   "author": "",
   "license": "ISC",
@@ -28,5 +28,9 @@
     "grunt-sass": "^1.1.0",
     "grunt-wp-i18n": "^0.5.4",
     "postcss-flexibility": "^1.0.3"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/maheshwaghmare/_s/issues"
+  },
+  "homepage": "https://github.com/maheshwaghmare/_s#readme"
 }
