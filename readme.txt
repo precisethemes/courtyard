@@ -115,6 +115,10 @@ Screenshot images licensed under CC0 Public Domain (http://creativecommons.org/p
 
 === Changelog ===
 
+Version 1.3.6 TBD
+* Added options in PT: About widget.
+* Fixed arrow display issue in PT: Services and PT: Rooms widgets.
+
 Version 1.3.5
 * Added Back compatible functionality for PHP version.
 * Enhancement of theme coding standard.
