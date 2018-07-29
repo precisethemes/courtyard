@@ -67,7 +67,7 @@ class courtyard_rooms_widget extends WP_Widget {
                 </div><!-- .pt-admin-input-label -->
 
                 <div class="pt-admin-input-holder">
-                    <input type="number" min="1" max="5" id="<?php echo $this->get_field_id('room_limit'); ?>"
+                    <input type="number" id="<?php echo $this->get_field_id('room_limit'); ?>"
                            name="<?php echo $this->get_field_name('room_limit'); ?>"
                            value="<?php echo esc_attr($instance['room_limit']); ?>">
                     <p><em><?php esc_html_e('Number of rooms to display.', 'courtyard'); ?></em></p>
@@ -234,13 +234,20 @@ class courtyard_rooms_widget extends WP_Widget {
                                     </div><!-- .swiper-wrapper -->
 
                                     <div class="pt-more-arrow">
-                                        <?php if ( !empty( $button_text ) ) : ?>
+                                        <?php if ( !empty( $button_text ) ) :
+                                            $pt_arrow_left  = array( 'pt-arrow-left transition35' );
+                                            $pt_arrow_right = array( 'pt-arrow-right transition35' );
+                                            if ( $countPosts <= 3 ) {
+                                                $pt_arrow_left[]    = 'hide-arrow';
+                                                $pt_arrow_right[]   = 'hide-arrow';
+                                            }
+                                            ?>
                                             <div class="pt-more-arrow-holder">
-                                                <i class="pt-arrow-left transition35<?php if ( $countPosts >= 3 ) { echo' '.esc_attr('hide-arrow'); } ?>"></i>
+                                                <i class="<?php echo esc_attr( implode( ' ', $pt_arrow_left ) ); ?>"></i>
 
                                                 <a href="<?php echo esc_url( $button_url ); ?>" class="transition35"><?php echo esc_html( $button_text ); ?></a>
 
-                                                <i class="pt-arrow-right transition35<?php if ( $countPosts >= 3 ) { echo' '.esc_attr('hide-arrow'); } ?>"></i>
+                                                <i class="<?php echo esc_attr( implode( ' ', $pt_arrow_right ) ); ?>"></i>
                                             </div><!-- .pt-more-arrow-holder -->
                                         <?php endif; ?>
                                     </div><!-- .pt-more-arrow -->

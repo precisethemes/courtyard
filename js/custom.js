@@ -117,12 +117,13 @@ jQuery(window).load(function() {
 
         // Room Listing Slider
         jQuery('.pt-rooms-section').each(function(index, element){
-            var container           = jQuery(this).find('.pt-rooms-slider');
+            var container           = jQuery(this).find('.pt-rooms-slider'),
+                slideCount          = container.find('.swiper-slide').length;
 
             var pt_rooms_slider = new Swiper(container, {
                 spaceBetween: 30,
                 preventClicks: false,
-                slidesPerView: 3,
+                slidesPerView: ( slideCount < 3 ) ? slideCount : 3,
                 slidesPerColumn: 1,
                 touchEventsTarget: 'swiper-wrapper',
                 speed: 800,
@@ -132,10 +133,10 @@ jQuery(window).load(function() {
                 },
                 breakpoints: {
                     992: {
-                        slidesPerView: 3
+                        slidesPerView: ( slideCount < 3 ) ? slideCount : 3
                     },
                     768: {
-                        slidesPerView: 2
+                        slidesPerView: ( slideCount < 2 ) ? slideCount : 2
                     },
                     576: {
                         slidesPerView: 1
@@ -152,7 +153,7 @@ jQuery(window).load(function() {
             var pt_services_slider = new Swiper(container, {
                 spaceBetween: 0,
                 preventClicks: false,
-                slidesPerView: 3,
+                slidesPerView: ( slideCount < 3 ) ? slideCount : 3,
                 slidesPerColumn: ( slideCount > 5 ) ? 2 : 1 ,
                 touchEventsTarget: 'swiper-wrapper',
                 speed: 800,
@@ -162,11 +163,11 @@ jQuery(window).load(function() {
                 },
                 breakpoints: {
                     992: {
-                        slidesPerView: 3,
+                        slidesPerView: ( slideCount < 3 ) ? slideCount : 3,
                         slidesPerColumn: 1
                     },
                     768: {
-                        slidesPerView: 2,
+                        slidesPerView: ( slideCount < 2 ) ? slideCount : 2,
                         slidesPerColumn: 1
                     },
                     576: {
