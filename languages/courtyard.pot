@@ -1,9 +1,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE COURTYARD_VERSION\n"
+"Project-Id-Version: Courtyard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-11-06 07:43+0000\n"
+"POT-Creation-Date: 2018-07-29 08:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -14,274 +14,64 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco https://localise.biz/"
 
-#: 404.php:17
-msgid "Oops! That page can&rsquo;t be found."
-msgstr ""
-
-#: 404.php:21
-msgid ""
-"It looks like nothing was found at this location. Maybe try one of the links "
-"below or a search?"
+#: comments.php:29
+msgid "% Responses"
 msgstr ""
 
 #: archive.php:45 index.php:49 search.php:42
 msgid "&laquo; Previous"
 msgstr ""
 
-#: archive.php:46 index.php:50 search.php:43
-msgid "Next &raquo;"
-msgstr ""
-
-#: archive.php:47 index.php:51 search.php:44 inc/functions.php:573
-#: inc/admin/widgets/about-widget.php:42
-msgid "Page"
-msgstr ""
-
-#: comments.php:29
-msgid "No Responses"
-msgstr ""
-
-#: comments.php:29
-msgid "One Response"
-msgstr ""
-
-#: comments.php:29
-msgid "% Responses"
-msgstr ""
-
-#: comments.php:34 comments.php:55
-msgid "Comment navigation"
-msgstr ""
-
-#: comments.php:37 comments.php:58
-msgid "Older Comments"
-msgstr ""
-
-#: comments.php:38 comments.php:59
-msgid "Newer Comments"
-msgstr ""
-
-#: comments.php:72
-msgid "Comments are closed."
-msgstr ""
-
-#: footer.php:39 inc/admin/customizer/customizer.php:771
-msgid "Back to Top"
-msgstr ""
-
-#: functions.php:75
-msgid "Primary"
-msgstr ""
-
-#: functions.php:241
-msgid "Install Required Plugins"
-msgstr ""
-
-#: functions.php:242
-msgid "Install Plugins"
-msgstr ""
-
-#. %s: plugin name.
-#: functions.php:244
-#, php-format
-msgid "Installing Plugin: %s"
-msgstr ""
-
-#. %s: plugin name.
-#: functions.php:246
-#, php-format
-msgid "Updating Plugin: %s"
-msgstr ""
-
-#: functions.php:247
-msgid "Something went wrong with the plugin API."
-msgstr ""
-
-#: functions.php:248
-#, php-format
-msgid "This theme requires the following plugin: %1$s."
-msgid_plural "This theme requires the following plugins: %1$s."
-msgstr[0] ""
-msgstr[1] ""
-
-#: functions.php:254
-#, php-format
-msgid "This theme recommends the following plugin: %1$s."
-msgid_plural "This theme recommends the following plugins: %1$s."
-msgstr[0] ""
-msgstr[1] ""
-
-#: functions.php:260
-#, php-format
-msgid ""
-"The following plugin needs to be updated to its latest version to ensure "
-"maximum compatibility with this theme: %1$s."
-msgid_plural ""
-"The following plugins need to be updated to their latest version to ensure "
-"maximum compatibility with this theme: %1$s."
-msgstr[0] ""
-msgstr[1] ""
-
-#: functions.php:266
-#, php-format
-msgid "There is an update available for: %1$s."
-msgid_plural "There are updates available for the following plugins: %1$s."
-msgstr[0] ""
-msgstr[1] ""
-
-#: functions.php:272
-#, php-format
-msgid "The following required plugin is currently inactive: %1$s."
-msgid_plural "The following required plugins are currently inactive: %1$s."
-msgstr[0] ""
-msgstr[1] ""
-
-#: functions.php:278
-#, php-format
-msgid "The following recommended plugin is currently inactive: %1$s."
-msgid_plural "The following recommended plugins are currently inactive: %1$s."
-msgstr[0] ""
-msgstr[1] ""
-
-#: functions.php:284
-msgid "Begin installing plugin"
-msgid_plural "Begin installing plugins"
-msgstr[0] ""
-msgstr[1] ""
-
-#: functions.php:289
-msgid "Begin updating plugin"
-msgid_plural "Begin updating plugins"
-msgstr[0] ""
-msgstr[1] ""
-
-#: functions.php:294
-msgid "Begin activating plugin"
-msgid_plural "Begin activating plugins"
-msgstr[0] ""
-msgstr[1] ""
-
-#: functions.php:299
-msgid "Return to Required Plugins Installer"
-msgstr ""
-
-#: functions.php:300
-msgid "Plugin activated successfully."
-msgstr ""
-
-#: functions.php:301
-msgid "The following plugin was activated successfully:"
-msgstr ""
-
-#. 1: plugin name.
-#: functions.php:303
-#, php-format
-msgid "No action taken. Plugin %1$s was already active."
-msgstr ""
-
-#. 1: plugin name.
-#: functions.php:305
-#, php-format
-msgid ""
-"Plugin not activated. A higher version of %s is needed for this theme. "
-"Please update the plugin."
-msgstr ""
-
-#. 1: dashboard link.
-#: functions.php:307
-#, php-format
-msgid "All plugins installed and activated successfully. %1$s"
-msgstr ""
-
-#: functions.php:308
-msgid "Dismiss this notice"
-msgstr ""
-
-#: functions.php:309
-msgid ""
-"There are one or more required or recommended plugins to install, update or "
-"activate."
-msgstr ""
-
-#: functions.php:310
-msgid "Please contact the administrator of this site for help."
-msgstr ""
-
-#: search.php:20
-#, php-format
-msgid "Search Results for: %s"
-msgstr ""
-
-#: single.php:26
-msgid "Next Post &rarr;"
-msgstr ""
-
-#: single.php:27
-msgid "Next post:"
-msgstr ""
-
 #: single.php:28
 msgid "&larr; Previous Post"
 msgstr ""
 
-#: single.php:29
-msgid "Previous post:"
+#. used between list items, there is a space after the comma
+#: inc/template-tags.php:79
+msgid ", "
 msgstr ""
 
-#: inc/functions.php:79
-msgctxt "Courgette|Roboto font: on or off"
-msgid "on"
+#: inc/welcome-screen/class-welcome-screen.php:226
+msgid "1"
 msgstr ""
 
-#: inc/functions.php:139
-#, php-format
-msgid "Copyright &copy; %1$s %3$s. %2$s."
+#: inc/welcome-screen/class-welcome-screen.php:233
+msgid "1 (Sticky Only)"
 msgstr ""
 
-#: inc/functions.php:139
-msgid "All rights reserved"
+#: inc/welcome-screen/class-welcome-screen.php:247
+msgid "10"
 msgstr ""
 
-#: inc/functions.php:141
-#, php-format
-msgid "Designed by %2$s"
+#: inc/welcome-screen/class-welcome-screen.php:248
+msgid "15"
 msgstr ""
 
-#: inc/functions.php:141 inc/admin/widgets/rooms-widget.php:98
-msgid "http://precisethemes.com/"
+#: inc/welcome-screen/class-welcome-screen.php:227
+msgid "3"
 msgstr ""
 
-#: inc/functions.php:182
-msgid "Page Template"
+#: inc/welcome-screen/class-welcome-screen.php:234
+msgid "3 (Sticky, Scroll and Hide/Show on Scroll)"
 msgstr ""
 
-#: inc/functions.php:217
-msgid "Default Template"
+#: inc/welcome-screen/class-welcome-screen.php:307
+msgid "4"
 msgstr ""
 
-#: inc/functions.php:231
-msgid "All Templates"
-msgstr ""
-
-#: inc/functions.php:406 woocommerce/woocommerce.php:62
-msgid "Home"
-msgstr ""
-
-#: inc/functions.php:578
-msgid "Search results for: "
-msgstr ""
-
-#: inc/functions.php:583
+#: inc/functions.php:585
 msgid "404 Error"
 msgstr ""
 
-#: inc/functions.php:696
-msgid "Related"
+#: inc/welcome-screen/class-welcome-screen.php:308
+msgid "8"
 msgstr ""
 
-#: inc/template-tags.php:29
+#: inc/admin/meta-boxes/class-meta-box.php:167
 #, php-format
-msgid "<span class=\"screen-reader-text\">Posted on</span> %s"
+msgid ""
+"<a href=\"%s\" target=\"_blank\">Refer here</a> for icon class. For example: "
+"<strong>fa-refresh</strong>"
 msgstr ""
 
 #. %s: post author
@@ -290,15 +80,346 @@ msgstr ""
 msgid "<span class=\"screen-reader-text\">Posted author</span> %s"
 msgstr ""
 
-#. used between list items, there is a space after the comma
-#: inc/template-tags.php:79
-msgid ", "
+#. %s: post date
+#: inc/template-tags.php:29
+#, php-format
+msgid "<span class=\"screen-reader-text\">Posted on</span> %s"
 msgstr ""
 
-#. %s: post title
-#: inc/template-tags.php:112
+#: inc/admin/customizer/repeatable/repeatable.php:251
+msgid "[Untitled]"
+msgstr ""
+
+#: inc/admin/customizer/customizer.php:287
+msgid "Activate Image Link Back to Home"
+msgstr ""
+
+#: inc/admin/customizer/repeatable/repeatable.php:231
+msgid "Add a Item"
+msgstr ""
+
+#: inc/admin/customizer/repeatable/repeatable.php:356
+msgid "Add Image"
+msgstr ""
+
+#. %d: widget number
+#: inc/admin/widgets/widgets.php:57
 #, php-format
-msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgid "Add widgets in your footer widget area %d."
+msgstr ""
+
+#: inc/admin/widgets/widgets.php:18
+msgid "Add widgets in your sidebar of theme."
+msgstr ""
+
+#: woocommerce/woocommerce.php:200
+msgid "Add widgets in your WooCommerce sidebar of theme."
+msgstr ""
+
+#: inc/admin/customizer/customizer.php:402
+msgid "Add your social profiles."
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:267
+msgid "Advanced Options for Homepage Widgets"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:288
+msgid "Advanced Page Settings"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:281
+msgid "Advanced Post Settings"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:300
+msgid "Advanced WooCommerce Settings"
+msgstr ""
+
+#: inc/demo-importer/demo-importer.php:18
+msgid ""
+"After you import this demo, you will have to setup the slider separately."
+msgstr ""
+
+#. Name of the template
+msgid "All Packages Listing"
+msgstr ""
+
+#: inc/functions.php:141
+msgid "All rights reserved"
+msgstr ""
+
+#. Name of the template
+msgid "All Rooms Listing"
+msgstr ""
+
+#. Name of the template
+msgid "All Services Listing"
+msgstr ""
+
+#: inc/functions.php:233
+msgid "All Templates"
+msgstr ""
+
+#: inc/admin/customizer/customizer.php:583
+msgid "Archive/Blog Settings"
+msgstr ""
+
+#: inc/admin/customizer/customizer.php:651
+#: inc/admin/customizer/customizer.php:711
+msgid "Archive/Blog Sidebar"
+msgstr ""
+
+#: footer.php:39 inc/admin/customizer/customizer.php:774
+msgid "Back to Top"
+msgstr ""
+
+#: inc/admin/customizer/customizer.php:304
+msgid "Background Color"
+msgstr ""
+
+#: inc/admin/customizer/customizer.php:214
+msgid "Background Image"
+msgstr ""
+
+#: inc/admin/customizer/customizer.php:336
+msgid "Blue"
+msgstr ""
+
+#: inc/admin/widgets/rooms-widget.php:94
+msgid "Botton URL"
+msgstr ""
+
+#: inc/admin/customizer/customizer.php:192
+msgid "Breadcrumbs"
+msgstr ""
+
+#: inc/admin/customizer/customizer.php:206
+msgid "Breadcrumbs Delimiter"
+msgstr ""
+
+#: inc/admin/customizer/customizer.php:341
+msgid "Brown"
+msgstr ""
+
+#: inc/admin/widgets/rooms-widget.php:81
+#: inc/admin/widgets/services-widget.php:80
+msgid "Button Text"
+msgstr ""
+
+#: inc/admin/widgets/services-widget.php:92
+msgid "Button URL"
+msgstr ""
+
+#: inc/admin/widgets/recent-posts-widget.php:77
+msgid "By Category"
+msgstr ""
+
+#: inc/admin/widgets/about-widget.php:105
+msgid "Center"
+msgstr ""
+
+#: inc/admin/customizer/repeatable/repeatable.php:356
+msgid "Change Image"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:104
+msgid "Changelog"
+msgstr ""
+
+#: inc/admin/widgets/recent-posts-widget.php:124
+msgid ""
+"Check to display the random post from either the chosen category or from "
+"latest post."
+msgstr ""
+
+#: inc/admin/widgets/about-widget.php:74
+msgid "Check to hide page featured image as background of container."
+msgstr ""
+
+#: inc/admin/widgets/logo-widget.php:115
+msgid "Choose an image"
+msgstr ""
+
+#: inc/admin/widgets/about-widget.php:124
+msgid "Choose the background color for the widget content section."
+msgstr ""
+
+#: inc/admin/widgets/logo-widget.php:89
+#: inc/admin/widgets/packages-widget.php:81
+#: inc/admin/widgets/recent-posts-widget.php:141
+#: inc/admin/widgets/rooms-widget.php:115
+#: inc/admin/widgets/services-widget.php:114
+#: inc/admin/widgets/social-icon-widget.php:58
+#: inc/admin/widgets/testimonial-widget.php:88
+#: inc/admin/widgets/video-widget.php:97
+msgid "Choose the background color for the widget section."
+msgstr ""
+
+#: inc/admin/customizer/repeatable/repeatable.php:377
+msgid "Close"
+msgstr ""
+
+#: inc/admin/widgets/about-widget.php:116 inc/admin/widgets/logo-widget.php:81
+#: inc/admin/widgets/packages-widget.php:73
+#: inc/admin/widgets/recent-posts-widget.php:133
+#: inc/admin/widgets/rooms-widget.php:107
+#: inc/admin/widgets/services-widget.php:106
+#: inc/admin/widgets/social-icon-widget.php:50
+#: inc/admin/widgets/testimonial-widget.php:80
+#: inc/admin/widgets/video-widget.php:90
+msgid "Color"
+msgstr ""
+
+#: inc/admin/customizer/customizer.php:322
+msgid "Color Schemes"
+msgstr ""
+
+#: inc/admin/customizer/customizer.php:298
+msgid "Colors"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:260
+msgid "Coming Soon Page"
+msgstr ""
+
+#: comments.php:34 comments.php:55
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:72
+msgid "Comments are closed."
+msgstr ""
+
+#: functions.php:208
+msgid "Contact Form 7"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:330
+msgid "Contact Form 7 Compatible"
+msgstr ""
+
+#: inc/admin/widgets/about-widget.php:83
+msgid "Container Width"
+msgstr ""
+
+#: inc/functions.php:141
+#, php-format
+msgid "Copyright &copy; %1$s %3$s. %2$s."
+msgstr ""
+
+#: inc/admin/widgets/image-slider-widget.php:53
+#: inc/admin/widgets/recent-posts-widget.php:99
+#: inc/admin/widgets/rooms-widget.php:66
+#: inc/admin/widgets/services-widget.php:65
+#: inc/admin/widgets/testimonial-widget.php:64
+msgid "Count"
+msgstr ""
+
+#. If there are characters in your language that are not
+#. supported by Roboto, translate this to 'off'. Do not translate
+#. into your own language.
+#: inc/functions.php:81
+msgctxt "Courgette|Roboto font: on or off"
+msgid "on"
+msgstr ""
+
+#. Name of the theme
+msgid "Courtyard"
+msgstr ""
+
+#. Description of the theme
+msgid ""
+"Courtyard - Responsive WordPress Theme is clean, minimalistic and "
+"beautifully designed theme perfectly for Hotel and Resorts. Courtyard theme "
+"can likewise be utilized to make site for Motel, Boarding House, Guest House,"
+" Lodge, Bed and Breakfast, B&amp;B, Hostel, Inn Hospitality Business, "
+"Restaurant, Cuisine, Cafe, and some other kind of site you can envision with "
+"effectively adaptable and easily customizable landing page. Preview Demo is "
+"available at http://demo.precisethemes.com/courtyard/"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:294
+msgid "Custom 404 Error Page"
+msgstr ""
+
+#: inc/admin/meta-boxes/class-meta-box.php:76
+msgid "Default Layout"
+msgstr ""
+
+#: inc/functions.php:219
+msgid "Default Template"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:169
+msgid "Demo content"
+msgstr ""
+
+#: inc/functions.php:143
+#, php-format
+msgid "Designed by %2$s"
+msgstr ""
+
+#: inc/admin/widgets/image-slider-widget.php:173
+msgid "Discover"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:72
+msgid "Dismiss"
+msgstr ""
+
+#: inc/admin/widgets/recent-posts-widget.php:10
+msgid "Display latest posts or posts of specific category."
+msgstr ""
+
+#: inc/admin/customizer/customizer.php:254
+msgid "Display Site Title"
+msgstr ""
+
+#: inc/admin/widgets/image-slider-widget.php:10
+msgid "Display some pages as image slider."
+msgstr ""
+
+#: inc/admin/widgets/packages-widget.php:10
+msgid "Display some pages as packages."
+msgstr ""
+
+#: inc/admin/widgets/rooms-widget.php:8
+msgid "Display some pages as rooms."
+msgstr ""
+
+#: inc/admin/widgets/services-widget.php:7
+msgid "Display some pages as services."
+msgstr ""
+
+#: inc/admin/widgets/testimonial-widget.php:8
+msgid "Display some pages as testimonials."
+msgstr ""
+
+#: inc/admin/customizer/customizer.php:267
+msgid "Display Tagline"
+msgstr ""
+
+#: inc/admin/widgets/video-widget.php:10
+msgid "Display video from Youtube,Vimeo etc."
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:202
+msgid "Documentation"
+msgstr ""
+
+#. %s: Page Name
+#: inc/admin/widgets/widgets.php:34
+#, php-format
+msgid ""
+"Drag and drop our all custom widgets to build content awesome for the page: "
+"%s"
+msgstr ""
+
+#. %s: Name of current post
+#: template-parts/content-page.php:40
+#, php-format
+msgid "Edit %s"
 msgstr ""
 
 #. %s: Name of current post
@@ -307,96 +428,95 @@ msgstr ""
 msgid "Edit<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr ""
 
+#: inc/admin/meta-boxes/class-meta-box.php:446
+msgid "Enable related packages."
+msgstr ""
+
+#: inc/admin/meta-boxes/class-meta-box.php:254
+msgid "Enable related rooms."
+msgstr ""
+
+#: inc/admin/meta-boxes/class-meta-box.php:350
+msgid "Enable related services."
+msgstr ""
+
+#: inc/admin/widgets/video-widget.php:79
+msgid "Enter the complete video URL."
+msgstr ""
+
+#: inc/back-compat.php:28 inc/back-compat.php:38 inc/back-compat.php:51
+#, php-format
+msgid ""
+"Envy Blog requires at least PHP version 5.4.0. You are running version %s. "
+"Please upgrade and try again."
+msgstr ""
+
+#: inc/admin/customizer/customizer.php:601
+msgid "Excerpt Length"
+msgstr ""
+
+#: inc/admin/customizer/customizer.php:391
+msgid "Facebook"
+msgstr ""
+
+#: inc/admin/widgets/about-widget.php:66
+msgid "Featured Image"
+msgstr ""
+
+#: inc/admin/customizer/customizer.php:768
+msgid "Footer"
+msgstr ""
+
+#. %d: widget number
+#: inc/admin/widgets/widgets.php:55
+#, php-format
+msgid "Footer %d"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:318
+msgid "Footer Copyright Editor"
+msgstr ""
+
+#: inc/admin/customizer/customizer.php:807
+msgid "Footer Layout"
+msgstr ""
+
+#: inc/admin/customizer/customizer.php:794
+msgid "Footer Widgets"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:220
+msgid "Free Version"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:103
+msgid "Free vs Pro"
+msgstr ""
+
 #. Name of the template
 msgid "Front Page"
 msgstr ""
 
-#. Name of the template
-msgid "Hero Image"
-msgstr ""
-
-#. Name of the template
-msgid "All Packages Listing"
-msgstr ""
-
-#: page-templates/template-packages-list.php:70
-#: inc/admin/widgets/packages-widget.php:188
-msgid "View Details"
-msgstr ""
-
-#. Name of the template
-msgid "Single Package"
-msgstr ""
-
-#. Name of the template
-msgid "All Rooms Listing"
-msgstr ""
-
-#: page-templates/template-rooms-list.php:69
-#: inc/admin/customizer/customizer.php:621
-#: inc/admin/widgets/recent-posts-widget.php:279
-#: inc/admin/widgets/rooms-widget.php:225
-msgid "Read More"
-msgstr ""
-
-#. Name of the template
-msgid "Single Room"
-msgstr ""
-
-#. Name of the template
-msgid "All Services Listing"
-msgstr ""
-
-#. Name of the template
-msgid "Single Service"
-msgstr ""
-
-#. Name of the template
-msgid "Single Testimonial"
-msgstr ""
-
-#: template-parts/content-none.php:14
-msgid "Nothing Found"
-msgstr ""
-
-#: template-parts/content-none.php:21
+#: inc/admin/widgets/widgets.php:32
 #, php-format
-msgid ""
-"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgid "Front Page - %s"
 msgstr ""
 
-#: template-parts/content-none.php:25
-msgid ""
-"Sorry, but nothing matched your search terms. Please try again with some "
-"different keywords."
+#: inc/admin/widgets/about-widget.php:89
+msgid "Full"
 msgstr ""
 
-#: template-parts/content-none.php:31
-msgid ""
-"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
-"searching can help."
+#. Name of the template
+msgid "Full Width"
 msgstr ""
 
-#: template-parts/content-page.php:25 template-parts/content.php:89
-msgid "Pages:"
+#: inc/admin/customizer/customizer.php:161
+msgid "General"
 msgstr ""
 
-#. %s: Name of current post
-#: template-parts/content-page.php:37
+#: inc/welcome-screen/class-welcome-screen.php:67
 #, php-format
-msgid "Edit %s"
-msgstr ""
-
-#: woocommerce/woocommerce.php:220
-#, php-format
-msgid "%d"
-msgid_plural "%d"
-msgstr[0] ""
-msgstr[1] ""
-
-#: inc/demo-importer/demo-importer.php:18
-msgid ""
-"After you import this demo, you will have to setup the slider separately."
+msgid "Get started with %s"
 msgstr ""
 
 #: inc/welcome-screen/class-welcome-screen.php:45
@@ -405,25 +525,44 @@ msgstr ""
 msgid "Getting Started"
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:63
-#, php-format
-msgid "Welcome to %s"
+#: inc/welcome-screen/class-welcome-screen.php:144
+msgid "Go to Customizer"
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:64
-#, php-format
-msgid ""
-"Welcome! Thank you for choosing %s ! To fully take advantage of the best our "
-"theme can offer please make sure you visit our %swelcome page%s."
+#: inc/welcome-screen/class-welcome-screen.php:182
+msgid "Go to the automatic importer"
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:67
-#, php-format
-msgid "Get started with %s"
+#: inc/welcome-screen/class-welcome-screen.php:178
+msgid "Go to the importer"
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:72
-msgid "Dismiss"
+#: inc/admin/customizer/customizer.php:786
+msgid "Go to Top Button"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:274
+msgid "Google Fonts"
+msgstr ""
+
+#: inc/admin/customizer/customizer.php:332
+msgid "Green"
+msgstr ""
+
+#: inc/admin/widgets/about-widget.php:88
+msgid "Half"
+msgstr ""
+
+#: inc/admin/customizer/customizer.php:223
+msgid "Header"
+msgstr ""
+
+#: inc/admin/customizer/customizer.php:275
+msgid "Header Media"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:239
+msgid "Header Top Bar"
 msgstr ""
 
 #: inc/welcome-screen/class-welcome-screen.php:88
@@ -431,51 +570,32 @@ msgstr ""
 msgid "Hello, %s,"
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:89
-#, php-format
-msgid "Welcome to %s version %s"
+#. Name of the template
+msgid "Hero Image"
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:101
-msgid "Recommendation"
+#: inc/functions.php:408 woocommerce/woocommerce.php:174
+msgid "Home"
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:102
-#: inc/welcome-screen/class-welcome-screen.php:354
-msgid "Theme Support"
+#: inc/functions.php:143 inc/admin/widgets/rooms-widget.php:98
+msgid "http://precisethemes.com/"
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:103
-msgid "Free vs Pro"
+#. URI of the theme
+msgid "http://precisethemes.com/wordpress-theme/courtyard/"
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:104
-msgid "Changelog"
+#. Author URI of the theme
+msgid "https://precisethemes.com/"
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:128
-msgid "Read Documentation & Installation Guide"
+#: inc/admin/customizer/customizer.php:417
+msgid "Icon"
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:129
-msgid ""
-"Theme documentation page will guide you to install and configure theme quick "
-"and easy. We have included details, screenshots and stepwise description "
-"about theme installation guides and tutorials. Follow the link: "
-msgstr ""
-
-#: inc/welcome-screen/class-welcome-screen.php:129
-#: inc/welcome-screen/class-welcome-screen.php:218
-msgid "View Courtyard Documentation"
-msgstr ""
-
-#: inc/welcome-screen/class-welcome-screen.php:133
-msgid "Recommended Plugins"
-msgstr ""
-
-#: inc/welcome-screen/class-welcome-screen.php:134
-#, php-format
-msgid "We have listed some of recommended plugins that works perfect with %s."
+#: inc/admin/meta-boxes/class-meta-box.php:141
+msgid "Icon class"
 msgstr ""
 
 #: inc/welcome-screen/class-welcome-screen.php:138
@@ -488,18 +608,34 @@ msgid ""
 "quick and easy site setup."
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:143
-msgid "Theme Option & Customization"
+#: inc/admin/widgets/image-slider-widget.php:87
+msgid "Info: only page have thumbnail will show in image slide."
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:144
+#: inc/admin/customizer/customizer.php:419
+msgid "Info:- Enter font awesome icon class here. For example: fa-facebook."
+msgstr ""
+
+#: inc/admin/meta-boxes/class-meta-box.php:169
 msgid ""
-"Most of theme settings customization options are available through theme "
-"customizer. To setup and customise your website elements and sections "
+"Info:- If featured image is not used than display the icon in Services. "
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:144
-msgid "Go to Customizer"
+#: inc/welcome-screen/class-welcome-screen.php:162
+#: inc/welcome-screen/class-welcome-screen.php:177
+msgid "Install and Activate"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:172
+msgid ""
+"Install the following plugin and then come back here to access the importer. "
+"With it you can import all demo content and change your homepage and blog "
+"page to the ones from our demo site, automatically. It will also assign a "
+"menu."
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:171
+msgid "Install:  One Click Demo Import"
 msgstr ""
 
 #: inc/welcome-screen/class-welcome-screen.php:156
@@ -512,407 +648,50 @@ msgid ""
 "to create pages by adding widgets to them using drag and drop."
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:162
-#: inc/welcome-screen/class-welcome-screen.php:174
-#: inc/welcome-screen/class-welcome-screen.php:189
-msgid "Install and Activate"
-msgstr ""
-
-#: inc/welcome-screen/class-welcome-screen.php:165
-#: inc/welcome-screen/class-welcome-screen.php:177
-#: inc/welcome-screen/class-welcome-screen.php:193
-msgid "Plugin installed and active!"
-msgstr ""
-
-#: inc/welcome-screen/class-welcome-screen.php:169
-msgid "Install: WooCommerce"
-msgstr ""
-
-#: inc/welcome-screen/class-welcome-screen.php:170
+#: 404.php:21
 msgid ""
-"It is highly recommend that you install WooCommerce. It will create custom "
-"post types like services and employees for you to use on your website."
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:181
-msgid "Demo content"
-msgstr ""
-
-#: inc/welcome-screen/class-welcome-screen.php:183
-msgid "Install:  One Click Demo Import"
-msgstr ""
-
-#: inc/welcome-screen/class-welcome-screen.php:184
+#: template-parts/content-none.php:31
 msgid ""
-"Install the following plugin and then come back here to access the importer. "
-"With it you can import all demo content and change your homepage and blog "
-"page to the ones from our demo site, automatically. It will also assign a "
-"menu."
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:190
-msgid "Go to the importer"
+#: inc/admin/widgets/recent-posts-widget.php:74
+msgid "Latest Posts"
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:194
-msgid "Go to the automatic importer"
-msgstr ""
-
-#: inc/welcome-screen/class-welcome-screen.php:206
-msgid "Support Forum"
-msgstr ""
-
-#: inc/welcome-screen/class-welcome-screen.php:208
+#. %s: post title
+#: inc/template-tags.php:112
 #, php-format
-msgid ""
-"Need help to setup your website with %s theme? Visit our support forum and "
-"browse support topics or create new, one of our support member will follow "
-"and help you to solver your issue."
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:210
-msgid "Visit Support Forum"
+#: inc/admin/widgets/about-widget.php:104
+msgid "Left"
 msgstr ""
 
-#: inc/welcome-screen/class-welcome-screen.php:214
-msgid "Documentation"
-msgstr ""
-
-#: inc/welcome-screen/class-welcome-screen.php:216
-msgid ""
-"Theme documentation page will guide you to install and configure theme quick "
-"and easy. We have included details, screenshots and stepwise description "
-"about theme installation guides and tutorials."
-msgstr ""
-
-#: inc/welcome-screen/class-welcome-screen.php:231
-msgid "Theme Features"
-msgstr ""
-
-#: inc/welcome-screen/class-welcome-screen.php:232
-msgid "Free Version"
-msgstr ""
-
-#: inc/welcome-screen/class-welcome-screen.php:233
-msgid "Pro Version"
-msgstr ""
-
-#: inc/welcome-screen/class-welcome-screen.php:237
-msgid "Number of Header Layouts"
-msgstr ""
-
-#: inc/welcome-screen/class-welcome-screen.php:239
-msgid "3"
-msgstr ""
-
-#: inc/welcome-screen/class-welcome-screen.php:244
-msgid "Number of Header Bar Type"
-msgstr ""
-
-#: inc/welcome-screen/class-welcome-screen.php:245
-msgid "1 (Sticky Only)"
-msgstr ""
-
-#: inc/welcome-screen/class-welcome-screen.php:246
-msgid "3 (Sticky, Scroll and Hide/Show on Scroll)"
-msgstr ""
-
-#: inc/welcome-screen/class-welcome-screen.php:251
-msgid "Header Top Bar"
-msgstr ""
-
-#: inc/welcome-screen/class-welcome-screen.php:258
-msgid "Number of Custom Widgets"
-msgstr ""
-
-#: inc/welcome-screen/class-welcome-screen.php:259
-msgid "10"
-msgstr ""
-
-#: inc/welcome-screen/class-welcome-screen.php:260
-msgid "15"
-msgstr ""
-
-#: inc/welcome-screen/class-welcome-screen.php:265
-msgid "Smooth Page Scroll"
-msgstr ""
-
-#: inc/welcome-screen/class-welcome-screen.php:272
-msgid "Coming Soon Page"
-msgstr ""
-
-#: inc/welcome-screen/class-welcome-screen.php:279
-msgid "Advanced Options for Homepage Widgets"
-msgstr ""
-
-#: inc/welcome-screen/class-welcome-screen.php:286
-msgid "Google Fonts"
-msgstr ""
-
-#: inc/welcome-screen/class-welcome-screen.php:293
-msgid "Advanced Post Settings"
-msgstr ""
-
-#: inc/welcome-screen/class-welcome-screen.php:300
-msgid "Advanced Page Settings"
-msgstr ""
-
-#: inc/welcome-screen/class-welcome-screen.php:306
-msgid "Custom 404 Error Page"
-msgstr ""
-
-#: inc/welcome-screen/class-welcome-screen.php:312
-msgid "Advanced WooCommerce Settings"
-msgstr ""
-
-#: inc/welcome-screen/class-welcome-screen.php:318
-msgid "Number of Footer Layouts"
-msgstr ""
-
-#: inc/welcome-screen/class-welcome-screen.php:319
-msgid "4"
-msgstr ""
-
-#: inc/welcome-screen/class-welcome-screen.php:320
-msgid "8"
-msgstr ""
-
-#: inc/welcome-screen/class-welcome-screen.php:324
-msgid "Sortable Footer Bar Elements"
-msgstr ""
-
-#: inc/welcome-screen/class-welcome-screen.php:330
-msgid "Footer Copyright Editor"
-msgstr ""
-
-#: inc/welcome-screen/class-welcome-screen.php:336
-msgid "WPML Compatible"
-msgstr ""
-
-#: inc/welcome-screen/class-welcome-screen.php:342
-msgid "Contact Form 7 Compatible"
-msgstr ""
-
-#: inc/welcome-screen/class-welcome-screen.php:348
-msgid "WooCommerce Compatible"
-msgstr ""
-
-#: inc/welcome-screen/class-welcome-screen.php:355
-msgid "Quick Ticket Support"
-msgstr ""
-
-#: inc/welcome-screen/class-welcome-screen.php:356
-msgid "Support via Forum"
-msgstr ""
-
-#: inc/welcome-screen/class-welcome-screen.php:362
-msgid ""
-"Need more features and customization option? Try Pro Version of Courtyard "
-"theme."
-msgstr ""
-
-#: inc/welcome-screen/class-welcome-screen.php:363
-#, php-format
-msgid "View %s Pro Version"
-msgstr ""
-
-#: inc/admin/customizer/customizer.php:161
-msgid "General"
-msgstr ""
-
-#: inc/admin/customizer/customizer.php:167
-#: inc/admin/customizer/customizer.php:589
-msgid "Settings"
-msgstr ""
-
-#: inc/admin/customizer/customizer.php:179
-msgid "Optimized Bootstrap"
-msgstr ""
-
-#: inc/admin/customizer/customizer.php:192
-msgid "Breadcrumbs"
-msgstr ""
-
-#: inc/admin/customizer/customizer.php:206
-msgid "Breadcrumbs Delimiter"
-msgstr ""
-
-#: inc/admin/customizer/customizer.php:214
-msgid "Background Image"
-msgstr ""
-
-#: inc/admin/customizer/customizer.php:223
-msgid "Header"
-msgstr ""
-
-#: inc/admin/customizer/customizer.php:229
-msgid "Site Title & Tagline"
-msgstr ""
-
-#: inc/admin/customizer/customizer.php:241
-msgid "Secondary Logo"
-msgstr ""
-
-#: inc/admin/customizer/customizer.php:254
-msgid "Display Site Title"
-msgstr ""
-
-#: inc/admin/customizer/customizer.php:267
-msgid "Display Tagline"
-msgstr ""
-
-#: inc/admin/customizer/customizer.php:275
-msgid "Header Media"
-msgstr ""
-
-#: inc/admin/customizer/customizer.php:287
-msgid "Activate Image Link Back to Home"
-msgstr ""
-
-#: inc/admin/customizer/customizer.php:298
-msgid "Colors"
-msgstr ""
-
-#: inc/admin/customizer/customizer.php:304
-msgid "Background Color"
-msgstr ""
-
-#: inc/admin/customizer/customizer.php:311
-msgid "Theme Color"
-msgstr ""
-
-#: inc/admin/customizer/customizer.php:322
-msgid "Color Schemes"
-msgstr ""
-
-#: inc/admin/customizer/customizer.php:327
-msgid "Watermelon"
-msgstr ""
-
-#: inc/admin/customizer/customizer.php:328
-msgid "Red"
-msgstr ""
-
-#: inc/admin/customizer/customizer.php:329
-msgid "Orange"
-msgstr ""
-
-#: inc/admin/customizer/customizer.php:330
-msgid "Yellow"
+#: inc/admin/meta-boxes/class-meta-box.php:78
+msgid "Left Sidebar"
 msgstr ""
 
 #: inc/admin/customizer/customizer.php:331
 msgid "Lime"
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:332
-msgid "Green"
-msgstr ""
-
-#: inc/admin/customizer/customizer.php:333
-msgid "Mint"
-msgstr ""
-
-#: inc/admin/customizer/customizer.php:334
-msgid "Teal"
-msgstr ""
-
-#: inc/admin/customizer/customizer.php:335
-msgid "Sky Blue"
-msgstr ""
-
-#: inc/admin/customizer/customizer.php:336
-msgid "Blue"
-msgstr ""
-
-#: inc/admin/customizer/customizer.php:337
-msgid "Purple"
-msgstr ""
-
-#: inc/admin/customizer/customizer.php:338
-msgid "Pink"
+#: inc/admin/widgets/logo-widget.php:102
+msgid "Logo"
 msgstr ""
 
 #: inc/admin/customizer/customizer.php:339
 msgid "Magenta"
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:340
-msgid "Plum"
-msgstr ""
-
-#: inc/admin/customizer/customizer.php:341
-msgid "Brown"
-msgstr ""
-
 #: inc/admin/customizer/customizer.php:342
 msgid "Maroon"
-msgstr ""
-
-#: inc/admin/customizer/customizer.php:354
-msgid "Primary Color"
-msgstr ""
-
-#: inc/admin/customizer/customizer.php:355
-msgid "You can override theme color by custom color"
-msgstr ""
-
-#: inc/admin/customizer/customizer.php:368
-msgid "Secondary Color"
-msgstr ""
-
-#: inc/admin/customizer/customizer.php:377
-#: inc/admin/customizer/customizer.php:401
-msgid "Social"
-msgstr ""
-
-#: inc/admin/customizer/customizer.php:382
-msgid "Social Profiles"
-msgstr ""
-
-#: inc/admin/customizer/customizer.php:391
-msgid "Facebook"
-msgstr ""
-
-#: inc/admin/customizer/customizer.php:402
-msgid "Add your social profiles."
-msgstr ""
-
-#: inc/admin/customizer/customizer.php:409
-msgid "Name"
-msgstr ""
-
-#: inc/admin/customizer/customizer.php:413
-#: inc/admin/widgets/logo-widget.php:138 inc/admin/widgets/logo-widget.php:145
-msgid "URL"
-msgstr ""
-
-#: inc/admin/customizer/customizer.php:417
-msgid "Icon"
-msgstr ""
-
-#: inc/admin/customizer/customizer.php:419
-msgid "Info:- Enter font awesome icon class here. For example: fa-facebook."
-msgstr ""
-
-#: inc/admin/customizer/customizer.php:431
-msgid "Post Settings"
-msgstr ""
-
-#: inc/admin/customizer/customizer.php:437
-#: inc/admin/customizer/customizer.php:552
-#: inc/admin/customizer/customizer.php:637 inc/admin/widgets/widgets.php:16
-msgid "Sidebar"
-msgstr ""
-
-#: inc/admin/customizer/customizer.php:451
-msgid "Post Sidebar"
-msgstr ""
-
-#: inc/admin/customizer/customizer.php:452
-msgid ""
-"Select default layout for single posts. This layout will be reflected in all "
-"single posts unless unique layout is set for specific post."
 msgstr ""
 
 #: inc/admin/customizer/customizer.php:465
@@ -920,30 +699,143 @@ msgstr ""
 msgid "Meta"
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:477
-#: inc/admin/customizer/customizer.php:690
-msgid "Post Author"
+#: inc/admin/customizer/customizer.php:333
+msgid "Mint"
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:490
-#: inc/admin/customizer/customizer.php:677
-msgid "Post Date"
+#: inc/welcome-screen/class-welcome-screen.php:144
+msgid ""
+"Most of theme settings customization options are available through theme "
+"customizer. To setup and customise your website elements and sections "
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:503
-msgid "Post Categories"
-msgstr ""
-
-#: inc/admin/customizer/customizer.php:516
-msgid "Post Tags"
+#: inc/admin/customizer/customizer.php:409
+msgid "Name"
 msgstr ""
 
 #: inc/admin/customizer/customizer.php:524
 msgid "Navigation"
 msgstr ""
 
+#: inc/welcome-screen/class-welcome-screen.php:196
+#, php-format
+msgid ""
+"Need help to setup your website with %s theme? Visit our support forum and "
+"browse support topics or create new, one of our support member will follow "
+"and help you to solver your issue."
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:356
+msgid ""
+"Need more features and customization option? Try Pro Version of Courtyard "
+"theme."
+msgstr ""
+
+#: comments.php:38 comments.php:59
+msgid "Newer Comments"
+msgstr ""
+
+#: archive.php:46 index.php:50 search.php:43
+msgid "Next &raquo;"
+msgstr ""
+
+#: single.php:26
+msgid "Next Post &rarr;"
+msgstr ""
+
+#: single.php:27
+msgid "Next post:"
+msgstr ""
+
 #: inc/admin/customizer/customizer.php:536
 msgid "Next/Previous Article"
+msgstr ""
+
+#: inc/admin/meta-boxes/class-meta-box.php:260
+#: inc/admin/meta-boxes/class-meta-box.php:356
+#: inc/admin/meta-boxes/class-meta-box.php:452
+msgid "No of posts to display"
+msgstr ""
+
+#: comments.php:29
+msgid "No Responses"
+msgstr ""
+
+#: inc/admin/meta-boxes/class-meta-box.php:79
+msgid "No Sidebar Full Width"
+msgstr ""
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#: inc/admin/widgets/logo-widget.php:63
+msgid "Number"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:246
+msgid "Number of Custom Widgets"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:306
+msgid "Number of Footer Layouts"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:232
+msgid "Number of Header Bar Type"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:225
+msgid "Number of Header Layouts"
+msgstr ""
+
+#: inc/admin/widgets/recent-posts-widget.php:106
+msgid "Number of posts to display."
+msgstr ""
+
+#: inc/admin/widgets/rooms-widget.php:73
+msgid "Number of rooms to display."
+msgstr ""
+
+#: inc/admin/widgets/services-widget.php:72
+msgid "Number of services to display."
+msgstr ""
+
+#: inc/admin/widgets/image-slider-widget.php:60
+msgid "Number of slides to display."
+msgstr ""
+
+#: inc/admin/widgets/testimonial-widget.php:71
+msgid "Number of testimonials to display."
+msgstr ""
+
+#: comments.php:37 comments.php:58
+msgid "Older Comments"
+msgstr ""
+
+#: functions.php:213
+msgid "One Click Demo Import"
+msgstr ""
+
+#: comments.php:29
+msgid "One Response"
+msgstr ""
+
+#: 404.php:17
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: inc/admin/customizer/customizer.php:179
+msgid "Optimized Bootstrap"
+msgstr ""
+
+#: inc/admin/customizer/customizer.php:329
+msgid "Orange"
+msgstr ""
+
+#: archive.php:47 index.php:51 search.php:44 inc/functions.php:575
+#: inc/admin/widgets/about-widget.php:48
+msgid "Page"
 msgstr ""
 
 #: inc/admin/customizer/customizer.php:546
@@ -954,18 +846,147 @@ msgstr ""
 msgid "Page Sidebar"
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:567
-msgid ""
-"Select default layout for single page. This layout will be reflected in all "
-"single page unless unique layout is set for specific page."
+#: inc/functions.php:184
+msgid "Page Template"
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:583
-msgid "Archive/Blog Settings"
+#: template-parts/content-page.php:25 template-parts/content.php:74
+#: inc/admin/widgets/about-widget.php:197
+msgid "Pages:"
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:601
-msgid "Excerpt Length"
+#: inc/admin/customizer/customizer.php:338
+msgid "Pink"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:165
+#: inc/welcome-screen/class-welcome-screen.php:181
+msgid "Plugin installed and active!"
+msgstr ""
+
+#: inc/admin/customizer/customizer.php:340
+msgid "Plum"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:342
+msgid "Polylang Compatible"
+msgstr ""
+
+#: inc/admin/customizer/customizer.php:477
+#: inc/admin/customizer/customizer.php:690
+msgid "Post Author"
+msgstr ""
+
+#: inc/admin/customizer/customizer.php:503
+msgid "Post Categories"
+msgstr ""
+
+#: inc/admin/customizer/customizer.php:490
+#: inc/admin/customizer/customizer.php:677
+msgid "Post Date"
+msgstr ""
+
+#: inc/admin/customizer/customizer.php:431
+msgid "Post Settings"
+msgstr ""
+
+#: inc/admin/customizer/customizer.php:451
+msgid "Post Sidebar"
+msgstr ""
+
+#: inc/admin/customizer/customizer.php:516
+msgid "Post Tags"
+msgstr ""
+
+#: inc/admin/widgets/recent-posts-widget.php:68
+msgid "Post Type"
+msgstr ""
+
+#. Author of the theme
+msgid "Precise Themes"
+msgstr ""
+
+#: single.php:29
+msgid "Previous post:"
+msgstr ""
+
+#: functions.php:79
+msgid "Primary"
+msgstr ""
+
+#: inc/admin/customizer/customizer.php:354
+msgid "Primary Color"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:221
+msgid "Pro Version"
+msgstr ""
+
+#: inc/admin/customizer/customizer.php:737
+msgid "Product Sidebar"
+msgstr ""
+
+#: inc/admin/widgets/about-widget.php:9
+msgid "PT: About"
+msgstr ""
+
+#: inc/admin/widgets/image-slider-widget.php:12
+msgid "PT: Hero Image Slider"
+msgstr ""
+
+#: inc/admin/widgets/logo-widget.php:10
+msgid "PT: Logo"
+msgstr ""
+
+#: inc/admin/widgets/packages-widget.php:12
+msgid "PT: Packages"
+msgstr ""
+
+#: inc/admin/widgets/recent-posts-widget.php:12
+msgid "PT: Recent Posts"
+msgstr ""
+
+#: inc/admin/widgets/rooms-widget.php:10
+msgid "PT: Rooms"
+msgstr ""
+
+#: inc/admin/widgets/services-widget.php:9
+msgid "PT: Services"
+msgstr ""
+
+#: inc/admin/widgets/social-icon-widget.php:11
+msgid "PT: Social Icons"
+msgstr ""
+
+#: inc/admin/widgets/testimonial-widget.php:10
+msgid "PT: Testimonials"
+msgstr ""
+
+#: inc/admin/widgets/video-widget.php:12
+msgid "PT: Video"
+msgstr ""
+
+#: inc/admin/customizer/customizer.php:337
+msgid "Purple"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:349
+msgid "Quick Ticket Support"
+msgstr ""
+
+#: inc/admin/widgets/recent-posts-widget.php:116
+msgid "Random Post"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:128
+msgid "Read Documentation & Installation Guide"
+msgstr ""
+
+#: page-templates/template-rooms-list.php:69
+#: inc/admin/customizer/customizer.php:621
+#: inc/admin/widgets/recent-posts-widget.php:279
+#: inc/admin/widgets/rooms-widget.php:225
+msgid "Read More"
 msgstr ""
 
 #: inc/admin/customizer/customizer.php:614
@@ -976,8 +997,96 @@ msgstr ""
 msgid "Read More Text"
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:651
-msgid "Archive/Blog Sidebar"
+#: template-parts/content-none.php:21
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:101
+msgid "Recommendation"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:133
+msgid "Recommended Plugins"
+msgstr ""
+
+#: inc/admin/widgets/logo-widget.php:116
+msgid "Recommended size 400 x 260"
+msgstr ""
+
+#: inc/admin/customizer/customizer.php:328
+msgid "Red"
+msgstr ""
+
+#: inc/admin/meta-boxes/class-meta-box.php:326
+msgid "Relatd Services"
+msgstr ""
+
+#: inc/functions.php:698
+msgid "Related"
+msgstr ""
+
+#: inc/admin/meta-boxes/class-meta-box.php:422
+msgid "Related Packages"
+msgstr ""
+
+#: inc/admin/meta-boxes/class-meta-box.php:230
+msgid "Related Rooms"
+msgstr ""
+
+#: inc/admin/customizer/repeatable/repeatable.php:354
+#: inc/admin/customizer/repeatable/repeatable.php:376
+msgid "Remove"
+msgstr ""
+
+#: inc/admin/widgets/about-widget.php:106
+msgid "Right"
+msgstr ""
+
+#: inc/admin/meta-boxes/class-meta-box.php:77
+msgid "Right Sidebar"
+msgstr ""
+
+#: inc/admin/widgets/image-slider-widget.php:70
+msgid "Scroll Down"
+msgstr ""
+
+#: inc/functions.php:580
+msgid "Search results for: "
+msgstr ""
+
+#: search.php:20
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: inc/admin/customizer/customizer.php:368
+msgid "Secondary Color"
+msgstr ""
+
+#: inc/admin/customizer/customizer.php:241
+msgid "Secondary Logo"
+msgstr ""
+
+#: inc/admin/widgets/logo-widget.php:115
+msgid "Select an Image"
+msgstr ""
+
+#: inc/admin/widgets/recent-posts-widget.php:86
+msgid "Select Category"
+msgstr ""
+
+#: inc/admin/customizer/customizer.php:567
+msgid ""
+"Select default layout for single page. This layout will be reflected in all "
+"single page unless unique layout is set for specific page."
+msgstr ""
+
+#: inc/admin/customizer/customizer.php:452
+msgid ""
+"Select default layout for single posts. This layout will be reflected in all "
+"single posts unless unique layout is set for specific post."
 msgstr ""
 
 #: inc/admin/customizer/customizer.php:652
@@ -987,52 +1096,16 @@ msgid ""
 "archives, categories, search page etc."
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:700
-msgid "WooCommerce"
-msgstr ""
-
-#: inc/admin/customizer/customizer.php:706
-#: inc/admin/customizer/customizer.php:720
-msgid "Shop Sidebar"
-msgstr ""
-
-#: inc/admin/customizer/customizer.php:721
+#: inc/admin/customizer/customizer.php:725
 msgid ""
-"Select default sidebar. This sidebar will be reflected in shop page as well "
-"as archive pages of WooCommerce."
+"Select default sidebar. This sidebar will be reflected in archives, "
+"categories, search page etc. of WooCommerce."
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:734
-#: inc/admin/customizer/customizer.php:748
-msgid "Product Sidebar"
-msgstr ""
-
-#: inc/admin/customizer/customizer.php:749
+#: inc/admin/customizer/customizer.php:752
 msgid ""
 "Select default sidebar. This sidebar will be reflected in product page of "
 "WooCommerce."
-msgstr ""
-
-#: inc/admin/customizer/customizer.php:765
-msgid "Footer"
-msgstr ""
-
-#: inc/admin/customizer/customizer.php:783
-msgid "Go to Top Button"
-msgstr ""
-
-#: inc/admin/customizer/customizer.php:791
-msgid "Footer Widgets"
-msgstr ""
-
-#: inc/admin/customizer/customizer.php:804
-msgid "Footer Layout"
-msgstr ""
-
-#: inc/admin/customizer/customizer.php:805
-msgid ""
-"Select layout for footer widget columns. It generates some widget areas for "
-"Footer based on the layout."
 msgstr ""
 
 #: inc/admin/meta-boxes/class-meta-box.php:36
@@ -1041,77 +1114,222 @@ msgstr ""
 msgid "Select Layout"
 msgstr ""
 
-#: inc/admin/meta-boxes/class-meta-box.php:76
-msgid "Default Layout"
-msgstr ""
-
-#: inc/admin/meta-boxes/class-meta-box.php:77
-msgid "Right Sidebar"
-msgstr ""
-
-#: inc/admin/meta-boxes/class-meta-box.php:78
-msgid "Left Sidebar"
-msgstr ""
-
-#: inc/admin/meta-boxes/class-meta-box.php:79
-msgid "No Sidebar Full Width"
-msgstr ""
-
-#: inc/admin/meta-boxes/class-meta-box.php:141
-msgid "Icon class"
-msgstr ""
-
-#: inc/admin/meta-boxes/class-meta-box.php:167
-#, php-format
+#: inc/admin/customizer/customizer.php:808
 msgid ""
-"<a href=\"%s\" target=\"_blank\">Refer here</a> for icon class. For example: "
-"<strong>fa-refresh</strong>"
+"Select layout for footer widget columns. It generates some widget areas for "
+"Footer based on the layout."
 msgstr ""
 
-#: inc/admin/meta-boxes/class-meta-box.php:169
-msgid ""
-"Info:- If featured image is not used than display the icon in Services. "
+#: inc/admin/customizer/customizer.php:167
+#: inc/admin/customizer/customizer.php:589
+msgid "Settings"
 msgstr ""
 
-#: inc/admin/meta-boxes/class-meta-box.php:230
-msgid "Related Rooms"
-msgstr ""
-
-#: inc/admin/meta-boxes/class-meta-box.php:254
-msgid "Enable related rooms."
-msgstr ""
-
-#: inc/admin/meta-boxes/class-meta-box.php:260
-#: inc/admin/meta-boxes/class-meta-box.php:356
-#: inc/admin/meta-boxes/class-meta-box.php:452
-msgid "No of posts to display"
-msgstr ""
-
-#: inc/admin/meta-boxes/class-meta-box.php:326
-msgid "Relatd Services"
-msgstr ""
-
-#: inc/admin/meta-boxes/class-meta-box.php:350
-msgid "Enable related services."
-msgstr ""
-
-#: inc/admin/meta-boxes/class-meta-box.php:422
-msgid "Related Packages"
-msgstr ""
-
-#: inc/admin/meta-boxes/class-meta-box.php:446
-msgid "Enable related packages."
+#: inc/admin/widgets/logo-widget.php:54
+#: inc/admin/widgets/packages-widget.php:62
+#: inc/admin/widgets/recent-posts-widget.php:59
+#: inc/admin/widgets/rooms-widget.php:57
+#: inc/admin/widgets/services-widget.php:56
+#: inc/admin/widgets/testimonial-widget.php:55
+#: inc/admin/widgets/video-widget.php:61
+msgid "Short description"
 msgstr ""
 
 #: inc/admin/widgets/about-widget.php:7
 msgid "Show a single page."
 msgstr ""
 
-#: inc/admin/widgets/about-widget.php:9
-msgid "PT: About"
+#: inc/admin/widgets/logo-widget.php:8
+msgid "Show your business patner logo."
 msgstr ""
 
-#: inc/admin/widgets/about-widget.php:26 inc/admin/widgets/about-widget.php:33
+#: inc/admin/customizer/customizer.php:437
+#: inc/admin/customizer/customizer.php:552
+#: inc/admin/customizer/customizer.php:637 inc/admin/widgets/widgets.php:16
+msgid "Sidebar"
+msgstr ""
+
+#: inc/admin/customizer/customizer.php:724
+#: inc/admin/customizer/customizer.php:751
+msgid "Sidebar Layout"
+msgstr ""
+
+#. Name of the template
+msgid "Single Package"
+msgstr ""
+
+#. Name of the template
+msgid "Single Room"
+msgstr ""
+
+#. Name of the template
+msgid "Single Service"
+msgstr ""
+
+#. Name of the template
+msgid "Single Testimonial"
+msgstr ""
+
+#: inc/admin/customizer/customizer.php:229
+msgid "Site Title & Tagline"
+msgstr ""
+
+#: inc/admin/customizer/customizer.php:335
+msgid "Sky Blue"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:253
+msgid "Smooth Page Scroll"
+msgstr ""
+
+#: inc/admin/customizer/customizer.php:377
+#: inc/admin/customizer/customizer.php:401
+msgid "Social"
+msgstr ""
+
+#: inc/admin/widgets/social-icon-widget.php:9
+msgid "Social Icons."
+msgstr ""
+
+#: inc/admin/customizer/customizer.php:382
+msgid "Social Profiles"
+msgstr ""
+
+#: template-parts/content-none.php:25
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:312
+msgid "Sortable Footer Bar Elements"
+msgstr ""
+
+#: inc/admin/widgets/logo-widget.php:48
+#: inc/admin/widgets/packages-widget.php:56
+#: inc/admin/widgets/recent-posts-widget.php:53
+#: inc/admin/widgets/rooms-widget.php:51
+#: inc/admin/widgets/services-widget.php:50
+#: inc/admin/widgets/testimonial-widget.php:49
+#: inc/admin/widgets/video-widget.php:55
+msgid "Sub Title"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:194
+msgid "Support Forum"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:350
+msgid "Support via Forum"
+msgstr ""
+
+#: inc/admin/customizer/customizer.php:334
+msgid "Teal"
+msgstr ""
+
+#: inc/admin/widgets/about-widget.php:99
+msgid "Text Alignment"
+msgstr ""
+
+#: inc/admin/customizer/customizer.php:311
+msgid "Theme Color"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:204
+msgid ""
+"Theme documentation page will guide you to install and configure theme quick "
+"and easy. We have included details, screenshots and stepwise description "
+"about theme installation guides and tutorials."
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:129
+msgid ""
+"Theme documentation page will guide you to install and configure theme quick "
+"and easy. We have included details, screenshots and stepwise description "
+"about theme installation guides and tutorials. Follow the link: "
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:219
+msgid "Theme Features"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:143
+msgid "Theme Option & Customization"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:102
+#: inc/welcome-screen/class-welcome-screen.php:348
+msgid "Theme Support"
+msgstr ""
+
+#: inc/admin/widgets/packages-widget.php:28
+msgid "This widget displays all pages related to Single Package Template."
+msgstr ""
+
+#: inc/admin/widgets/rooms-widget.php:28
+msgid "This widget displays all pages related to Single Room Template."
+msgstr ""
+
+#: inc/admin/widgets/services-widget.php:27
+msgid "This widget displays all pages related to Single Service Template."
+msgstr ""
+
+#: inc/admin/widgets/testimonial-widget.php:26
+msgid "This widget displays all pages related to Single Testimonial Template."
+msgstr ""
+
+#: inc/admin/widgets/image-slider-widget.php:28
+msgid "This widget displays pages of Hero Image Slider Template."
+msgstr ""
+
+#: inc/admin/widgets/video-widget.php:29
+msgid "This widget displays videos related to Youtube, Video etc."
+msgstr ""
+
+#: inc/admin/widgets/logo-widget.php:71
+msgid ""
+"Tip: Enter number to upload the number of logo ( default 3 ) and save it "
+"then enter the data in respective field."
+msgstr ""
+
+#: inc/admin/widgets/social-icon-widget.php:26
+msgid ""
+"Tip: This widget is used to display social icons for that you have to set "
+"social profile links through Appearance-> Customize-> Social-> Social "
+"Profiles."
+msgstr ""
+
+#: inc/admin/widgets/image-slider-widget.php:30
+msgid ""
+"Tip: to rearrange the image slider order, edit each image slider page and "
+"add a value in Page Attributes > Order"
+msgstr ""
+
+#: inc/admin/widgets/packages-widget.php:30
+msgid ""
+"Tip: to rearrange the packages order, edit each packages page and add a "
+"value in Page Attributes > Order"
+msgstr ""
+
+#: inc/admin/widgets/rooms-widget.php:29
+msgid ""
+"Tip: to rearrange the room order, edit each room page and add a value in "
+"Page Attributes > Order"
+msgstr ""
+
+#: inc/admin/widgets/services-widget.php:28
+msgid ""
+"Tip: to rearrange the services order, edit each service page and add a value "
+"in Page Attributes > Order"
+msgstr ""
+
+#: inc/admin/widgets/testimonial-widget.php:27
+msgid ""
+"Tip: to rearrange the testimonial order, edit each testimonial page and add "
+"a value in Page Attributes > Order"
+msgstr ""
+
+#: inc/admin/widgets/about-widget.php:32 inc/admin/widgets/about-widget.php:39
 #: inc/admin/widgets/image-slider-widget.php:37
 #: inc/admin/widgets/image-slider-widget.php:44
 #: inc/admin/widgets/logo-widget.php:32 inc/admin/widgets/logo-widget.php:39
@@ -1131,397 +1349,100 @@ msgstr ""
 msgid "Title"
 msgstr ""
 
-#: inc/admin/widgets/about-widget.php:60 inc/admin/widgets/logo-widget.php:81
-#: inc/admin/widgets/packages-widget.php:73
-#: inc/admin/widgets/recent-posts-widget.php:133
-#: inc/admin/widgets/rooms-widget.php:107
-#: inc/admin/widgets/services-widget.php:106
-#: inc/admin/widgets/social-icon-widget.php:50
-#: inc/admin/widgets/testimonial-widget.php:80
-#: inc/admin/widgets/video-widget.php:90
-msgid "Color"
-msgstr ""
-
-#: inc/admin/widgets/about-widget.php:68
-msgid "Choose the background color for the widget content section."
-msgstr ""
-
-#: inc/admin/widgets/image-slider-widget.php:10
-msgid "Display some pages as image slider."
-msgstr ""
-
-#: inc/admin/widgets/image-slider-widget.php:12
-msgid "PT: Hero Image Slider"
-msgstr ""
-
-#: inc/admin/widgets/image-slider-widget.php:28
-msgid "This widget displays pages of Hero Image Slider Template."
-msgstr ""
-
-#: inc/admin/widgets/image-slider-widget.php:30
-msgid ""
-"Tip: to rearrange the image slider order, edit each image slider page and "
-"add a value in Page Attributes > Order"
-msgstr ""
-
-#: inc/admin/widgets/image-slider-widget.php:53
-#: inc/admin/widgets/recent-posts-widget.php:99
-#: inc/admin/widgets/rooms-widget.php:66
-#: inc/admin/widgets/services-widget.php:65
-#: inc/admin/widgets/testimonial-widget.php:64
-msgid "Count"
-msgstr ""
-
-#: inc/admin/widgets/image-slider-widget.php:60
-msgid "Number of slides to display."
-msgstr ""
-
-#: inc/admin/widgets/image-slider-widget.php:70
-msgid "Scroll Down"
-msgstr ""
-
 #: inc/admin/widgets/image-slider-widget.php:78
 msgid "Uncheck to disable."
 msgstr ""
 
-#: inc/admin/widgets/image-slider-widget.php:87
-msgid "Info: only page have thumbnail will show in image slide."
-msgstr ""
-
-#: inc/admin/widgets/image-slider-widget.php:173
-msgid "Discover"
-msgstr ""
-
-#: inc/admin/widgets/logo-widget.php:8
-msgid "Show your business patner logo."
-msgstr ""
-
-#: inc/admin/widgets/logo-widget.php:10
-msgid "PT: Logo"
-msgstr ""
-
-#: inc/admin/widgets/logo-widget.php:48
-#: inc/admin/widgets/packages-widget.php:56
-#: inc/admin/widgets/recent-posts-widget.php:53
-#: inc/admin/widgets/rooms-widget.php:51
-#: inc/admin/widgets/services-widget.php:50
-#: inc/admin/widgets/testimonial-widget.php:49
-#: inc/admin/widgets/video-widget.php:55
-msgid "Sub Title"
-msgstr ""
-
-#: inc/admin/widgets/logo-widget.php:54
-#: inc/admin/widgets/packages-widget.php:62
-#: inc/admin/widgets/recent-posts-widget.php:59
-#: inc/admin/widgets/rooms-widget.php:57
-#: inc/admin/widgets/services-widget.php:56
-#: inc/admin/widgets/testimonial-widget.php:55
-#: inc/admin/widgets/video-widget.php:61
-msgid "Short description"
-msgstr ""
-
-#: inc/admin/widgets/logo-widget.php:63
-msgid "Number"
-msgstr ""
-
-#: inc/admin/widgets/logo-widget.php:71
-msgid ""
-"Tip: Enter number to upload the number of logo ( default 3 ) and save it "
-"then enter the data in respective field."
-msgstr ""
-
-#: inc/admin/widgets/logo-widget.php:89
-#: inc/admin/widgets/packages-widget.php:81
-#: inc/admin/widgets/recent-posts-widget.php:141
-#: inc/admin/widgets/rooms-widget.php:115
-#: inc/admin/widgets/services-widget.php:114
-#: inc/admin/widgets/social-icon-widget.php:58
-#: inc/admin/widgets/testimonial-widget.php:88
-#: inc/admin/widgets/video-widget.php:97
-msgid "Choose the background color for the widget section."
-msgstr ""
-
-#: inc/admin/widgets/logo-widget.php:102
-msgid "Logo"
-msgstr ""
-
-#: inc/admin/widgets/logo-widget.php:115
-msgid "Choose an image"
+#: inc/admin/customizer/customizer.php:413
+#: inc/admin/widgets/logo-widget.php:138 inc/admin/widgets/logo-widget.php:145
+msgid "URL"
 msgstr ""
 
 #: inc/admin/widgets/logo-widget.php:115
 msgid "Use image"
 msgstr ""
 
-#: inc/admin/widgets/logo-widget.php:115
-msgid "Select an Image"
+#: inc/admin/widgets/video-widget.php:72
+msgid "Video"
 msgstr ""
 
-#: inc/admin/widgets/logo-widget.php:116
-msgid "Recommended size 400 x 260"
-msgstr ""
-
-#: inc/admin/widgets/packages-widget.php:10
-msgid "Display some pages as packages."
-msgstr ""
-
-#: inc/admin/widgets/packages-widget.php:12
-msgid "PT: Packages"
-msgstr ""
-
-#: inc/admin/widgets/packages-widget.php:28
-msgid "This widget displays all pages related to Single Package Template."
-msgstr ""
-
-#: inc/admin/widgets/packages-widget.php:30
-msgid ""
-"Tip: to rearrange the packages order, edit each packages page and add a "
-"value in Page Attributes > Order"
-msgstr ""
-
-#: inc/admin/widgets/recent-posts-widget.php:10
-msgid "Display latest posts or posts of specific category."
-msgstr ""
-
-#: inc/admin/widgets/recent-posts-widget.php:12
-msgid "PT: Recent Posts"
-msgstr ""
-
-#: inc/admin/widgets/recent-posts-widget.php:68
-msgid "Post Type"
-msgstr ""
-
-#: inc/admin/widgets/recent-posts-widget.php:74
-msgid "Latest Posts"
-msgstr ""
-
-#: inc/admin/widgets/recent-posts-widget.php:77
-msgid "By Category"
-msgstr ""
-
-#: inc/admin/widgets/recent-posts-widget.php:86
-msgid "Select Category"
-msgstr ""
-
-#: inc/admin/widgets/recent-posts-widget.php:106
-msgid "Number of posts to display."
-msgstr ""
-
-#: inc/admin/widgets/recent-posts-widget.php:116
-msgid "Random Post"
-msgstr ""
-
-#: inc/admin/widgets/recent-posts-widget.php:124
-msgid ""
-"Check to display the random post from either the chosen category or from "
-"latest post."
-msgstr ""
-
-#: inc/admin/widgets/rooms-widget.php:8
-msgid "Display some pages as rooms."
-msgstr ""
-
-#: inc/admin/widgets/rooms-widget.php:10
-msgid "PT: Rooms"
-msgstr ""
-
-#: inc/admin/widgets/rooms-widget.php:19
-msgid "view all rooms"
-msgstr ""
-
-#: inc/admin/widgets/rooms-widget.php:28
-msgid "This widget displays all pages related to Single Room Template."
-msgstr ""
-
-#: inc/admin/widgets/rooms-widget.php:29
-msgid ""
-"Tip: to rearrange the room order, edit each room page and add a value in "
-"Page Attributes > Order"
-msgstr ""
-
-#: inc/admin/widgets/rooms-widget.php:73
-msgid "Number of rooms to display."
-msgstr ""
-
-#: inc/admin/widgets/rooms-widget.php:81
-#: inc/admin/widgets/services-widget.php:80
-msgid "Button Text"
+#: inc/welcome-screen/class-welcome-screen.php:357
+#, php-format
+msgid "View %s Pro Version"
 msgstr ""
 
 #: inc/admin/widgets/rooms-widget.php:85
 msgid "View All Rooms"
 msgstr ""
 
-#: inc/admin/widgets/rooms-widget.php:94
-msgid "Botton URL"
-msgstr ""
-
-#: inc/admin/widgets/services-widget.php:7
-msgid "Display some pages as services."
-msgstr ""
-
-#: inc/admin/widgets/services-widget.php:9
-msgid "PT: Services"
+#: inc/admin/widgets/rooms-widget.php:19
+msgid "view all rooms"
 msgstr ""
 
 #: inc/admin/widgets/services-widget.php:18
 msgid "View All Services"
 msgstr ""
 
-#: inc/admin/widgets/services-widget.php:27
-msgid "This widget displays all pages related to Single Service Template."
+#: inc/welcome-screen/class-welcome-screen.php:129
+#: inc/welcome-screen/class-welcome-screen.php:206
+msgid "View Courtyard Documentation"
 msgstr ""
 
-#: inc/admin/widgets/services-widget.php:28
-msgid ""
-"Tip: to rearrange the services order, edit each service page and add a value "
-"in Page Attributes > Order"
+#: page-templates/template-packages-list.php:70
+#: inc/admin/widgets/packages-widget.php:188
+msgid "View Details"
 msgstr ""
 
-#: inc/admin/widgets/services-widget.php:72
-msgid "Number of services to display."
+#: inc/welcome-screen/class-welcome-screen.php:198
+msgid "Visit Support Forum"
 msgstr ""
 
-#: inc/admin/widgets/services-widget.php:92
-msgid "Button URL"
+#: inc/admin/customizer/customizer.php:327
+msgid "Watermelon"
 msgstr ""
 
-#: inc/admin/widgets/social-icon-widget.php:9
-msgid "Social Icons."
-msgstr ""
-
-#: inc/admin/widgets/social-icon-widget.php:11
-msgid "PT: Social Icons"
-msgstr ""
-
-#: inc/admin/widgets/social-icon-widget.php:26
-msgid ""
-"Tip: This widget is used to display social icons for that you have to set "
-"social profile links through Appearance-> Customize-> Social-> Social "
-"Profiles."
-msgstr ""
-
-#: inc/admin/widgets/testimonial-widget.php:8
-msgid "Display some pages as testimonials."
-msgstr ""
-
-#: inc/admin/widgets/testimonial-widget.php:10
-msgid "PT: Testimonials"
-msgstr ""
-
-#: inc/admin/widgets/testimonial-widget.php:26
-msgid "This widget displays all pages related to Single Testimonial Template."
-msgstr ""
-
-#: inc/admin/widgets/testimonial-widget.php:27
-msgid ""
-"Tip: to rearrange the testimonial order, edit each testimonial page and add "
-"a value in Page Attributes > Order"
-msgstr ""
-
-#: inc/admin/widgets/testimonial-widget.php:71
-msgid "Number of testimonials to display."
-msgstr ""
-
-#: inc/admin/widgets/video-widget.php:10
-msgid "Display video from Youtube,Vimeo etc."
-msgstr ""
-
-#: inc/admin/widgets/video-widget.php:12
-msgid "PT: Video"
-msgstr ""
-
-#: inc/admin/widgets/video-widget.php:29
-msgid "This widget displays videos related to Youtube, Video etc."
-msgstr ""
-
-#: inc/admin/widgets/video-widget.php:72
-msgid "Video"
-msgstr ""
-
-#: inc/admin/widgets/video-widget.php:79
-msgid "Enter the complete video URL."
-msgstr ""
-
-#: inc/admin/widgets/widgets.php:18
-msgid "Add widgets in your sidebar of theme."
-msgstr ""
-
-#: inc/admin/widgets/widgets.php:32
+#: inc/welcome-screen/class-welcome-screen.php:134
 #, php-format
-msgid "Front Page - %s"
+msgid "We have listed some of recommended plugins that works perfect with %s."
 msgstr ""
 
-#. %s: Page Name
-#: inc/admin/widgets/widgets.php:34
+#: inc/welcome-screen/class-welcome-screen.php:89
+#, php-format
+msgid "Welcome to %1$s version %2$s"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:63
+#, php-format
+msgid "Welcome to %s"
+msgstr ""
+
+#: inc/welcome-screen/class-welcome-screen.php:64
 #, php-format
 msgid ""
-"Drag and drop our all custom widgets to build content awesome for the page: "
-"%s"
+"Welcome! Thank you for choosing %1$s ! To fully take advantage of the best "
+"our theme can offer please make sure you visit our %2$sswelcome page%3$s."
 msgstr ""
 
-#. %d: widget number
-#: inc/admin/widgets/widgets.php:55
-#, php-format
-msgid "Footer %d"
+#: inc/admin/customizer/customizer.php:705
+msgid "WooCommerce"
 msgstr ""
 
-#. %d: widget number
-#: inc/admin/widgets/widgets.php:57
-#, php-format
-msgid "Add widgets in your footer widget area %d."
+#: woocommerce/woocommerce.php:198
+msgid "WooCommerce - Sidebar"
 msgstr ""
 
-#: inc/admin/customizer/repeatable/repeatable.php:231
-msgid "Add a Item"
+#: inc/welcome-screen/class-welcome-screen.php:336
+msgid "WooCommerce Compatible"
 msgstr ""
 
-#: inc/admin/customizer/repeatable/repeatable.php:251
-msgid "[Untitled]"
+#: inc/welcome-screen/class-welcome-screen.php:324
+msgid "WPML Compatible"
 msgstr ""
 
-#: inc/admin/customizer/repeatable/repeatable.php:354
-#: inc/admin/customizer/repeatable/repeatable.php:376
-msgid "Remove"
+#: inc/admin/customizer/customizer.php:330
+msgid "Yellow"
 msgstr ""
 
-#: inc/admin/customizer/repeatable/repeatable.php:356
-#: inc/admin/customizer/repeatable/repeatable.php:356
-msgid "Add Image"
-msgstr ""
-
-#: inc/admin/customizer/repeatable/repeatable.php:356
-#: inc/admin/customizer/repeatable/repeatable.php:356
-msgid "Change Image"
-msgstr ""
-
-#: inc/admin/customizer/repeatable/repeatable.php:377
-msgid "Close"
-msgstr ""
-
-#. Name of the theme
-msgid "Courtyard"
-msgstr ""
-
-#. Description of the theme
-msgid ""
-"Courtyard - Responsive WordPress Theme is clean, minimalistic and "
-"beautifully designed theme perfectly for Hotel and Resorts. Courtyard theme "
-"can likewise be utilized to make site for Motel, Boarding House, Guest House,"
-" Lodge, Bed and Breakfast, B&amp;B, Hostel, Inn Hospitality Business, "
-"Restaurant, Cuisine, Cafe, and some other kind of site you can envision with "
-"effectively adaptable and easily customizable landing page. Preview Demo is "
-"available at http://demo.precisethemes.com/courtyard/"
-msgstr ""
-
-#. URI of the theme
-msgid "http://precisethemes.com/wordpress-theme/courtyard/"
-msgstr ""
-
-#. Author of the theme
-msgid "Precise Themes"
-msgstr ""
-
-#. Author URI of the theme
-msgid "https://precisethemes.com/"
+#: inc/admin/customizer/customizer.php:355
+msgid "You can override theme color by custom color"
 msgstr ""

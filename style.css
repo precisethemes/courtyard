@@ -1484,8 +1484,7 @@ a.pt-secondary-logo {
 .pt-front-page .widget-title,
 .page-template-template-rooms-list h1,
 .page-template-template-services-list h1,
-.page-template-template-packages-list h1,
-.pt-about-cont-holder h3 {
+.page-template-template-packages-list h1 {
 	margin-top: 0;
 	font-size: 48px;
 	line-height: 1.2em;
@@ -1495,6 +1494,14 @@ a.pt-secondary-logo {
 	letter-spacing: .025em;
 }
 
+.pt-about-cont-holder h3 {
+	margin-top: 0;
+	font-size: 48px;
+	line-height: 1.2em;
+	color: #42414e;
+	font-weight: 300;
+	letter-spacing: .025em;
+}
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -2189,9 +2196,9 @@ section.pt-about-section .pt-widget-section {
 	color: #757575;
 }
 
-.pt-about-cont-holder h3 {
-	text-align: left;
-}
+/*.pt-about-cont-holder h3 {*/
+	/*text-align: left;*/
+/*}*/
 
 /*--------------------------------------------------------------
 # Logos Widget

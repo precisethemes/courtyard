@@ -14,9 +14,15 @@ class Courtyard_About_Widget extends WP_Widget {
             (array) $instance, array(
                 'title'             => '',
                 'page_id'           => '',
+                'featured_image'    => '0',
+                'container_width'   => 'half',
+                'text_align'        => 'text-left',
                 'background_color'  => '#ffffff',
             )
         );
+        $featured_image     = $instance['featured_image'] ? 'checked="checked"' : '';
+        $container_width    = $instance['container_width'];
+        $text_align         = $instance['text_align'];
         ?>
 
         <div class="pt-about">
@@ -57,6 +63,56 @@ class Courtyard_About_Widget extends WP_Widget {
             <div class="pt-admin-input-wrap">
                 <div class="pt-admin-input-label">
                     <label
+                            for="<?php echo $this->get_field_id('featured_image'); ?>"><?php esc_html_e('Featured Image', 'courtyard'); ?></label>
+                </div><!-- .pt-admin-input-label -->
+
+                <div class="pt-admin-input-holder">
+                    <input type="checkbox" <?php echo $featured_image; ?>
+                           id="<?php echo $this->get_field_id('featured_image'); ?>"
+                           name="<?php echo $this->get_field_name('featured_image'); ?>"
+                           value="<?php echo esc_attr($instance['featured_image']); ?>">
+                    <p><em><?php esc_html_e('Check to hide page featured image as background of container.', 'courtyard'); ?></em></p>
+                </div><!-- .pt-admin-input-holder -->
+
+                <div class="clear"></div>
+            </div><!-- .pt-admin-input-wrap -->
+
+            <div class="pt-admin-input-wrap">
+                <div class="pt-admin-input-label">
+                    <label
+                            for="<?php echo $this->get_field_id('container_width'); ?>"><?php esc_html_e('Container Width', 'courtyard'); ?></label>
+                </div><!-- .pt-admin-input-label -->
+
+                <div class="pt-admin-input-holder">
+                    <select id="<?php echo $this->get_field_id('container_width'); ?>" name="<?php echo $this->get_field_name('container_width'); ?>">
+                        <option value="half" <?php selected( $container_width, 'half' ); ?>><?php esc_html_e('Half', 'courtyard'); ?></option>
+                        <option value="full" <?php selected( $container_width, 'full' ); ?>><?php esc_html_e('Full', 'courtyard'); ?></option>
+                    </select>
+                </div><!-- .pt-admin-input-holder -->
+
+                <div class="clear"></div>
+            </div><!-- .pt-admin-input-wrap -->
+
+            <div class="pt-admin-input-wrap">
+                <div class="pt-admin-input-label">
+                    <label
+                            for="<?php echo $this->get_field_id('text_align'); ?>"><?php esc_html_e('Text Alignment', 'courtyard'); ?></label>
+                </div><!-- .pt-admin-input-label -->
+
+                <div class="pt-admin-input-holder">
+                    <select id="<?php echo $this->get_field_id('text_align'); ?>" name="<?php echo $this->get_field_name('text_align'); ?>">
+                        <option value="text-left" <?php selected( $text_align, 'text-left' ); ?>><?php esc_html_e('Left', 'courtyard'); ?></option>
+                        <option value="text-center" <?php selected( $text_align, 'text-center' ); ?>><?php esc_html_e('Center', 'courtyard'); ?></option>
+                        <option value="text-right" <?php selected( $text_align, 'text-right' ); ?>><?php esc_html_e('Right', 'courtyard'); ?></option>
+                    </select>
+                </div><!-- .pt-admin-input-holder -->
+
+                <div class="clear"></div>
+            </div><!-- .pt-admin-input-wrap -->
+
+            <div class="pt-admin-input-wrap">
+                <div class="pt-admin-input-label">
+                    <label
                     for="<?php echo $this->get_field_id('background_color'); ?>"><?php esc_html_e('Color', 'courtyard'); ?></label>
                 </div><!-- .pt-admin-input-label -->
 
@@ -78,6 +134,9 @@ class Courtyard_About_Widget extends WP_Widget {
 
         $instance['title']             = sanitize_text_field( $new_instance['title'] );
         $instance['page_id']           = absint( $new_instance['page_id'] );
+        $instance['featured_image']    = isset($new_instance['featured_image']) ? 1 : 0;
+        $instance['container_width']   = $new_instance['container_width'];
+        $instance['text_align']        = $new_instance['text_align'];
         $instance['background_color']  = sanitize_text_field( $new_instance['background_color'] );
         return $instance;
     }
@@ -86,9 +145,11 @@ class Courtyard_About_Widget extends WP_Widget {
         ob_start();
         extract($args);
 
-        global $post;
         $pt_page_id         = isset( $instance['page_id'] ) ? $instance['page_id'] : '';
         $background_color   = isset( $instance['background_color'] ) ? $instance['background_color'] : '#ffffff';
+        $featured_image     = !empty($instance['featured_image']) ? 'true' : 'false';
+        $container_width    = isset($instance['container_width']) ? $instance['container_width'] : 'half';
+        $text_align         = isset($instance['text_align']) ? $instance['text_align'] : 'text-left';
 
         $get_featured_pages = new WP_Query( array(
             'post_status'           => 'publish',
@@ -115,18 +176,16 @@ class Courtyard_About_Widget extends WP_Widget {
                     if ( has_post_thumbnail() ) {
                         $custom_image = $image_path[0];
                     }
-                    $image_alt = get_post_meta( $image_id, '_wp_attachment_image_alt', true );
-                    $alt = !empty( $image_alt ) ? $image_alt : the_title_attribute( 'echo=0' ) ;
                     $inline_img_style = 'style="background:url(' . esc_url($custom_image) . ') no-repeat;"';
                     ?>
 
-                    <div class="pt-about-wrap" <?php echo $inline_img_style; ?>>
+                    <div class="pt-about-wrap" <?php if( $featured_image == 'false' ) { echo $inline_img_style;} ?>>
                         <div class="container">
                             <div class="row">
-                                <div class="col-md-7 col-sm-7 col-md-push-5 col-sm-push-5">
+                                <div class="<?php if ( $container_width == 'half' ) { echo esc_attr('col-md-7 col-sm-7 col-md-push-5 col-sm-push-5'); } else { echo esc_attr( 'col-md-12 col-sm-12' ); }?>">
                                     <div class="pt-about-col">
                                         <article class="pt-about-cont" <?php echo $inline_style; ?>>
-                                            <div class="pt-about-cont-holder">
+                                            <div class="pt-about-cont-holder <?php echo esc_attr( $text_align ); ?>">
                                                 <header>
                                                     <h3><?php the_title(); ?></h3>
                                                 </header>
