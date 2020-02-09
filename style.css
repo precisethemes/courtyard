@@ -452,28 +452,14 @@ a:active {
 	width: 200px;
 }
 
-.main-navigation ul ul li {
-
-}
-
-.main-navigation li:hover > a,
-.main-navigation li.focus > a {
-}
-
-.main-navigation ul ul :hover > a,
-.main-navigation ul ul .focus > a {
-}
-
-.main-navigation ul ul a:hover,
-.main-navigation ul ul a.focus {
-}
-
 .main-navigation ul li:hover > ul,
+.main-navigation ul li:focus-within > ul,
 .main-navigation ul li.focus > ul {
 	left: auto;
 }
 
 .main-navigation ul ul li:hover > ul,
+.main-navigation ul ul li:focus-within > ul,
 .main-navigation ul ul li.focus > ul {
 	left: 100%;
 }
@@ -1110,7 +1096,8 @@ a.pt-secondary-logo {
 	text-align: center;
 }
 
-.pt-menu li:hover > ul {
+.pt-menu li:hover > ul,
+.pt-menu li:focus-within > ul {
 	top: 100%;
 	visibility: visible;
 	opacity: 1;
@@ -1118,7 +1105,8 @@ a.pt-secondary-logo {
 	border: 1px solid rgba(33,33,33,.085);
 }
 
-.pt-menu li li:hover > ul {
+.pt-menu li li:hover > ul,
+.pt-menu li li:focus-within > ul {
 	top: -1px;
 }
 
