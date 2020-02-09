@@ -1,6 +1,6 @@
 {
   "name": "courtyard",
-  "version": "1.0.0",
+  "version": "1.3.6",
   "description": "[![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)",
   "main": "Gruntfile.js",
   "scripts": {
@@ -10,14 +10,14 @@
     "type": "git",
     "url": "git+https://github.com/maheshwaghmare/_s.git"
   },
-  "author": "",
+  "author": "precisethemes",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^6.3.3",
-    "grunt": "^1.0.3",
+    "grunt": "^1.0.4",
     "grunt-checktextdomain": "^1.0.1",
     "grunt-contrib-clean": "^1.1.0",
-    "grunt-contrib-compress": "^1.4.3",
+    "grunt-contrib-compress": "^1.6.0",
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-cssmin": "^1.0.2",
     "grunt-contrib-jshint": "^1.1.0",
@@ -32,5 +32,6 @@
   "bugs": {
     "url": "https://github.com/maheshwaghmare/_s/issues"
   },
-  "homepage": "https://github.com/maheshwaghmare/_s#readme"
+  "homepage": "https://github.com/maheshwaghmare/_s#readme",
+  "dependencies": {}
 }
