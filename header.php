@@ -22,7 +22,11 @@
 
 <body <?php body_class(); ?>>
 
+<?php wp_body_open(); ?>
+
 <div id="page" class="site">
+
+    <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'courtyard' ); ?></a>
 	
 	<header class="pt-header">
 		<div class="pt-navbar transition5<?php if( is_front_page() ) { echo ' pt-home-navbar'; } ?>">
@@ -105,3 +109,5 @@
 		endif;
         ?>
 	</header>
+
+    <div id="content" class="site-content">

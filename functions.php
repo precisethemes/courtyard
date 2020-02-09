@@ -170,12 +170,6 @@ require get_template_directory() . '/inc/functions.php';
 require get_template_directory() . '/woocommerce/woocommerce.php';
 
 /**
- * Demo Importer
- */
-require get_template_directory() . '/inc/demo-importer/demo-importer.php';
-
-
-/**
  * Admin notice
  */
 require get_template_directory() . '/inc/notices/persist-admin-notices-dismissal.php';
@@ -207,11 +201,6 @@ if ( ! function_exists( 'courtyard_register_recommended_plugins' ) ) :
             array(
                 'name'     => esc_html__( 'Classic Editor', 'courtyard' ),
                 'slug'     => 'classic-editor',
-                'required' => false,
-            ),
-            array(
-                'name'     => esc_html__( 'One Click Demo Import', 'courtyard' ),
-                'slug'     => 'one-click-demo-import',
                 'required' => false,
             ),
             array(

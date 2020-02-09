@@ -1,7 +1,7 @@
 === Courtyard ===
 
 Contributors: Precise Themes
-Version: 1.3.6
+Version: 1.3.7
 Requires at least: 4.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -114,6 +114,12 @@ Screenshot images licensed under CC0 Public Domain (http://creativecommons.org/p
   Source: https://unsplash.com/photos/w04Uo0y8UyI
 
 === Changelog ===
+
+Version 1.3.7 - 2020-02-09
+* Added `wp_body_open` function to support WordPress 5.2 `wp_body_open` hook.
+* Fixed `skip-link` to content area.
+* Fixed keyboard accessibility.
+* Tweak deprecate demo importer files through theme.
 
 Version 1.3.6 - Feb 18, 2019
 * Added options in PT: About widget.
