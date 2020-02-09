@@ -83,6 +83,12 @@ input[type=checkbox]:before {
     opacity: 1;
 }
 
+#accordion-section-custom_theme_upsell {
+    display: block !important;
+    height: 48px !important;
+    margin-top: -15px;
+}
+
 /*--------------------------------------------------------------
 # Admin input
 --------------------------------------------------------------*/
@@ -251,11 +257,6 @@ input[type=checkbox]:before {
     border-right: 1px solid #eef0f2;
     border-bottom: 1px solid #eef0f2;
     background: #fff !important;
-}
-
-#customize-controls a {
-    background: transparent;
-    border: 0;
 }
 
 #customize-controls a:hover {

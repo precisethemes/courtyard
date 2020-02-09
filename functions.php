@@ -205,13 +205,18 @@ if ( ! function_exists( 'courtyard_register_recommended_plugins' ) ) :
     function courtyard_register_recommended_plugins() {
         $plugins = array(
             array(
-                'name'     => esc_html__( 'Contact Form 7', 'courtyard' ),
-                'slug'     => 'contact-form-7',
+                'name'     => esc_html__( 'Classic Editor', 'courtyard' ),
+                'slug'     => 'classic-editor',
                 'required' => false,
             ),
             array(
                 'name'     => esc_html__( 'One Click Demo Import', 'courtyard' ),
                 'slug'     => 'one-click-demo-import',
+                'required' => false,
+            ),
+            array(
+                'name'     => esc_html__( 'Contact Form 7', 'courtyard' ),
+                'slug'     => 'contact-form-7',
                 'required' => false,
             ),
         );

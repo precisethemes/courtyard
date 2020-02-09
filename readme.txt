@@ -1,7 +1,7 @@
 === Courtyard ===
 
 Contributors: Precise Themes
-Version: 1.3.5
+Version: 1.3.6
 Requires at least: 4.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -115,9 +115,10 @@ Screenshot images licensed under CC0 Public Domain (http://creativecommons.org/p
 
 === Changelog ===
 
-Version 1.3.6 TBD
+Version 1.3.6 - Feb 18, 2019
 * Added options in PT: About widget.
 * Fixed arrow display issue in PT: Services and PT: Rooms widgets.
+* Fixed polylang issue for PHP version 7.3
 
 Version 1.3.5
 * Added Back compatible functionality for PHP version.

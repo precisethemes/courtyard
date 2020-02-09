@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Courtyard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-29 08:38+0000\n"
+"POT-Creation-Date: 2019-02-18 05:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -12,13 +12,14 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Loco https://localise.biz/"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.2.0; wp-5.0.3"
 
 #: comments.php:29
 msgid "% Responses"
 msgstr ""
 
-#: archive.php:45 index.php:49 search.php:42
+#: index.php:49 archive.php:45 search.php:42
 msgid "&laquo; Previous"
 msgstr ""
 
@@ -90,7 +91,7 @@ msgstr ""
 msgid "[Untitled]"
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:287
+#: inc/admin/customizer/customizer.php:374
 msgid "Activate Image Link Back to Home"
 msgstr ""
 
@@ -116,7 +117,7 @@ msgstr ""
 msgid "Add widgets in your WooCommerce sidebar of theme."
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:402
+#: inc/admin/customizer/customizer.php:489
 msgid "Add your social profiles."
 msgstr ""
 
@@ -161,28 +162,28 @@ msgstr ""
 msgid "All Templates"
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:583
+#: inc/admin/customizer/customizer.php:670
 msgid "Archive/Blog Settings"
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:651
-#: inc/admin/customizer/customizer.php:711
+#: inc/admin/customizer/customizer.php:738
+#: inc/admin/customizer/customizer.php:798
 msgid "Archive/Blog Sidebar"
 msgstr ""
 
-#: footer.php:39 inc/admin/customizer/customizer.php:774
+#: footer.php:39 inc/admin/customizer/customizer.php:861
 msgid "Back to Top"
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:304
+#: inc/admin/customizer/customizer.php:391
 msgid "Background Color"
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:214
+#: inc/admin/customizer/customizer.php:301
 msgid "Background Image"
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:336
+#: inc/admin/customizer/customizer.php:423
 msgid "Blue"
 msgstr ""
 
@@ -190,25 +191,29 @@ msgstr ""
 msgid "Botton URL"
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:192
+#: inc/admin/customizer/customizer.php:279
 msgid "Breadcrumbs"
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:206
+#: inc/admin/customizer/customizer.php:293
 msgid "Breadcrumbs Delimiter"
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:341
+#: inc/admin/customizer/customizer.php:428
 msgid "Brown"
 msgstr ""
 
-#: inc/admin/widgets/rooms-widget.php:81
 #: inc/admin/widgets/services-widget.php:80
+#: inc/admin/widgets/rooms-widget.php:81
 msgid "Button Text"
 msgstr ""
 
 #: inc/admin/widgets/services-widget.php:92
 msgid "Button URL"
+msgstr ""
+
+#: inc/admin/customizer/customizer.php:112
+msgid "Buy PRO Version"
 msgstr ""
 
 #: inc/admin/widgets/recent-posts-widget.php:77
@@ -245,37 +250,40 @@ msgstr ""
 msgid "Choose the background color for the widget content section."
 msgstr ""
 
-#: inc/admin/widgets/logo-widget.php:89
-#: inc/admin/widgets/packages-widget.php:81
-#: inc/admin/widgets/recent-posts-widget.php:141
-#: inc/admin/widgets/rooms-widget.php:115
-#: inc/admin/widgets/services-widget.php:114
-#: inc/admin/widgets/social-icon-widget.php:58
 #: inc/admin/widgets/testimonial-widget.php:88
-#: inc/admin/widgets/video-widget.php:97
+#: inc/admin/widgets/services-widget.php:114
+#: inc/admin/widgets/logo-widget.php:89
+#: inc/admin/widgets/social-icon-widget.php:58
+#: inc/admin/widgets/packages-widget.php:81
+#: inc/admin/widgets/video-widget.php:97 inc/admin/widgets/rooms-widget.php:115
+#: inc/admin/widgets/recent-posts-widget.php:141
 msgid "Choose the background color for the widget section."
+msgstr ""
+
+#: functions.php:208
+msgid "Classic Editor"
 msgstr ""
 
 #: inc/admin/customizer/repeatable/repeatable.php:377
 msgid "Close"
 msgstr ""
 
-#: inc/admin/widgets/about-widget.php:116 inc/admin/widgets/logo-widget.php:81
-#: inc/admin/widgets/packages-widget.php:73
-#: inc/admin/widgets/recent-posts-widget.php:133
-#: inc/admin/widgets/rooms-widget.php:107
-#: inc/admin/widgets/services-widget.php:106
-#: inc/admin/widgets/social-icon-widget.php:50
 #: inc/admin/widgets/testimonial-widget.php:80
-#: inc/admin/widgets/video-widget.php:90
+#: inc/admin/widgets/services-widget.php:106
+#: inc/admin/widgets/logo-widget.php:81
+#: inc/admin/widgets/social-icon-widget.php:50
+#: inc/admin/widgets/packages-widget.php:73
+#: inc/admin/widgets/about-widget.php:116 inc/admin/widgets/video-widget.php:90
+#: inc/admin/widgets/rooms-widget.php:107
+#: inc/admin/widgets/recent-posts-widget.php:133
 msgid "Color"
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:322
+#: inc/admin/customizer/customizer.php:409
 msgid "Color Schemes"
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:298
+#: inc/admin/customizer/customizer.php:385
 msgid "Colors"
 msgstr ""
 
@@ -291,7 +299,7 @@ msgstr ""
 msgid "Comments are closed."
 msgstr ""
 
-#: functions.php:208
+#: functions.php:218
 msgid "Contact Form 7"
 msgstr ""
 
@@ -308,11 +316,11 @@ msgstr ""
 msgid "Copyright &copy; %1$s %3$s. %2$s."
 msgstr ""
 
-#: inc/admin/widgets/image-slider-widget.php:53
-#: inc/admin/widgets/recent-posts-widget.php:99
-#: inc/admin/widgets/rooms-widget.php:66
-#: inc/admin/widgets/services-widget.php:65
 #: inc/admin/widgets/testimonial-widget.php:64
+#: inc/admin/widgets/services-widget.php:65
+#: inc/admin/widgets/image-slider-widget.php:53
+#: inc/admin/widgets/rooms-widget.php:66
+#: inc/admin/widgets/recent-posts-widget.php:99
 msgid "Count"
 msgstr ""
 
@@ -372,7 +380,7 @@ msgstr ""
 msgid "Display latest posts or posts of specific category."
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:254
+#: inc/admin/customizer/customizer.php:341
 msgid "Display Site Title"
 msgstr ""
 
@@ -396,7 +404,7 @@ msgstr ""
 msgid "Display some pages as testimonials."
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:267
+#: inc/admin/customizer/customizer.php:354
 msgid "Display Tagline"
 msgstr ""
 
@@ -451,11 +459,11 @@ msgid ""
 "Please upgrade and try again."
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:601
+#: inc/admin/customizer/customizer.php:688
 msgid "Excerpt Length"
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:391
+#: inc/admin/customizer/customizer.php:478
 msgid "Facebook"
 msgstr ""
 
@@ -463,7 +471,7 @@ msgstr ""
 msgid "Featured Image"
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:768
+#: inc/admin/customizer/customizer.php:855
 msgid "Footer"
 msgstr ""
 
@@ -477,11 +485,11 @@ msgstr ""
 msgid "Footer Copyright Editor"
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:807
+#: inc/admin/customizer/customizer.php:894
 msgid "Footer Layout"
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:794
+#: inc/admin/customizer/customizer.php:881
 msgid "Footer Widgets"
 msgstr ""
 
@@ -506,11 +514,7 @@ msgstr ""
 msgid "Full"
 msgstr ""
 
-#. Name of the template
-msgid "Full Width"
-msgstr ""
-
-#: inc/admin/customizer/customizer.php:161
+#: inc/admin/customizer/customizer.php:248
 msgid "General"
 msgstr ""
 
@@ -537,7 +541,7 @@ msgstr ""
 msgid "Go to the importer"
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:786
+#: inc/admin/customizer/customizer.php:873
 msgid "Go to Top Button"
 msgstr ""
 
@@ -545,7 +549,7 @@ msgstr ""
 msgid "Google Fonts"
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:332
+#: inc/admin/customizer/customizer.php:419
 msgid "Green"
 msgstr ""
 
@@ -553,11 +557,11 @@ msgstr ""
 msgid "Half"
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:223
+#: inc/admin/customizer/customizer.php:310
 msgid "Header"
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:275
+#: inc/admin/customizer/customizer.php:362
 msgid "Header Media"
 msgstr ""
 
@@ -574,7 +578,7 @@ msgstr ""
 msgid "Hero Image"
 msgstr ""
 
-#: inc/functions.php:408 woocommerce/woocommerce.php:174
+#: woocommerce/woocommerce.php:174 inc/functions.php:408
 msgid "Home"
 msgstr ""
 
@@ -590,7 +594,7 @@ msgstr ""
 msgid "https://precisethemes.com/"
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:417
+#: inc/admin/customizer/customizer.php:504
 msgid "Icon"
 msgstr ""
 
@@ -612,7 +616,7 @@ msgstr ""
 msgid "Info: only page have thumbnail will show in image slide."
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:419
+#: inc/admin/customizer/customizer.php:506
 msgid "Info:- Enter font awesome icon class here. For example: fa-facebook."
 msgstr ""
 
@@ -678,7 +682,7 @@ msgstr ""
 msgid "Left Sidebar"
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:331
+#: inc/admin/customizer/customizer.php:418
 msgid "Lime"
 msgstr ""
 
@@ -686,20 +690,20 @@ msgstr ""
 msgid "Logo"
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:339
+#: inc/admin/customizer/customizer.php:426
 msgid "Magenta"
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:342
+#: inc/admin/customizer/customizer.php:429
 msgid "Maroon"
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:465
-#: inc/admin/customizer/customizer.php:665
+#: inc/admin/customizer/customizer.php:552
+#: inc/admin/customizer/customizer.php:752
 msgid "Meta"
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:333
+#: inc/admin/customizer/customizer.php:420
 msgid "Mint"
 msgstr ""
 
@@ -709,11 +713,11 @@ msgid ""
 "customizer. To setup and customise your website elements and sections "
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:409
+#: inc/admin/customizer/customizer.php:496
 msgid "Name"
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:524
+#: inc/admin/customizer/customizer.php:611
 msgid "Navigation"
 msgstr ""
 
@@ -731,11 +735,15 @@ msgid ""
 "theme."
 msgstr ""
 
+#: inc/admin/customizer/customizer.php:111
+msgid "Need More Options?"
+msgstr ""
+
 #: comments.php:38 comments.php:59
 msgid "Newer Comments"
 msgstr ""
 
-#: archive.php:46 index.php:50 search.php:43
+#: index.php:50 archive.php:46 search.php:43
 msgid "Next &raquo;"
 msgstr ""
 
@@ -747,7 +755,7 @@ msgstr ""
 msgid "Next post:"
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:536
+#: inc/admin/customizer/customizer.php:623
 msgid "Next/Previous Article"
 msgstr ""
 
@@ -825,24 +833,24 @@ msgstr ""
 msgid "Oops! That page can&rsquo;t be found."
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:179
+#: inc/admin/customizer/customizer.php:266
 msgid "Optimized Bootstrap"
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:329
+#: inc/admin/customizer/customizer.php:416
 msgid "Orange"
 msgstr ""
 
-#: archive.php:47 index.php:51 search.php:44 inc/functions.php:575
+#: index.php:51 archive.php:47 search.php:44 inc/functions.php:575
 #: inc/admin/widgets/about-widget.php:48
 msgid "Page"
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:546
+#: inc/admin/customizer/customizer.php:633
 msgid "Page Settings"
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:566
+#: inc/admin/customizer/customizer.php:653
 msgid "Page Sidebar"
 msgstr ""
 
@@ -855,7 +863,7 @@ msgstr ""
 msgid "Pages:"
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:338
+#: inc/admin/customizer/customizer.php:425
 msgid "Pink"
 msgstr ""
 
@@ -864,7 +872,7 @@ msgstr ""
 msgid "Plugin installed and active!"
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:340
+#: inc/admin/customizer/customizer.php:427
 msgid "Plum"
 msgstr ""
 
@@ -872,29 +880,29 @@ msgstr ""
 msgid "Polylang Compatible"
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:477
-#: inc/admin/customizer/customizer.php:690
+#: inc/admin/customizer/customizer.php:564
+#: inc/admin/customizer/customizer.php:777
 msgid "Post Author"
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:503
+#: inc/admin/customizer/customizer.php:590
 msgid "Post Categories"
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:490
-#: inc/admin/customizer/customizer.php:677
+#: inc/admin/customizer/customizer.php:577
+#: inc/admin/customizer/customizer.php:764
 msgid "Post Date"
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:431
+#: inc/admin/customizer/customizer.php:518
 msgid "Post Settings"
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:451
+#: inc/admin/customizer/customizer.php:538
 msgid "Post Sidebar"
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:516
+#: inc/admin/customizer/customizer.php:603
 msgid "Post Tags"
 msgstr ""
 
@@ -914,7 +922,7 @@ msgstr ""
 msgid "Primary"
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:354
+#: inc/admin/customizer/customizer.php:441
 msgid "Primary Color"
 msgstr ""
 
@@ -922,7 +930,7 @@ msgstr ""
 msgid "Pro Version"
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:737
+#: inc/admin/customizer/customizer.php:824
 msgid "Product Sidebar"
 msgstr ""
 
@@ -966,7 +974,7 @@ msgstr ""
 msgid "PT: Video"
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:337
+#: inc/admin/customizer/customizer.php:424
 msgid "Purple"
 msgstr ""
 
@@ -983,17 +991,17 @@ msgid "Read Documentation & Installation Guide"
 msgstr ""
 
 #: page-templates/template-rooms-list.php:69
-#: inc/admin/customizer/customizer.php:621
-#: inc/admin/widgets/recent-posts-widget.php:279
+#: inc/admin/customizer/customizer.php:708
 #: inc/admin/widgets/rooms-widget.php:225
+#: inc/admin/widgets/recent-posts-widget.php:279
 msgid "Read More"
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:614
+#: inc/admin/customizer/customizer.php:701
 msgid "Read More Button"
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:629
+#: inc/admin/customizer/customizer.php:716
 msgid "Read More Text"
 msgstr ""
 
@@ -1015,7 +1023,7 @@ msgstr ""
 msgid "Recommended size 400 x 260"
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:328
+#: inc/admin/customizer/customizer.php:415
 msgid "Red"
 msgstr ""
 
@@ -1061,11 +1069,11 @@ msgstr ""
 msgid "Search Results for: %s"
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:368
+#: inc/admin/customizer/customizer.php:455
 msgid "Secondary Color"
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:241
+#: inc/admin/customizer/customizer.php:328
 msgid "Secondary Logo"
 msgstr ""
 
@@ -1077,32 +1085,32 @@ msgstr ""
 msgid "Select Category"
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:567
+#: inc/admin/customizer/customizer.php:654
 msgid ""
 "Select default layout for single page. This layout will be reflected in all "
 "single page unless unique layout is set for specific page."
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:452
+#: inc/admin/customizer/customizer.php:539
 msgid ""
 "Select default layout for single posts. This layout will be reflected in all "
 "single posts unless unique layout is set for specific post."
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:652
+#: inc/admin/customizer/customizer.php:739
 msgid ""
 "Select default sidebar. This sidebar will be reflected in all pages unless "
 "unique layout is set for specific page as well as reflected in whole site "
 "archives, categories, search page etc."
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:725
+#: inc/admin/customizer/customizer.php:812
 msgid ""
 "Select default sidebar. This sidebar will be reflected in archives, "
 "categories, search page etc. of WooCommerce."
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:752
+#: inc/admin/customizer/customizer.php:839
 msgid ""
 "Select default sidebar. This sidebar will be reflected in product page of "
 "WooCommerce."
@@ -1114,24 +1122,23 @@ msgstr ""
 msgid "Select Layout"
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:808
+#: inc/admin/customizer/customizer.php:895
 msgid ""
 "Select layout for footer widget columns. It generates some widget areas for "
 "Footer based on the layout."
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:167
-#: inc/admin/customizer/customizer.php:589
+#: inc/admin/customizer/customizer.php:254
+#: inc/admin/customizer/customizer.php:676
 msgid "Settings"
 msgstr ""
 
+#: inc/admin/widgets/testimonial-widget.php:55
+#: inc/admin/widgets/services-widget.php:56
 #: inc/admin/widgets/logo-widget.php:54
 #: inc/admin/widgets/packages-widget.php:62
+#: inc/admin/widgets/video-widget.php:61 inc/admin/widgets/rooms-widget.php:57
 #: inc/admin/widgets/recent-posts-widget.php:59
-#: inc/admin/widgets/rooms-widget.php:57
-#: inc/admin/widgets/services-widget.php:56
-#: inc/admin/widgets/testimonial-widget.php:55
-#: inc/admin/widgets/video-widget.php:61
 msgid "Short description"
 msgstr ""
 
@@ -1143,14 +1150,14 @@ msgstr ""
 msgid "Show your business patner logo."
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:437
-#: inc/admin/customizer/customizer.php:552
-#: inc/admin/customizer/customizer.php:637 inc/admin/widgets/widgets.php:16
+#: inc/admin/customizer/customizer.php:524
+#: inc/admin/customizer/customizer.php:639
+#: inc/admin/customizer/customizer.php:724 inc/admin/widgets/widgets.php:16
 msgid "Sidebar"
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:724
-#: inc/admin/customizer/customizer.php:751
+#: inc/admin/customizer/customizer.php:811
+#: inc/admin/customizer/customizer.php:838
 msgid "Sidebar Layout"
 msgstr ""
 
@@ -1170,11 +1177,11 @@ msgstr ""
 msgid "Single Testimonial"
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:229
+#: inc/admin/customizer/customizer.php:316
 msgid "Site Title & Tagline"
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:335
+#: inc/admin/customizer/customizer.php:422
 msgid "Sky Blue"
 msgstr ""
 
@@ -1182,8 +1189,8 @@ msgstr ""
 msgid "Smooth Page Scroll"
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:377
-#: inc/admin/customizer/customizer.php:401
+#: inc/admin/customizer/customizer.php:464
+#: inc/admin/customizer/customizer.php:488
 msgid "Social"
 msgstr ""
 
@@ -1191,7 +1198,7 @@ msgstr ""
 msgid "Social Icons."
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:382
+#: inc/admin/customizer/customizer.php:469
 msgid "Social Profiles"
 msgstr ""
 
@@ -1205,13 +1212,12 @@ msgstr ""
 msgid "Sortable Footer Bar Elements"
 msgstr ""
 
+#: inc/admin/widgets/testimonial-widget.php:49
+#: inc/admin/widgets/services-widget.php:50
 #: inc/admin/widgets/logo-widget.php:48
 #: inc/admin/widgets/packages-widget.php:56
+#: inc/admin/widgets/video-widget.php:55 inc/admin/widgets/rooms-widget.php:51
 #: inc/admin/widgets/recent-posts-widget.php:53
-#: inc/admin/widgets/rooms-widget.php:51
-#: inc/admin/widgets/services-widget.php:50
-#: inc/admin/widgets/testimonial-widget.php:49
-#: inc/admin/widgets/video-widget.php:55
 msgid "Sub Title"
 msgstr ""
 
@@ -1223,7 +1229,7 @@ msgstr ""
 msgid "Support via Forum"
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:334
+#: inc/admin/customizer/customizer.php:421
 msgid "Teal"
 msgstr ""
 
@@ -1231,7 +1237,7 @@ msgstr ""
 msgid "Text Alignment"
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:311
+#: inc/admin/customizer/customizer.php:398
 msgid "Theme Color"
 msgstr ""
 
@@ -1329,23 +1335,23 @@ msgid ""
 "a value in Page Attributes > Order"
 msgstr ""
 
-#: inc/admin/widgets/about-widget.php:32 inc/admin/widgets/about-widget.php:39
-#: inc/admin/widgets/image-slider-widget.php:37
-#: inc/admin/widgets/image-slider-widget.php:44
-#: inc/admin/widgets/logo-widget.php:32 inc/admin/widgets/logo-widget.php:39
-#: inc/admin/widgets/logo-widget.php:124 inc/admin/widgets/logo-widget.php:131
-#: inc/admin/widgets/packages-widget.php:38
-#: inc/admin/widgets/packages-widget.php:45
-#: inc/admin/widgets/recent-posts-widget.php:37
-#: inc/admin/widgets/recent-posts-widget.php:44
-#: inc/admin/widgets/rooms-widget.php:35 inc/admin/widgets/rooms-widget.php:42
-#: inc/admin/widgets/services-widget.php:34
-#: inc/admin/widgets/services-widget.php:41
-#: inc/admin/widgets/social-icon-widget.php:33
-#: inc/admin/widgets/social-icon-widget.php:40
 #: inc/admin/widgets/testimonial-widget.php:33
 #: inc/admin/widgets/testimonial-widget.php:40
+#: inc/admin/widgets/services-widget.php:34
+#: inc/admin/widgets/services-widget.php:41
+#: inc/admin/widgets/logo-widget.php:32 inc/admin/widgets/logo-widget.php:39
+#: inc/admin/widgets/logo-widget.php:124 inc/admin/widgets/logo-widget.php:131
+#: inc/admin/widgets/social-icon-widget.php:33
+#: inc/admin/widgets/social-icon-widget.php:40
+#: inc/admin/widgets/image-slider-widget.php:37
+#: inc/admin/widgets/image-slider-widget.php:44
+#: inc/admin/widgets/packages-widget.php:38
+#: inc/admin/widgets/packages-widget.php:45
+#: inc/admin/widgets/about-widget.php:32 inc/admin/widgets/about-widget.php:39
 #: inc/admin/widgets/video-widget.php:37 inc/admin/widgets/video-widget.php:44
+#: inc/admin/widgets/rooms-widget.php:35 inc/admin/widgets/rooms-widget.php:42
+#: inc/admin/widgets/recent-posts-widget.php:37
+#: inc/admin/widgets/recent-posts-widget.php:44
 msgid "Title"
 msgstr ""
 
@@ -1353,7 +1359,7 @@ msgstr ""
 msgid "Uncheck to disable."
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:413
+#: inc/admin/customizer/customizer.php:500
 #: inc/admin/widgets/logo-widget.php:138 inc/admin/widgets/logo-widget.php:145
 msgid "URL"
 msgstr ""
@@ -1397,7 +1403,7 @@ msgstr ""
 msgid "Visit Support Forum"
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:327
+#: inc/admin/customizer/customizer.php:414
 msgid "Watermelon"
 msgstr ""
 
@@ -1423,7 +1429,7 @@ msgid ""
 "our theme can offer please make sure you visit our %2$sswelcome page%3$s."
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:705
+#: inc/admin/customizer/customizer.php:792
 msgid "WooCommerce"
 msgstr ""
 
@@ -1439,10 +1445,10 @@ msgstr ""
 msgid "WPML Compatible"
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:330
+#: inc/admin/customizer/customizer.php:417
 msgid "Yellow"
 msgstr ""
 
-#: inc/admin/customizer/customizer.php:355
+#: inc/admin/customizer/customizer.php:442
 msgid "You can override theme color by custom color"
 msgstr ""
